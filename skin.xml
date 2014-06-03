@@ -1,0 +1,8 @@
+<skin>
+	<!--	Skin: Atemio Default Vs 1.00	-->
+	<!--	This skin is part of the default Atemio-skin; the same license applies.	-->
+	<output id="0">
+		<resolution bpp="32" xres="1280" yres="720" />
+	</output>
+	<include filename="/usr/share/enigma2/skin_default/skin_default.xml"/>
+</skin>
