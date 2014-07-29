@@ -475,6 +475,12 @@
 		<widget source="key_yellow" render="Label" position="450,658" size="150,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;20" halign="left" />
 	</screen>
 
+	<screen name="nRGB">
+		<panel name="nRG"/>
+		<ePixmap pixmap="buttons/blue.png" position="560,660" size="20,25" alphatest="blend" />
+		<widget name="key_blue"  position="590,657" size="250,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;22" halign="left" />
+	</screen>
+
 	<screen name="CancelTemplate">
 		<panel name="ButtonRed"/>
 		<widget name="canceltext" position="90,656" zPosition="1" size="220,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
