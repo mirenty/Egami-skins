@@ -18,6 +18,9 @@ ico_format_16_9.png \
 ico_format_4_3.png \
 ico_format_hd.png \
 ico_hbbtv_on.png \
+ico_update.png \
+ico_update_s.png \
+ico_update_u.png \
 ico_sub_on.png \
 ico_txt_on.png \
 infobar.png \
