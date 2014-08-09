@@ -345,45 +345,6 @@
 		<!-- eLabel name="DEBUG"  text="PANEL P024" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- ********** OpenWeb-If Config ********** -->
-
-	<screen name="OpenWebifConfig" position="fill" title="OpenWebif Configuration" flags="wfNoBorder">
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate"/>
-		<panel name="nRG"/>
-		<widget name="lab1" position="40,90" size="585,60" zPosition="1" font="Regular;24" valign="top" transparent="1" />
-		<widget name="config" position="40,150" size="585,240" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-	</screen>
-
-	<!-- ********** Micom Firmware Upgrade ********** -->
-		
-	<screen name="Filebrowser" position="fill" title="File Browser" flags="wfNoBorder">
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate"/>
-		<widget name="file_list" position="40,90" size="585,525" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-		<widget source="status" render="Label" position="640,0" zPosition="5" size="585,75" font="Regular;18" halign="center" valign="center" backgroundColor="bkwall" transparent="1" />
-		<ePixmap  position="890,480" size="300,300" pixmap="menu/a4y.png" alphatest="blend" />
-		<ePixmap pixmap="buttons/yellow.png" position="60,660" size="20,25" alphatest="blend" />
-		<ePixmap pixmap="buttons/blue.png"   position="310,660" size="20,25" alphatest="blend" />
-		<widget source="key_yellow" render="Label" position="90,658" size="150,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;20" halign="left" />
-		<widget source="key_blue" render="Label"   position="340,657" size="250,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;22" halign="left" />
-	</screen>
-
-	<screen name="FirmwareUpgrade" position="fill" title="Firmware Upgrade" flags="wfNoBorder">
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate"/>
-		<panel name="sRG"/>
-		<widget name="oldversion_label" position="40,90"   size="300,25" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-		<widget name="oldversion"       position="320,90"  size="100,25" font="Regular;22" backgroundColor="bkwall" transparent="1" />
-		<widget name="newversion_label" position="40,130"  size="300,25" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-		<widget name="newversion"       position="320,130" size="100,25" font="Regular;22" backgroundColor="bkwall" transparent="1" />
-		<widget source="status" render="Label" position="40,550" size="580,75" font="Regular;22" backgroundColor="bkwall" transparent="1" />
-		<ePixmap  position="890,480" size="300,300" pixmap="menu/a4y.png" alphatest="blend" />
-	</screen>
-        
 	<!-- ********** CrossEPG ********** -->
 
 	<!-- Cross EPG SETUP -->
@@ -756,17 +717,6 @@
 		<!-- eLabel name="DEBUG"  text="PANEL P052" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
         </screen>
 
-	<!-- ********** Transcoding Setup ********** -->
-	
-	<screen name="TranscodingSetup" title="Transcoding Setup" position="fill" flags="wfNoBorder">
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate"/>
-		<panel name="sRG"/>
-		<widget name="config" position="40,90" font="Regular;20" size="580,360" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-
-	</screen>
-	
 	<!-- ********** CCcam Info ********** -->
 
 	<screen name="CCcamInfoMain" title="CCCamInfo MainMenu" position="fill" flags="wfNoBorder">
