@@ -20,6 +20,13 @@
 		<eLabel position="40,62" size="583,1" backgroundColor="#606060" zPosition="0" />
 	</screen>
 
+	<screen name="ntWallTemplate">
+		<ePixmap pixmap="menu/bkdown.png" position="0,0"   size="1280,720" zPosition="-1" />
+    		<ePixmap pixmap="menu/bktop.png"  position="630,0" size="1280,720" zPosition="-1" />
+		<eLabel position="40,60" size="583,2" backgroundColor="#101010" zPosition="0" />
+		<eLabel position="40,62" size="583,1" backgroundColor="#606060" zPosition="0" />
+	</screen>
+
 	<!-- Small Wall Template -->
 	<screen name="sWallTemplate">
 		<ePixmap pixmap="menu/bkdown.png" position="0,0"   size="1280,720" zPosition="-1" />
@@ -50,12 +57,12 @@
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
 		<panel name="sRG"/>
-		<!-- ePixmap pixmap="buttons/maxbar.png" position="610,90" size="15,500" zPosition="2" alphatest="blend" /-->
 		<widget name="config" position="40,90" size="585,500" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
 		<widget name="description" position="675,390" size="550,200" font="Regular;22" valign="top" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="10" />
-		<ePixmap  position="870,500" size="300,300" pixmap="menu/setup.png" alphatest="blend" />
+		<ePixmap  position="870,500" size="300,300" pixmap="menu/setup_selection.png" alphatest="blend" />
 		<widget name="VKeyIcon" pixmap="buttons/key_text.png" alphatest="on" zPosition="1" position="80,420" size="50,25" />
 		<widget name="HelpWindow" position="80,450" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+		<widget name="footnote" position="690,30" size="510,30" halign="center" font="mediamenu;26" foregroundColor="#808080" backgroundColor="bkwall" transparent="1"  zPosition="1" />
 	</screen>
 
   	<!-- Menu Icons Template -->
@@ -92,7 +99,7 @@
   			<convert type="MenuEntryCompare">plugin_selection</convert>
   			<convert type="ConditionalShowHide" />
   		</widget>
-  		<widget source="menu" render="Pixmap" pixmap="menu/setup.png"           position="870,500" size="300,300" alphatest="blend" >
+  		<widget source="menu" render="Pixmap" pixmap="menu/setup_selection.png"           position="870,500" size="300,300" alphatest="blend" >
   			<convert type="MenuEntryCompare">setup_selection</convert>
   			<convert type="ConditionalShowHide" />
   		</widget>
@@ -298,11 +305,14 @@
 	<screen name="ButtonGrey">
 		<ePixmap pixmap="buttons/grey.png"   position="1060,660" size="20,25" alphatest="blend" />
 	</screen>
-
 	<!-- Button Templates Colors Name -->
 	<screen name="nR">
 		<panel name="ButtonRed"/>
 		<widget name="key_red" position="90,657" size="250,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;22" halign="left" />
+	</screen>
+	<screen name="nG">
+		<panel name="ButtonGreen"/>
+		<widget name="key_green" position="340,657" size="250,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;22" halign="left" />
 	</screen>
 	<screen name="nRG">
 		<panel name="nR"/>
@@ -363,6 +373,11 @@
 	</screen>
 	<screen name="sRGYB">
 		<panel name="sRGY"/>
+		<panel name="ButtonBlue"/>
+		<widget source="key_blue" render="Label" position="840,657" size="250,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;22" halign="left" />
+	</screen>
+	<screen name="sRGB">
+		<panel name="sRG"/>
 		<panel name="ButtonBlue"/>
 		<widget source="key_blue" render="Label" position="840,657" size="250,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;22" halign="left" />
 	</screen>
@@ -462,7 +477,7 @@
 
 	<screen name="sRGB">
 		<panel name="sRG"/>
-		<panel name="ButtonBlue"/>
+		<ePixmap pixmap="buttons/blue.png" position="560,660" size="20,25" alphatest="blend" />
 		<widget source="key_blue" render="Label" position="590,657" size="250,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;22" halign="left" />
 	</screen>
 

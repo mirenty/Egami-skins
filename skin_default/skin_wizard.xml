@@ -161,6 +161,8 @@
 		<widget name="languagetext" position="90,663" size="210,24" font="Regular;21"  backgroundColor="bkwall" transparent="1" />
 		<ePixmap pixmap="icons/info_on.png" position="40,95"  size="40,40" zPosition="10" alphatest="blend" />
 		<ePixmap pixmap="icons/net_on.png"  position="40,303" size="40,40" zPosition="10" alphatest="blend" />
+		<widget name="VKeyIcon" pixmap="buttons/key_text.png" alphatest="on" zPosition="1" position="80,420" size="50,25" />
+		<widget name="HelpWindow" position="80,450" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 		<!-- eLabel name="DEBUG"  text="PANEL W004" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90" /-->
 	</screen>
 
@@ -304,7 +306,7 @@
 		<ePixmap alphatest="blend" pixmap="buttons/green.png" position="360,635" size="30,40" />
 		<widget backgroundColor="bkwall" font="Regular;20" halign="left" name="key_red" position="105,637" size="240,24" transparent="1" zPosition="1" />
 		<widget backgroundColor="bkwall" font="Regular;20" halign="left" name="key_green" position="395,637" size="240,24" transparent="1" zPosition="1" />
-		<ePixmap alphatest="blend" pixmap="icons/setup.png" position="920,230" size="256,256" transparent="1" zPosition="2" />
+		<ePixmap alphatest="blend" pixmap="menu/setup_selection.png" position="920,230" size="256,256" transparent="1" zPosition="2" />
 		<!-- eLabel name="DEBUG"  text="PANEL W010" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90" /-->
 	</screen>
 

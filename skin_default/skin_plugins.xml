@@ -178,7 +178,7 @@
 		<panel name="ClockTemplate" />
 		<panel name="nRG"/>
 		<widget name="config" position="40,80" size="585,230" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-		<widget name="description" position="40,290" size="585,400" font="Regular;22" halign="left" valign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
+		<widget name="description" position="40,350" size="585,400" font="Regular;20" halign="left" valign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
 		<widget name="pleasewait" position="40,80" size="585,230" font="Regular;32" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="2" />
 		<!-- eLabel name="DEBUG"  text="PANEL P013" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
@@ -209,7 +209,8 @@
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate" />
 		<panel name="nRG"/>
-		<widget name="config" position="40,80" size="585,500" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
+		<widget name="config" position="40,80" size="585,400" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
+		<widget name="description" position="40,400" size="585,200" font="Regular;20" halign="left" valign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
 		<widget name="pleasewait" position="40,80" size="585,230" font="Regular;32" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="2" />
 		<!-- eLabel name="DEBUG"  text="PANEL P015" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
@@ -261,7 +262,7 @@
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate" />
 		<panel name="fakeExit"/>
-		<widget name="list" position="40,90" size="585,500" font="Regular;16" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
+		<widget name="list" position="40,90" size="585,500" font="Regular;16" backgroundColor="bkwall" transparent="1" />
 		<!-- eLabel name="DEBUG"  text="PANEL P018" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
@@ -270,9 +271,9 @@
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate" />
-		<panel name="fakeExit"/>
+		<panel name="nR"/>
 		<widget name="about" position="40,90" size="585,500" font="Regular;20" backgroundColor="bkwall" transparent="1" />
-		<widget name="oealogo" position="240,440" size="200,135" zPosition="4" transparent="1" alphatest="blend" />
+		<widget name="oealogo" position="240,470" size="200,135" zPosition="4" transparent="1" alphatest="blend" />
 		<!-- eLabel name="DEBUG"  text="PANEL P019" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
@@ -340,7 +341,7 @@
 		<panel name="sRGYB"/>
 		<widget name="config" position="40,80" size="585,510" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1"/>
 		<widget source="current_address" render="Label" position="40,580"  size="585,30" zPosition="10" font="Regular;21" halign="left" valign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-		<widget source="fixed_address"   render="Label" position="640,570" size="700,30" zPosition="10" font="Regular;21" halign="left" valign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
+		<widget source="fixed_address"   render="Label" position="680,30" size="540,30" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
 		<ePixmap  position="890,480" size="300,300" pixmap="menu/hdmi.png" alphatest="blend" />
 		<!-- eLabel name="DEBUG"  text="PANEL P024" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
@@ -476,8 +477,8 @@
 		<panel name="ClockTemplate"/>
 		<panel name="nR"/>
 		<widget name="about" position="40,90" size="585,510" font="Regular;18" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-		<widget name="rytec_pix" position="785,575" size="70,70" alphatest="blend" />
-		<widget name="krkadoni_pix" position="900,623" size="70,22" alphatest="blend" />
+		<widget name="rytec_pix" position="45,530" size="0,70" alphatest="blend" />
+		<widget name="krkadoni_pix" position="150,530" size="0,22" alphatest="blend" />
 		<!-- eLabel name="DEBUG"  text="PANEL P030" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
@@ -752,6 +753,7 @@
     		<widget name="labstop"     position="280,140" size="120,28" font="Regular;24" halign="left"   valign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
     		<widget name="labrun"      position="280,140" size="200,28" font="Regular;24" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="green"  zPosition="1" />
     		<widget name="labactive"   position="280,140" size="200,28" font="Regular;24" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="red"    zPosition="1" />
+    		<widget name="key"         position="40, 500" size="580,80" font="Regular;18" halign="left"   valign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
 		<ePixmap position="920,520" size="300,90" pixmap="menu/cron.png" alphatest="blend" />
 		<!-- eLabel name="DEBUG"  text="PANEL P052" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
         </screen>
@@ -762,9 +764,12 @@
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate"/>
-		<panel name="sRG"/>
+		<panel name="sRGB"/>
 		<widget name="config" position="40,90" font="Regular;20" size="580,360" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-
+		<widget name="description" position="40,290" size="585,400" font="Regular;22" halign="left" valign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
+		<widget name="text" position="40,360" size="580,230" font="Regular;22" backgroundColor="bkwall" transparent="1" zPosition="1" />
+		<widget name="blue"     position="920,657" size="250,28" backgroundColor="bkwall" zPosition="2" transparent="1" />
+		<widget name="key_blue" position="980,657" size="250,28" backgroundColor="bkwall" zPosition="2" transparent="1" font="Regular;22" halign="left" />
 	</screen>
 	
 	<!-- ********** CCcam Info ********** -->
