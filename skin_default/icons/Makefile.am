@@ -33,6 +33,7 @@ faz.png \
 folder.png \
 forward.png \
 forward_large.png \
+flash.png \
 fza.png \
 ico_dvb-c.png \
 ico_dvb-s.png \
