@@ -2384,9 +2384,9 @@
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate" />
 		<panel name="nRGYB"/>
-		<widget name="list" position="40,80" size="585,250" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-		<widget name="timer1" position="85,380" size="585,260" scrollbarMode="showNever" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-		<widget name="timer2" position="590,110" size="600,250" scrollbarMode="showNever" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
+		<widget name="list" position="40,80" size="585,150" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
+		<widget name="timer1" position="670,540" size="585,260" scrollbarMode="showNever" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
+		<widget name="timer2" position="20,240" size="600,250" scrollbarMode="showNever" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
 		<!--eLabel name="DEBUG"  text="PANEL S095" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
