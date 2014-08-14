@@ -1781,6 +1781,20 @@
 		<!--eLabel name="DEBUG"  text="PANEL S071" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
+	<!-- RecordTimerQuestions -->
+	<screen name="RecordTimerQuestion" position="center,center" size="240,70" zPosition="5" flags="wfNoBorder">
+		<widget name="text" position="0,0" size="0,0" font="Regular;20"/>
+		<widget name="list" position="10,10" size="220,50" enableWrapAround="1"/>
+	</screen>
+
+	<screen name="RemoveTimerQuestion" position="center,center" size="503,130" zPosition="5" flags="wfNoBorder">
+		<widget name="text" position="0,0" size="0,0" font="Regular;22"/>
+		<widget name="list" position="10,10" size="220,50" enableWrapAround="1"/>
+		<applet type="onLayoutFinish">
+self.autoResize()
+		</applet>
+	</screen>
+
 	<!-- Parental Control PinInput OK --> 
 	<screen name="PinInput" title="Change pin code" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
