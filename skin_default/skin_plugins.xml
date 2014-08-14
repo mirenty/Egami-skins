@@ -897,4 +897,23 @@
 		<widget name="status" position="40,330" size="585,240" foregroundColor="bluette" backgroundColor="bkwall" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P066" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
+
+	<!-- ## PermanentClock ## -->
+	<screen name="PermanentClockMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="Permanent Clock">
+		<panel name="WallTemplate" />
+		<panel name="PigTemplate" />
+		<panel name="ClockTemplate"/>
+		<widget name="list" font="Regular;22" position="40,80" size="585,300" transparent="1" foregroundColor="grey"/>
+		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="310,660" size="70,30"/>
+		<eLabel text="Cancel" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="385,660" size="220,26" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="60,660" size="35,26"/>
+		<eLabel text="Accept" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="100,660" size="220,26" transparent="1" zPosition="1"/>
+	</screen>
+	<screen name="PermanentClockScreen" position="0,0" size="120,30" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
+		<widget source="global.CurrentTime" render="Label" position="1,1" size="120,30" backgroundColor="transparent" transparent="1" zPosition="0" foregroundColor="grey" borderWidth="2" font="Regular;26" borderColor="black" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+	</screen>
+
+
 </skin>
