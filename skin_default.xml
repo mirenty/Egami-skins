@@ -2016,7 +2016,7 @@ self.autoResize()
 		<!-- List -->
 		<ePixmap pixmap="buttons/maxbarblue.png" position="1205,75"   size="15,418" zPosition="2" alphatest="blend" />
 		<widget name="list" position="480,75" size="740,418" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" 
-			itemHeights="25,25,25" fontSizesOriginal="24,22,20" fontSizesCompact="22,18" fontSizesMinimal="22,18" backgroundColor="bkwall" transparent="1" />
+			itemHeights="28" font="Regular;20" backgroundColor="bkwall" transparent="1" />
 		<!-- Music Name -->
 		<widget source="session.CurrentService" render="Label" position="610,607" size="480,20" font="Regular;19" noWrap="1" halign="center" zPosition="2" foregroundColor="#73c6ff" backgroundColor="#000000" transparent="1" >
 			<convert type="ServiceName">Name</convert>
