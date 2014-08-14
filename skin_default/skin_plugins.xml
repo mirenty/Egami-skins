@@ -550,8 +550,8 @@
 		<widget name="castlabel"    position="40,330"  size="585,300" font="Regular;20" backgroundColor="bkwall" transparent="1" />
 		<widget name="extralabel"   position="40,330"  size="585,300" font="Regular;18" backgroundColor="bkwall" transparent="1" />
 		<widget name="ratinglabel"  position="40,300"  size="250,20"  font="Regular;18"  foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-		<widget name="starsbg"      position="260,297" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png"  zPosition="0" transparent="1" alphatest="on" />
-		<widget name="stars"        position="260,297" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" transparent="1" />
+		<widget name="starsbg"      position="340,297" size="170,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png"  zPosition="0" transparent="1" alphatest="on" />
+		<widget name="stars"        position="340,297" size="170,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" transparent="1" />
 		<!-- eLabel name="DEBUG"  text="PANEL P035" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
