@@ -2206,22 +2206,22 @@ self.autoResize()
 	<!-- Timeshift state OK -->
 	<screen name="TimeshiftState" title="TimeShift" position="187,200" zPosition="2" size="889,360" backgroundColor="transparent" flags="wfNoBorder" >
 		<widget name="state" position="257,20" size="381,95" font="Arial; 100" halign="center" backgroundColor="#10000000" transparent="1" valign="top" />
-		<eLabel position="95,189" size="700,1" backgroundColor="bkwall" zPosition="1" />
-		<eLabel position="0,160" size="890,60" zPosition="-1" />
-  		<widget source="session.CurrentService" render="Label" position="25,15" size="200,27" font="Regular;20" halign="left" foregroundColor="bluette" backgroundColor="bkwall" zPosition="3" >
-  			<convert type="ServicePosition">Position</convert>
-  		</widget>
-  		<widget source="session.CurrentService" render="Label" position="e-145,15" size="120,27" font="Regular;20" halign="right" foregroundColor="bluette" backgroundColor="bkwall" zPosition="3" >
-  			<convert type="ServicePosition">Length</convert>
-  		</widget>
-  		<widget name="PTSSeekBack" position="25,43" size="621,15" pixmap="slider_back.png" alphatest="on" zPosition="2"/>
-  		<widget name="PTSSeekPointer" position="10,40" size="19,20" pixmap="position_pointer2.png" alphatest="on" zPosition="4" />
-  		<widget source="session.CurrentService" render="Progress" position="25,43" size="621,15" zPosition="3" pixmap="slider.png" transparent="1">
-  			<convert type="ServicePosition">Position</convert>
-  		</widget>
-  		<widget name="statusicon" position="25,60" size="20,20" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on" />
-  		<widget name="speed" position="55,62" size="80,15" font="Regular;17" halign="left" foregroundColor="bluette" backgroundColor="bkwall" transparent="1" zPosition="5" />
-  		<widget name="eventname" position="75,60" size="521,25" font="Regular;18" halign="center" foregroundColor="bluette" backgroundColor="bkwall" transparent="1" zPosition="2" />
+		<!--eLabel position="95,189" size="700,1" backgroundColor="bkwall" zPosition="1" /-->
+		<eLabel position="0,15" size="890,65" zPosition="-1" />
+		<widget source="session.CurrentService" render="Label" position="25,15" size="200,27" font="Regular;20" halign="left" foregroundColor="bluette" backgroundColor="bkwall" zPosition="3" >
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="e-145,15" size="120,27" font="Regular;20" halign="right" foregroundColor="bluette" backgroundColor="bkwall" zPosition="3" >
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<widget name="PTSSeekBack" position="25,43" size="621,15" pixmap="slider_back.png" alphatest="on" zPosition="2"/>
+		<widget name="PTSSeekPointer" position="10,40" size="19,20" pixmap="position_pointer2.png" alphatest="on" zPosition="4" />
+		<widget source="session.CurrentService" render="Progress" position="25,43" size="621,15" zPosition="3" pixmap="slider.png" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget name="statusicon" position="25,60" size="20,20" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on" />
+		<widget name="speed" position="55,62" size="80,15" font="Regular;17" halign="left" foregroundColor="bluette" backgroundColor="bkwall" transparent="1" zPosition="5" />
+		<widget name="eventname" position="75,60" size="521,25" font="Regular;18" halign="center" foregroundColor="bluette" backgroundColor="bkwall" transparent="1" zPosition="2" />
 		<!--eLabel name="DEBUG"  text="PANEL S086" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
