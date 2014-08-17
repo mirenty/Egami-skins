@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
+	<!--
+	##################### mmark_A4Y_ATEMIO v.1.0.0 ########################
+	#
+	mmark	              Version 1.0 released                   10-05-2014
+	#
+	#######################################################################
+	   The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
+	 This skin is Freeware. Everyone can modify and use it in other images.
+		     BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!
+	   Do whatever you want with this skin, but don't tell it's yours, 
+	 or your idea, and leave the credentials in the "About-box" as they are
+	-->
 
 	<!-- ********** AutoTimer ********** -->
 
@@ -28,7 +40,7 @@
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate" />
 		<panel name="sGBY"/>
-		<widget name="entries" position="40,90" size="560,510" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
+		<widget name="entries" position="590,110" size="600,450" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
 		<ePixmap pixmap="buttons/key_menu.png" position="1175,27" zPosition="2" size="50,40" alphatest="blend" />
 		<ePixmap  position="870,500" size="300,300" pixmap="menu/timer.png" alphatest="blend" />
 		<!-- eLabel name="DEBUG"  text="PANEL P003" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
@@ -550,8 +562,8 @@
 		<widget name="castlabel"    position="40,330"  size="585,300" font="Regular;20" backgroundColor="bkwall" transparent="1" />
 		<widget name="extralabel"   position="40,330"  size="585,300" font="Regular;18" backgroundColor="bkwall" transparent="1" />
 		<widget name="ratinglabel"  position="40,300"  size="250,20"  font="Regular;18"  foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-		<widget name="starsbg"      position="340,297" size="170,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png"  zPosition="0" transparent="1" alphatest="on" />
-		<widget name="stars"        position="340,297" size="170,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" transparent="1" />
+		<widget name="starsbg"      position="260,297" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png"  zPosition="0" transparent="1" alphatest="on" />
+		<widget name="stars"        position="260,297" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" transparent="1" />
 		<!-- eLabel name="DEBUG"  text="PANEL P035" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
@@ -897,23 +909,4 @@
 		<widget name="status" position="40,330" size="585,240" foregroundColor="bluette" backgroundColor="bkwall" transparent="1"/>
 		<!-- eLabel name="DEBUG"  text="PANEL P066" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
-
-	<!-- ## PermanentClock ## -->
-	<screen name="PermanentClockMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="Permanent Clock">
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate"/>
-		<widget name="list" font="Regular;22" position="40,80" size="585,300" transparent="1" foregroundColor="grey"/>
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="310,660" size="70,30"/>
-		<eLabel text="Cancel" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="385,660" size="220,26" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="60,660" size="35,26"/>
-		<eLabel text="Accept" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="100,660" size="220,26" transparent="1" zPosition="1"/>
-	</screen>
-	<screen name="PermanentClockScreen" position="0,0" size="120,30" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
-		<widget source="global.CurrentTime" render="Label" position="1,1" size="120,30" backgroundColor="transparent" transparent="1" zPosition="0" foregroundColor="grey" borderWidth="2" font="Regular;26" borderColor="black" valign="center" halign="center">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-	</screen>
-
-
 </skin>

@@ -30,6 +30,7 @@ satellite.png \
 scan_channel.png \
 scart.png \
 sd.png \
+setup.png \
 setup_selection.png \
 standby_restart.png \
 speaker.png \
