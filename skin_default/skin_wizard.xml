@@ -6,11 +6,11 @@
 	mmark	              Version 1.0 released                   10-05-2014
 	#
 	#######################################################################
-			   THIS SKIN IS FOR ATEMIO IMAGES ONLY.
-		     YOU CAN MODIFY THIS SKIN ONLY FOR PERSONAL USE. 
-	 YOU CANNOT USE ANY PART FOR THIS SKIN IN A NEW SKIN OR TO ADAPT THIS 
-	                       SKIN FOR DIFFERENT IMAGES.
-	-->
+	   The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
+	 This skin is Freeware. Everyone can modify and use it in other images.
+		     BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!
+	   Do whatever you want with this skin, but don't tell it's yours, 
+	 or your idea, and leave the credentials in the "About-box" as they are	-->
 
 	<!-- Video Wizzard OK -->
 	<screen name="VideoWizard" title="Welcome..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
