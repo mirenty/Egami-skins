@@ -1302,29 +1302,18 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S040" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	
-	
 	<!-- NetWork MiniDLNA Browser OK -->
 	<screen name="uShareSelection" title="Mini DLNA Browser" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate" />
 		<panel name="nRG"/>
-
 		<eLabel text="exit" position="90,657" size="250,28" font="Regular;22"  foregroundColor="white" backgroundColor="bkwall" transparent="1" />
 		<eLabel text="Save" position="345,657" size="250,28" font="Regular;22"  foregroundColor="white" backgroundColor="bkwall" transparent="1" />
-
 		<widget name="checkList" position="40,90" size="585,240" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
 		<!-- eLabel name="DEBUG"  text="PANEL S046" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-
-
-	
-	
-	
-	
-	
 	<!-- NetWork NFS Setup OK -->
 	<screen name="NetworkNfs" title="NFS Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
@@ -1837,13 +1826,13 @@
 		<panel name="ClockTemplate" />
 		<panel name="fakeExit"/>
 		<widget source="TunerHeader"  render="Label" position="40,90"  size="585,40"  font="Regular;30" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-		<widget source="nims"         render="Label" position="40,130" size="585,150" font="Regular;22" halign="left" backgroundColor="bkwall"  transparent="1" valign="top" />
+		<widget source="nims"         render="Label" position="40,130" size="585,150" font="Regular;20" halign="left" backgroundColor="bkwall"  transparent="1" valign="top" />
 		<widget source="HDDHeader"    render="Label" position="40,280" size="585,40"  font="Regular;30" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-		<widget source="hdd"          render="Label" position="40,330" size="585,150" font="Regular;22" halign="left" backgroundColor="bkwall"  transparent="1" valign="top" />
-		<widget source="MountsHeader" render="Label" position="40,430" size="585,40"  font="Regular;30" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-		<widget source="mounts"       render="Label" position="40,470" size="585,120" font="Regular;22" halign="left" backgroundColor="bkwall"  transparent="1" valign="top" />
+		<widget source="hdd"          render="Label" position="40,330" size="600,150" font="Regular;20" halign="left" backgroundColor="bkwall"  transparent="1" valign="top" />
+		<widget source="MountsHeader" render="Label" position="40,490" size="585,40"  font="Regular;30" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
+		<widget source="mounts"       render="Label" position="40,540" size="600,120" font="Regular;20" halign="left" backgroundColor="bkwall"  transparent="1" valign="top" />
 		<ePixmap  position="870,500" size="300,300" pixmap="menu/devices.png" alphatest="blend" />
-		<!-- eLabel name="DEBUG"  text="PANEL S075" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+		<!--eLabel name="DEBUG"  text="PANEL S075" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
 	<!-- Info System Memory Info OK -->
@@ -2402,11 +2391,11 @@
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate" />
-		<panel name="nRGYB"/>
-		<widget name="list" position="40,80" size="585,250" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-		<widget name="timer1" position="85,380" size="585,260" scrollbarMode="showNever" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-		<widget name="timer2" position="590,110" size="600,250" scrollbarMode="showNever" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL S095" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+		<panel name="nRYB"/>
+		<widget name="list" position="40,80" size="585,150" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
+		<widget name="timer1" position="670,540" size="585,260" scrollbarMode="showNever" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
+		<widget name="timer2" position="20,240" size="600,250" scrollbarMode="showNever" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
+		<!--eLabel name="DEBUG"  text="PANEL S095" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
 	<!-- Timer Selection OK -->
