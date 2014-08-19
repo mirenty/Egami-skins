@@ -1066,7 +1066,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S029" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Network Adapter Test OK -->
+	<!-- Network Adapter Test -->
 	<screen name="NetworkAdapterTest" title="Network test" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1093,16 +1093,16 @@
 		<widget name="DNSInfo_Check" 		 position="40,312"  size="38,31"   zPosition="2" pixmaps="buttons/green20.png,buttons/red.png20" alphatest="blend" />
 		<widget name="DNStext" 			 position="80,310"  size="610,25"  zPosition="1" font="Regular;22" foregroundColor="white" backgroundColor="bkwall" transparent="1" />		
 		<widget name="DNS" 			 position="280,310" size="610,25"  zPosition="1" font="Regular;20" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="bkwall" transparent="1" />
-		<widget name="AdapterInfo" 		 position="490,110" size="318,50"  zPosition="1" />
-		<widget name="AdapterInfo_Text" 	 position="490,110" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
-		<widget name="NetworkInfo" 		 position="490,160" size="318,50"  zPosition="1" />
-		<widget name="NetworkInfo_Text" 	 position="490,160" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
-		<widget name="DhcpInfo" 		 position="490,210" size="318,50"  zPosition="1" />
-		<widget name="DhcpInfo_Text" 		 position="490,210" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
-		<widget name="IPInfo" 			 position="490,260" size="318,50"  zPosition="1" />
-		<widget name="IPInfo_Text" 		 position="490,260" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
-		<widget name="DNSInfo" 			 position="490,310" size="318,50"  zPosition="1" />
-		<widget name="DNSInfo_Text" 		 position="490,310" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
+		<widget name="AdapterInfo" 		 position="440,110" size="318,50"  zPosition="1" />
+		<widget name="AdapterInfo_Text" 	 position="440,110" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
+		<widget name="NetworkInfo" 		 position="440,160" size="318,50"  zPosition="1" />
+		<widget name="NetworkInfo_Text" 	 position="440,160" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
+		<widget name="DhcpInfo" 		 position="440,210" size="318,50"  zPosition="1" />
+		<widget name="DhcpInfo_Text" 		 position="440,210" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
+		<widget name="IPInfo" 			 position="440,260" size="318,50"  zPosition="1" />
+		<widget name="IPInfo_Text" 		 position="440,260" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
+		<widget name="DNSInfo" 			 position="440,310" size="318,50"  zPosition="1" />
+		<widget name="DNSInfo_Text" 		 position="440,310" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
 		<widget name="InfoText"			 position="40,360"  size="585,300" zPosition="2" font="Regular;20" transparent="1" valign="center" halign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" />
 		<widget name="InfoTextBorder" 		 position="40,380"  size="585,300" zPosition="2" />
 		<widget name="EditSettingsButton" 	 position="840,657" size="250,24"  zPosition="1" />
