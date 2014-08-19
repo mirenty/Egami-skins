@@ -2250,13 +2250,13 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S088" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- EPG Selection OK -->
+	<!-- EPG Selection -->
 	<screen name="EPGSelection" title="EPG Selection" position="fill" flags="wfNoBorder">
 		<panel name="sWallTemplate" />
 		<panel name="sPigTemplate" />
 		<panel name="nRGYB-MI"/>
 		<ePixmap pixmap="buttons/maxbar.png" position="760,80"   size="15,510" zPosition="2" alphatest="blend" />
-		<widget name="list" position="40,80" size="735,510" itemHeight="30" selectionPixmap="buttons/listselect.png" transparent="1"  />
+		<widget name="list" position="40,80" size="735,510" itemHeight="30" selectionPixmap="buttons/listselect.png" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="Event" render="Label" position="815,300" size="110,24" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1"  zPosition="5" >
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">ShortDate</convert>
