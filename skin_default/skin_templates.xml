@@ -323,10 +323,15 @@
 	<screen name="nRB">
 		<panel name="nR"/>
 		<panel name="ButtonBlue"/>
-		<widget name="key_blue" position="340,657" size="250,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;22" halign="left" />
+		<widget name="key_blue" position="840,657" size="250,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;22" halign="left" />
 	</screen>
 	<screen name="nRGY">
 		<panel name="nRG"/>
+		<panel name="ButtonYellow"/>
+		<widget name="key_yellow"  position="590,657" size="250,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;22" halign="left" />
+	</screen>
+	<screen name="nRYB">
+		<panel name="nRB"/>
 		<panel name="ButtonYellow"/>
 		<widget name="key_yellow"  position="590,657" size="250,28" backgroundColor="bkwall" zPosition="1" transparent="1" font="Regular;22" halign="left" />
 	</screen>
