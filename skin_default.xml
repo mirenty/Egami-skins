@@ -17,13 +17,13 @@
 		<resolution bpp="32" xres="1280" yres="720"/>
 	</output>
 
-	<!-- External Files OK -->
+	<!-- External Files -->
 	<include filename="/usr/share/enigma2/skin_default/skin_templates.xml"/>
 	<include filename="/usr/share/enigma2/skin_default/skin_plugins.xml"/>
 	<include filename="/usr/share/enigma2/skin_default/skin_wizard.xml"/>
 	<include filename="/usr/share/enigma2/skin_default/skin_nopanel.xml"/>
 
-	<!-- Fonts OK -->
+	<!-- Fonts -->
 	 <fonts>
 		<font name="xRegular"  filename="nmsbd.ttf"                scale="100"/>
 		<font name="LCD"       filename="lcd.ttf"                  scale="100"/>
@@ -33,7 +33,7 @@
 		<font name="mediamenu" filename="msmenu.ttf"     	   scale="93" />
 	</fonts>
 
-	<!-- Colors OK --> 
+	<!-- Colors --> 
 	<colors> 
 		<color name="background" value="#00000000"/>
 		<color name="bkwall" value="#00272e43"/>
@@ -3003,11 +3003,11 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S132" position="200,400" size="50,50" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- User Positioner Interface OK -->
-	<screen name="UserInterfacePositioner" Title="Positioner" position="0,0" size="1280,720" backgroundColor="#FF000000" flags="wfNoBorder">
-		<panel name="nRGY"/>
-		<widget name="config" position="center,center" size="1210,680" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#20000000" transparent="0" />
-		<widget source="status" render="Label" position="center,center" size="660,60" font="Regular;20" backgroundColor="#20000000" halign="center" valign="center" zPosition="10" />
+	<!-- User Positioner Interface -->
+	<screen name="UserInterfacePositioner" Title="Positioner" position="0,0" size="e,e" backgroundColor="bluetransparent" flags="wfNoBorder">
+		<panel name="sRGY"/>
+		<widget name="config" position="c-175,c-75" size="350,130" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#20000000" transparent="0" />
+		<widget source="status" render="Label" position="c-300,e-190" size="600,70" font="Regular;20" backgroundColor="#20000000" halign="center" valign="center" zPosition="10" />
 		<!-- eLabel name="DEBUG"  text="PANEL S133" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
