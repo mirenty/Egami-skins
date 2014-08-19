@@ -34,13 +34,13 @@
 		<!-- eLabel name="DEBUG"  text="PANEL P002" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Auto Timer OK -->
+	<!-- Auto Timer -->
 	<screen name="AutoTimerOverview" title="AutoTimer Overview" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate" />
 		<panel name="sGBY"/>
-		<widget name="entries" position="590,110" size="600,450" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
+		<widget name="entries" position="40,90" size="560,510" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
 		<ePixmap pixmap="buttons/key_menu.png" position="1175,27" zPosition="2" size="50,40" alphatest="blend" />
 		<ePixmap  position="870,500" size="300,300" pixmap="menu/timer.png" alphatest="blend" />
 		<!-- eLabel name="DEBUG"  text="PANEL P003" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->

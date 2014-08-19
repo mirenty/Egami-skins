@@ -2359,31 +2359,31 @@
 
 	<!-- Timers -->
 	
-	<!-- Timer Entry OK -->
+	<!-- Timer Entry -->
 	<screen name="TimerEntry" title="Timer entry" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate" />
 		<panel name="CancelOKTemplate"/>
 		<widget name="config" position="40,80" size="585,500" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-		<!-- widget name="VKeyIcon" pixmap="buttons/key_text.png" alphatest="on" zPosition="1" position="80,420" size="50,25" /-->
+		<!--<widget name="VKeyIcon" pixmap="buttons/key_text.png" alphatest="on" zPosition="1" position="80,420" size="50,25" />-->
 		<widget name="HelpWindow" position="80,450" size="1,1" transparent="1" zPosition="1" alphatest="on" />
-		<ePixmap  position="870,500" size="300,300" pixmap="menu/timer.png" alphatest="blend" />
+		<widget name="description" position="680,520" size="560,140" font="Regular;24" backgroundColor="bkwall" transparent="1" />
 		<widget name="ok"     position="185,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" />
 		<widget name="cancel" position="460,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL S092" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+		<!--eLabel name="DEBUG"  text="PANEL S092" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- Timer Edit List OK -->
+	<!-- Timer Edit List -->
 	<screen name="TimerEditList" title="Timer Overview" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate" />
 		<panel name="nRGYB-I"/>
 		<widget name="timerlist" position="40,80" size="585,500" font="Regular;24" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-		<widget name="description" position="40,480" size="585,50" font="Regular;24" backgroundColor="bkwall" transparent="1" />
+		<widget name="description" position="680,520" size="560,140" font="Regular;24" backgroundColor="bkwall" transparent="1" />
 		<!-- ePixmap  position="870,500" size="300,300" pixmap="menu/timer.png" alphatest="blend" /-->
-		<!-- eLabel name="DEBUG"  text="PANEL S093" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+		<!--eLabel name="DEBUG"  text="PANEL S093" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
 	<!-- Timer Log OK -->
