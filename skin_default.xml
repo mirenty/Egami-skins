@@ -2631,7 +2631,7 @@
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate"/>
-		<panel name="nRG"/>
+		<panel name="nRGB"/>
 		<!-- Ico Crypt -->
 		<ePixmap pixmap="infobar/cryptoff_ico.png" position="45,80" size="17,25" zPosition="1" alphatest="blend" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/crypton_ico.png" position="45,80" size="17,25" zPosition="2" alphatest="blend">
