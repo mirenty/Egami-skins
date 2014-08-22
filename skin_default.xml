@@ -74,7 +74,7 @@
 		<color name="backpurple" value="#4D5375"/>
 	</colors>
 
-	<!-- Main screen colors (id=0 Framebuffer) OK -->
+	<!-- Main screen colors (id=0 Framebuffer) -->
 	<windowstyle type="skinned" id="0">
 		<title offset="20,3" font="Regular;24" />
 		<color name="WindowTitleForeground" color="#73c6ff"/>
@@ -116,10 +116,10 @@
 		<widget name="UnhandledKeyPixmap" pixmap="icons/unhandled-key.png" position="0,0" size="38,50" alphatest="off" />
 	</screen>
 
-	<!-- SubTitle OK -->
+	<!-- SubTitle -->
 	<screen name="SubtitleDisplay" title="SubTitle" position="fill" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
 
-	<!-- PiP Zap OK -->
+	<!-- PiP Zap -->
 	<screen name="PictureInPictureZapping" title="PiPZap" position="center,60" size="120,26" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder" >
 		<eLabel text="PiP-Zap" position="0,0" size="120,26" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
 	</screen>
@@ -128,44 +128,44 @@
 		<widget name="video" position="0,0" size="240,135" backgroundColor="transparent" />
 	</screen>
 
-	<!-- PiP Setup OK -->
+	<!-- PiP Setup -->
 	<screen name="PiPSetup" title="Pip Setup" backgroundColor="transparent" position="200,200" size="800,200" zPosition="-1" flags="wfNoBorder" >
 		<widget name="text" position="0,0" size="800,200" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
 	</screen>
 
-	<!-- NumberZap OK -->
+	<!-- NumberZap -->
 	<screen name="NumberZap" title="NumberZap" position="80,30" size="450,109" backgroundColor="transparent" flags="wfNoBorder" >
 		<widget name="channel"     position="0,0"   size="160,60" font="Regular;34" valign="center" halign="left" foregroundColor="#ffffff" backgroundColor="transparent" transparent="1" borderColor="black" borderWidth="2" />
 		<widget name="number"      position="170,0" size="500,60" font="Regular;34" valign="center" halign="left" foregroundColor="#73c6ff" backgroundColor="transparent" transparent="1" borderColor="black" borderWidth="2" />
 		<widget name="servicename" position="0,40"  size="500,60" font="Regular;26" valign="center" halign="left" foregroundColor="#ffffff" backgroundColor="transparent" transparent="1" borderColor="black" borderWidth="2" />
 	</screen>
 
-	<!-- ChapterZap OK -->
+	<!-- ChapterZap -->
 	<screen name="ChapterZap" title="ChapterZap" position="center,center" size="240,85" flags="wfNoBorder">
 		<ePixmap alphatest="off" pixmap="infobar/bl80.png" position="0,0" size="240,55" zPosition="-1" />
 		<widget name="chapter" position="20,15" size="200,40" font="Regular;32" backgroundColor="#10101010" foregroundColor="#808080" transparent="1" />
 		<widget name="number"  position="20,55" size="500,28" font="Regular;26" backgroundColor="#10101010" foregroundColor="#73c6ff" zPosition="1" transparent="1" />
 	</screen>
 
-	<!-- VideoMode OK -->
+	<!-- VideoMode -->
 	<screen name="VideoMode" title="VideoMode" position="85,45" size="400,50" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="videomode" position="0,0" size="380,40" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="left"/>
 	</screen>
 
-	<!-- PVR State OK -->
+	<!-- PVR State -->
 	<screen name="PVRState" title="PVR State" position="128,115" size="150,60" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
 		<widget name="state" position="0,0" size="150,30" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" halign="left"/>
 		<widget name="speed" position="0,30" size="150,60" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" halign="left"/>
 		<widget name="statusicon" position="0,90" size="440,10" zPosition="1" pixmap="buttons/grey20.png" transparent="1"/>
 	</screen>
 
-	<!-- AutoVideo OK -->
+	<!-- AutoVideo -->
 	<screen name="AutoVideoModeLabel" title="AutoVideoMode" position="40,40" size="330,55" flags="wfNoBorder" >
 		<widget name="content" position="7,5" size="320,22" font="Regular;20" transparent="1" />
 		<widget name="restxt" position="7,26" size="320,22" font="Regular;20" transparent="1" />
 	</screen>
    
-	<!-- RDS InfoDisplay OK -->
+	<!-- RDS InfoDisplay -->
 	<screen name="RdsInfoDisplay" title="RDS Display Info" position="0,60" size="1280,200" backgroundColor="transparent" zPosition="-2" flags="wfNoBorder">
 		<widget position="0,0" size="1250,90" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="4" font="Regular;24" borderColor="black" valign="center" halign="center" name="RadioText"/>
 		<widget position="0,100" size="1250,90" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="4" font="Regular;24" borderColor="black" valign="center" halign="center" name="RtpText"/>
@@ -187,7 +187,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S002" position="900,650" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Virtual Keyboard OK -->
+	<!-- Virtual Keyboard -->
 	<screen name="VirtualKeyBoard" title="Metro Virtual KeyBoard" position="center,center" size="700,300" zPosition="99" backgroundColor="#10101010" >
 		<widget name="list" position="5,70" size="700,300" selectionDisabled="1" backgroundColor="#10101010" />
 		<eLabel position="5,5"  size="690,50" backgroundColor="#10808080" />
@@ -205,7 +205,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S003" position="50,50" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- NumericalTextInputHelpDialog OK -->
+	<!-- NumericalTextInputHelpDialog -->
 	<screen name="NumericalTextInputHelpDialog" title="Numerical Text Input" position="350,505" size="514,164" backgroundColor="background" zPosition="2" flags="wfNoBorder" >
 		<eLabel position="0,0" size="514,164" backgroundColor="#808080" zPosition="-1" />
 		<widget name="key1"  position="2,2"     size="170,40" font="Regular;22" valign="center" halign="center" backgroundColor="bkwall" />
@@ -247,7 +247,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S005" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Menus OK -->
+	<!-- Menus -->
 	<screen name="Menu" title="Menu Template" flags="wfNoBorder"  position="0,0" size="1280,720" >
 		<panel name="MenuTemplate"/>
 		<panel name="MenuIconsTemplate"/>
@@ -281,7 +281,7 @@
 		<ePixmap  position="870,500" size="300,300" pixmap="menu/standby_restart.png" alphatest="blend" />
 	</screen>
 
-	<!-- InfoBars OK -->
+	<!-- InfoBars -->
 	<screen name="InfoBar" title="InfoBar" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap position="0,580" size="1280,140" pixmap="infobar/infobar.png" zPosition="-1" alphatest="off" />
 		<!-- Picon -->
@@ -523,9 +523,9 @@
 		<widget name="channel"          position="40,1000" size="580,44"  font="Regular;24" foregroundColor="#0073c6ff" backgroundColor="bkwall" halign="left" zPosition="2" transparent="1" />
 	</screen>
 
-	<!-- PANELS OK -->
+	<!-- PANELS -->
 
-	<!-- JobView OK -->
+	<!-- JobView -->
 	<screen name="JobView" title="Job View" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -569,7 +569,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S007" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Harddisk setup OK -->
+	<!-- Harddisk setup -->
 	<screen name="HarddiskSetup" title="Harddisk Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -582,7 +582,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S008" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Console OK -->
+	<!-- Console -->
 	<screen name="Console" title="Command Console" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -591,7 +591,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S009" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Simple channelselection OK -->
+	<!-- Simple channelselection -->
 		<screen name="SimpleChannelSelection" title="Simple Channel Selection" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -607,7 +607,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S010" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Slim Channel Selection - I still not found were this is used OK -->
+	<!-- Slim Channel Selection - I still not found were this is used -->
 	<screen name="SlimChannelSelection" title="Slim Channel Selection" position="40,80" size="700,600" backgroundColor="transparent" >
 		<eLabel position="fill" backgroundColor="bkwall" zPosition="-10" />
 		<widget name="list" position="5,15" size="690,390" itemHeight="30" serviceItemHeight="30" serviceNumberFont="Regular;20" serviceInfoFont="Regular;20" serviceNameFont="Regular;22"
@@ -642,7 +642,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S011" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Panel Backup OK -->
+	<!-- Panel Backup -->
 	<screen name="AtemioMenuBk" title="Atemio Backup" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -669,7 +669,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S012" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Event View Info OK -->
+	<!-- Event View Info -->
 	<screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -711,7 +711,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S013" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Event View Context Menu OK -->
+	<!-- Event View Context Menu -->
 	<screen name="EventViewContextMenu" title="Eventview Context Menu" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -726,14 +726,14 @@
 		</widget>
 	</screen>
 
-	<!-- Event View Context Menu OK -->
+	<!-- Event View Context Menu -->
 	<screen name="EventViewSimple" title="Eventview Simple" position="center,80" size="980,250" backgroundColor="#10000000" flags="wfNoBorder">
 		<widget name="datetime" position="40,20"  size="250,22" font="Regular;22" foregroundColor="#ffffff" backgroundColor="#10000000" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="duration" position="300,20" size="150,22" font="Regular;22" foregroundColor="red"     backgroundColor="#10000000" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="FullDescription" position="40,60" size="870,140" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="#10000000" transparent="1" />
 	</screen>
 	
-	<!-- Event View Context Menu OK -->
+	<!-- Event View Context Menu -->
 	<screen name="EventViewEPGSelect" title="Eventview EPG Select" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -783,7 +783,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S014" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- ChannelList Menu OK -->
+	<!-- ChannelList Menu -->
 	<screen name="ChannelContextMenu" title="Channel Context Menu" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -793,7 +793,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S015" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- ServiceInfo OK -->
+	<!-- ServiceInfo -->
 	<screen name="ServiceInfoSimple" title="Service Info" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -803,7 +803,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S016" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Bouquet Selector OK -->
+	<!-- Bouquet Selector -->
 	<screen name="BouquetSelector" title="Bouquet Selector" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -820,7 +820,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S017" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Input Device Selection OK -->
+	<!-- Input Device Selection -->
 	<screen name="InputDeviceSelection" title="Select input device" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -842,7 +842,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S017" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Input Device Setup OK -->
+	<!-- Input Device Setup -->
 	<screen name="InputDeviceSetup" title="Input device setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -853,7 +853,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S019" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Language selection OK -->
+	<!-- Language selection -->
 	<screen name="LanguageSelection" title="Language selection" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -875,7 +875,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S020" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Logo Manager OK --> 
+	<!-- Logo Manager --> 
 	<screen name="LogManager" title="LogoManager" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -889,7 +889,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S021" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- Logo Viewer OK -->
+	<!-- Logo Viewer -->
 	<screen name="LogManagerViewLog" title="Log Manager View" position="fill" flags="wfNoBorder">
 		<panel name="sWallTemplate" />
 		<panel name="sPigTemplate" />
@@ -900,7 +900,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S022" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- LogoManager FB OK -->
+	<!-- LogoManager FB -->
 	<screen name="LogManagerFb" title="Logo Manager" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -910,7 +910,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S023" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Network Mounts Setup OK -->
+	<!-- Network Mounts Setup -->
 	<screen name="NetworkMountsMenu" title="Mounts Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -922,7 +922,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S024" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Video Enh Preview OK -->
+	<!-- Video Enh Preview -->
 	<screen name="VideoEnhancementPreview" position="center,480" size="600,190" title="VideoEnhancementPreview" backgroundColor="metrixBackground">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -933,7 +933,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S024b" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Video Enh Setup OK -->
+	<!-- Video Enh Setup -->
 	<screen name="VideoEnhancementSetup" position="0,0" size="1280,720" title="VideoEnhancementSetup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -947,7 +947,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S024c" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Network Configuration OK -->
+	<!-- Network Configuration -->
 	<screen name="AdapterSetupConfiguration" title="Adapter Configuration" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -964,7 +964,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S025" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Network MacAdress Setup OK -->
+	<!-- Network MacAdress Setup -->
 	<screen name="NetworkMacSetup" position="fill" title="MAC-adress settings" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -976,7 +976,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S025b" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Network Adapter Setup OK -->
+	<!-- Network Adapter Setup -->
 	<screen name="AdapterSetup" title="Adapter Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1004,7 +1004,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S026" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- WirelessLan Setup OK -->
+	<!-- WirelessLan Setup -->
 	<screen name="WlanStatus" title="Wireless Network State" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1030,7 +1030,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S027" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- WirelessLan Scan OK -->
+	<!-- WirelessLan Scan -->
 	<screen name="WlanScan" title="Choose a Wireless Network" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1055,7 +1055,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S028" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Network NameServer Setup OK -->
+	<!-- Network NameServer Setup -->
 	<screen name="NameserverSetup" title="Network NameServer" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1079,38 +1079,38 @@
 		<ePixmap pixmap="buttons/grey20.png" position="40,262"  size="30,31"   zPosition="1" alphatest="blend" />
 		<ePixmap pixmap="buttons/grey20.png" position="40,312"  size="30,31"   zPosition="1" alphatest="blend" />
 		<widget name="AdapterInfo_OK" 		 position="40,112"  size="38,31"   zPosition="2" pixmap="buttons/green20.png" alphatest="blend" />
-		<widget name="Adaptertext" 		 position="80,110"  size="610,25"  zPosition="1" font="Regular;22" foregroundColor="white" backgroundColor="bkwall" transparent="1" />			
-		<widget name="Adapter" 			 position="280,110" size="610,25"  zPosition="1" font="Regular;20" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="bkwall" transparent="1" />
+		<widget name="Adaptertext" 		 position="70,110"  size="180,25"  zPosition="1" font="Regular;22" foregroundColor="white" backgroundColor="bkwall" transparent="1" />			
+		<widget name="Adapter" 			 position="250,110" size="190,25"  zPosition="1" font="Regular;20" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="bkwall" transparent="1" />
 		<widget name="NetworkInfo_Check"	 position="40,162"  size="38,31"   zPosition="2" pixmaps="buttons/green20.png,buttons/red20.png" alphatest="blend" />
-		<widget name="Networktext"		 position="80,160"  size="610,25"  zPosition="1" font="Regular;22" foregroundColor="white" backgroundColor="bkwall" transparent="1" />		
-		<widget name="Network" 			 position="280,160" size="610,25"  zPosition="1" font="Regular;20" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="bkwall" transparent="1" />
+		<widget name="Networktext"		 position="70,160"  size="180,25"  zPosition="1" font="Regular;22" foregroundColor="white" backgroundColor="bkwall" transparent="1" />		
+		<widget name="Network" 			 position="250,160" size="190,25"  zPosition="1" font="Regular;20" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="bkwall" transparent="1" />
 		<widget name="DhcpInfo_Check" 		 position="40,212"  size="38,31"   zPosition="2" pixmaps="buttons/green20.png,buttons/red20.png" alphatest="blend" />
-		<widget name="Dhcptext" 		 position="80,210"  size="610,25"  zPosition="1" font="Regular;22" foregroundColor="white" backgroundColor="bkwall" transparent="1" />			
-		<widget name="Dhcp" 			 position="280,210" size="610,25"  zPosition="1" font="Regular;20" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="bkwall" transparent="1" />
+		<widget name="Dhcptext" 		 position="70,210"  size="180,25"  zPosition="1" font="Regular;22" foregroundColor="white" backgroundColor="bkwall" transparent="1" />			
+		<widget name="Dhcp" 			 position="250,210" size="190,25"  zPosition="1" font="Regular;20" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="bkwall" transparent="1" />
 		<widget name="IPInfo_Check" 		 position="40,262"  size="38,31"   zPosition="2" pixmaps="buttons/green20.png,buttons/red20.png" alphatest="blend" />
-		<widget name="IPtext" 			 position="80,260"  size="610,25"  zPosition="1" font="Regular;22" foregroundColor="white" backgroundColor="bkwall" transparent="1" />			
-		<widget name="IP" 			 position="280,260" size="610,25"  zPosition="1" font="Regular;20" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="bkwall" transparent="1" />
+		<widget name="IPtext" 			 position="70,260"  size="180,25"  zPosition="1" font="Regular;22" foregroundColor="white" backgroundColor="bkwall" transparent="1" />			
+		<widget name="IP" 			 position="250,260" size="190,25"  zPosition="1" font="Regular;20" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="bkwall" transparent="1" />
 		<widget name="DNSInfo_Check" 		 position="40,312"  size="38,31"   zPosition="2" pixmaps="buttons/green20.png,buttons/red.png20" alphatest="blend" />
-		<widget name="DNStext" 			 position="80,310"  size="610,25"  zPosition="1" font="Regular;22" foregroundColor="white" backgroundColor="bkwall" transparent="1" />		
-		<widget name="DNS" 			 position="280,310" size="610,25"  zPosition="1" font="Regular;20" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="bkwall" transparent="1" />
-		<widget name="AdapterInfo" 		 position="440,110" size="318,50"  zPosition="1" />
-		<widget name="AdapterInfo_Text" 	 position="440,110" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
-		<widget name="NetworkInfo" 		 position="440,160" size="318,50"  zPosition="1" />
-		<widget name="NetworkInfo_Text" 	 position="440,160" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
-		<widget name="DhcpInfo" 		 position="440,210" size="318,50"  zPosition="1" />
-		<widget name="DhcpInfo_Text" 		 position="440,210" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
-		<widget name="IPInfo" 			 position="440,260" size="318,50"  zPosition="1" />
-		<widget name="IPInfo_Text" 		 position="440,260" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
-		<widget name="DNSInfo" 			 position="440,310" size="318,50"  zPosition="1" />
-		<widget name="DNSInfo_Text" 		 position="440,310" size="318,50"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
-		<widget name="InfoText"			 position="40,360"  size="585,300" zPosition="2" font="Regular;20" transparent="1" valign="center" halign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" />
-		<widget name="InfoTextBorder" 		 position="40,380"  size="585,300" zPosition="2" />
-		<widget name="EditSettingsButton" 	 position="840,657" size="250,24"  zPosition="1" />
-		<widget name="EditSettings_Text" 	 position="840,657" size="250,24"  zPosition="2" font="Regular;22" transparent="1" foregroundColors="blue,white,green" backgroundColor="bkwall" />
+		<widget name="DNStext" 			 position="70,310"  size="180,25"  zPosition="1" font="Regular;22" foregroundColor="white" backgroundColor="bkwall" transparent="1" />		
+		<widget name="DNS" 			 position="250,310" size="190,25"  zPosition="1" font="Regular;20" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="bkwall" transparent="1" />
+		<widget name="AdapterInfo" 		 position="310,110" size="150,50"  halign="center" zPosition="1" />
+		<widget name="AdapterInfo_Text" 	 position="455,110" size="170,50"  halign="right" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
+		<widget name="NetworkInfo" 		 position="310,160" size="150,50"  halign="center" zPosition="1" />
+		<widget name="NetworkInfo_Text" 	 position="455,160" size="170,50"  halign="right" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
+		<widget name="DhcpInfo" 		 position="310,210" size="150,50"  halign="center" zPosition="1" />
+		<widget name="DhcpInfo_Text" 		 position="455,210" size="170,50"  halign="right" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
+		<widget name="IPInfo" 			 position="310,260" size="150,50"  halign="center" zPosition="1" />
+		<widget name="IPInfo_Text" 		 position="455,260" size="170,50"  halign="right" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
+		<widget name="DNSInfo" 			 position="310,310" size="150,50"  halign="center" zPosition="1" />
+		<widget name="DNSInfo_Text" 		 position="455,310" size="170,50"  halign="right" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="bkwall" />
+		<widget name="InfoText"			 position="32,340"  size="585,300" halign="center" valign="center" zPosition="2" font="Regular;20" transparent="1" foregroundColor="#73c6ff" backgroundColor="bkwall" />
+		<widget name="InfoTextBorder" 		 position="32,380"  size="585,300" halign="right" zPosition="2" />
+		<widget name="EditSettingsButton" 	 position="320,657" size="250,24"  halign="right" zPosition="1" />
+		<widget name="EditSettings_Text" 	 position="840,657" size="250,24"  halign="right" zPosition="2" font="Regular;22" transparent="1" foregroundColors="blue,white,green" backgroundColor="bkwall" />
 		<!-- eLabel name="DEBUG"  text="PANEL S030" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Network Adapter Selection OK -->
+	<!-- Network Adapter Selection -->
 	<screen name="NetworkAdapterSelection" title="Network Adapter Selection" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1133,7 +1133,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S031" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Network Browser OK -->
+	<!-- Network Browser -->
 	<screen name="NetworkBrowser" title="Network Neighbourhood" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1159,7 +1159,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S032" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Network Service Setup OK -->
+	<!-- Network Service Setup -->
 	<screen name="NetworkServiceSetup" title="Network Service" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1174,7 +1174,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S033" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Network AFP Setup OK -->
+	<!-- Network AFP Setup -->
 	<screen name="NetworkAfp" title="Network AFP" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1188,7 +1188,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S034" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Network FTP Setup OK -->
+	<!-- Network FTP Setup -->
 	<screen name="NetworkFtp" title="Network FTP" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1203,7 +1203,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S035" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Network Inadyn Setup OK -->
+	<!-- Network Inadyn Setup -->
 	<screen name="NetworkInadyn" title="Network Inadyn" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1233,7 +1233,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S036" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- NetWork Inadyn Setup OK -->
+	<!-- NetWork Inadyn Setup -->
 	<screen name="NetworkInadynSetup" title="Inadyn Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1245,7 +1245,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S037" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- NetWork Inadyn Log OK -->
+	<!-- NetWork Inadyn Log -->
 	<screen name="NetworkInadynLog" title="Inadyn Log" position="fill" flags="wfNoBorder">
 		<panel name="sWallTemplate" />
 		<panel name="sPigTemplate" />
@@ -1255,7 +1255,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S038" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- NetWork MiniDLNA OK -->
+	<!-- NetWork MiniDLNA -->
 	<screen name="NetworkMiniDLNA" title="Mini DLNA" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1291,7 +1291,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S039" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- NetWork MiniDLNA OK -->
+	<!-- NetWork MiniDLNA -->
 	<screen name="NetworkuShareSetup" title="Mini DLNA Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1302,7 +1302,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S040" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- NetWork MiniDLNA Browser OK -->
+	<!-- NetWork MiniDLNA Browser -->
 	<screen name="uShareSelection" title="Mini DLNA Browser" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1314,7 +1314,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S046" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- NetWork NFS Setup OK -->
+	<!-- NetWork NFS Setup -->
 	<screen name="NetworkNfs" title="NFS Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1328,7 +1328,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S041" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- NetWork OpenVPN Setup OK -->
+	<!-- NetWork OpenVPN Setup -->
 	<screen name="NetworkOpenvpn" title="OpenVPN" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1342,7 +1342,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S042" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- NetWork Telnet Setup OK -->
+	<!-- NetWork Telnet Setup -->
 	<screen name="NetworkTelnet" title="Telnet" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1357,7 +1357,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S043" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- NetWork uShare OK -->
+	<!-- NetWork uShare -->
 	<screen name="NetworkuShare" title="uShare" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1395,7 +1395,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S044" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- NetWork uShare Setup OK -->
+	<!-- NetWork uShare Setup -->
 	<screen name="uShareSetup" title="uShare Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1407,7 +1407,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S045" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- Nim selection OK -->
+	<!-- Nim selection -->
 	<screen name="NimSelection" title="Nim Selection" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1430,7 +1430,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S047" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Nim setup OK -->
+	<!-- Nim setup -->
 	<screen name="NimSetup" title="Reception Settings" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="ClockTemplate" />
@@ -1442,7 +1442,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S048" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Scan simple OK -->
+	<!-- Scan simple -->
 	<screen name="ScanSimple" title="Scan Simple" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1457,7 +1457,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S049" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Scan setup OK -->
+	<!-- Scan setup -->
 	<screen name="ScanSetup" title="Scan Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1472,7 +1472,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S050" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Service Scan OK -->
+	<!-- Service Scan -->
 	<screen name="ServiceScan" title="Service scan" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1503,7 +1503,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S051" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoDiseqC OK -->
+	<!-- AutoDiseqC -->
 		<screen name="AutoDiseqc" title="Auto DiseqC" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1516,7 +1516,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S052" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- FastScan OK -->
+	<!-- FastScan -->
 	<screen name="FastScanScreen" title="FastScan Screen" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="ClockTemplate" />
@@ -1529,7 +1529,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S053" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- FastScanStatus OK -->
+	<!-- FastScanStatus -->
 	<screen name="FastScanStatus" title="FastScan Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="ClockTemplate" />
@@ -1539,13 +1539,13 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S054" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Rotor Nim Selection OK -->
+	<!-- Rotor Nim Selection -->
 	<screen name="RotorNimSelection" title="select Slot" position="center,center" size="600,100" >
 		<widget name="nimlist" position="0,0" size="600,100" />
 		<!-- eLabel name="DEBUG"  text="PANEL S055" position="50,50" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Rotor Dish OK -->
+	<!-- Rotor Dish -->
 	<screen name="Dish" title="Rotor Dish" position="20,20" size="150,270" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="Dishpixmap" position="0,0"    size="130,160" zPosition="-1" pixmap="icons/dish.png" transparent="1" alphatest="on" />
 		<widget name="turnTime"   position="25,0"   size="120,20"  zPosition="1" font="Regular;20" halign="right" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1" />
@@ -1562,7 +1562,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S056" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Sat Nim Selection OK -->
+	<!-- Sat Nim Selection -->
 	<screen name="SatNimSelection" title="Select Tuner" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1571,7 +1571,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S057" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Satfinder OK -->
+	<!-- Satfinder -->
 	<screen name="Satfinder" title="Satfinder" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="ClockTemplate" />
@@ -1608,7 +1608,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S058" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Tuner Screen OK -->
+	<!-- Tuner Screen -->
 	<screen name="TunerScreen" title="Tuner Screen" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1618,7 +1618,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S059" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Positioner setup OK -->
+	<!-- Positioner setup -->
 	<screen name="PositionerSetup" title="Positioner setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1647,7 +1647,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S060" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Positioner Setup Log OK -->
+	<!-- Positioner Setup Log -->
 	<screen name="PositionerSetupLog" title="Positioner Setup Log" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1657,7 +1657,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S061" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Service SoftCam / CI OK -->
+	<!-- Service SoftCam / CI -->
 	<screen name="CAidSelect" title="SoftCam Service" position="0,0" size="541,720" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1667,7 +1667,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S062" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Common interface - selection OK -->
+	<!-- Common interface - selection -->
 	<screen name="CiSelection" title="Common Interface" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1679,7 +1679,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S063" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Service SoftCam / CI OK -->
+	<!-- Service SoftCam / CI -->
 	<screen name="CIselectMainMenu" title="CI Select Menu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1689,7 +1689,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S064" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- Service SoftCam / CI MMIDIALOG OK -->
+	<!-- Service SoftCam / CI MMIDIALOG -->
 	<screen name="MMIDialog" title="CI MMI Dialog" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1705,7 +1705,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S065" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- Softcam Setup OK -->
+	<!-- Softcam Setup -->
 	<screen name="SoftcamSetup" title="SoftCam Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1716,7 +1716,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S066" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- CI Config Menu OK -->
+	<!-- CI Config Menu -->
 	<screen name="CIconfigMenu" title="CI Config Menu" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1729,7 +1729,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S067" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Common interface - MainMenu OK -->
+	<!-- Common interface - MainMenu -->
 	<screen name="easyCIconfigMenu" title="Easy CI Menu" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1743,7 +1743,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S068" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- Parental Control OK -->
+	<!-- Parental Control -->
 	<screen name="ParentalControlSetup" title="Parental control setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1753,7 +1753,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S069" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Parental Control Editor OK -->
+	<!-- Parental Control Editor -->
 	<screen name="ParentalControlEditor" title="Parental control services Editor" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1764,7 +1764,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S070" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- ChoiceBox OK -->
+	<!-- ChoiceBox -->
 	<screen name="ChoiceBox" title="Choice Box" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="ntWallTemplate" />
 		<panel name="PigTemplate" />
@@ -1778,7 +1778,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S071" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Parental Control PinInput OK --> 
+	<!-- Parental Control PinInput --> 
 	<screen name="PinInput" title="Change pin code" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1791,7 +1791,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S072" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Parental Control PinInput Popup OK -->
+	<!-- Parental Control PinInput Popup -->
 	<screen name="PinInputPopup" title="Change pin code" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1804,7 +1804,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S073" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Info About OK -->
+	<!-- Info About -->
 	<screen name="AboutOE" title="Image Information" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1819,7 +1819,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S074" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
   
-	<!-- Info Devices OK -->
+	<!-- Info Devices -->
 	<screen name="Devices" title="Device Information" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1835,7 +1835,7 @@
 		<!--eLabel name="DEBUG"  text="PANEL S075" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Info System Memory Info OK -->
+	<!-- Info System Memory Info -->
 	<screen name="SystemMemoryInfo" title="Memory Information" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1848,7 +1848,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S076" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
   
-	<!-- Info Network Info OK -->
+	<!-- Info Network Info -->
 	<screen name="SystemNetworkInfo" title="Network Information" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1865,7 +1865,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S077" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Info Software OK -->
+	<!-- Info Software -->
 	<screen name="SoftwareUpdateChanges" title="Software OE Changes" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1875,7 +1875,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S078" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
   
-	<!-- Info Translation OK -->
+	<!-- Info Translation -->
 	<screen name="TranslationInfo" title="Translation" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1886,7 +1886,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S079" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
   
-	<!-- Audio and subtitle selection OK -->
+	<!-- Audio and subtitle selection -->
 	<screen name="AudioSelection" title="Audio Selection" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1931,7 +1931,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S080" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- GraphicalEPG OK -->
+	<!-- GraphicalEPG -->
 	<screen name="GraphicalEPGPIG" title="E.P Guide" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<ePixmap pixmap="menu/bkdown.png" position="0,0" size="1280,720" zPosition="-1" />
 		<panel name="sRGYB-MI"/>
@@ -2110,7 +2110,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S082b" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Movie Player Infobar OK -->
+	<!-- Movie Player Infobar -->
 	<screen name="MoviePlayer" title="Player InfoBar" position="71,580" size="1138,88" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="PlayerTemplate"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/dolby.png" position="1085,51" size="33,21" zPosition="10" alphatest="on">
@@ -2132,7 +2132,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S083" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- MediaPlayer FileBrowser OK -->
+	<!-- MediaPlayer FileBrowser -->
 	<screen name="FileBrowser" title="DVD File Browser" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2143,7 +2143,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S083B" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Radio Stuff OK -->
+	<!-- Radio Stuff -->
 	<screen name="ChannelSelectionRadio" title="Channel Selection" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2164,7 +2164,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S084" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- Radio InfoBar OK -->
+	<!-- Radio InfoBar -->
 	<screen name="RadioInfoBar" title="RadioBar" position="675,370" size="0,240" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="global.CurrentTime" render="Label" position="0,0" size="0,30" font="Regular;24" valign="top" halign="right" foregroundColor="#ffffff" backgroundColor="bkwall" transparent="1" zPosition="1" >
 			<convert type="ClockToText">ShortDate</convert>
@@ -2233,7 +2233,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S087" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Location Box OK -->
+	<!-- Location Box -->
 	<screen name="LocationBox" title="Location" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2283,7 +2283,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S089" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- EPG Search OK -->
+	<!-- EPG Search -->
 	<screen name="EPGSearch" title="EPG Search" position="fill" flags="wfNoBorder">
 		<panel name="sWallTemplate" />
 		<panel name="sPigTemplate" />
@@ -2373,7 +2373,7 @@
 		<!--eLabel name="DEBUG"  text="PANEL S093" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Timer Log OK -->
+	<!-- Timer Log -->
 	<screen name="TimerLog" title="Timer log" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2384,7 +2384,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S094" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Timer Conflict OK -->
+	<!-- Timer Conflict -->
 	<screen name="TimerSanityConflict" title="Timer sanity error" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2396,7 +2396,7 @@
 		<!--eLabel name="DEBUG"  text="PANEL S095" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Timer Selection OK -->
+	<!-- Timer Selection -->
 	<screen name="TimerSelection" title="Timer selection" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2422,7 +2422,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S096c" position="40,50" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Mount Manager OK -->
+	<!-- Mount Manager -->
 	<screen name="AutoMountManager" title="MountManager" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2444,7 +2444,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S097" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Mount Editor OK -->
+	<!-- Mount Editor -->
 	<screen name="AutoMountEdit" title="Add New MountPoint" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2457,7 +2457,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S098" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- MountPoint Management OK -->
+	<!-- MountPoint Management -->
 	<screen name="AutoMountView" title="MountPoints Management" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2487,7 +2487,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S099" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- User Manager OK -->
+	<!-- User Manager -->
 	<screen name="UserManager" title="UserManager" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2508,7 +2508,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S100" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- UserDialog OK -->
+	<!-- UserDialog -->
 	<screen name="UserDialog" title="UserDialog" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2521,7 +2521,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S101" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Scan IP OK -->
+	<!-- Scan IP -->
 	<screen name="ScanIP" title="Scan IP" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2532,7 +2532,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S102" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Packet Manager OK -->
+	<!-- Packet Manager -->
 	<screen name="PacketManager" title="IPKG upgrade" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2555,7 +2555,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S103" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Ipkg installer OK -->
+	<!-- Ipkg installer -->
 	<screen name="IpkgInstaller" title="IPKG Installer" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2568,7 +2568,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S104" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- Ipkg installer Software Update OK -->
+	<!-- Ipkg installer Software Update -->
 	<screen name="UpdatePlugin" title="Plugin Update" position="center,center" size="700,230" backgroundColor="10000000">
 		<widget source="package" render="Label" position="10,30" size="680,32" font="Regular;28" halign="center" foregroundColor="bluette" backgroundColor="#10101010" transparent="1" />
 		<widget source="status"  render="Label" position="10,90" size="680,60" font="Regular;24" halign="center" foregroundColor="#808080" backgroundColor="#10101010" transparent="1" />
@@ -2577,7 +2577,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S105" position="50,50" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Choose upgrade source OK -->
+	<!-- Choose upgrade source -->
 	<screen name="IPKGMenu" title="IPKG Menu" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2588,7 +2588,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S106" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Edit upgrade source OK -->
+	<!-- Edit upgrade source -->
 	<screen name="IPKGSource" title="IPKG source" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2599,7 +2599,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S107" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- ATEMIO PANELS OK -->
+	<!-- ATEMIO PANELS -->
 	<screen name="AtemioMenu" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2626,7 +2626,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S108" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>'
 
-	<!-- PANELS CAM OK -->
+	<!-- PANELS CAM -->
 	<screen name="ScNewSelection" title="Softcam Selection" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2665,7 +2665,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S109" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoCam List OK -->
+	<!-- AutoCam List -->
 	<screen name="AutoCamListSetup" title="Auto-Camd List Setup" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2686,7 +2686,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S110" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoCam Service OK -->
+	<!-- AutoCam Service -->
 	<screen name="AutoCamServiceSetup" title="Channel Selection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2697,7 +2697,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S111" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Download Addons OK -->
+	<!-- Download Addons -->
 	<screen name="PluginDownloadBrowser" title="Downloadable plugins" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2709,7 +2709,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S112" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Manual Ipk Installer OK -->
+	<!-- Manual Ipk Installer -->
 	<screen name="AtemioIPKInstaller" title="Ipkg Installer" position="0,0" size="1280,720" flags="wfNoBorder" > 
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2720,7 +2720,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S113" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Swapp Manager OK -->
+	<!-- Swapp Manager -->
 	<screen name="AtemioSwapPanel" title="Atemio Swap Panel" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2739,7 +2739,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S114" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Script Panel OK -->
+	<!-- Script Panel -->
 	<screen name="ScriptExecuter" title="Script Executer" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2752,7 +2752,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S115" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Inputbox Add Marker OK -->
+	<!-- Inputbox Add Marker -->
 	<screen name="InputBox" title="InputBox" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2764,7 +2764,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S116" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- ServiceInfo OK -->
+	<!-- ServiceInfo -->
 	<screen name="ServiceInfo" title="ServiceInfo" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2777,7 +2777,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S117" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- About OK -->
+	<!-- About -->
 	<screen name="AboutTeam" title="About Team" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2787,7 +2787,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S118" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Plugin Browser OK -->
+	<!-- Plugin Browser -->
 	<screen name="PluginBrowser" title="Plugin Browser" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2799,7 +2799,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S119" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Devices Panels OK -->
+	<!-- Devices Panels -->
 	<screen name="DevicesPanel" title="Device Panels" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2821,7 +2821,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S120" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Devices Config OK -->
+	<!-- Devices Config -->
 	<screen name="DevicesConf" title="Device Conf" position="fill" flags="wfNoBorder" >
 		<panel name="ntWallTemplate" />
 		<panel name="PigTemplate" />
@@ -2834,7 +2834,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S121" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Skin Selector OK -->
+	<!-- Skin Selector -->
 	<screen name="SkinSelector" title="Skin Selector" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="ClockTemplate"/>
@@ -2848,7 +2848,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S122" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Backup Manager Panel  OK -->
+	<!-- Backup Manager Panel  -->
 	<screen name="AtemioBackupManagerMenu" title="Backup Menu" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2860,7 +2860,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S123" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Backup Panel OK --> 
+	<!-- Backup Panel --> 
 	<screen name="AtemioBackupManager" title="Backup Manager" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2876,7 +2876,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S124" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Backup Screen OK -->
+	<!-- Backup Screen -->
 	<screen name="BackupScreen" title="Backup is running" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2885,7 +2885,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S125B" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Backup Selection OK -->
+	<!-- Backup Selection -->
 	<screen name="BackupSelection" title="Backup Selection" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2896,7 +2896,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S125" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Extra Plugins  OK -->
+	<!-- Extra Plugins  -->
 	<screen name="XtraPluginsSelection" title="Xtra Plugin" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2907,7 +2907,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S126" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- BackupManager Log OK -->
+	<!-- BackupManager Log -->
 	<screen name="AtemioBackupManagerLogView" title="Backup Log" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2919,7 +2919,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S127" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Backup Image Manager OK -->
+	<!-- Backup Image Manager -->
 	<screen name="AtemioImageManager" title="Image Manager" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2935,7 +2935,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S128" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Backup Image Manager OK -->
+	<!-- Backup Image Manager -->
 	<screen name="ImageManagerDownload" title="Image Manager Download" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2950,7 +2950,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S129" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Backup Image Manager OK -->
+	<!-- Backup Image Manager -->
 	<screen name="AtemioExtraDown" title="Atemio Extra Download" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2972,7 +2972,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S130" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Backup Image Manager OK -->
+	<!-- Backup Image Manager -->
 	<screen name="AtemioExtraFile" title="Atemio Extra Files" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -2993,7 +2993,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S131" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Backup Image Manager OK -->
+	<!-- Backup Image Manager -->
 	<screen  name="AtemioDownloader" title="Atemio Downloader" position="center,center" size="600,250" backgroundColor="10000000">
 		<widget source="fname" render="Label" position="5,30" size="590,75" font="Regular;20" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="#10000000" transparent="1" />
 		<widget source="progressbar" render="Progress" pixmap="icons/bar_downloader.png" position="5,120" size="590,12" zPosition="2" transparent="1" />
@@ -3009,7 +3009,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S133" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- History Zap OK -->
+	<!-- History Zap -->
   	<screen name="HistoryZapSelector" Title="History Zap" position="fill" size="620,300" flags="wfNoBorder" >
 		<panel name="sWallTemplate" />
 		<panel name="sPigTemplate" />
