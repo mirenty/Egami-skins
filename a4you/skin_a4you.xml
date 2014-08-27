@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 	<!--
-	##################### mmark_A4Y_ATEMIO v.1.3.0 ########################
+	##################### mmark_a4you_ATEMIO v.1.3.0 ########################
 	#
-	mmark	              Version 1.3 released                   10-08-2014
+	mmark	              Version 1.3.1 released                   27-08-2014
 	#
 	#######################################################################
-	   The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
-	 This skin is Freeware. Everyone can modify and use it in other images.
-		     BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!
-	   Do whatever you want with this skin, but don't tell it's yours, 
-	 or your idea, and leave the credentials in the "About-box" as they are
+		The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
+		This skin is Freeware. Everyone can modify and use it in other images.
+		BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!
+		Do whatever you want with this skin, but don't tell it's yours, 
+		or your idea, and leave the credentials in the "About-box" as they are
 	-->
 	
 	<output id="0">
 		<resolution bpp="32" xres="1280" yres="720"/>
 	</output>
 
-	<!-- External Files -->
-	<include filename="/usr/share/enigma2/skin_default/skin_templates.xml"/>
-	<include filename="/usr/share/enigma2/skin_default/skin_plugins.xml"/>
-	<include filename="/usr/share/enigma2/skin_default/skin_wizard.xml"/>
-	<include filename="/usr/share/enigma2/skin_default/skin_nopanel.xml"/>
-
-	<!-- Fonts -->
+	<!-- External Files --><!-->
+	<include filename="/usr/share/enigma2/a4you/skin_templates.xml"/>
+	<include filename="/usr/share/enigma2/a4you/skin_plugins.xml"/>
+	<include filename="/usr/share/enigma2/a4you/skin_wizard.xml"/>
+	<include filename="/usr/share/enigma2/a4you/skin_nopanel.xml"/>
+-->
+	<!-- Fonts --><!--
 	 <fonts>
 		<font name="xRegular"  filename="nmsbd.ttf"                scale="100"/>
 		<font name="LCD"       filename="lcd.ttf"                  scale="100"/>
@@ -31,9 +31,9 @@
 		<font name="Fixed"     filename="andale.ttf"               scale="100"/>
 		<font name="Regular"   filename="verdana_r.ttf"  	   scale="93" />
 		<font name="mediamenu" filename="msmenu.ttf"     	   scale="93" />
-	</fonts>
+	</fonts>-->
 
-	<!-- Colors --> 
+	<!-- Colors --><!-- 
 	<colors> 
 		<color name="background" value="#00000000"/>
 		<color name="bkwall" value="#00272e43"/>
@@ -72,9 +72,9 @@
 		<color name="yellow" value="#00ffc000"/>
 		<color name="yellowtransparent" value="#084b4b00"/>
 		<color name="backpurple" value="#4D5375"/>
-	</colors>
+	</colors>-->
 
-	<!-- Main screen colors (id=0 Framebuffer) -->
+	<!-- Main screen colors (id=0 Framebuffer) --><!--
 	<windowstyle type="skinned" id="0">
 		<title offset="20,3" font="Regular;24" />
 		<color name="WindowTitleForeground" color="#73c6ff"/>
@@ -88,24 +88,24 @@
 		<color name="ListboxMarkedBackground" color="#1077c6ff"/>
 		<color name="ListboxMarkedForeground" color="#00ff00"/>
 		<color name="ListboxMarkedAndSelectedBackground" color="#1077c6ff"/>
-		<color name="ListboxMarkedAndSelectedForeground" color="#00ff00"/>
-		<!-- screen border png's -->
+		<color name="ListboxMarkedAndSelectedForeground" color="#00ff00"/>-->
+		<!-- screen border png's --><!--
 		<borderset name="bsWindow">
-			<pixmap filename="window/top_left_corner.png"     pos="bpTopLeft"/>
-			<pixmap filename="window/top_edge.png"            pos="bpTop"/>
-			<pixmap filename="window/top_right_corner.png"    pos="bpTopRight"/>
-			<pixmap filename="window/left_edge.png"           pos="bpLeft"/>
-			<pixmap filename="window/right_edge.png"          pos="bpRight"/>
-			<pixmap filename="window/bottom_left_corner.png"  pos="bpBottomLeft"/>
-			<pixmap filename="window/bottom_edge.png"         pos="bpBottom"/>
-			<pixmap filename="window/bottom_right_corner.png" pos="bpBottomRight"/>
+			<pixmap filename="a4you/window/top_left_corner.png"     pos="bpTopLeft"/>
+			<pixmap filename="a4you/windoww/top_edge.png"            pos="bpTop"/>
+			<pixmap filename="a4you/window/top_right_corner.png"    pos="bpTopRight"/>
+			<pixmap filename="a4you/window/left_edge.png"           pos="bpLeft"/>
+			<pixmap filename="a4you/window/right_edge.png"          pos="bpRight"/>
+			<pixmap filename="a4you/window/bottom_left_corner.png"  pos="bpBottomLeft"/>
+			<pixmap filename="a4you/window/bottom_edge.png"         pos="bpBottom"/>
+			<pixmap filename="a4you/window/bottom_right_corner.png" pos="bpBottomRight"/>
 		</borderset>
 		<borderset name="bsListboxEntry">
-			<pixmap pos="bpTop" 	    filename="infobar/line.png"/>
-			<pixmap pos="bpBottom" 	    filename="infobar/line.png"/>
+			<pixmap filename="a4you/infobar/line.png" pos="bpTop" />
+			<pixmap filename="a4you/infobar/line.png" pos="bpBottom"/>
 		</borderset>
 	</windowstyle>
-
+-->
 	<!-- Mute -->
 	<screen name="Mute" title="Mute" position="center,45" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
 		<ePixmap pixmap="mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"/>
