@@ -3,7 +3,7 @@
 	<!--
 	##################### mmark_A4Y_ATEMIO v.1.3.0 ########################
 	#
-	mmark	              Version 1.2 released                   02-09-2014
+	mmark	              Version 1.2.1 released                   06-09-2014
 	#
 	#######################################################################
 		The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
@@ -776,12 +776,10 @@
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate"/>
-		<panel name="sRGB"/>
+		<panel name="sRG"/>
 		<widget name="config" position="40,90" font="Regular;20" size="580,360" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
 		<widget name="description" position="40,290" size="585,400" font="Regular;22" halign="left" valign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
 		<widget name="text" position="40,360" size="580,230" font="Regular;22" backgroundColor="bkwall" transparent="1" zPosition="1" />
-		<widget name="blue"     position="920,657" size="250,28" backgroundColor="bkwall" zPosition="2" transparent="1" />
-		<widget name="key_blue" position="980,657" size="250,28" backgroundColor="bkwall" zPosition="2" transparent="1" font="Regular;22" halign="left" />
 	</screen>
 	
 	<!-- ********** CCcam Info ********** -->
