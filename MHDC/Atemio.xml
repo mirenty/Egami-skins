@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<skin>
+	<!-- ATEMIO PANELS -->
+	<screen name="AtemioMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="VixLogo"/>
+	  	<widget source="list" render="Listbox" position="590,90" size="755,584" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" >
+	  		<convert type="TemplatedMultiContent">
+	  			{"template": [
+	  				MultiContentEntryText(pos = (60, 2), size = (300, 30), font=0, flags = RT_HALIGN_LEFT | RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryText(pos = (70, 24), size = (640, 50), font=0, color=0x73c6ff, flags = RT_VALIGN_TOP, text = 2),
+	  				MultiContentEntryPixmapAlphaTest(pos=(5, 4), size=(40, 40), png = 3),
+	  				],
+	  				"fonts": [gFont("Regular", 22)],
+	  				"itemHeight": 50
+	  			}
+	  		</convert>
+	  	</widget>
+		<eLabel name="spaceused" text="% Flash Used..." position="5,500" size="455,20" font="Regular;19" halign="center" foregroundColor="grey" transparent="1" zPosition="5"/>
+	  	<widget name="spaceused" position="5,525" size="477,18" foregroundColor="secondFG" backgroundColor="secondBG" zPosition="3" />
+	</screen>
+	<!-- Panel Backup  -->
+	<screen name="AtemioMenuBk" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="RedTemplate 2"/>
+		<panel name="VixLogo"/>
+		<widget source="menu" render="Listbox" position="520,82" scrollbarMode="showNever" size="755,480" transparent="1" enableWrapAround="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 1) ],
+					"fonts": [gFont("Regular", 28)],
+					"itemHeight": 50
+				}
+			</convert>
+		</widget>
+		<widget source="menu" render="Listbox" position="5,379" size="477,264" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="secondFG" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (0,0),size = (477,264),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+					],
+					"fonts": [gFont("Regular",22)],
+					"itemHeight": 25
+				}
+			</convert>
+		</widget>
+</screen>
+	<!-- Backup Panel --> 
+	<screen name="AtemioBackupManager" title="Backup Manager" position="fill" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="VixLogo"/>
+		<panel name="RGY_Template"/>
+		<panel name="MenuTemplate"/>
+		<widget name="lab1" position="520,90"  size="585,70" font="Regular;22" backgroundColor="background" transparent="1" zPosition="2" />
+		<widget name="list" position="520,180" size="585,400" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" zPosition="2" />
+		<widget name="backupstatus" position="680,390" size="560,180" font="Regular; 20" halign="center" valign="top" zPosition="5" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(25)
+		</applet>
+		<!-- eLabel name="DEBUG"  text="PANEL S124" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+	</screen>
+</skin>
