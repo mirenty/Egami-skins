@@ -4903,6 +4903,7 @@ self.autoResize()
 	<screen name="AtemioMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<panel name="AtemioLogo"/>
+	  	<widget source="conn" render="Label" text="Select Option..." position="20,375" size="500,55" font="Regular;20" halign="left" valign="center" foregroundColor="greenlight" zPosition="5" />
 	  	<widget source="list" render="Listbox" position="590,90" size="755,584" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" >
 	  		<convert type="TemplatedMultiContent">
 	  			{"template": [
@@ -4956,17 +4957,18 @@ self.autoResize()
 		<widget name="backupstatus" position="15,385" size="480,250" font="Regular;20" zPosition="5" foregroundColor="greenlight"/>
 		<panel name="AtemioLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="BackupManagerMenu" position="0,0" size="1280,720">
+	<screen flags="wfNoBorder" name="AtemioBackupManagerMenu" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
-		<panel name="RGYB_Template"/>
+		<panel name="RGY_Template"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
-		<ePixmap pixmap="buttons/key_text.png" position="1110,682" zPosition="4" size="35,25" alphatest="blend" transparent="1"/>
+		<widget name="footnote" position="880,682" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="greenlight"/>
+		<widget name="description" position="10,385" size="480,77" font="Regular;20" foregroundColor="greenlight" halign="center" valign="center" transparent="0" zPosition="1" />
 		<panel name="AtemioLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="VIXBackupManagerLogView" position="0,0" size="1280,720">
+	<screen flags="wfNoBorder" name="AtemioBackupManagerLogView" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="list" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
+		<widget name="waitingtext" position="0,0" size="0,0" />
 		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXCronManager" position="0,0" size="1280,720">
