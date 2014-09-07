@@ -69,7 +69,7 @@
 	</screen>
 
 
-	<screen name="VixLogo">
+	<screen name="AtemioLogo">
 		<ePixmap pixmap="MHDC/logos/AtemioLogo.png" position="60,638" size="300,34" alphatest="blend"/>
 	</screen>
 
@@ -855,7 +855,7 @@
 		<eLabel text="'Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,681" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="'OK' = Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="400,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="'Subs' = 2X Audio" backgroundColor="secondBG" font="Regular;22" halign="left" position="635,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Menus ## -->
 	<screen name="Menu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -868,7 +868,7 @@
 			}
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -880,7 +880,13 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="footnote" position="750,682" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="greenlight"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
+	</screen>
+	<!-- About -->
+	<screen name="AboutTeam" title="About Team" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<widget name="about" font="Regular;22" position="590,90" size="720,490" halign="left" transparent="1" />
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="AboutOE" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -891,7 +897,7 @@
 		<widget source="lab3" render="Label" position="10,500" size="500,20" font="Regular; 19" transparent="0" zPosition="1" foregroundColor="greenlight" halign="center"/>
 		<widget name="AboutScrollLabel" scrollbarMode="showOnDemand" font="Regular;20" position="520,82" size="755,583" transparent="1"/>
 		<eLabel text="Magic-HD-Night/Noire by DeLaGrooV..." position="5,530" size="520,30" font="Regular; 19" halign="center" transparent="1" zPosition="1" valign="center" foregroundColor="greenlight"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="Devices" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -901,14 +907,14 @@
 		<widget source="hdd" render="Label" position="610,400" size="610,100" foregroundColor="grey" transparent="1" font="Regular;20"/>
 		<widget source="MountsHeader" render="Label" position="610,510" size="580,25" transparent="1" font="Regular;22"/>
 		<widget source="mounts" render="Label" position="610,550" size="580,100" foregroundColor="grey" transparent="1" font="Regular;20"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="SystemMemoryInfo" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget source="lab1" render="Label" position="520,90" size="755,30" font="Regular;24" transparent="0" zPosition="1" foregroundColor="secondFG"/>
 		<widget source="lab2" render="Label" position="520,120" size="755,30" font="Regular;22" transparent="0" zPosition="1" foregroundColor="grey"/>
 		<widget name="AboutScrollLabel" render="Label" position="520,160" size="755,425" transparent="0" font="Regular;20" zPosition="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="SystemNetworkInfo" flags="wfNoBorder" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -918,24 +924,24 @@
 		<widget source="IF" render="Label" position="630,400" size="400,21" zPosition="10" font="Regular;20" halign="left" transparent="1"/>
 		<widget source="Statustext" render="Label" position="520,450" size="115,21" zPosition="10" font="Regular;20" halign="left" transparent="1"/>
 		<widget name="statuspic" pixmaps="buttons/button_green.png,buttons/button_green_off.png" position="635,450" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="AboutReleaseNotes" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="list" font="Regular;20" position="520,82" size="755,583" transparent="1"/>
 		<eLabel text="Magic-HD-Night by DeLaGrooV..." position="5,530" size="520,30" font="Regular; 19" halign="center" transparent="1" zPosition="1" valign="center" foregroundColor="grey"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="infolist" position="520,82" size="755,583" selectionDisabled="0"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="HarddiskSelection" flags="wfNoBorder" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="hddlist" position="520,90" size="755,575" font="Regular;22" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="HarddiskSetup" flags="wfNoBorder" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -944,12 +950,12 @@
 		<widget name="model" position="590,110" size="380,25" font="Regular;22"/>
 		<widget name="capacity" position="590,140" size="380,25" font="Regular;22"/>
 		<widget name="bus" position="590,170" size="380,25" font="Regular;22"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="HarddiskWait" flags="wfNoBorder" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="wait" position="590,110" size="600,50" font="Regular;23" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Input & Output Boxes ## -->
 	<screen name="SelectPath" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -957,13 +963,13 @@
 		<panel name="RG_Template 2"/>
 		<widget name="target" position="520,90" size="755,30" backgroundColor="background" transparent="1" font="Regular;23"/>
 		<widget name="filelist" position="520,120" size="755,545" itemHeight="30" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="RecordPathsSettings" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="config" position="520,90" size="755,575" itemHeight="29" font="Regular;22" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="configOSD" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -974,7 +980,7 @@
 		<widget name="txt_brightness" position="590,390" size="120,20"/>
 		<widget name="txt_gamma" position="590,420" size="120,20"/>
 		<widget name="okbutton" position="590,450" size="205,40"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="clockDisplay" position="0,0" size="1280,720" backgroundColor="transparent">
 		<panel name="BasicTemplate"/>
@@ -985,7 +991,7 @@
 	<screen flags="wfNoBorder" name="ParentalControlChangePin" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="520,82" size="755,583" enableWrapAround="1" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="ParentalControlEditor" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -994,7 +1000,7 @@
 		<ePixmap pixmap="MHDC/buttons/red2.png" alphatest="on" position="15,682" size="26,26"/>
 		<ePixmap pixmap="MHDC/buttons/green2.png" alphatest="on" position="305,682" size="26,26"/>
 		<eLabel text="OK" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="ParentalControlSetup" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -1003,14 +1009,14 @@
 		<ePixmap pixmap="MHDC/buttons/red2.png" alphatest="on" position="15,682" size="26,26"/>
 		<ePixmap pixmap="MHDC/buttons/green2.png" alphatest="on" position="305,682" size="26,26"/>
 		<eLabel text="OK" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- VideoSetup (VideoMode Plugin) -->
 	<screen flags="wfNoBorder" name="VideoSetup" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##Resolution label Vix## -->
 	<screen name="AutoVideoModeLabel" position="900,40" size="330,55" backgroundColor="transpBG" flags="wfNoBorder" >
@@ -1022,13 +1028,13 @@
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget name="passwd" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##SimpleSummary## -->
 	<screen flags="wfNoBorder" name="SimpleSummary" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="parent.Title" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##JobView## -->
 	<screen flags="wfNoBorder" name="JobView" position="0,0" size="1280,720">
@@ -1059,7 +1065,7 @@
 		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="875,682" size="320,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left">
 			<convert type="ConditionalShowHide"/>
 		</widget>--&gt;
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##Pin input## -->
 	<screen flags="wfNoBorder" name="PinInput" position="0,0" size="1280,720">
@@ -1068,7 +1074,7 @@
 		<widget name="text" position="590,140" size="600,25" font="Regular;20" halign="center"/>
 		<widget name="tries" position="590,170" size="600,25" font="Regular;20" halign="center"/>
 		<widget name="input" position="590,200" size="600,40" font="Regular;50" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##TextBox## -->
 	<screen flags="wfNoBorder" name="TextBox" position="0,0" size="1280,720">
@@ -1085,7 +1091,7 @@
 		<widget source="session.VideoPicture" backgroundColor="transparent" position="10,85" render="Pig" size="477,270" zPosition="1"/>
 		<widget name="text" position="520,250" size="755,340" font="Regular;22"/>
 		<eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 <!--	<screen name="MessageBox" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1094,7 +1100,7 @@
 		<widget name="QuestionPixmap" pixmap="MHDC/window/input_question.png" position="550,110" size="54,54" alphatest="on"/>
 		<widget name="InfoPixmap" pixmap="MHDC/window/input_info.png" position="550,110" size="54,54" alphatest="on"/>
 		<widget name="list" position="15,390" size="500,240" font="Regular;22"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="MessageBoxSimple" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1103,7 +1109,7 @@
 		<widget name="QuestionPixmap" pixmap="MHDC/window/input_question.png" position="550,110" size="54,54" alphatest="on"/>
 		<widget name="InfoPixmap" pixmap="MHDC/window/input_info.png" position="550,110" size="54,54" alphatest="on"/>
 		<widget name="list" position="15,390" size="500,240" font="Regular;22"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen> -->
 	<screen name="MessageBoxTemplate">
 		<widget name="text" position="65,8" size="520,0" font="Regular;22" />
@@ -1129,7 +1135,7 @@ self.autoResize()
 		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="550,110" size="53,53" alphatest="on"/>
 		<widget name="list" position="15,390" size="600,240" font="Regular;22"/>
 		<widget name="rc" pixmap="rc.png" position="1105,140" zPosition="10" size="154,500" transparent="0" alphatest="blend"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="TimeDateInput" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -1138,7 +1144,7 @@ self.autoResize()
 		<widget name="canceltext" position="50,682" zPosition="1" size="220,26" font="Regular;24" halign="left" backgroundColor="background" transparent="1"/>
 		<widget name="oktext" position="340,682" zPosition="1" size="220,26" font="Regular;24" halign="left" backgroundColor="background" transparent="1"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="520,82" size="755,583" font="Regular;22" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="LanguageSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1154,7 +1160,7 @@ self.autoResize()
 			}
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="InputDeviceSelection" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -1172,54 +1178,54 @@ self.autoResize()
 			</convert>
 		</widget>
 		<widget source="introduction" render="Label" position="15,380" size="477,150" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="greenlight" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="InputDeviceSetup" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;20" position="520,82" size="755,583" transparent="1"/>
 		<widget source="introduction" render="Label" position="15,380" size="477,200" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="greenlight" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="Console" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="520,82" size="755,577" font="Console;19"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="InputBox" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="590,110" size="600,30" font="Regular;22" halign="center" transparent="1"/>
 		<widget name="input" position="590,150" size="600,30" font="Regular;25" halign="center" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="Kernel" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="liste" position="520,90" size="755,577" zPosition="3" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="general" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="liste" position="520,90" size="755,577" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="label" position="15,400" size="447,200" font="Regular;24" halign="center" valign="center" foregroundColor="unf47d19"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="modules" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="MHDC/buttons/green2.png" alphatest="on" position="305,682" size="26,26"/>
 		<widget name="key_green" position="340,682" size="220,26" font="Regular;24" halign="left" valign="center" backgroundColor="secondBG" transparent="1" zPosition="1"/>
 		<widget name="liste" position="520,82" size="755,577" scrollbarMode="showOnDemand" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="password" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="liste" scrollbarMode="showOnDemand" position="520,90" size="755,545" transparent="1"/>
 		<widget name="label1" position="15,400" size="447,200" font="Regular;24" halign="center" valign="center" foregroundColor="unf47d19"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="EcmExtraWindow" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="description" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="Crond" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -1231,7 +1237,7 @@ self.autoResize()
 				"fonts": [gFont("Regular", 20)], "itemHeight": 75 }
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="UserScript" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -1242,14 +1248,14 @@ self.autoResize()
 				"itemHeight": 40 }
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="HotplugScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="icon" position="520,82" size="755,65" alphatest="on"/>
 		<widget name="info" position="15,385" size="477,100" font="Regular;20" foregroundColor="unf47d19"/>
 		<widget name="menu" scrollbarMode="showOnDemand" position="520,147" size="755,500" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="Traffic" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -1257,13 +1263,13 @@ self.autoResize()
 		<widget name="text1" position="590,210" size="600,30" font="Regular;25" halign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="text2" position="590,310" size="600,30" font="Regular;25" halign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="ChoiceBox" position="0,0" size="1280,720" zPosition="10" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="15,379" size="477,260" zPosition="2" font="Regular;24" foregroundColor="unf47d19"/>
 		<widget name="list" position="520,82" size="755,577" font="Regular;26" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="RecordTimerQuestion" position="center,center" size="225,60" zPosition="5" flags="wfNoBorder">
 		<widget name="text" position="0,0" size="0,0" font="Regular;20"/>
@@ -1311,7 +1317,7 @@ self.autoResize()
 	<screen name="Subtitles" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="config" position="520,90" size="755,575" backgroundColor="darkgrey" zPosition="3" transparent="1" font="Regular;22" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="ChapterZap" position="center,center" size="280,60" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="chapter" position="0,-200" size="200,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="4" valign="center" halign="right"/>
@@ -1399,23 +1405,23 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,570"	 itemHeight="30" transparent="1"/>
 	<!--<widget name="menu" position="520,90" size="755,565" itemHeight="35" font="Regular;25" scrollbarMode="showOnDemand"/>-->
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" position="520,82" size="755,583" itemHeight="30" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="MovieContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" position="520,82" size="755,583" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="MovieBrowserConfiguration" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;18" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="NumericalTextInputHelpDialog" position="center,450" size="454,164" backgroundColor="background" zPosition="2" flags="wfNoBorder">
 		<eLabel position="0,0" size="454,164" backgroundColor="yellowtransparent" zPosition="-1"/>
@@ -1438,7 +1444,7 @@ self.autoResize()
 		<widget name="header" position="652,239" size="500,26" transparent="1" noWrap="1" font="Regular;20"/>
 		<widget name="text" position="652,274" size="536,34" transparent="1" noWrap="1" font="Regular;24" valign="center" halign="right"/>
 		<widget name="list" position="647,380" size="540,225" selectionDisabled="1" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="Dish" flags="wfNoBorder" position="20,20" size="130,295" title="Dish" zPosition="10" backgroundColor="transpBG">
 		<widget name="Dishpixmap" position="0,20" size="130,160" zPosition="1" pixmap="icons/dish.png" transparent="1" alphatest="on"/>
@@ -1472,7 +1478,7 @@ self.autoResize()
 		<panel name="RG_Template"/>
 		<widget name="current_status" position="15,400" size="400,30" font="Regular;20" valign="center"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="25" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Service Selectors ## -->
 	<screen name="UserDialog" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1483,7 +1489,7 @@ self.autoResize()
 		<widget name="HelpWindow" position="588,400" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
 	<!--<widget name="VKeyIcon" pixmap="vkey_icon.png" position="391,643" size="220,26" zPosition="10" transparent="1" alphatest="blend"/>-->
 		<eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="290,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" backgroundColor="transpBlue" zPosition="-1" size="1280,720">
 		<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2"/>
@@ -1597,7 +1603,7 @@ self.autoResize()
 		<widget name="subpages_8" position="635,325" size="36,20" alphatest="on"/>
 		<eLabel text="9" position="605,350" size="16,25" font="Regular;21" foregroundColor="black" backgroundColor="transpWhite"/>
 		<widget name="subpages_9" position="635,350" size="36,20" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
@@ -1627,7 +1633,7 @@ self.autoResize()
 	<screen flags="wfNoBorder" name="SelectBouquet" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="LocationBox" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1715,7 +1721,7 @@ self.autoResize()
 	<screen name="TimerSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="timerlist" position="520,82" size="755,577" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1725,7 +1731,7 @@ self.autoResize()
 		<widget name="canceltext" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left"/>
 		<widget name="oktext" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left"/>
 		<widget name="HelpWindow" pixmap="vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="blend"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="TimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1735,14 +1741,14 @@ self.autoResize()
 		<widget name="begin" position="1111,144" size="72,35" font="Regular;25"/>
 		<widget name="end" position="1112,195" size="72,35" font="Regular;25"/>
 		<widget name="apply" position="929,325" size="250,35"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="TimerEditList" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="InfoTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="timerlist" position="520,82" size="755,578" font="Regular;19" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="TimerLog" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1764,7 +1770,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template 2"/>
 		<widget name="config" position="520,82" size="755,583" font="Regular;22" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="WebIfInterfaceConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1772,7 +1778,7 @@ self.autoResize()
 		<panel name="GreenTemplate 2"/>
 		<panel name="BlueTemplate 2"/>
 		<widget name="config" position="520,82" size="755,583" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="WebIfInterfaceListConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1783,7 +1789,7 @@ self.autoResize()
 		<widget source="auth" render="Label" position="780,120" size="200,50" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;20" halign="left"/>
 		<widget source="disabled" render="Label" position="950,120" size="180,50" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;20" halign="left"/>
 		<widget name="ifacelist" position="520,180" size="755,485" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="OpenWebifConfig" title="OpenWebif Setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1796,37 +1802,37 @@ self.autoResize()
 		<panel name="RG_Template"/>
 		<panel name="MenuTemplate"/>
 		<widget name="list" position="520,82" size="755,550" font="Regular;26" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="PluginDownloadBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="520,82" size="755,50" zPosition="-1" transparent="1" font="Regular;23" valign="center" halign="center"/>
 		<widget name="list" position="520,82" size="755,576" zPosition="3" font="Regular;25" itemHeight="48" transparent="0" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="DirectoryBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
 		<widget name="filelist" position="520,82" size="755,583" itemHeight="28" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="configTest" position="0,0" size="1280,720" title="config menu">
 		<panel name="BasicTemplate"/>
 		<widget name="config" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- BlindScan -->
 	<screen flags="wfNoBorder" name="Blindscan" position="0,0" size="1280,720" title="Hardware Blindscan">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="FileBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RedTemplate 2"/>
 		<widget name="filelist" position="520,82" size="755,583" itemHeight="28" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="VideoFinetune" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1836,7 +1842,7 @@ self.autoResize()
 		<ePixmap pixmap="buttons/key_3.png" zPosition="2" position="90,480" size="35,25" alphatest="on"/>
 		<ePixmap pixmap="buttons/key_4.png" zPosition="2" position="90,520" size="35,25" alphatest="on"/>
 		<ePixmap pixmap="buttons/key_5.png" zPosition="2" position="90,560" size="35,25" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="SkinSelector" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1845,7 +1851,7 @@ self.autoResize()
 		<widget name="SkinList" position="520,90" size="300,570" itemHeight="28" font="Regular;25" scrollbarMode="showOnDemand"/>
 		<widget name="Preview" position="918,110" size="280,210" alphatest="on"/>
 		<widget source="introduction" render="Label" position="525,682" size="640,30" transparent="1" zPosition="10" font="Regular;22" valign="center" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##Softwaremanager## -->
 	<screen name="SoftwareManagerSetup" flags="wfNoBorder" position="0,0" size="1280,720">
@@ -1858,19 +1864,19 @@ self.autoResize()
 	<screen name="BackupScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<widget name="config" position="520,90" size="755,575" transparent="1" scrollbarMode="showOnDemand"/>
 		<panel name="BasicTemplate"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template 2"/>
 		<widget name="checkList" position="520,90" size="755,575" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="XtraPluginsSelection" title="" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template 2"/>
 		<widget name="checkList" position="520,90" size="755,575" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="Ipkg" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1878,26 +1884,26 @@ self.autoResize()
 		<widget name="status" position="590,170" size="600,56" backgroundColor="darkgrey" transparent="1" font="Regular;24"/>
 		<widget name="slider" position="594,294" size="592,17" zPosition="2" transparent="1"/>
 		<widget name="activityslider" position="44,594" size="1194,6" pixmap="MHDC/window/slider100.png" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="IpkgInstaller" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="list" position="590,120" size="600,300" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="introduction" render="Label" position="590,430" size="600,27" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" foregroundColor="white" font="Regular;24" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="IPKGMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="filelist" position="590,120" size="600,300" font="Fixed;24" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="IPKGSource" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="text" position="70,400" size="1150,30" font="Fixed;23" zPosition="3" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="PacketManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1915,7 +1921,7 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1923,13 +1929,13 @@ self.autoResize()
 		<widget source="status" render="Label" position="590,170" size="600,56" backgroundColor="darkgrey" transparent="1" font="Regular;24"/>
 	<!--		<widget name="slider" position="594,294" size="652,17" zPosition="2" transparent="1"/>-->
 		<widget name="activityslider" position="49,609" size="1194,6" pixmap="MHDC/window/slider100.png" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="SoftwareUpdateChanges" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template"/>
 		<widget name="text" scrollbarMode="showOnDemand" font="Regular;20" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="SoftwareUpdateChoices" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1959,7 +1965,7 @@ self.autoResize()
 			}
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="PluginManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1985,7 +1991,7 @@ self.autoResize()
 			</convert>
 		</widget>
 		<widget source="status" render="Label" position="15,400" size="447,200" foregroundColor="unf47d19" transparent="1" font="Regular;22" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="PluginManagerInfo" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2003,7 +2009,7 @@ self.autoResize()
 			</convert>
 		</widget>
 		<widget source="status" render="Label" position="520,640" size="755,25" backgroundColor="background" transparent="1" font="Regular;22" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="PluginManagerHelp" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2026,7 +2032,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget name="detailtext" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="PluginDetails" position="0,0" size="1280,720">
  		<panel name="BasicTemplate"/>
@@ -2036,18 +2042,18 @@ self.autoResize()
 		<widget name="detailtext" position="520,120" size="755,575" font="Regular;25" backgroundColor="background" transparent="1"/>
 		<widget name="screenshot" position="15,385" size="477,200" alphatest="on"/>
 		<widget name="divpic" position="0,0" size="0,0"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="RestoreScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="config" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template 2"/>
 		<widget name="filelist" position="520,82" size="755,583" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##FPUpgrade## -->
 	<screen flags="wfNoBorder" name="FPUpgrade" position="0,0" size="1280,720">
@@ -2057,13 +2063,13 @@ self.autoResize()
 		<widget name="newversion_label" font="Regular;22" position="590,210" size="290,30" transparent="1"/>
 		<widget name="oldversion" font="Regular;22" position="880,180" size="50,25" transparent="1"/>
 		<widget name="text" font="Regular;22" position="880,210" size="50,25" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="SystemMessage" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget source="text" position="680,110" size="440,500" font="Regular;20" halign="center" valign="center" render="Label"/>
 		<ePixmap pixmap="icons/input_error.png" position="590,110" size="53,53" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##VideoEnhancement## -->
 	<screen name="VideoEnhancementPreview" position="center,360" size="560,170">
@@ -2080,13 +2086,13 @@ self.autoResize()
 		<panel name="RGYB_Template 2"/>
 		<widget name="config" position="520,82" size="755,558" scrollbarMode="showOnDemand"/>
 		<widget name="introduction" position="520,640" size="755,25" backgroundColor="background" transparent="1" font="Regular;22" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##NetWorkmanager## -->
 	<screen name="NetworkSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" position="520,82" size="755,583" itemHeight="32" font="Regular;22" selectionDisabled="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on"/>
@@ -2098,7 +2104,7 @@ self.autoResize()
 		<widget source="IF" render="Label" position="760,645" size="500,25" transparent="1" zPosition="10" font="Regular;21" halign="left"/>
 		<widget source="Statustext" render="Label" position="316,645" size="200,26" transparent="1" zPosition="10" font="Regular;20" valign="center" halign="right"/>
 		<widget name="statuspic" position="520,645" size="35,25" transparent="1" zPosition="10" pixmaps="icons/lock_on.png,icons/lock_off.png" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder">
  		<panel name="BasicTemplate"/>
@@ -2157,7 +2163,7 @@ self.autoResize()
 		<widget source="enc" render="Label" position="850,455" size="370,35" valign="center" font="Regular;20" backgroundColor="background" transparent="1"/>
 		<widget source="Statustext" render="Label" position="830,565" size="350,28" font="Regular;20" halign="center" backgroundColor="un25062748" transparent="1"/>
 		<widget name="statuspic" position="993,600" size="25,24" pixmaps="icons/lock_on.png,icons/lock_error.png" transparent="1" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="WlanScan" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -2177,30 +2183,30 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##Common interface## -->
 	<screen flags="wfNoBorder" name="ScSelection" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
 		<widget name="entries" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CamControl" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="entries" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="ConfigAction" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CamSelectMenu" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="MMIDialog" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -2208,19 +2214,19 @@ self.autoResize()
 		<widget name="subtitle" position="590,135" size="600,25" font="Regular;23"/>
 		<widget name="entries" position="590,170" size="600,150" scrollbarMode="showOnDemand"/>
 		<widget name="bottom" position="590,330" size="600,25" font="Regular;23"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="CiSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="590,120" size="600,30" backgroundColor="background" transparent="1" font="Regular;25"/>
 		<widget name="entries" position="590,180" size="600,375" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="CIselectMainMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="CiList" position="590,120" size="600,450" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="CIconfigMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2234,7 +2240,7 @@ self.autoResize()
 		<eLabel position="550,306" size="660,2" backgroundColor="grey"/>
 		<widget name="ServiceList" position="590,315" size="600,300" backgroundColor="background" zPosition="1" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="ServiceList_info" render="Label" position="550,315" size="660,300" backgroundColor="background" zPosition="2" transparent="1" font="Regular;22"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="easyCIconfigMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2248,7 +2254,7 @@ self.autoResize()
 		<widget source="ServiceList_info" render="Label" position="590,315" size="600,300" backgroundColor="background" zPosition="2" transparent="1" font="Regular;22"/>
 		<widget name="ServiceList" position="590,170" size="600,400" backgroundColor="background" zPosition="1" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="ServiceList_info" render="Label" position="590,170" size="600,400" backgroundColor="background" zPosition="2" transparent="1" font="Regular;22"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="CAidSelect" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2256,21 +2262,21 @@ self.autoResize()
 		<eLabel position="81,438" size="350,72" backgroundColor="darkgrey" shadowColor="black" shadowOffset="2,2" zPosition="3" transparent="1" text="select CAId's" foregroundColor="grey" font="Regular;32"/>
 		<widget name="list" position="590,120" size="600,450" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="introduction" render="Label" position="590,600" size="600,27" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" foregroundColor="white" font="Regular;24" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="myProviderSelection" flags="wfNoBorder" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget name="list" position="590,110" size="600,450" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1"/>
 		<widget source="introduction" render="Label" position="590,560" size="600,27" zPosition="1" font="Regular;24" halign="center" foregroundColor="white" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="myChannelSelection" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget name="list" position="520,82" size="755,445" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1"/>
 		<widget source="introduction" render="Label" position="520,527" size="755,27" zPosition="1" font="Regular;24" halign="center" foregroundColor="white" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="NetworkAdapterSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2342,7 +2348,7 @@ self.autoResize()
 			</convert>
 		</widget>
 		<widget source="infotext" render="Label" position="530,590" size="690,30" transparent="1" zPosition="10" font="Regular;20" valign="center" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2366,7 +2372,7 @@ self.autoResize()
 			</convert>
 		</widget>
 		<widget source="introduction" render="Label" position="520,605" size="755,60" backgroundColor="background" transparent="1" font="Regular;22" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="UserDialog" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2383,7 +2389,7 @@ self.autoResize()
 		<panel name="RGY_Template 2"/>
 		<ePixmap pixmap="buttons/vkey_text.png" position="617,197" size="542,52" zPosition="-4" alphatest="blend"/>
 		<widget name="config" position="590,110" size="600,100" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##AutoMount## -->
 	<screen name="AutoMountView" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2426,7 +2432,7 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="AutoMountEdit" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2436,7 +2442,7 @@ self.autoResize()
 		<widget source="introduction" render="Label" position="520,643" size="755,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center"/>
 	<!--<widget name="VKeyIcon" pixmap="vkey_icon.png" position="340,682" size="35,25" zPosition="10" transparent="1" alphatest="blendn"/>-->
 		<eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="300,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="devicesMount" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -2447,7 +2453,7 @@ self.autoResize()
 				MultiContentEntryPixmapAlphaTest(pos = (5,20),size = (64,64),png = 1)],"fonts": [gFont("Regular",18)],"itemHeight": 110 }
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##TunerSetUp## -->
 	<screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2464,20 +2470,20 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="NimSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="config" position="520,82" size="755,583" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="ScanSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="config" position="520,82" size="755,555" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" itemHeight="28" font="Regular;22"/>
 		<widget name="introduction" position="520,640" size="755,27" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" foregroundColor="greenlight" font="Regular;24" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="ScanSimple" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2485,7 +2491,7 @@ self.autoResize()
 		<widget name="header" position="590,120" size="600,28" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;24"/>
 		<widget name="config" position="590,180" size="600,350" transparent="1" scrollbarMode="showOnDemand" itemHeight="32" font="Regular;24"/>
 		<widget name="footer" position="590,600" size="600,27" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" foregroundColor="greenlight" font="Regular;24" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="ServiceScan" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2495,23 +2501,23 @@ self.autoResize()
 		<widget name="pass" position="590,175" size="660,28" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;24"/>
 		<widget name="scan_progress" position="590,230" size="660,20" borderWidth="2" borderColor="black"/>
 		<widget name="servicelist" position="590,260" size="660,410" backgroundColor="darkgrey" selectionDisabled="1" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="satellites" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="liste" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
 		<widget name="savetext" position="175,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="satellites_view" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="liste" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="SatNimSelection" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="nimlist" scrollbarMode="showOnDemand" itemHeight="32" font="Regular;24" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2"/>
@@ -2591,44 +2597,44 @@ self.autoResize()
 		<widget name="symbolrate_value" position="1110,490" size="100,24" backgroundColor="darkgrey" transparent="1" font="Regular;21"/>
 		<eLabel position="960,520" size="150,24" backgroundColor="darkgrey" transparent="1" text="FEC:" font="Regular;21"/>
 		<widget name="fec_value" position="1110,520" size="100,24" backgroundColor="darkgrey" transparent="1" font="Regular;21"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="TunerScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="introduction" position="520,82" size="755,30" font="Regular;23"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,113" size="755,553" transparent="1"/>
 		<eLabel text="'OK' = Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="FastScanScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="config" scrollbarMode="showOnDemand" itemHeight="32" font="Regular;24" position="520,82" size="755,555" transparent="1"/>
 		<widget name="introduction" font="Regular;24" position="520,640" size="755,25" halign="center" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="FastScanStatus" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="frontend" pixmap="icons/scan-s.png" position="590,110" size="64,64" transparent="1" alphatest="on"/>
 		<widget name="scan_state" position="660,110" zPosition="2" size="400,30" font="Regular;18"/>
 		<widget name="scan_progress" position="660,145" size="400,15" pixmap="progress_big.png" borderWidth="2" borderColor="black"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CableScanScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 		<widget name="introduction" position="10,450" size="477,75" font="Regular;20" halign="center" foregroundColor="unf47d19"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CableScanStatus" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="scan_state" position="520,120" zPosition="2" size="400,30" font="Regular;18"/>
 		<widget name="scan_progress" position="520,155" size="400,15" pixmap="progress_big.png" borderWidth="2" borderColor="uncccccc"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="SecParameterSetup" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="config" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##Wizards## -->
 	<screen name="NetworkWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2659,7 +2665,7 @@ self.autoResize()
 		<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" transparent="1" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" transparent="1" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" transparent="1" zPosition="11" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="DefaultSatLists" title="Default Sat-Lists" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2674,7 +2680,7 @@ self.autoResize()
 		<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" transparent="1" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" transparent="1" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" transparent="1" zPosition="11" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="DreamPackageWizard" title="Dream-Package Wizard" position="280,78" size="720,576">
 		<widget name="text" position="153,50" size="340,270" font="Regular;23"/>
@@ -2710,7 +2716,7 @@ self.autoResize()
 		<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="HelpMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2721,7 +2727,7 @@ self.autoResize()
 		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
 		<widget name="long_key" position="123,482" size="350,50" foregroundColor="yellow" font="Regular;25" halign="right"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="VideoWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2738,7 +2744,7 @@ self.autoResize()
 		<widget name="arrowdown2" pixmap="arrowdown.png" position="517,288" size="37,70" transparent="1" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" transparent="1" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" transparent="1" zPosition="11" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="ImageWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplateNoVp"/>
@@ -2755,7 +2761,7 @@ self.autoResize()
 		<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="TutorialWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
  		<panel name="BasicTemplateNoVp"/>
@@ -2765,7 +2771,7 @@ self.autoResize()
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
 		<widget name="text" position="740,120" size="480,240" backgroundColor="background" transparent="1" font="Regular;23"/>
 		<widget name="list" position="550,380" size="660,150" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="StartWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplateNoVp"/>
@@ -2782,7 +2788,7 @@ self.autoResize()
 			<convert type="StringList"/>
 		</widget>
 		<widget name="config" position="590,360" size="600,200" zPosition="2" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##NETCaster## -->
 	<screen name="NETcasterScreenBrowser" title="Netcaster" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
@@ -2797,25 +2803,25 @@ self.autoResize()
 		<widget name="pixblue" position="875,682" size="220,26" backgroundColor="secondBG" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
 		<widget name="streamlist" position="590,110" size="670,520" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget name="metadata" position="70,350" size="400,200" transparent="1" font="Regular;24" valign="center" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="NETcasterScreenHelp" title="NETcaster Help" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
 		<panel name="BasicTemplateNoVp"/>
 		<widget name="help" position="590,110" size="670,520" backgroundColor="darkgrey" transparent="1" font="Regular;22"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="netcaststopmess" position="0,0" size="1280,720" title="Message">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="590,110" size="600,80" font="Regular;20"/>
 		<widget name="progress" position="590,200" size="600,10"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="netcastsetup" position="0,0" size="1280,720" title="Setup">
 		<panel name="BasicTemplate"/>
 		<panel name="ButtonGreen"/>
 		<widget name="oktext" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="liste" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##SHOUTcast## -->
 	<screen name="SHOUTcastWidget" title="Shoutcast" position="0,0" size="1280,720" transparent="0" backgroundColor="background" flags="wfNoBorder">
@@ -2834,14 +2840,14 @@ self.autoResize()
 		<panel name="BasicTemplateNoVp"/>
  		<panel name="RG_Template 2"/>
 		<widget name="config" position="520,90" size="755,575" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="SHOUTcastStreamripperRecordingPath" title="Select record path for streamripper" position="0,0" size="1280,720" transparent="0" backgroundColor="background" flags="wfNoBorder">
 		<panel name="BasicTemplateNoVp"/>
 		<panel name="RG_Template 2"/>
 		<widget name="target" position="590,115" size="600,28" backgroundColor="background" transparent="1" font="Regular;24"/>
 		<widget name="filelist" position="590,165" size="600,450" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##Merlin## -->
 	<screen name="iDreamAddToDatabase" title="Add music files to iDream database" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2849,7 +2855,7 @@ self.autoResize()
  		<panel name="RG_Template 2"/>
 		<widget source="Title" render="Label" position="590,110" size="600,43" backgroundColor="background" transparent="1" font="Regular;25"/>
 		<widget name="output" position="590,160" size="600,450" backgroundColor="background" transparent="1" font="Regular;22"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="iDreamMerlin" title="iDream" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplateNoVp"/>
@@ -2858,14 +2864,14 @@ self.autoResize()
 		<widget source="Title" render="Label" position="590,110" size="600,43" backgroundColor="background" transparent="1" font="Regular;25"/>
 		<widget name="headertext" position="590,155" size="600,28" backgroundColor="background" transparent="1" font="Regular;23"/>
 		<widget name="list" position="590,185" size="600,400" itemHeight="30" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="MerlinMusicPlayerFileList" title="Merlin Music Player" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplateNoVp"/>
 		<widget source="Title" render="Label" position="590,110" size="600,43" backgroundColor="background" transparent="1" font="Regular;25"/>
 		<widget name="headertext" position="590,155" size="600,28" backgroundColor="background" transparent="1" font="Regular;23"/>
 		<widget name="list" position="590,185" size="600,400" itemHeight="30" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="MerlinMusicPlayerLyrics" title="Merlin Music Player" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplateNoVp"/>
@@ -2873,7 +2879,7 @@ self.autoResize()
 		<widget name="headertext" position="590,155" size="600,28" backgroundColor="background" zPosition="1" transparent="1" foregroundColor="yellow" font="Regular;24"/>
 		<widget name="resulttext" position="590,185" size="600,25" backgroundColor="background" zPosition="1" transparent="1" font="Regular;20"/>
 		<widget name="lyric_text" position="590,210" size="600,280" backgroundColor="background" zPosition="2" transparent="1" font="Regular;22"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="MerlinMusicPlayerScreen" title="Merlin Music Player" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplateNoVp"/>
@@ -2915,7 +2921,7 @@ self.autoResize()
 		<eLabel position="800,120" size="430,244" backgroundColor="white" zPosition="2"/>
 		<ePixmap pixmap="MHDC/dvr/wallpaper.png" position="802,122" size="426,240" zPosition="3"/>
 		<widget name="config" position="70,120" size="700,450" itemHeight="30" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="MerlinMusicPlayerSongList" title="Songlist" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplateNoVp"/>
@@ -2947,17 +2953,17 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<widget name="list" position="520,90" size="755,575" zPosition="2" scrollbarMode="showOnDemand"/>
 		<widget name="text" position="520,90" size="755,575" zPosition="1" font="Regular;20" valign="center" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="Shooter_II" title="Shooter-II" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="list" position="590,110" size="670,520" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="Scripts" title="Scripts from /usr/script/tools/..." position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="list" position="520,90" size="755,575" itemHeight="28" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="DreamExplorerII" title="Dream-Explorer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2972,12 +2978,12 @@ self.autoResize()
 		<eLabel text="Rename" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="Move/Copy" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="Bookmarks" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="vEditor" title="File-Explorer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="filedata" position="520,90" size="755,575" zPosition="4"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="MviExplorer" title="mvi-Explorer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2"/>
@@ -2994,7 +3000,7 @@ self.autoResize()
 	<screen name="PictureExplorerII" title="Picture-Explorer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplateNoVp"/>
 		<widget name="Picture" position="520,90" size="755,575" zPosition="4"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CPmaniger" position="0,0" size="1280,720" title="Select Copy/Move location">
 		<panel name="BasicTemplate"/>
@@ -3004,7 +3010,7 @@ self.autoResize()
 		<eLabel text="COPY" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="File" font="Regular;20" halign="center" position="520,82" size="755,100" transparent="1" valign="center" zPosition="4"/>
 		<widget name="CPto" scrollbarMode="showOnDemand" font="Regular;22" position="520,182" size="755,483" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="FileExplorer" title="File-Explorer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3018,7 +3024,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamCC/buttons.png" position="745,477" size="200,40" zPosition="5" alphatest="on"/>
 		<widget name="menu" position="520,90" size="755,575" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##Apple trailer player##-->
 	<screen flags="wfNoBorder" name="TrailerInfoScreen" position="0,0" size="1280,720" title="Apple TrailerPlayer">
@@ -3040,7 +3046,7 @@ self.autoResize()
 		<widget source="director" transparent="1" render="Label" zPosition="2" valign="top" halign="left" position="900,140" size="350,20" font="Regular;18" backgroundColor="un80b0a" foregroundColor="un919fbb"/>
 		<widget source="cast" transparent="1" render="Label" zPosition="2" valign="top" halign="left" position="900,200" size="350,410" font="Regular;18" backgroundColor="un80b0a" foregroundColor="un919fbb"/>
 		<widget source="release" transparent="1" render="Label" zPosition="2" valign="top" halign="left" position="900,630" size="350,19" font="Regular;18" backgroundColor="un80b0a" foregroundColor="un919fbb"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="PlayTrailer" position="0,0" size="1280,720" title="Play Trailer">
 		<panel name="BasicTemplate"/>
@@ -3053,7 +3059,7 @@ self.autoResize()
 		<widget source="label_timeleft" transparent="1" render="Label" zPosition="2" position="620,290" size="480,30" font="Regular;20"/>
 		<widget source="label_progress" transparent="1" render="Label" zPosition="2" position="620,330" size="480,30" font="Regular;20"/>
 		<widget name="activityslider" position="35,500" size="1200,20" zPosition="3" pixmap="MHDC/window/slider100.png" transparent="0"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##Media-Player## -->
 	<screen name="MediaPlayer" title="MediaPlayer" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -3111,13 +3117,13 @@ self.autoResize()
 				"itemHeight": 35 }
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="Pic_Setup" position="0,0" size="1280,720" flags="wfNoBorder">
  		<panel name="RG_Template 2"/>
 		<panel name="BasicTemplate"/>
 		<widget name="config" position="520,82" size="755,583" itemHeight="29" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="Pic_Full_View" position="0,0" size="1280,720">
 		<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1"/>
@@ -3142,7 +3148,7 @@ self.autoResize()
 		<panel name="GreenTemplate 2"/>
 		<panel name="BlueTemplate 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;24" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="AutomaticVolumeAdjustmentEntriesListConfigScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -3150,13 +3156,13 @@ self.autoResize()
 		<widget render="Label" source="name" position="520,82" size="755,50" font="Regular;24" halign="left"/>
 		<widget render="Label" source="adjustvalue" position="520,140" size="755,50" font="Regular;24" halign="left"/>
 		<widget name="entrylist" position="520,200" size="755,300" scrollbarMode="showOnDemand" font="Regular;24"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="AutomaticVolumeAdjustmentEntryConfigScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;24" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## FanControl ## -->
 	<screen flags="wfNoBorder" name="FanControlScreen" position="0,0" size="1280,720">
@@ -3166,7 +3172,7 @@ self.autoResize()
 		<eLabel text="Change setting" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="OK = Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="Exit = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="FancontrolConfiguration" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -3175,7 +3181,7 @@ self.autoResize()
 		<widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## CCCam Info ##-->
 	<screen flags="wfNoBorder" name="EcmInfoScreen" position="0,0" size="755,25" title="ECM Info" backgroundColor="transpBlack" zPosition="-1">
@@ -3194,24 +3200,24 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" position="520,90" font="Regular;24" size="755,575" transparent="1"/>
 		<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CCcamInfoEcmInfoSelection" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="list" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
 		<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CCcamInfoInfoScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="520,90" size="755,575" font="Regular;22" transparent="1"/>
 		<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CCcamInfoConfigMenu" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CCcamInfoSubMenu" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -3219,7 +3225,7 @@ self.autoResize()
 		<widget name="info" position="15,400" size="477,240" font="Regular;22" transparent="1" foregroundColor="unf47d19"/>
 		<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="OK = Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CCcamInfoServerMenu" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -3227,7 +3233,7 @@ self.autoResize()
 		<widget name="info" position="520,373" size="755,290" font="Regular;22" transparent="1"/>
 		<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="OK = Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CCcamShareViewMenu" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -3239,49 +3245,49 @@ self.autoResize()
 		<widget name="cards" position="20,560" size="450,25" halign="left" font="Regular;20"/>
 		<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="OK = Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="CCcamInfoRemoteBoxMenu" flags="wfNoBorder" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="list" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CCcamInfoShareInfo" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="list" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CCcamInfoConfigSwitcher" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="list" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="EcmInfoConfigMenu" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
 		<eLabel text="'Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="'OK' = Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CCcamInfoMenuConfig" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template"/>
 		<widget name="list" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Oscam Info ##-->
 	<screen flags="wfNoBorder" name="OscamInfoMenu" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="mainmenu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="oscECMInfo" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="output" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!--	<screen flags="wfNoBorder" name="oscInfo" position="0,0" size="1280,720" title="XXXXXXXXX">
 		<panel name="BasicTemplate"/>
@@ -3294,7 +3300,7 @@ self.autoResize()
 		<widget source="key_yellow" render="Label" position="614,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1"/>
 		<widget source="key_blue" render="Label" position="875,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1"/>
 		<widget name="output" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>-->
 	<!--	<screen flags="wfNoBorder" name="oscEntitlements" position="0,0" size="1280,720" title="Client Info">
 		<panel name="BasicTemplate"/>
@@ -3321,28 +3327,28 @@ self.autoResize()
 				}
 			</convert>
 				</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>-->
 	<screen flags="wfNoBorder" name="OscamInfoConfigScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 		<widget name="status" render="Label" position="15,400" zPosition="1" size="477,200" font="Regular;16" halign="center" valign="center" transparent="1" foregroundColor="unf47d19"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Pauli Keymapper ## -->
 	<screen flags="wfNoBorder" name="Pauli" position="0,0" size="1280,720" title="Pauli Neutrino Keymap">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
 		<ePixmap position="240,365" size="140,488" pixmap="/usr/share/enigma2/rc.png" transparent="1" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## QuickButton ## -->
 	<screen name="QuickbuttonSetup" flags="wfNoBorder" position="0,0" size="1280,720" title="Quickbutton">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Multi Quick Button ## -->
 	<screen flags="wfNoBorder" name="MultiQuickButton" position="0,0" size="1280,720" title="Multi QuickButton Panel">
@@ -3362,14 +3368,14 @@ self.autoResize()
 		<widget name="key_2" position="130,500" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1"/>
 		<widget name="key_3" position="130,550" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1"/>
 		<widget name="list" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="QuickButton" position="0,0" size="1280,720" title="QuickButton">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
 		<widget name="background" font="Regular;20" position="590,110" size="600,40" halign="left" valign="center" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="MultiQuickButtonChannelConfiguration" position="0,0" size="1280,720" title="MultiQuickButton Channel Selection">
 		<panel name="BasicTemplate"/>
@@ -3378,7 +3384,7 @@ self.autoResize()
 		<widget name="buttonred" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="buttongreen" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Cronmanager ## -->
 	<screen flags="wfNoBorder" name="Cronmanager" position="0,0" size="1280,720">
@@ -3394,7 +3400,7 @@ self.autoResize()
 			<convert type="ClockToText">Date</convert>
 		</widget>	 
 		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## RSS ## -->
 	<screen flags="wfNoBorder" name="FeedScreenList" position="0,0" size="1280,720" title="PLi RSS reader">
@@ -3402,41 +3408,41 @@ self.autoResize()
 		<panel name="MenuTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
 		<eLabel text="OK = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="FeedScreenContent" position="0,0" size="1280,720" title="PLi RSS reader Content">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
 		<eLabel text="OK = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="FeedScreenItemviewer" position="0,0" size="1280,720" title="PLi RSS ItemViewer">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="520,90" size="755,575" font="Regular;22" transparent="1"/>
 		<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="FeedreaderMenuMain" position="0,0" size="1280,720" title="PLi RSS reader Menu Main">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
 		<eLabel text="OK = Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="WizzardAddFeed" position="0,0" size="1280,720" title="PLi RSS reader Add Feed">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
 		<eLabel text="OK = Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="Exit = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="WizzardDeleteFeed" position="0,0" size="1280,720" title="PLi RSS reader Delete Feed">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
 		<eLabel text="OK = Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="Exit = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="rss_reader" position="0,0" size="1280,720" title="RSS Reader">
 		<panel name="BasicTemplate"/>
@@ -3448,20 +3454,20 @@ self.autoResize()
 						"itemHeight": 38 }
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## SimpleRSS ## -->
 	<screen name="RSSSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget name="config" position="520,90" size="755,575" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="RSSEntryView" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget source="info" render="Label" position="520,82" size="755,28" backgroundColor="background" transparent="1" font="Regular;24"/>
 		<widget name="content" position="520,110" size="755,555" font="Regular;21" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="RSSFeedView" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3477,7 +3483,7 @@ self.autoResize()
 			</convert>
 		</widget>
 		<widget source="summary" render="Label" position="15,575" size="1250,50" backgroundColor="background" transparent="1" font="Regular;21"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="rss_lister" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3486,21 +3492,21 @@ self.autoResize()
 		<widget name="label2" position="520,113" size="755,20" backgroundColor="background" font="Regular;20" halign="right"/>
 		<widget name="pic" position="200,458" size="160,100" transparent="1" alphatest="on"/>
 		<widget name="menu" position="520,133" size="755,480" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="rssview" title="" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="blue2" position="590,110" size="600,55" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center"/>
 		<widget name="text" position="590,110" size="600,450" backgroundColor="background" transparent="1" zPosition="3" font="Regular;22"/>
 		<widget name="config" position="520,90" size="755,575"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="RSSOverview" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget source="info" render="Label" position="520,82" size="755,28" backgroundColor="background" transparent="1" font="Regular;24"/>
 		<widget name="content" position="520,110" size="755,400" backgroundColor="background" transparent="1" font="Regular; 22"/>
 		<widget source="summary" render="Label" position="520,510" size="755,125" backgroundColor="background" transparent="1" font="Regular;22"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="bp_devices" title="" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3516,25 +3522,25 @@ self.autoResize()
 		<widget name="part0" position="627,560" size="520,25" font="Regular;18"/>
 		<widget name="mount_pic1" pixmap="icons/lock_on.png" position="584,597" size="25,25" alphatest="on"/>
 		<widget name="part1" position="627,596" size="520,25" font="Regular;18"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## WebCam Plugin ## -->
 	<screen name="WebcamViewer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" position="520,82" size="755,583" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="WebcamViewerMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="config" position="520,90" size="755,575"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="ViewerSelectScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="list" position="520,90" size="755,575"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="TravelWebcamviewer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3566,7 +3572,7 @@ self.autoResize()
 			</convert>
 		</widget>
 		<widget name="thumbnail" position="200,400" size="100,75" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## BitrateViewer## -->
 	<screen flags="wfNoBorder" name="BitrateViewer" backgroundColor="transparent" position="0,0" size="1280,720">
@@ -3603,14 +3609,14 @@ self.autoResize()
 		<widget name="castlabel" position="520,275" size="755,385" backgroundColor="darkgrey" transparent="1" font="Regular;18"/>
 		<widget name="extralabel" position="520,82" size="755,583" backgroundColor="darkgrey" transparent="1" font="Regular;18"/>
 		<widget name="statusbar" position="5,500" size="510,140" backgroundColor="darkgrey" transparent="1" font="Regular;18" halign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="IMDbSetup" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget source="help" render="Label" position="5,400" size="477,80" font="Regular;20" foregroundColor="unf47d19"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="740,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Screensaver Morpheus ## -->
 	<screen flags="wfNoBorder" name="Morpheus" position="0,0" size="1280,720" title="Screensaver Morpheus">
@@ -3626,7 +3632,7 @@ self.autoResize()
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="740,583" transparent="1"/>
 		<widget name="picturename" position="50,400" size="260,50" valign="center" halign="center" zPosition="2" font="Regular;40" backgroundColor="listbox" foregroundColor="black"/>
 		<widget name="themename" position="50,460" size="260,50" valign="center" halign="center" zPosition="2" font="Regular;40" backgroundColor="listbox" foregroundColor="black"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## MeteoViewer ## -->
 	<screen flags="wfNoBorder" name="meteoViewer" position="0,0" size="1280,720" title="meteoViewer">
@@ -3641,14 +3647,14 @@ self.autoResize()
 		<widget name="msg" position="545,653" size="400,20" font="Regular;18" backgroundColor="background" halign="left"/>
 		<widget name="download" position="945,658" zPosition="5" borderWidth="1" size="150,12" backgroundColor="background"/>
 		<widget name="slide" position="1095,662" zPosition="5" borderWidth="1" size="170,6" backgroundColor="background"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="meteoViewerCfg" position="0,0" size="1280,720" title="MeteoViewer Configuration">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,560" transparent="1"/>
 		<widget name="statusbar" position="520,645" size="755,20" font="Regular;20" backgroundColor="background"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## WeatherPlugin ## -->
 	<screen name="WeatherPluginEntriesListConfigScreen" title="WeatherPlugin: List of Entries" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -3657,7 +3663,7 @@ self.autoResize()
 		<widget source="city" render="Label" position="636,98" size="150,28" transparent="1" font="Regular;24"/>
 		<widget source="language" render="Label" position="790,98" size="150,28" transparent="1" font="Regular;24"/>
 		<widget name="entrylist" position="635,135" size="600,480" itemHeight="30" font="Regular;24" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="WeatherPluginEntryConfigScreen" title="WeatherPlugin: Edit Entry" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3665,7 +3671,7 @@ self.autoResize()
 		<panel name="GreenTemplate 2"/>
 		<panel name="BlueTemplate 2"/>
 		<widget name="config" position=" 590,110" size="600,405" itemHeight="30" font="Regular;24" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="WeatherPlugin" title="Weather Plugin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3688,7 +3694,7 @@ self.autoResize()
 		<widget name="weekday4_icon" position="1030,390" size=" 72,72" zPosition="1" alphatest="blend"/>
 		<widget source="statustext" render="Label" position="70,414" size="550,200" zPosition="1" transparent="1" font="Regular;24" valign="center" halign="center"/>
 		<ePixmap pixmap="buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="weather" title="Weather" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3697,7 +3703,7 @@ self.autoResize()
 		<widget name="label1" position="590,93" size="460,22" font="Regular;20"/>
 		<ePixmap pixmap="weather_icons/TWClogo_64px.png" position="470,45" size="90,65" alphatest="on"/>
 		<widget name="menu" position="590,115" size="600,400" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="weatherview" title="" position="2,2" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2"/>
@@ -3721,14 +3727,14 @@ self.autoResize()
 					],"fonts": [gFont("Regular",17)],"itemHeight": 210 }
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="DLMenu" title="Download" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text0" position="10,5" size="480,80" font="Regular;20"/>
 		<widget name="text1" position="671,113" size="480,25" font="Regular;20"/>
 		<widget name="progress" position="671,165" size="480,25"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Foreca Weather forecast ## -->
 	<screen flags="wfNoBorder" name="CityPanel" position="0,0" size="1280,720" title="CityPanel">
@@ -3737,7 +3743,7 @@ self.autoResize()
 		<panel name="YellowTemplate 2"/>
 		<panel name="BlueTemplate 2"/>
 		<widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;22" position="520,85" size="760,578" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" title="Forecast">  <!-- Don't use basic-template-title needs zpostion=3 -->
 		<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2"/>
@@ -3760,34 +3766,34 @@ self.autoResize()
 		<widget source="key_info" render="Label" position="140,500" size="220,26" backgroundColor="background" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
 		<widget source="Titel2" render="Label" position="15,15" zPosition="2" size="968,55" font="Regular;24" valign="center" halign="center" transparent="1" foregroundColor="green"/>
 		<widget name="MainList" scrollbarMode="showOnDemand" font="Regular;20" position="520,100" size="760,545" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="SatPanel" position="0,0" size="1280,720" title="Satelliet Beelden">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget name="Mlist" scrollbarMode="showOnDemand" zPosition="3" font="Regular;22" position="520,90" size="760,573" transparent="3"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="SatPanelb" position="0,0" size="1280,720" title="Duitsland">
 		<panel name="BasicTemplate"/>
 		<widget name="Mlist" scrollbarMode="showOnDemand" zPosition="3" font="Regular;22" position="520,90" size="760,573" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="SatPanelc" position="0,0" size="1280,720" title="Continenten">
 		<panel name="BasicTemplate"/>
 		<widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;22" zPosition="3" position="520,90" size="760,573" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="SatPaneld" position="0,0" size="1280,720" title="Europa">
 		<panel name="BasicTemplate"/>
 		<widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;22" zPosition="3" position="520,90" size="760,573" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="PicSetup" position="0,0" size="1280,720" title="SlideShow Settings">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="740,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="Email" title="eMail-Checker" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3804,7 +3810,7 @@ self.autoResize()
 			</convert>
 		</widget>
 		<ePixmap pixmap="buttons/key_menu.png" position="1110,682" size="36,20" transparent="1" zPosition="4" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="dreamnetcast" title="Dreamnetcast" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3831,7 +3837,7 @@ self.autoResize()
 		<widget name="label2" position="5,405" size="700,20" font="Regular;18"/>
 		<widget name="rec_pic" pixmap="icons/icon_rec.png" position="720,405" size="36,20" zPosition="2" alphatest="on"/>
 		<widget name="info_pic" pixmap="buttons/key_info.png" position="760,402" size="36,20" zPosition="2" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## EPG ## -->
 	<screen name="EPGRefreshConfiguration" title="EPGRefresh Configuration" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -3839,7 +3845,7 @@ self.autoResize()
 		<panel name="RGYB_Template 2"/>
 		<widget name="config" position="520,82" size="740,583" itemHeight="32" font="Regular;23" scrollbarMode="showOnDemand"/>
 		<widget source="help" render="Label" position="5,300" size="477,300" font="Regular;24" valign="center" halign="center" foregroundColor="greenlight"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="epgrefresh" title="EPG Refresh" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3848,7 +3854,7 @@ self.autoResize()
 		<panel name="BlueTemplate"/>
 		<widget name="liste" position="668,113" size="420,225" scrollbarMode="showOnDemand"/>
 		<widget name="label" position="668,369" size="420,20" font="Regular;18"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="epgsearch" title="EPG Search" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3857,14 +3863,14 @@ self.autoResize()
 		<widget name="liste" position="520,82" size="755,583" scrollbarMode="showOnDemand"/>
 		<widget name="label0" position="624,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="center"/>
 		<widget name="epgliste" position="565,115" size="700,400" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="EPGSearchSetup" title="EPG-Search Setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="config" position="520,82" size="740,583" scrollbarMode="showOnDemand"/>
 		<widget source="help" render="Label" position="15,400" size="477,100" font="Regular;21" foregroundColor="greenlight"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## XMLTV EPG importer ## -->
 	<screen name="EPGMainSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -3874,19 +3880,19 @@ self.autoResize()
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;24" position="520,82" size="755,583" transparent="1"/>
 		<widget name="statusbar" position="15,555" size="470,100" font="Regular;24"/>
 		<widget name="status" position="15,400" size="470,150" font="Regular;24"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="XMLTVImportSources" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;24" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="XMLTVImportLog" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="list" font="Regular;24" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="Main_Menu_set" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -3896,7 +3902,7 @@ self.autoResize()
 					"fonts": [gFont("Regular",20)],
 					"itemHeight": 24 }
 			</convert>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="Main_Menu_extra" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -3922,7 +3928,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget name="detailtext" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3930,7 +3936,7 @@ self.autoResize()
 		<panel name="YellowTemplate"/>
 		<panel name="BlueTemplate"/>
 		<widget name="config" position="520,90" size="755,575"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="AutoTimerSettings" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3952,21 +3958,21 @@ self.autoResize()
 		<widget source="Title" render="Label" position="520,82" size="755,43" backgroundColor="background" transparent="1" font="Regular;26"/>
 		<widget name="config" position="520,125" size="755,540" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background"/>
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="AutoTimerServiceEditor" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget source="Title" render="Label" position="520,82" size="755,43" backgroundColor="background" transparent="1" font="Regular;26"/>
 		<widget name="config" position="520,125" size="755,540" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="AutoTimerImporter" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget source="Title" render="Label" position="520,82" size="755,43" backgroundColor="background" transparent="1" font="Regular;26"/>
 		<widget name="list" position="520,125" size="755,540" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="AutoTimerOverview" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3976,7 +3982,7 @@ self.autoResize()
 		<panel name="MenuTemplate"/>
 		<widget source="Title" render="Label" position="520,82" size="755,43" backgroundColor="background" transparent="1" font="Regular;26"/>
 		<widget name="entries" position="520,125" size="755,538" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="AutoTimerPreview" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3995,7 +4001,7 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## PermanentClock ## -->
 	<screen flags="wfNoBorder" name="PermanentClockMenu" position="0,0" size="1280,720">
@@ -4003,7 +4009,7 @@ self.autoResize()
 		<widget name="list" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
 		<eLabel text="Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 		<eLabel text="'OK'= Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="PermanentClockScreen" position="0,0" size="120,30" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
 		<widget source="global.CurrentTime" render="Label" position="1,1" size="120,30" backgroundColor="transparent" transparent="1" zPosition="0" foregroundColor="foreground" borderWidth="2" font="Regular;26" borderColor="black" valign="center" halign="center">
@@ -4020,13 +4026,13 @@ self.autoResize()
 		<widget name="buttongreen" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="buttonblue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## LogoManager ## -->
 	<screen flags="wfNoBorder" name="LogoManagerScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="filelist" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="LogoManagerConfigScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -4035,7 +4041,7 @@ self.autoResize()
 		<widget name="buttonred" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="buttongreen" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Seekbar ##-->
 	<screen name="Seekbar" position="center,center" size="560,60" backgroundColor="transparent" flags="wfNoBorder">
@@ -4083,7 +4089,7 @@ self.autoResize()
 	<screen flags="wfNoBorder" name="CurrentRemoteTV" position="0,0" size="1280,720" title="Remote Player">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="590,110" zPosition="1" size="670,520" font="Regular;20" halign="center" valign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="PartnerboxEntryConfigScreen" position="0,0" size="1280,720" title="Edit Entry">
 		<panel name="BasicTemplate"/>
@@ -4093,7 +4099,7 @@ self.autoResize()
 		<widget name="HelpWindow" pixmap="vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="1110,682" zPosition="10" size="35,25" transparent="1" alphatest="blend"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="PartnerboxEntriesListConfigScreen" position="0,0" size="1280,720" title="List of Entries">
 		<panel name="BasicTemplate"/>
@@ -4105,20 +4111,20 @@ self.autoResize()
 		<widget name="port" position="790,82" size="100,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
 		<widget name="type" position="935,82" size="200,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
 		<widget name="entrylist" position="520,132" size="755,533" scrollbarMode="showOnDemand" backgroundColor="secondBG" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="PartnerboxSetup" position="0,0" size="1280,720" title="Partnerbox Setup">
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="RemotePlayer" position="0,0" size="1280,720" title="Partnerbox - RemotePlayer">
 		<panel name="BasicTemplate"/>
 		<widget name="ServiceName" position="590,110" size="600,72" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="foreground" font="Regular;24" valign="center" halign="center"/>
 		<widget name="DateTime" position="590,190" size="600,52" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="foreground" font="Regular;20" valign="top" halign="left"/>
 		<widget name="IP" position="590,250" size="600,52" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="foreground" font="Regular;20" valign="top" halign="right"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="RemoteTimerBouquetList" position="0,0" size="1280,720" title="Choose bouquet">
 		<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2"/>
@@ -4134,28 +4140,28 @@ self.autoResize()
 		<widget source="session.VideoPicture" backgroundColor="transparent" position="10,85" render="Pig" size="477,270" zPosition="1"/>
 		<widget name="text" position="520,82" size="755,583" zPosition="1" font="Regular;26" halign="center" valign="center"/>
 		<widget name="bouquetlist" position="520,82" size="755,575" font="Regular;26" scrollbarMode="showOnDemand" zPosition="2"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="RemoteTimer" position="0,0" size="1280,720" title="RemoteTimer Timerlist">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="text" position="520,90" size="755,575" zPosition="3" font="Regular;20" valign="center" halign="center"/>
 		<widget name="timerlist" position="520,90" size="755,565" zPosition="5" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="RemoteTimerEPGList" position="0,0" size="1280,720" title="EPG Selection">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="text" position="520,90" size="755,575" zPosition="3" font="Regular;20" valign="center" halign="center"/>
 		<widget name="epglist" position="520,90" size="755,570" zPosition="5" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="RemoteTimerChannelList" position="0,0" size="1280,720" title="Bouquet List">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="text" position="520,90" size="755,575" zPosition="1" font="Regular;26" valign="center" halign="center"/>
 		<widget name="channellist" position="520,90" size="755,575" font="Regular;26" zPosition="2" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="RemoteTimerEventView" position="0,0" size="1280,720" title="Eventview">
 		<panel name="BasicTemplate"/>
@@ -4164,7 +4170,7 @@ self.autoResize()
 		<widget name="datetime" position="590,510" size="600,30" font="Regular;22"/>
 		<widget name="duration" position="590,540" size="600,30" font="Regular;22"/>
 		<widget name="channel" position="590,570" size="600,30" font="Regular;22"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="RemoteTimerEntry" position="0,0" size="1280,720" title="Timer entry">
 		<panel name="BasicTemplate"/>
@@ -4173,7 +4179,7 @@ self.autoResize()
 		<widget name="canceltext" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="oktext" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="config" position="590,110" size="600,420" itemHeight="28" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## RemoteTimer ##-->
 	<screen flags="wfNoBorder" name="RemoteTimerScreen" position="0,0" size="1280,720" title="Remote-Timer digest">
@@ -4181,13 +4187,13 @@ self.autoResize()
 		<panel name="RGYB_Template"/>
 		<widget name="text" position="520,82" zPosition="1" size="755,25" font="Regular;24" halign="center" valign="center"/>
 		<widget name="timerlist" scrollbarMode="showOnDemand" font="Regular;22" position="522,110" size="755,552" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="RemoteTimerSetup" position="0,0" size="1280,720" title="Remote-Timer Settings">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,300" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## RemoteControlSetup ## -->
 	<screen flags="wfNoBorder" name="RemoteControlSetup" position="0,0" size="1280,720" title="Remote control setup">
@@ -4197,7 +4203,7 @@ self.autoResize()
 		<widget name="cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="ok" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="config" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## MyTube ## -->
 	<screen flags="wfNoBorder" name="MyTubePlayerMainScreen" position="0,0" size="1280,720" title="MyTubePlayer MainScreen">
@@ -4257,7 +4263,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="MyTubeVideoInfoScreen" position="0,0" size="1280,720" title="MyTubePlayerMainScreen">
 		<panel name="BasicTemplate"/>
@@ -4290,7 +4296,7 @@ self.autoResize()
 		<widget font="Regular;20" halign="left" name="views" position="380,460" size="200,24" transparent="1" valign="top" zPosition="10"/>
 		<widget font="Regular;20" halign="left" name="tags" position="70,560" size="500,60" transparent="1" valign="top" zPosition="10"/>
 		<widget font="Regular;20" halign="left" name="detailtext" position="590,150" size="600,250" transparent="1" valign="top" zPosition="10"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen backgroundColor="background" flags="wfNoBorder" name="MyTubeSuggestionsListScreen" position="378,218" size="850,260" zPosition="6">
 		<eLabel backgroundColor="secondBG" position="0,0" size="850,260" zPosition="7"/>
@@ -4325,7 +4331,7 @@ self.autoResize()
 		<ePixmap pixmap="MHDC/buttons/red2.png" alphatest="on" position="15,682" size="26,26"/>
 		<widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="detailtext" font="Regular;22" position="520,90" size="755,575" valign="top" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="MyTubeTasksScreen" position="0,0" size="1280,720" title="MyTube TasksScreen">
 		<panel name="BasicTemplate"/>
@@ -4343,7 +4349,7 @@ self.autoResize()
 					"itemHeight": 25
 					}
 			</convert>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## PictureViewer ## -->
 	<screen name="PictureViewer" title="PictureViewer" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4365,7 +4371,7 @@ self.autoResize()
 		<eLabel position="590,410" size="600,2" backgroundColor="background"/>
 		<eLabel position="590,412" size="600,2" backgroundColor="grey"/>
 		<widget name="slist" position="590,420" size="600,200" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## CleanupWizard ## -->
 	<screen flags="wfNoBorder" name="CleanupWizardConfiguration" position="0,0" size="1280,720" title="CleanupWizard settings">
@@ -4373,7 +4379,7 @@ self.autoResize()
 		<panel name="RG_Template 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="590,110" size="600,448" transparent="1"/>
 		<widget source="status" render="Label" position="590,560" size="600,64" zPosition="1" font="Regular;24" halign="center" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CleanupWizard" position="0,0" size="1280,720" title="CleanupWizard">
 		<panel name="BasicTemplate"/>
@@ -4395,7 +4401,7 @@ self.autoResize()
 		<widget name="arrowdown2" position="-100,-100" size=" 37,70" pixmap="arrowdown.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" position="-100,-100" size=" 37,70" pixmap="arrowup.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" position="-100,-100" size=" 37,70" pixmap="arrowup.png" zPosition="11" alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## ACDInfo ## -->
 	<screen flags="wfNoBorder" name="CDInfo" position="0,0" size="1280,720" title="CDInfo">
@@ -4409,7 +4415,7 @@ self.autoResize()
 		<widget name="config" position="520,90" size="600,400" zPosition="3" scrollbarMode="showOnDemand" font="Regular;24" backgroundColor="darkgrey" transparent="1"/>
 		<widget source="info" render="Label" position="590,500" size="600,120" font="Regular;24" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1"/>
 		<widget source="info2" render="Label" position="70,370" size="440,250" font="Regular;24" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Last.FM ## -->
 	<screen flags="wfNoBorder" name="LastFMScreenMain" position="0,0" size="1280,720" title="Last.FM">
@@ -4434,7 +4440,7 @@ self.autoResize()
 		<widget name="streamlist" position="740,82" size="520,450" scrollbarMode="showOnDemand"/>
 		<widget name="infolabel" position="740,580" size="380,30" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular;20"/>
 		<ePixmap pixmap="buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="LastFMConfigScreen" position="0,0" size="1280,720" title="Last.FM Setup">
 		<panel name="BasicTemplate"/>
@@ -4443,7 +4449,7 @@ self.autoResize()
 		<widget name="buttonred" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="buttongreen" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;24" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## DMvidsDirect ## -->
 	<screen flags="wfNoBorder" name="Vidtype" position="0,0" size="1280,720" title="Categories">
@@ -4472,7 +4478,7 @@ self.autoResize()
 		<widget name="RemainingTime" position="15,450" size="477,60" zPosition="4" font="Regular;20" foregroundColor="uncccccc"/>
 		<widget name="PluginInfo" position="15,520" size="477,60" zPosition="4" font="Regular;20" foregroundColor="uncccccc"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 
 	<!-- ## PiP ## -->
@@ -4496,7 +4502,7 @@ self.autoResize()
 		<widget name="moviename" position="520,82" size="745,50" halign="center" font="Regular;25"/>
 		<widget name="cTaglist" position="520,140" size="220,520" scrollbarMode="showOnDemand"/>
 		<widget name="aTaglist" position="750,140" size="515,520" scrollbarMode="showOnDemand"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Classic NetRadio ## -->
 	<screen flags="wfNoBorder" name="AboutScreen" position="0,0" size="1280,720" title="NetRadio Classic v.2.2c-Tunisiasat">
@@ -4504,14 +4510,14 @@ self.autoResize()
 		<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on"/>
 		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="80,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="text" font="Regular;24" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="Menuscrn" position="0,0" size="1280,720" title="NetRadio Classic Menu">
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on"/>
 	 	<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="80,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="Favoritescrn" position="0,0" size="1280,720" title="NetRadio Classic Favorites">
 		<panel name="BasicTemplateNoVp"/>
@@ -4525,7 +4531,7 @@ self.autoResize()
 		<widget name="titel" font="Regular;30" position="40,140" size="1200,400" valign="center" halign="center" foregroundColor="yellow" transparent="1"/>
 		<eLabel text="Favorite" backgroundColor="secondBG" font="Regular;24" halign="right" position="614,682" size="220,30" foregroundColor="grey" transparent="1" zPosition="1"/>	
 		<widget name="leagueNumberWidget" position="835,682" size="60,30" transparent="1" foregroundColor="grey" halign="center" font="Regular;24"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="StationsScreen" position="0,0" size="1280,720" title="Add to Favorites">
 		<panel name="BasicTemplateNoVp"/>
@@ -4542,7 +4548,7 @@ self.autoResize()
 		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="ButtonBluetext" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="stationmenu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## TV Charts ## -->
 	<screen flags="wfNoBorder" name="TVChartsMain" position="0,0" size="1280,720" title="TV Charts">
@@ -4552,7 +4558,7 @@ self.autoResize()
 		<eLabel text="'OK' = ZAP" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,645" size="150,26" transparent="1" zPosition="1"/>
 		<widget name="info" font="Regular;22" position="15,400" size="477,200" transparent="1" foregroundColor="#f47d19"/>
 		<widget name="channellist" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## Google Maps ## -->
 	<screen flags="wfNoBorder" name="GoogleMapsConfigScreen" position="0,0" size="1280,720" title="Google Maps Setup">
@@ -4563,7 +4569,7 @@ self.autoResize()
 		<widget name="buttongreen" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="label" position="85,460" size="200,40" valign="center" halign="center" zPosition="1" foregroundColor="#f47d19" font="Regular;18"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="GoogleMapsGeoSearchScreen" position="0,0" size="1280,720" title="GoogleMaps Search">
 		<panel name="BasicTemplateNoVp"/>
@@ -4588,14 +4594,14 @@ self.autoResize()
 		}
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_Setup" position="0,0" size="1280,720" title="CrossEPG Setup">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 		<widget name="information" position="15,300" size="477,300" halign="center" valign="center" font="Regular;22" foregroundColor="greenlight"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_Info" position="0,0" size="1280,720" title="CrossEPG Info">
 		<panel name="BasicTemplate"/>
@@ -4611,13 +4617,13 @@ self.autoResize()
 		<widget name="channels_count" position="600,373" size="600,25" font="Regular;22"/>
 		<widget name="events_count" position="600,403" size="600,25" font="Regular;22"/>
 		<widget name="hashes_count" position="600,433" size="600,25" font="Regular;22"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_Extra" position="0,0" size="1280,720" title="CrossEPG_Extra">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_Providers" position="0,0" size="1280,720" title="CrossEPG Providers">
 		<panel name="BasicTemplate"/>
@@ -4633,7 +4639,7 @@ self.autoResize()
 			}
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_About" position="0,0" size="1280,720" title="About CrossEPG">
 		<panel name="BasicTemplate"/>
@@ -4641,7 +4647,7 @@ self.autoResize()
 		<widget name="about" position="560,110" size="700,360" font="Regular;16"/>
 		<widget name="rytec_pix" position="785,525" size="70,70"/>
 		<widget name="krkadoni_pix" position="785,600" size="70,22"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_Ordering" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -4663,7 +4669,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<widget name="pluginInfo" position="530,110" size="700,50" valign="center" halign="left" zPosition="5" transparent="1" font="Regular;24"/>
 		<widget name="daemonInfo" position="530,200" size="700,50" valign="center" halign="left" zPosition="5" transparent="1" font="Regular;24"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="DeviceBrowser" position="0,0" size="1280,720" title="DeviceBrowser">
 		<panel name="BasicTemplate"/>
@@ -4672,19 +4678,19 @@ self.autoResize()
 		<widget name="key_r" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="key_g" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="filelist" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="AtmoLightSummary" position="0,0" size="1280,720" title="Setup">
 		<panel name="BasicTemplate"/>
 		<widget name="SetupEntry" position="590,110" size="500,25" font="Regular;22" halign="left"/>
 		<widget name="SetupValue" position="590,110" size="500,25" font="Regular;22" halign="right"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## FanControl 2 ##-->
 	<screen flags="wfNoBorder" name="FanControl2SpezialSetup" position="0,0" size="1280,720" title="Fan Control 2 - Setup">
 		<panel name="BasicTemplate"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="FanControl2Plugin" position="0,0" size="1280,720" title="Fan Control 2">
 		<panel name="BasicTemplate"/>
@@ -4711,7 +4717,7 @@ self.autoResize()
 		<widget source="PixRPM" render="Progress" position="740,495" size="375,5" borderWidth="1"/>
 		<widget source="PixVLT" render="Progress" position="740,530" size="375,5" borderWidth="1"/>
 		<widget source="PixPWM" render="Progress" position="740,575" size="375,5" borderWidth="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="FanControl2Monitor" position="0,0" size="1280,720" title="Fan Control 2 - Monitor">
 		<panel name="BasicTemplate"/>
@@ -4738,7 +4744,7 @@ self.autoResize()
 		<widget source="ProTemp7" render="Progress" position="825,400" size="325,5" borderWidth="1"/>
 		<widget source="ProHDD" render="Progress" position="825,430" size="325,5" borderWidth="1"/>
 		<widget source="ProFan" render="Progress" position="825,460" size="325,5" borderWidth="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="FanControl2Test" position="0,0" size="1280,720" title="Fan Control 2 - Test">
 		<panel name="BasicTemplate"/>
@@ -4749,7 +4755,7 @@ self.autoResize()
 		<widget source="TextTest5" render="Label" position="605,260" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1"/>
 		<widget source="TextTest6" render="Label" position="605,290" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1"/>
 		<widget source="TextTest7" render="Label" position="605,320" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## ViX-specific screens ## -->
 	<screen flags="wfNoBorder" name="VIXMenu" position="0,0" size="1280,720">
@@ -4775,7 +4781,7 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXPowerManager" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -4785,15 +4791,15 @@ self.autoResize()
 		<widget name="deepstandbystatus" position="10,525" size="250,55" font="Regular;20" zPosition="5"/>
 		<widget name="guirestartstatus" position="260,470" size="250,55" font="Regular;20" zPosition="6"/>
 		<widget name="rebootstatus" position="260,525" size="250,55" font="Regular;20" zPosition="6"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXSetup" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="VIXSwap" position="0,0" size="1280,720">
+	<screen flags="wfNoBorder" name="AtemioSwapPanel" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="autostart_off" position="590,183" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
@@ -4806,13 +4812,13 @@ self.autoResize()
 		<widget name="lab4" position="590,293" size="150,30" font="Regular;20" valign="center" transparent="0"/>
 		<widget name="inactive" position="740,293" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="active" position="740,293" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXSoftcamMenu" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXSoftcamManager" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -4826,7 +4832,7 @@ self.autoResize()
 			<applet type="onLayoutFinish">
 				self["list"].instance.setItemHeight(25)
 			</applet>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXSoftcamLog" position="0,0" size="1280,720">
 		<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2"/>
@@ -4842,7 +4848,7 @@ self.autoResize()
 		<widget source="session.VideoPicture" backgroundColor="transparent" position="10,85" render="Pig" size="477,270" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_menu.png" alphatest="on" position="1110,682"	size="35,25"/>
 		<widget name="list" font="Regular;18" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXAutoStartCam" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -4851,7 +4857,7 @@ self.autoResize()
 		pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png"
 		transparent="1" alphatest="blend"/>
 		<widget name="lab1" position="560,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXStartCam" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -4859,7 +4865,7 @@ self.autoResize()
 		pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png"
 		transparent="1" alphatest="blend"/>
 		<widget name="lab1" position="560,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXStopCam" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -4867,12 +4873,12 @@ self.autoResize()
 		pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png"
 		transparent="1" alphatest="blend"/>
 		<widget name="lab1" position="560,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## ImageManager ## -->
-	<screen flags="wfNoBorder" name="VIXImageManager" position="0,0" size="1280,720">
+	<screen name="AtemioImageManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<panel name="RGYB_Template"/>
+		<panel name="RGY_Template"/>
 		<panel name="MenuTemplate"/>
 		<widget name="lab1" position="520,82" size="755,50" font="Regular; 20" zPosition="2" transparent="0" halign="center"/>
 		<widget name="list" position="520,140" size="755,525" font="Regular;20" foregroundColor="grey" transparent="0" scrollbarMode="showOnDemand"/>
@@ -4881,20 +4887,63 @@ self.autoResize()
 			</applet>
 		<widget name="backupstatus" position="15,385" size="480,250" font="Regular;20" zPosition="5" foregroundColor="greenlight"/>
 		<eLabel text="'Help' = Download image" position="15,600" size="417,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="ImageManagerDownload" position="0,0" size="1280,720">
+	<screen name="ImageManagerDownload" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<panel name="RG_Template"/>
+		<panel name="RGY_Template"/>
 		<widget name="lab1" position="520,82" size="755,50" font="Regular; 21" zPosition="2" transparent="0" valign="center" halign="center"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;20" foregroundColor="grey" position="520,140" size="755,525" transparent="1"/>
 			<applet type="onLayoutFinish">
 				self["list"].instance.setItemHeight(25)
 			</applet>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
+	</screen>
+	<!-- ATEMIO PANELS -->
+	<screen name="AtemioMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="AtemioLogo"/>
+	  	<widget source="list" render="Listbox" position="590,90" size="755,584" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" >
+	  		<convert type="TemplatedMultiContent">
+	  			{"template": [
+	  				MultiContentEntryText(pos = (60, 2), size = (300, 30), font=0, flags = RT_HALIGN_LEFT | RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryText(pos = (70, 24), size = (640, 50), font=0, color=0x73c6ff, flags = RT_VALIGN_TOP, text = 2),
+	  				MultiContentEntryPixmapAlphaTest(pos=(5, 4), size=(40, 40), png = 3),
+	  				],
+	  				"fonts": [gFont("Regular", 22)],
+	  				"itemHeight": 50
+	  			}
+	  		</convert>
+	  	</widget>
+		<eLabel name="spaceused" text="% Flash Used..." position="5,500" size="455,20" font="Regular;19" halign="center" foregroundColor="grey" transparent="1" zPosition="5"/>
+	  	<widget name="spaceused" position="5,525" size="477,18" foregroundColor="secondFG" backgroundColor="secondBG" zPosition="3" />
+	</screen>
+	<!-- Panel Backup  -->
+	<screen name="AtemioMenuBk" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="RedTemplate 2"/>
+		<panel name="AtemioLogo"/>
+		<widget source="menu" render="Listbox" position="520,82" scrollbarMode="showNever" size="755,480" transparent="1" enableWrapAround="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 1) ],
+					"fonts": [gFont("Regular", 24)],
+					"itemHeight": 50
+				}
+			</convert>
+		</widget>
+		<widget source="menu" render="Listbox" position="10,385" size="477,264" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="secondFG" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (0,0),size = (477,264),flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+					],
+					"fonts": [gFont("Regular",22)],
+					"itemHeight": 25
+				}
+			</convert>
+		</widget>
 	</screen>
 	<!-- ## BackUpManager ## -->
-	<screen flags="wfNoBorder" name="VIXBackupManager" position="0,0" size="1280,720">
+	<screen name="AtemioBackupManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template"/>
 		<panel name="MenuTemplate"/>
@@ -4905,20 +4954,20 @@ self.autoResize()
 			self["list"].instance.setItemHeight(25)
 			</applet>
 		<widget name="backupstatus" position="15,385" size="480,250" font="Regular;20" zPosition="5" foregroundColor="greenlight"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="VIXBackupManagerMenu" position="0,0" size="1280,720">
+	<screen flags="wfNoBorder" name="BackupManagerMenu" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 		<widget name="HelpWindow" pixmap="vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
 		<ePixmap pixmap="buttons/key_text.png" position="1110,682" zPosition="4" size="35,25" alphatest="blend" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXBackupManagerLogView" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="list" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXCronManager" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -4934,7 +4983,7 @@ self.autoResize()
 			<convert type="StringList"/>
 		</widget>
 		<eLabel text="'OK' = Show details" backgroundColor="secondBG" font="Regular;22" halign="left" position="1055,682" size="240,26" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXSetupCronConf" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -4942,7 +4991,7 @@ self.autoResize()
 		<ePixmap pixmap="buttons/key_text.png" position="1110,682" zPosition="4" size="35,25" alphatest="blend" transparent="1"/>
 		<widget name="HelpWindow" pixmap="vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkInadyn" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -4966,7 +5015,7 @@ self.autoResize()
 		<widget name="sactive" position="610,383" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="system" position="650,383" size="100,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labsys" position="860,383" size="310,30" font="Regular;20" valign="center" backgroundColor="background"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkInadynSetup" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -4974,17 +5023,17 @@ self.autoResize()
 		<widget name="HelpWindow" pixmap="vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
 		<ePixmap pixmap="buttons/key_text.png" position="840,682" zPosition="4" size="35,25" alphatest="blend" transparent="1"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,435" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkInadynLog" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="infotext" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkVpnLog" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="infotext" font="Regular;22" position="590,110" size="600,500" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkServiceSetup" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -4994,7 +5043,7 @@ self.autoResize()
 		<widget name="lab2" position="620,260" size="150,30" font="Regular;20" valign="top" transparent="0"/>
 		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="NetworkMiniDLNA" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -5065,7 +5114,7 @@ self.autoResize()
 		<widget name="dlna" position="580,560" size="230,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="dlnainactive" position="850,560" zPosition="1" pixmap="icons/lock_off.png" size="32,32"	alphatest="on"/>
 		<widget name="dlnaactive" position="850,560" zPosition="2" pixmap="icons/lock_on.png" size="32,32"	 alphatest="on"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkuShareSetup" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -5073,18 +5122,18 @@ self.autoResize()
 		<ePixmap pixmap="buttons/key_text.png" position="1110,682" zPosition="4" size="35,25" alphatest="blend" transparent="1"/>
 		<widget name="HelpWindow" pixmap="vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="740,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkuShareLog" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="infotext" scrollbarMode="showOnDemand" font="Regular;20" position="520,82" size="740,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="uShareSelection" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template 2"/>
 		<widget name="checkList" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="740,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkTelnet" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -5093,7 +5142,7 @@ self.autoResize()
 		<widget name="lab2" position="620,260" size="150,70" font="Regular;20" valign="top" transparent="0"/>
 		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkFtp" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -5102,7 +5151,7 @@ self.autoResize()
 		<widget name="lab2" position="620,260" size="150,70" font="Regular;20" valign="top" transparent="0"/>
 		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="EPGMainSetup" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -5111,19 +5160,19 @@ self.autoResize()
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,480" transparent="1"/>
 		<widget name="statusbar" position="520,645" size="755,25" font="Regular;22"/>
 		<widget name="status" position="520,575" size="755,60" font="Regular;24"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="VIXIPKInstaller" position="0,0" size="1280,720">
+	<screen flags="wfNoBorder" name="AtemioIPKInstaller" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
-		<panel name="RGY_Template"/>
+		<panel name="RG_Template"/>
 		<widget name="lab1" position="590,110" size="600,25" font="Regular; 20" zPosition="2" transparent="0" halign="center"/>
 		<widget name="list" position="590,140" size="600,450" transparent="0" scrollbarMode="showOnDemand"/>
 			<applet type="onLayoutFinish">
 				self["list"].instance.setItemHeight(25)
 			</applet>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="VIXDevicesPanel" position="0,0" size="1280,720">
+	<screen flags="wfNoBorder" name="DevicesPanel" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget source="list" render="Listbox" position="590,110" size="600,430" ransparent="0" scrollbarMode="showOnDemand">
@@ -5139,14 +5188,14 @@ self.autoResize()
 			</convert>
 		</widget>
 		<widget name="lab1" zPosition="2" position="590,550" size="600,60" font="Regular;24" halign="center" transparent="0"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="VIXDevicePanelConf" position="0,0" size="1280,720">
+	<screen flags="wfNoBorder" name="DevicesConf" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
 		<widget name="Linconn" position="520,625" size="755,40" font="Regular;18" halign="center" valign="center"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,550" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXPartitionPanelConf" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -5164,17 +5213,17 @@ self.autoResize()
 			</convert>
 		</widget>
 		<widget name="lab1" zPosition="2" position="590,550" size="600,70" font="Regular;24" halign="center" transparent="0"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="VIXScriptRunner" position="0,0" size="1280,720">
+	<screen name="ScriptExecuter" title="Script Executer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<panel name="RG_Template"/>
-		<widget name="lab1" position="15,450" size="477,70" font="Regular; 20" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
+		<panel name="RedTemplate"/>
+		<widget name="labstatus" position="15,450" size="477,70" font="Regular; 20" zPosition="2" transparent="0" halign="center"/>
+		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 			<applet type="onLayoutFinish">
 				self["list"].instance.setItemHeight(25)
 			</applet>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap alphatest="off" pixmap="MHDC/infobar/hd.png" position="0,520" size="1280,220" zPosition="-1"/>
@@ -5332,12 +5381,12 @@ self.autoResize()
 		<widget name="config" font="Regular;18" position="520,82" size="755,580" transparent="1"/>
 		<widget source="status" render="Label" position="10,400" size="500,100" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0"/>
 		<widget name="footnote" position="780,682" size="240,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="greenlight"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXEPGBouquetSelector" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="GraphicalEPG" position="center,center" size="1280,720" backgroundColor="background">
 		<panel name="RGYB_Template"/>
@@ -5463,7 +5512,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="LogManager" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -5473,17 +5522,17 @@ self.autoResize()
 					self["list"].instance.setItemHeight(25)
 			</applet>
 		<widget name="LogsSize" position="10,385" size="503,50" font="Regular;22" foregroundColor="greenlight" halign="center" valign="center" transparent="0"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="LogManagerViewLog" position="0,0" size="1280,720">
 		<panel name="BasicTemplateNoVp"/>
 		<widget name="list" font="Regular;16" position="10,82" size="1260,555" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="LogManagerFb" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## OSD setup @@ -->
 	<screen flags="wfNoBorder" name="UserInterfacePositioner" position="0,0" size="1280,720">
@@ -5493,7 +5542,7 @@ self.autoResize()
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,120" size="700,200" transparent="1"/>
 		<eLabel text="Use arrows Up/Down to select" position="5,400" size="477,50" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1"/>
 		<eLabel text="Use arrows Left/Right to adjust" position="5,450" size="477,50" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!--	<screen flags="wfNoBorder" name="OSD3DSetupScreen" position="0,0" size="1280,720" title="OSD 3D-Setup">
 		<panel name="BasicTemplate"/>
@@ -5502,19 +5551,19 @@ self.autoResize()
 		<widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="config" font="Regular;22" position="520,82" size="740,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>-->
 	<screen flags="wfNoBorder" name="SortableMenu" position="0,0" size="1280,720" title="Sort Menu">
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on"/>
 		<eLabel text="Hide" position="875,682"	size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VPS_check_PDC_Screen" position="0,0" size="1280,720" title="VPS-Plugin">
 		<panel name="BasicTemplate"/>
 		<widget source="infotext" render="Label" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VPS_Setup" position="0,0" size="1280,720" title="VPS-Plugin">
 		<panel name="BasicTemplate"/>
@@ -5523,24 +5572,24 @@ self.autoResize()
 		<panel name="BlueTemplate 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 		<widget source="help" render="Label" font="Regular;22" position="5,375" size="477,250" transparent="1" foregroundColor="greenlight"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VPS_Screen_Info" position="0,0" size="1280,720" title="VPS-Plugin Information">
 		<panel name="BasicTemplate"/>
 		<widget name="text" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="YTTrailerList" position="0,0" size="1280,720" title="YT Trailer-List">
 		<panel name="BasicTemplate"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 		<eLabel text="'OK'= Play trailer" backgroundColor="secondBG" position="435,682" size="220,26" font="Regular;22" halign="left" transparent="1" zPosition="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="YTTrailerSetup" position="0,0" size="1280,720" title="YT-Trailer Setup">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="FPGAUpgrade" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -5549,7 +5598,7 @@ self.autoResize()
 		<panel name="BlueTemplate 2"/>
 		<widget name="file_list" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 		<widget source="status" render="Label" position="10,370" zPosition="1" size="477,200" font="Regular;18" halign="center" valign="center" transparent="1" foregroundColor="greenlight"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="UpgradeStatus" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -5557,7 +5606,7 @@ self.autoResize()
 		<widget name="slider" position="600,130" size="430,15"/>
 		<widget name="status" position="600,155" zPosition="1" size="430,30" font="Regular;20" halign="center" transparent="1"/>
 		<widget source="info" render="Label" position="600,195" zPosition="1" size="430,30" font="Regular;22" halign="center" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="HdmiCECSetupScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -5565,7 +5614,7 @@ self.autoResize()
 		<widget name="config" font="Regular;22" position="520,82" size="740,583" transparent="1"/>
 		<widget source="current_address" render="Label" position="5,430" size="477,50" zPosition="10" font="Regular;21" halign="left" valign="center"/>
 		<widget source="fixed_address" render="Label" position="5,500" size="477,50" zPosition="10" font="Regular;21" halign="left" valign="center"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="PluginHiderSetup" position="0,0" size="1280,720" title="PluginHider Setup">
 		<panel name="BasicTemplate"/>
@@ -5575,26 +5624,26 @@ self.autoResize()
 		<widget source="extensions" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="636,90" zPosition="2" halign="center" font="Regular;18"/>
 		<widget source="eventinfo" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="741,90" zPosition="2"	 halign="center" font="Regular;18"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,108" size="740,540" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="AutomaticCleanupSetup" position="0,0" size="1280,720" title="Automatic Cleanup Setup">
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="740,583" transparent="1"/>
 		<widget source="help" render="Label" position="5,400" size="477,200" font="Regular;21" foregroundColor="greenlight"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="RemoteControlCode" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="740,583" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="MessageBoxConfirmCode" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="520,300" size="740,100" halign="center" font="Regular;22"/>
 		<widget name="list" font="Regular;22" position="520,82" size="740,220" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="PipServiceRelationSetup" position="0,0" size="1280,720" title="PipServiceRelation Setup">
 		<panel name="BasicTemplate"/>
@@ -5602,19 +5651,19 @@ self.autoResize()
 		<widget name="entrylist" scrollbarMode="showOnDemand" font="Regular;22" position="520,127" size="740,540" transparent="1"/>
 		<widget render="Label" source="name" position="520,82" size="370,45" font="Regular;22" halign="left"/>
 		<widget render="Label" source="relationname" position="845,82" size="370,45" font="Regular;22" halign="left"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="PipServiceRelationEntryConfigScreen" position="0,0" size="1280,720" title="PipServiceRelation Entry Configuration">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="740,583" transparent="1"/>	
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## VU+ StreamTV ## -->
 	<screen name="StreamTVList" position="0,0" size="1280,720" flags="wfNoBorder" title="StreamTV List">
 		<panel name="BasicTemplate"/>
 		<widget name="streamlist" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="30" position="520,85" size="755,575" transparent="1"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## RecInfoBar ## -->
 	<screen name="RecInfoBar" title="Records Info" flags="wfNoBorder" position="0,0" size="1280,30" zPosition="1" backgroundColor="transpBlack">
@@ -5637,7 +5686,7 @@ self.autoResize()
 		<widget name="config" position="520,82" size="755,588" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" enableWrapAround="1"/>
 		<widget name="description" position="10,385" size="480,70" zPosition="2" font="Regular;20" foregroundColor="greenlight" valign="center" halign="center"/>
 		<widget name="text" position="10,485" size="480,50" zPosition="10" font="Regular;20" foregroundColor="grey" halign="center" transparent="0"/>
-		<panel name="VixLogo"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##AudioEffect (VU only)## -->
 	<screen name="AudioEffect" position="0,0" size="1280,720" flags="wfNoBorder" title="">
