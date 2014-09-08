@@ -3,7 +3,7 @@
 	<!--
 	##################### mmark_a4you_ATEMIO v.1.3.3 ########################
 	#                                                                       #
-	#      mmark            Version 1.3.3 released          05-09-2014      #
+	#      mmark            Version 1.3.31 released          08-09-2014      #
 	#                                                                       #
 	#########################################################################
 		The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
@@ -1722,6 +1722,8 @@
 		<panel name="ClockTemplate" />
 		<panel name="fakeExit"/>
 		<panel name="nG"/>
+		<ePixmap pixmap="buttons/key_info.png" alphatest="on" position="600,657" size="35,25" />
+		<eLabel text="= Release notes" position="640,657" size="220,26" font="Regular;22" halign="left" transparent="1" zPosition="1"/>
 		<widget source="lab1" render="Label" position="40,80"   size="585,40" font="Regular; 36" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
 		<widget source="lab2" render="Label" position="40,130"  size="585,26" font="Regular; 20" halign="left" backgroundColor="bkwall" transparent="1" />
 		<widget source="lab3" render="Label" position="680,570" size="560,24" font="Regular; 20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
