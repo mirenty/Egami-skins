@@ -1568,7 +1568,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S061" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Service SoftCam / CI -->
+	<!-- Service CI -->
 	<screen name="CAidSelect" title="SoftCam Service" position="0,0" size="541,720" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1590,7 +1590,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S063" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- Service SoftCam / CI -->
+	<!-- Service CI -->
 	<screen name="CIselectMainMenu" title="CI Select Menu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1600,7 +1600,7 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S064" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- Service SoftCam / CI MMIDIALOG -->
+	<!-- Service CI MMIDIALOG -->
 	<screen name="MMIDialog" title="CI MMI Dialog" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
@@ -1614,17 +1614,6 @@
 		<widget name="bottom"   position="40,400" size="585,25"  font="Regular;22" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
 		<ePixmap  position="920,500" size="300,300" pixmap="menu/info.png" alphatest="blend" />
 		<!-- eLabel name="DEBUG"  text="PANEL S065" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
-	</screen>
-	
-	<!-- Softcam Setup -->
-	<screen name="SoftcamSetup" title="SoftCam Setup" position="fill" flags="wfNoBorder">
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate" />
-		<panel name="nRGB"/>
-		<widget name="config" position="40,80"  size="585,100" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" />
-		<widget name="info"   position="40,210" size="585,325" font="Regular;18" backgroundColor="bkwall" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL S066" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
 	<!-- CI Config Menu -->
@@ -2538,125 +2527,6 @@
 	  	<widget name="spaceused" position="100,583" size="515,18" foregroundColor="#73c6ff" backgroundColor="#4D5375" zPosition="3" />
 		<!-- eLabel name="DEBUG"  text="PANEL S108" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>'
-
-	<!-- SoftCamPanel -->
-	<screen name="SoftCamPanel" title="Softcam Panel" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate"/>
-		<panel name="nRGB"/>
-		<!-- Ico Crypt -->
-		<ePixmap pixmap="infobar/cryptoff_ico.png" position="45,80" size="17,25" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/crypton_ico.png" position="45,80" size="17,25" zPosition="2" alphatest="blend">
-			<convert type="ServiceInfo">IsCrypted</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget name="cam"    zPosition="2" position="677,540" size="580,24" font="Regular; 22" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-		<widget name="server" zPosition="2" position="677,570" size="580,24" font="Regular; 22" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-		<widget name="entries" position="40,140" size="585,300" transparent="1" />
-		<ePixmap pixmap="buttons/key_menu.png" position="1175,27" zPosition="2" size="50,40" alphatest="on" />
-		<!-- Emu Info  -->
-		<eLabel text="EMU :" position="40,440" size="60,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
- 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="135,440" size="250,34" font="Regular;20" valign="top" halign="left" foregroundColor="foreground" backgroundColor="bkwall" transparent="1" zPosition="10" >
-			<convert type="PliExtraInfo">EmuInfoCrypt</convert>
-		</widget>
-		<!-- Ico Crypt -->
-		<ePixmap pixmap="infobar/ico_crypt_off.png" position="102,444" size="21,15" zPosition="0" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_crypt_on.png" position="102,444" size="21,15" zPosition="2" alphatest="blend">
-			<convert type="ServiceInfo">IsCrypted</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<!-- Sat Freq Info  -->
- 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="40,480" size="250,24" font="Regular;20" valign="top" halign="left" foregroundColor="bluette" backgroundColor="bkwall" transparent="1" zPosition="10" >
-			<convert type="PliExtraInfo">EmuInfoCryptSpecial</convert>
-		</widget>
-		<!-- Share Info -->
-		<eLabel text="SERVER :" position="40,530" size="150,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
-		<widget source="session.CurrentService" render="Label" position="40,540" size="580,60" font="Regular;20" valign="center" halign="left" foregroundColor="#007983b5" backgroundColor="bkwall" transparent="1" zPosition="5" >
-			<convert type="CryptoInfo">VerboseInfo</convert>
-		</widget>
-		<!-- eLabel name="DEBUG"  text="PANEL S109" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
-	</screen>
-
-	<!-- SoftCamPanel Menu -->
-	<screen name="SoftCamPanelSetupScreen" title="Softcam Panel Menu" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate"/>
-		<panel name="nRG"/>
-		<!-- Ico Crypt -->
-		<ePixmap pixmap="infobar/cryptoff_ico.png" position="45,80" size="17,25" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/crypton_ico.png" position="45,80" size="17,25" zPosition="2" alphatest="blend">
-			<convert type="ServiceInfo">IsCrypted</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget name="config" position="40,140" size="585,300" transparent="1" />
-		<!-- Emu Info  -->
-		<eLabel text="EMU :" position="40,440" size="60,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
- 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="135,440" size="250,34" font="Regular;20" valign="top" halign="left" foregroundColor="foreground" backgroundColor="bkwall" transparent="1" zPosition="10" >
-			<convert type="PliExtraInfo">EmuInfoCrypt</convert>
-		</widget>
-		<!-- Ico Crypt -->
-		<ePixmap pixmap="infobar/ico_crypt_off.png" position="102,444" size="21,15" zPosition="0" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_crypt_on.png" position="102,444" size="21,15" zPosition="2" alphatest="blend">
-			<convert type="ServiceInfo">IsCrypted</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<!-- Sat Freq Info  -->
- 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="40,480" size="250,24" font="Regular;20" valign="top" halign="left" foregroundColor="bluette" backgroundColor="bkwall" transparent="1" zPosition="10" >
-			<convert type="PliExtraInfo">EmuInfoCryptSpecial</convert>
-		</widget>
-		<!-- Share Info -->
-		<eLabel text="SERVER :" position="40,530" size="150,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
-		<widget source="session.CurrentService" render="Label" position="40,540" size="580,60" font="Regular;20" valign="center" halign="left" foregroundColor="#007983b5" backgroundColor="bkwall" transparent="1" zPosition="5" >
-			<convert type="CryptoInfo">VerboseInfo</convert>
-		</widget>
-		<!-- eLabel name="DEBUG"  text="PANEL S109" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
-	</screen>
-
-	<screen name="ScSetupScreen" title="IPKG source" position="fill" flags="wfNoBorder">
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate" />
-		<panel name="PigTemplate"/>
-		<panel name="ButtonRed"/>
-		<widget name="red" position="90,656" zPosition="1" size="220,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
-		<panel name="ButtonGreen"/>
-		<widget name="green" position="340,656" zPosition="1" size="220,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="config" position="40,90" size="585,510" font="Regular;23" zPosition="3" backgroundColor="bkwall" transparent="1" />
-	</screen>
-
-	<!-- AutoCam List -->
-	<screen name="AutoCamListSetup" title="Auto-Camd List Setup" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate"/>
-		<panel name="nRGYB"/>
-		<widget source="list" render="Listbox" position="40,80" size="585,450" scrollbarMode="showOnDemand" backgroundColor="bkwall" transparent="1" >
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (10, 5), size = (420, 25), font = 0, flags = RT_HALIGN_LEFT, text = 0),
-						MultiContentEntryText(pos = (50, 30), size = (380, 20), font = 1, flags = RT_HALIGN_LEFT, text = 1),
-						MultiContentEntryText(pos = (430, 13), size = (140, 24), font = 0, flags = RT_HALIGN_LEFT, text = 2),
-					],
-				 "fonts": [gFont("Regular", 21), gFont("Regular", 16)],
-				 "itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<!-- eLabel name="DEBUG"  text="PANEL S110" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
-	</screen>
-
-	<!-- AutoCam Service -->
-	<screen name="AutoCamServiceSetup" title="Channel Selection" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate"/>
-		<panel name="nRGYB"/>
-		<ePixmap pixmap="buttons/maxbar.png" position="610,80"   size="15,451" zPosition="2" alphatest="blend" />
-		<widget name="list" position="40,80" size="585,400" scrollbarMode="showOnDemand" itemHeight="40" backgroundColor="bkwall" transparent="1" />
-		<!-- eLabel name="DEBUG"  text="PANEL S111" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
-	</screen>
 
 	<!-- Download Addons -->
 	<screen name="PluginDownloadBrowser" title="Downloadable plugins" position="0,0" size="1280,720" flags="wfNoBorder" >
