@@ -3,7 +3,7 @@
 	<!--
 	##################### mmark_A4Y_ATEMIO v.1.3.0 ########################
 	#
-	mmark	              Version 1.2 released                   09-09-2014
+	mmark	              Version 1.4 released                   09-09-2014
 	#
 	#######################################################################
 		The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
@@ -14,7 +14,7 @@
 	-->
 
 	<!-- Video Wizzard OK -->
-	<screen name="VideoWizard" title="Welcome..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
+	<screen name="VideoWizard" title="Welcome..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="sWallTemplate"/>
 		<widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="Regular; 50" halign="left" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -22,7 +22,7 @@
 		<widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" >
+		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%e. %b</convert>
 		</widget>
 		<ePixmap pixmap="icons/info_on.png" position="40,95" size="40,40" zPosition="10" alphatest="blend"/>
@@ -52,7 +52,7 @@
 	</screen>
 
 	<!-- Language Wizzard OK -->
-	<screen name="LanguageWizard" title="Language Selection..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
+	<screen name="LanguageWizard" title="Language Selection..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="sWallTemplate"/>
 		<panel name="sRG"/>
 		<widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="Regular; 50" halign="left" backgroundColor="bkwall" transparent="1">
@@ -61,7 +61,7 @@
 		<widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" >
+		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%e. %b</convert>
 		</widget>
 		<ePixmap pixmap="icons/info_on.png" position="40,95" size="40,40" zPosition="10" alphatest="blend"/>
@@ -88,7 +88,7 @@
 	</screen>
 
 	<!-- Position Wizzard OK -->
-	<screen name="StartWizard" title="Start Wizard..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
+	<screen name="StartWizard" title="Start Wizard..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="sWallTemplate"/>
 		<eLabel zPosition="99" position="0,0" size="30,720" backgroundColor="#ff000000"/>
 		<eLabel zPosition="99" position="0,0" size="1280,20" backgroundColor="#ff000000"/>
@@ -100,7 +100,7 @@
 		<widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" >
+		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%e. %b</convert>
 		</widget>
 		<ePixmap pixmap="icons/info_on.png" position="40,95" size="40,40" zPosition="10" alphatest="blend"/>
@@ -129,7 +129,7 @@
 	</screen>
 
 	<!-- Network Wizard OK #4D5375 -->
-	<screen name="NetworkWizard" title="Network Wizard" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
+	<screen name="NetworkWizard" title="Network Wizard" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="sWallTemplate"/>
 		<widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="Regular; 50" halign="left" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -137,7 +137,7 @@
 		<widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" >
+		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%e. %b</convert>
 		</widget>
 		<widget name="text" position="100,100" size="670,420" font="Regular;22" backgroundColor="bkwall" transparent="1"/>
@@ -176,7 +176,7 @@
 		<widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" >
+		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%e. %b</convert>
 		</widget>
 		<ePixmap pixmap="icons/info_on.png" position="40,95" size="40,40" zPosition="10" alphatest="blend"/>
@@ -193,7 +193,7 @@
 		<widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" >
+		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%e. %b</convert>
 		</widget>
 		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="40,95" size="53,53" alphatest="blend"/>
@@ -256,7 +256,7 @@
 	</screen>
 
 	<!-- CleanupWizard -->
-	<screen name="CleanupWizard" title="Cleanup Wizard..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
+	<screen name="CleanupWizard" title="Cleanup Wizard..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel backgroundColor="bkwall" position="40,25" size="1205,650" zPosition="-10"/>
 		<widget backgroundColor="bkwall" font="Regular; 50" halign="left" position="1103,28" render="Label" size="140,60" source="global.CurrentTime" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -289,7 +289,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL W009" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90" /-->
 	</screen>
 
-	<screen name="CleanupWizardConfiguration" title="Cleanup Wizard Settings" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
+	<screen name="CleanupWizardConfiguration" title="Cleanup Wizard Settings" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel backgroundColor="bkwall" position="40,25" size="1205,650" zPosition="-10"/>
 		<widget backgroundColor="bkwall" font="Regular; 50" halign="left" position="1103,28" render="Label" size="140,60" source="global.CurrentTime" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -312,7 +312,7 @@
 	</screen>
 
 	<!-- Wizards -->
-	<screen name="DefaultSatLists" title="Default Sat Lists..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
+	<screen name="DefaultSatLists" title="Default Sat Lists..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel backgroundColor="bkwall" position="40,25" size="1205,650" zPosition="-10"/>
 		<widget backgroundColor="bkwall" font="Regular; 50" halign="left" position="1103,28" render="Label" size="140,60" source="global.CurrentTime" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -340,7 +340,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL W011" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90" /-->
 	</screen>
 
-	<screen name="DefaultWizard" title="Default Wizard..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
+	<screen name="DefaultWizard" title="Default Wizard..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel backgroundColor="bkwall" position="40,25" size="1205,650" zPosition="-10"/>
 		<widget backgroundColor="bkwall" font="Regular; 50" halign="left" position="1103,28" render="Label" size="140,60" source="global.CurrentTime" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -368,7 +368,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL W012" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90" /-->
 	</screen>
 
-	<screen name="ImageWizard" title="Image Wizard..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" >
+	<screen name="ImageWizard" title="Image Wizard..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel backgroundColor="bkwall" position="40,25" size="1205,650" zPosition="-10"/>
 		<widget backgroundColor="bkwall" font="Regular; 50" halign="left" position="1103,28" render="Label" size="140,60" source="global.CurrentTime" transparent="1">
 			<convert type="ClockToText">Default</convert>

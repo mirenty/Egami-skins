@@ -3,7 +3,7 @@
 	<!--
 	##################### mmark_A4Y_ATEMIO v.1.3.0 ########################
 	#
-	mmark	              Version 1.2.2 released                   09-09-2014
+	mmark	              Version 1.3.3 released                   09-09-2014
 	#
 	#######################################################################
 		The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
@@ -47,13 +47,13 @@
 	</screen>
 
 	<!-- dont saw this screen, may be later -->
-	<screen name="AutoTimerOverviewSummary" title="AutoTimer Overview Summary" position="fill" flags="wfNoBorder" >
+	<screen name="AutoTimerOverviewSummary" title="AutoTimer Overview Summary" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
 		<widget source="parent.Title" render="Label" position="40,25" size="580,24" font="Regular;20" backgroundColor="bkwall" transparent="1"/>
 		<widget source="entry" render="Label" position="40,90" size="560,24" font="Regular;20" backgroundColor="bkwall" transparent="1"/>
-		<widget source="global.CurrentTime" render="Label" position="40,120" size="82,18" font="Regular;16" backgroundColor="bkwall" transparent="1" >
+		<widget source="global.CurrentTime" render="Label" position="40,120" size="82,18" font="Regular;16" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">WithSeconds</convert>
 		</widget>
 		<!-- eLabel name="DEBUG" text="PANEL P004" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
@@ -90,12 +90,12 @@
 		<widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" >
+		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Format:%e. %b</convert>
 		</widget>
 		<widget name="text" position="40,90" size="720,260" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1"/>
 
-		<widget source="list" render="Listbox" position="40,240" size="720,220" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" >
+		<widget source="list" render="Listbox" position="40,240" size="720,220" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1">
 			<convert type="StringList"/>
 		</widget>
 		<widget name="config" position="40,240" size="720,220" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" zPosition="1"/>
@@ -108,7 +108,7 @@
 		<ePixmap position="60,665" pixmap="buttons/red.png" size="30,40" alphatest="blend"/>
 		<widget name="languagetext" position="90,663" size="210,24" font="Regular;21" backgroundColor="bkwall" transparent="1"/>
 		<widget name="HelpWindow" pixmap="buttons/key_text.png" position="80,440" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="80,410" zPosition="1" size="60,25" transparent="1" alphatest="on" >
+		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="80,410" zPosition="1" size="60,25" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<!-- eLabel name="DEBUG" text="PANEL P007" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
@@ -131,7 +131,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
 		<panel name="sRY"/>
-		<widget source="timerlist" render="Listbox" position="40,90" size="585,510" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" >
+		<widget source="timerlist" render="Listbox" position="40,90" size="585,510" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos=( 10,5),size=(595,26),text = 3,font = 0,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
@@ -184,7 +184,7 @@
 	<!-- ********** AutoBouquetsMaker ********** -->
 
 	<!-- AutoBouquetsMaker Config OK -->
-	<screen name="AutoBouquetsMaker_Setup" title="AutoBouquet Maker Setup" position="fill" flags="wfNoBorder" >
+	<screen name="AutoBouquetsMaker_Setup" title="AutoBouquet Maker Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -196,12 +196,12 @@
 	</screen>
 
 	<!-- AutoBouquetsMaker Menu OK -->
-	<screen name="AutoBouquetsMaker_Menu" title="AutoBouquet Maker Menu" position="fill" flags="wfNoBorder" >
+	<screen name="AutoBouquetsMaker_Menu" title="AutoBouquet Maker Menu" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
 		<panel name="fakeExit"/>
-		<widget source="list" render="Listbox" position="40,90" size="585,360" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" >
+		<widget source="list" render="Listbox" position="40,90" size="585,360" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (12, 4), size = (0, 0), png = 0),
@@ -216,7 +216,7 @@
 	</screen>
 
 	<!-- AutoBouquetsMaker Config Providers OK -->
-	<screen name="AutoBouquetsMaker_ProvidersSetup" title="AutoBouquet Maker Config" position="fill" flags="wfNoBorder" >
+	<screen name="AutoBouquetsMaker_ProvidersSetup" title="AutoBouquet Maker Config" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -228,12 +228,12 @@
 	</screen>
 
 	<!-- AutoBouquetsMaker Hide Selection OK -->
-	<screen name="AutoBouquetsMaker_HideSections" title="AutoBouquet Maker Hide" position="fill" flags="wfNoBorder" >
+	<screen name="AutoBouquetsMaker_HideSections" title="AutoBouquet Maker Hide" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
 		<panel name="nRG"/>
-		<widget source="list" render="Listbox" position="40,90" size="585,500" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" >
+		<widget source="list" render="Listbox" position="40,90" size="585,500" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (0, 0), png = 0),
@@ -249,7 +249,7 @@
 	</screen>
 	
 	<!-- AutoBouquetsMaker Ordering OK -->
-	<screen name="AutoBouquetsMaker_Ordering" title="AutoBouquet Maker Ordering" position="center,center" size="600,500" >
+	<screen name="AutoBouquetsMaker_Ordering" title="AutoBouquet Maker Ordering" position="center,center" size="600,500">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -269,7 +269,7 @@
 	</screen>
 
 	<!-- AutoBouquetsMaker Logs OK -->
-	<screen name="AutoBouquetsMaker_Log" title="Backup Log" position="fill" flags="wfNoBorder" >
+	<screen name="AutoBouquetsMaker_Log" title="Backup Log" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -279,7 +279,7 @@
 	</screen>
 
 	<!-- AutoBouquetsMaker About OK -->
-	<screen name="AutoBouquetsMaker_About" title="AutoBouquets Maker About" position="fill" flags="wfNoBorder" >
+	<screen name="AutoBouquetsMaker_About" title="AutoBouquets Maker About" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -321,7 +321,7 @@
 		<panel name="ClockTemplate"/>
 		<panel name="sR"/>
 		<ePixmap pixmap="buttons/maxbar.png" position="610,90" size="15,510" zPosition="2" alphatest="blend"/>
-		<widget source="menu" render="Listbox" position="40,90" size="585,490" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" >
+		<widget source="menu" render="Listbox" position="40,90" size="585,490" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ 
 					MultiContentEntryText(pos = (5,7),size = (250,30),flags = RT_HALIGN_LEFT,text = 0),
@@ -400,7 +400,7 @@
 	<!-- ********** CrossEPG ********** -->
 
 	<!-- Cross EPG SETUP -->
-	<screen title="CrossEPG Setup" name="CrossEPG_Setup" position="fill" flags="wfNoBorder" >
+	<screen title="CrossEPG Setup" name="CrossEPG_Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="nRG"/>
@@ -410,13 +410,13 @@
 	</screen>
 
 	<!-- Cross EPG Menu -->
-	<screen title="CrossEPG Menu" name="CrossEPG_Menu" position="fill" flags="wfNoBorder" >
+	<screen title="CrossEPG Menu" name="CrossEPG_Menu" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
 		<panel name="fakeExit"/>
 		<ePixmap pixmap="buttons/maxbar.png" position="610,90" size="15,490" zPosition="2" alphatest="blend"/>
-		<widget source="list" render="Listbox" position="40,90" size="585,490" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" >
+		<widget source="list" render="Listbox" position="40,90" size="585,490" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (5, 1), size = (35, 35), png = 0),
@@ -431,7 +431,7 @@
 	</screen>
 
 	<!-- Cross EPG Info -->
-	<screen title="CrossEPG Info" name="CrossEPG_Info" position="fill" flags="wfNoBorder" >
+	<screen title="CrossEPG Info" name="CrossEPG_Info" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -451,7 +451,7 @@
 	</screen>
 
 	<!-- Cross Extra -->
-	<screen name="CrossEPG_Extra" title="CrossEPG Extra" position="fill" flags="wfNoBorder" >
+	<screen name="CrossEPG_Extra" title="CrossEPG Extra" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -462,13 +462,13 @@
 	</screen>
 
 	<!-- Cross Providers -->
-	<screen name="CrossEPG_Providers" title="CrossEPG Providers" position="fill" flags="wfNoBorder" >
+	<screen name="CrossEPG_Providers" title="CrossEPG Providers" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
 		<panel name="nRGY"/>
 		<ePixmap pixmap="buttons/maxbar.png" position="610,90" size="15,490" zPosition="2" alphatest="blend"/>
-		<widget source="list" render="Listbox" position="40,90" size="585,490" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" >
+		<widget source="list" render="Listbox" position="40,90" size="585,490" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (5, 5), size = (515, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -483,7 +483,7 @@
 	</screen>
 
 	<!-- Cross About -->
-	<screen name="CrossEPG_About" title="About CrossEPG" position="fill" flags="wfNoBorder" >
+	<screen name="CrossEPG_About" title="About CrossEPG" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -495,13 +495,13 @@
 	</screen>
 
 	<!-- Cross Ordering -->
-	<screen name="CrossEPG_Ordering" title="Cross EPG - Providers start order" position="fill" flags="wfNoBorder" >
+	<screen name="CrossEPG_Ordering" title="Cross EPG - Providers start order" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
 		<panel name="nRGYB"/>
 		<ePixmap pixmap="buttons/maxbar.png" position="610,90" size="15,490" zPosition="2" alphatest="blend"/>
-		<widget source="list" render="Listbox" position="40,90" size="585,490" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" zPosition="2" >
+		<widget source="list" render="Listbox" position="40,90" size="585,490" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (5, 5), size = (515, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -548,7 +548,7 @@
 
 	<!-- ********** IMDB ********** -->
 
-	<screen name="IMDB" position="fill" title="Internet Movie Database Details Plugin" flags="wfNoBorder" >
+	<screen name="IMDB" position="fill" title="Internet Movie Database Details Plugin" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -620,7 +620,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P040" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<screen name="RemotePlayer" title="Partnerbox - RemotePlayer" position="283,102" size="720,576" backgroundColor="#FFFFFFFF" flags="wfNoBorder" >
+	<screen name="RemotePlayer" title="Partnerbox - RemotePlayer" position="283,102" size="720,576" backgroundColor="#FFFFFFFF" flags="wfNoBorder">
 		<ePixmap position="41,388" zPosition="-1" size="630,130" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Partnerbox/ExPlayer.png" alphatest="off" transparent="1"/>
 		<eLabel text="PartnerBox Remote Player" position="40,30" size="580,30" font="mediamenu;26" halign="center" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" zPosition="1"/>
 		<widget name="ServiceName" zPosition="1" position="50,404" size="610,59" valign="center" halign="center" font="Regular;21" foregroundColor="#F0F0F0" backgroundColor="#302C2C39"/>
@@ -696,7 +696,7 @@
 
 	<!-- ********** VLC Player ********** -->
 
-	<screen name="VlcServerConfigScreen" title="VLC Server Config" position="fill" flags="wfNoBorder" >
+	<screen name="VlcServerConfigScreen" title="VLC Server Config" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -704,14 +704,14 @@
 		<eLabel text="VLC Player Config" position="40,30" size="580,30" font="mediamenu;26" halign="center" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" zPosition="1"/>
 		<widget name="config" position="40,90" size="585,510" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1"/>
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="660,300" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="660,510" zPosition="1" size="60,25" transparent="1" alphatest="on" >
+		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="660,510" zPosition="1" size="60,25" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap position="990,520" size="300,300" pixmap="menu/vlc.png" alphatest="blend"/>
 		<!-- eLabel name="DEBUG" text="PANEL P048" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<screen name="VlcServerListScreen" title="VLC Server List" position="fill" flags="wfNoBorder" >
+	<screen name="VlcServerListScreen" title="VLC Server List" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -723,7 +723,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P049" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<screen name="VlcMediaListScreen" title="Select a VLC-Server Profile" position="fill" flags="wfNoBorder" >
+	<screen name="VlcMediaListScreen" title="Select a VLC-Server Profile" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -743,7 +743,7 @@
 
 	<!-- ********** Cron Manager ********** -->
  
- <screen name="CronTimersConfig" title="Cronmanager Menu" position="fill" flags="wfNoBorder" >
+ <screen name="CronTimersConfig" title="Cronmanager Menu" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -753,7 +753,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P051" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
  </screen>
 
- <screen name="CronTimers" title="Cronmanager Menu" position="fill" flags="wfNoBorder" >
+ <screen name="CronTimers" title="Cronmanager Menu" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -808,7 +808,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P055" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<screen name="CCcamShareViewMenu" title="CCcamInfo Client Info" position="fill" flags="wfNoBorder" >
+	<screen name="CCcamShareViewMenu" title="CCcamInfo Client Info" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<widget name="list" position="40,80" size="585,370" foregroundColor="bluette" backgroundColor="bkwall" transparent="1"/>

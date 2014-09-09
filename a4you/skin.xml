@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: a4you Vs 1.11	-->
+	<!--	Skin: a4you Vs 1.12	-->
 	<!--	This skin is part of the standard Atemio-skin; the same license applies.	-->
 	<output id="0">
 		<resolution bpp="32" xres="1280" yres="720" />
@@ -17,8 +17,8 @@
 		<font name="LCD" filename="lcd.ttf" scale="100"/>
 		<font name="Console" filename="tuxtxt.ttf" scale="100"/>
 		<font name="Fixed" filename="andale.ttf" scale="100"/>
-		<font name="Regular" filename="verdana_r.ttf" 	 scale="93" />
-		<font name="mediamenu" filename="msmenu.ttf" 	 scale="93" />
+		<font name="Regular" filename="verdana_r.ttf" 	 scale="93"/>
+		<font name="mediamenu" filename="msmenu.ttf" 	 scale="93"/>
 	</fonts>
 
 	<!-- Colors --> 
