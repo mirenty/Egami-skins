@@ -4878,7 +4878,7 @@ self.autoResize()
 	<!-- ## ImageManager ## -->
 	<screen name="AtemioImageManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<panel name="RGY_Template"/>
+		<panel name="RGYB_Template"/>
 		<panel name="MenuTemplate"/>
 		<widget name="lab1" position="520,82" size="755,50" font="Regular; 20" zPosition="2" transparent="0" halign="center"/>
 		<widget name="list" position="520,140" size="755,525" font="Regular;20" foregroundColor="grey" transparent="0" scrollbarMode="showOnDemand"/>
