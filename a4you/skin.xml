@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: a4you Vs 1.10	-->
+	<!--	Skin: a4you Vs 1.11	-->
 	<!--	This skin is part of the standard Atemio-skin; the same license applies.	-->
 	<output id="0">
 		<resolution bpp="32" xres="1280" yres="720" />
@@ -13,12 +13,12 @@
 
 	<!-- Fonts -->
 	 <fonts>
-		<font name="xRegular"  filename="nmsbd.ttf"                scale="100"/>
-		<font name="LCD"       filename="lcd.ttf"                  scale="100"/>
-		<font name="Console"   filename="tuxtxt.ttf"               scale="100"/>
-		<font name="Fixed"     filename="andale.ttf"               scale="100"/>
-		<font name="Regular"   filename="verdana_r.ttf"  	   scale="93" />
-		<font name="mediamenu" filename="msmenu.ttf"     	   scale="93" />
+		<font name="xRegular" filename="nmsbd.ttf" scale="100"/>
+		<font name="LCD" filename="lcd.ttf" scale="100"/>
+		<font name="Console" filename="tuxtxt.ttf" scale="100"/>
+		<font name="Fixed" filename="andale.ttf" scale="100"/>
+		<font name="Regular" filename="verdana_r.ttf" 	 scale="93" />
+		<font name="mediamenu" filename="msmenu.ttf" 	 scale="93" />
 	</fonts>
 
 	<!-- Colors --> 
@@ -64,7 +64,7 @@
 
 	<!-- Main screen colors (id=0 Framebuffer) -->
 	<windowstyle type="skinned" id="0">
-		<title offset="20,3" font="Regular;24" />
+		<title offset="20,3" font="Regular;24"/>
 		<color name="WindowTitleForeground" color="#73c6ff"/>
 		<color name="WindowTitleBackground" color="#4D5375"/> 
 		<color name="Background" color="#10000000"/>
@@ -79,17 +79,17 @@
 		<color name="ListboxMarkedAndSelectedForeground" color="#00ff00"/>
 		<!-- screen border png's -->
 		<borderset name="bsWindow">
-			<pixmap filename="a4you/window/top_left_corner.png"     pos="bpTopLeft"/>
-			<pixmap filename="a4you/window/top_edge.png"            pos="bpTop"/>
-			<pixmap filename="a4you/window/top_right_corner.png"    pos="bpTopRight"/>
-			<pixmap filename="a4you/window/left_edge.png"           pos="bpLeft"/>
-			<pixmap filename="a4you/window/right_edge.png"          pos="bpRight"/>
-			<pixmap filename="a4you/window/bottom_left_corner.png"  pos="bpBottomLeft"/>
-			<pixmap filename="a4you/window/bottom_edge.png"         pos="bpBottom"/>
+			<pixmap filename="a4you/window/top_left_corner.png" pos="bpTopLeft"/>
+			<pixmap filename="a4you/window/top_edge.png" pos="bpTop"/>
+			<pixmap filename="a4you/window/top_right_corner.png" pos="bpTopRight"/>
+			<pixmap filename="a4you/window/left_edge.png" pos="bpLeft"/>
+			<pixmap filename="a4you/window/right_edge.png" pos="bpRight"/>
+			<pixmap filename="a4you/window/bottom_left_corner.png" pos="bpBottomLeft"/>
+			<pixmap filename="a4you/window/bottom_edge.png" pos="bpBottom"/>
 			<pixmap filename="a4you/window/bottom_right_corner.png" pos="bpBottomRight"/>
 		</borderset>
 		<borderset name="bsListboxEntry">
-			<pixmap filename="a4you/infobar/line.png" pos="bpTop" />
+			<pixmap filename="a4you/infobar/line.png" pos="bpTop"/>
 			<pixmap filename="a4you/infobar/line.png" pos="bpBottom"/>
 		</borderset>
 	</windowstyle>
