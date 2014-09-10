@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
 	<!--
-	##################### mmark_A4Y_ATEMIO v.1.3.0 ########################
-	#
-	mmark	              Version 1.3.3 released                   09-09-2014
-	#
+	##################### mmark_A4Y_ATEMIO v.1.3.4 ########################
+	#                                                                     #
+	#      mmark	      Version 1.3.4 released           10-09-2014     #
+	#                                                                     #
 	#######################################################################
 		The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
 		This skin is Freeware. Everyone can modify and use it in other images.
@@ -933,6 +933,67 @@
 		<panel name="sRGYB"/>
 		<widget name="devicelist" position="40,90" size="560,500" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1"/>
 		<widget name="ConnStatus" position="680,520" size="560,140" font="Regular;24" backgroundColor="bkwall" transparent="1"/>
+	</screen>
+	
+	<!-- SoftCamPanel -->
+	<screen name="SoftCamPanel" title="Softcam Panel" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="WallTemplate" />
+		<panel name="PigTemplate" />
+		<panel name="ClockTemplate"/>
+		<panel name="nRGB"/>
+		<!-- Ico Crypt -->
+		<ePixmap pixmap="infobar/cryptoff_ico.png" position="45,80" size="17,25" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/crypton_ico.png" position="45,80" size="17,25" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="cam"    zPosition="2" position="677,540" size="580,24" font="Regular; 22" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
+		<widget name="server" zPosition="2" position="677,570" size="580,24" font="Regular; 22" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
+		<widget name="entries" position="40,140" size="585,300" transparent="1" />
+		<!-- Emu Info  -->
+		<eLabel text="EMU :" position="40,440" size="60,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
+ 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="135,440" size="250,34" font="Regular;20" valign="top" halign="left" foregroundColor="foreground" backgroundColor="bkwall" transparent="1" zPosition="10" >
+			<convert type="PliExtraInfo">EmuInfoCrypt</convert>
+		</widget>
+		<!-- Ico Crypt -->
+		<ePixmap pixmap="infobar/ico_crypt_off.png" position="102,444" size="21,15" zPosition="0" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_crypt_on.png" position="102,444" size="21,15" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Sat Freq Info  -->
+ 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="40,480" size="250,24" font="Regular;20" valign="top" halign="left" foregroundColor="bluette" backgroundColor="bkwall" transparent="1" zPosition="10" >
+			<convert type="PliExtraInfo">EmuInfoCryptSpecial</convert>
+		</widget>
+		<!-- Share Info -->
+		<eLabel text="SERVER :" position="40,530" size="150,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
+		<widget source="session.CurrentService" render="Label" position="40,540" size="580,60" font="Regular;20" valign="center" halign="left" foregroundColor="#007983b5" backgroundColor="bkwall" transparent="1" zPosition="5" >
+			<convert type="CryptoInfo">VerboseInfo</convert>
+		</widget>
+		<!-- eLabel name="DEBUG"  text="PANEL S109" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+	</screen>
+
+	<!-- SoftCamPanel Package List -->
+	<screen name="SoftCamPackages" title="Install SoftCams" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="WallTemplate" />
+		<panel name="PigTemplate" />
+		<panel name="ClockTemplate"/>
+		<panel name="nRG"/>
+		<widget source="list" render="Listbox" position="7,100" size="620,500" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+							MultiContentEntryText(pos = (7, 1), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+							MultiContentEntryText(pos = (7, 26), size = (540, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+							MultiContentEntryPixmapAlphaTest(pos = (545, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+							MultiContentEntryPixmapAlphaTest(pos = (7, 50), size = (510, 2), png = 5), # index 4 is the div pixmap
+						],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 14)],
+				"itemHeight": 52
+				}
+			</convert>
+		</widget>
+		<widget source="key_ok" render="Label" zPosition="2" position="677,570" size="580,24" font="Regular; 22" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
+		<!-- eLabel name="DEBUG"  text="PANEL S109" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
 </skin>
