@@ -70,7 +70,7 @@
 
 
 	<screen name="AtemioLogo">
-		<ePixmap pixmap="MHDC/logos/AtemioLogo.png" position="60,638" size="300,34" alphatest="blend"/>
+		<ePixmap pixmap="MHDC/logos/AtemioLogo.png" position="90,635" size="120,34" alphatest="blend"/>
 	</screen>
 
 	<!--Button templates -->
@@ -1267,7 +1267,7 @@ self.autoResize()
 	</screen>
 	<screen name="ChoiceBox" position="0,0" size="1280,720" zPosition="10" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="text" position="15,379" size="477,260" zPosition="2" font="Regular;24" foregroundColor="unf47d19"/>
+		<widget name="text" position="15,379" size="477,255" zPosition="2" font="Regular;24" foregroundColor="unf47d19"/>
 		<widget name="list" position="520,82" size="755,577" font="Regular;26" scrollbarMode="showOnDemand"/>
 		<panel name="AtemioLogo"/>
 	</screen>
@@ -4916,8 +4916,8 @@ self.autoResize()
 	  			}
 	  		</convert>
 	  	</widget>
-		<eLabel name="spaceused" text="% Flash Used..." position="5,500" size="455,20" font="Regular;19" halign="center" foregroundColor="grey" transparent="1" zPosition="5"/>
-	  	<widget name="spaceused" position="5,525" size="477,18" foregroundColor="secondFG" backgroundColor="secondBG" zPosition="3" />
+		<eLabel name="spaceused" text="% Flash Used..." position="590,550" size="455,20" font="Regular;19" halign="center" foregroundColor="white" transparent="1" zPosition="5"/>
+	  	<widget name="spaceused" position="590,575" size="477,12" foregroundColor="yellow" backgroundColor="secondBG" zPosition="3" />
 	</screen>
 	<!-- Panel Backup  -->
 	<screen name="AtemioMenuBk" position="0,0" size="1280,720" flags="wfNoBorder">
