@@ -4903,7 +4903,7 @@ self.autoResize()
 	<screen name="AtemioMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<panel name="AtemioLogo"/>
-	  	<widget source="conn" render="Label" text="Select Option..." position="20,375" size="500,55" font="Regular;20" halign="left" valign="center" foregroundColor="greenlight" zPosition="5" />
+	  	<widget source="conn" render="Label" text="Select Option..." position="25,375" size="500,55" font="Regular;20" halign="left" valign="center" foregroundColor="greenlight" zPosition="5" />
 	  	<widget source="list" render="Listbox" position="590,90" size="755,584" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" >
 	  		<convert type="TemplatedMultiContent">
 	  			{"template": [
@@ -4916,8 +4916,9 @@ self.autoResize()
 	  			}
 	  		</convert>
 	  	</widget>
-		<eLabel name="spaceused" text="% Flash Used..." position="590,550" size="455,20" font="Regular;19" halign="center" foregroundColor="white" transparent="1" zPosition="5"/>
-	  	<widget name="spaceused" position="590,575" size="477,12" foregroundColor="yellow" backgroundColor="secondBG" zPosition="3" />
+		<ePixmap position="600,557" size="40,40" pixmap="MHDC/icons/flash.png" alphatest="blend"/>
+		<eLabel name="spaceused" text="% Flash Used..." position="650,550" size="455,20" font="Regular;19" halign="center" foregroundColor="white" transparent="1" zPosition="5"/>
+	  	<widget name="spaceused" position="650,575" size="477,12" foregroundColor="#73c6ff" backgroundColor="secondBG" zPosition="3" />
 	</screen>
 	<!-- Panel Backup  -->
 	<screen name="AtemioMenuBk" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4932,13 +4933,13 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<widget source="menu" render="Listbox" position="10,385" size="477,264" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="secondFG" transparent="1">
+		<widget source="menu" render="Listbox" position="20,385" size="477,264" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="greenlight" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0,0),size = (477,264),flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+					MultiContentEntryText(pos = (0,0),size = (477,264),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
 					],
 					"fonts": [gFont("Regular",22)],
-					"itemHeight": 25
+					"itemHeight": 264
 				}
 			</convert>
 		</widget>
