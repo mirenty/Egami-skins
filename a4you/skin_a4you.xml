@@ -3,7 +3,7 @@
 	<!--
 	##################### mmark_a4you_ATEMIO v.1.3.3 ########################
 	#                                                                       #
-	#      mmark            Version 1.3.36 released          09-09-2014      #
+	#      mmark            Version 1.3.37 released          12-09-2014      #
 	#                                                                       #
 	#########################################################################
 		The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
@@ -204,10 +204,10 @@
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="300,595" size="645,30" font="Regular;26" halign="left" foregroundColor="#ffffff" backgroundColor="bkwall" transparent="1" zPosition="1" noWrap="1" >
+		<widget source="session.Event_Now" render="Label" position="300,595" size="635,30" font="Regular;26" halign="left" foregroundColor="#ffffff" backgroundColor="bkwall" transparent="1" zPosition="1" noWrap="1" >
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="950,595" size="120,30" font="Regular;26" halign="right" foregroundColor="#ffffff" backgroundColor="bkwall" transparent="1" zPosition="1" >
+		<widget source="session.Event_Now" render="Label" position="940,595" size="130,30" font="Regular;26" halign="right" foregroundColor="#ffffff" backgroundColor="bkwall" transparent="1" zPosition="1" >
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
