@@ -113,58 +113,6 @@
 		<eLabel name="DEBUG" text="PANEL N010" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/>
 	</screen>
 
-	<screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
-		<panel name="KeyMenuTemplate"/>
-		<panel name="ButtonTemplate_RS"/>
-		<widget source="menu" render="Listbox" position="590,110" size="600,500" zPosition="3" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (35,12),size = (590,40),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
-					],
-					"fonts": [gFont("Regular",23)],
-					"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<widget source="menu" render="Listbox" position="85,400" size="450,160" backgroundColor="darkgrey" zPosition="3" selectionDisabled="1" transparent="1" foregroundColor="white" scrollbarMode="showNever" selectionPixmap="buttons/listselect.png">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (0,0),size = (450,160),flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
-					],
-					"fonts": [gFont("Regular",20)],
-					"itemHeight": 160
-				}
-			</convert>
-		</widget>
-		<eLabel name="DEBUG" text="PANEL N013" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/>
-	</screen>
-
-	<screen name="PluginManager" title="Plugin manager" position="fill" flags="wfNoBorder">
-		<panel name="ButtonTemplate_RGYS"/>
-		<widget source="list" render="Listbox" position="590,110" size="600,459" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png">
-			<convert type="TemplatedMultiContent">
-				{"templates":
-					{"default": (51,[
-						MultiContentEntryText(pos = (5,1), size = (480,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (5,27), size = (480,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (500,0), size = (48,48), png = 5), # index 5 is the status pixmap
-						MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (600,2), png = 6), # index 6 is the div pixmap
-						]),
-						"category": (40,[
-						MultiContentEntryText(pos = (5,0), size = (595,22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (5,22), size = (595,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (600,2), png = 3), # index 3 is the div pixmap
-						])
-					},
-					"fonts": [gFont("Regular",22),gFont("Regular",18),gFont("Regular",16)],
-					"itemHeight": 52
-				}
-			</convert>
-		</widget>
-		<widget source="status" render="Label" position="590,590" size="600,25" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;22" halign="center"/>
-		<eLabel name="DEBUG" text="PANEL N014" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/>
-	</screen>
-
 	<screen name="PluginManagerInfo" title="Plugin manager activity" position="fill" flags="wfNoBorder">
 		<panel name="ButtonTemplate_RGS"/>
 		<widget source="list" render="Listbox" position="590,110" size="600,450" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png">
