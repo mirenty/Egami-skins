@@ -1757,7 +1757,7 @@
 		<panel name="ClockTemplate"/>
 		<panel name="sR"/>
 		<widget source="Statustext" render="Label" position="40,90" size="120,25" font="Regular;22" halign="left" backgroundColor="bkwall" transparent="1"/>
-		<widget name="statuspic" position="110,92" size="30,25" pixmaps="buttons/green20.png,/buttons/red20.png" alphatest="blend" transparent="1"/>
+		<widget name="statuspic" position="158,92" size="30,25" pixmaps="buttons/green20.png,/buttons/red20.png" alphatest="blend" transparent="1"/>
 		<eLabel position="40,135" size="585,2" backgroundColor="#202020" zPosition="0"/>
 		<eLabel position="40,137" size="585,1" backgroundColor="#606060" zPosition="0"/>
 		<widget source="IFtext" render="Label" position="180,90" size="120,25" font="Regular;22" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1"/>
