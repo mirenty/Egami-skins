@@ -3,6 +3,7 @@ Atemio-Skins
 
 Skins for Atemio
 
-- a4you
+- Magic HD Night
+- Magic HD Noire
 -
 -
