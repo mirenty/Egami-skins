@@ -3,7 +3,7 @@
 	<!--
 	##################### mmark_a4you_ATEMIO v.1.3.3 ########################
 	#                                                                       #
-	#      mmark            Version 1.3.38 released          15-09-2014      #
+	#      mmark            Version 1.3.39 released          15-09-2014      #
 	#                                                                       #
 	#########################################################################
 		The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
@@ -2632,8 +2632,19 @@
 	
 	<!-- Software Manager -->
 	<screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
-		<panel name="MenuTemplate"/>
-		<panel name="MenuIconsTemplate"/>
+		<panel name="WallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<widget source="menu" render="Listbox" position="40,80" size="585,495" font="Regular;24" scrollbarMode="showOnDemand" enableWrapAround="1"
+			backgroundPixmap="buttons/menuback.png" selectionPixmap="buttons/menuselect.png" backgroundColor="bkwall" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (45,6),size = (535,30),flags = RT_HALIGN_LEFT,text = 1) ],
+					"fonts": [gFont("Regular",24)],
+					"itemHeight": 45
+				}
+			</convert>
+		</widget>
+		<ePixmap pixmap="buttons/maxbar.png" position="610,80" size="15,496" zPosition="2" alphatest="blend"/>
 		<widget source="menu" render="Listbox" position="670,510" size="450,160" backgroundColor="darkgrey" zPosition="3" selectionDisabled="1" transparent="1" foregroundColor="white" scrollbarMode="showNever" selectionPixmap="buttons/listselect.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -2671,6 +2682,17 @@
 		</widget>
 		<widget source="status" render="Label" position="670,530" size="600,25" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;22" halign="center"/>
 		<!-- eLabel name="DEBUG" text="PANEL N014" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+	</screen>
+
+	<!-- Restore -->
+	<screen name="RestoreMenu" title="Restore Backups" position="fill" flags="wfNoBorder">
+		<panel name="WallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<panel name="nRGY"/>
+		<panel name="sRGY"/>
+		<widget name="filelist" position="40,80" size="585,500" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png"/>
+		<!--eLabel name="DEBUG" text="PANEL N018" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
 	<!-- Devices Panels -->
@@ -2765,6 +2787,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
 		<panel name="nRGY"/>
+		<panel name="sRGY"/>
 		<widget name="checkList" position="40,90" size="585,510" font="Regular;22" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" 
 			selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" zPosition="3"/>
 		<!-- eLabel name="DEBUG" text="PANEL S125" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
@@ -2779,6 +2802,33 @@
 		<widget name="checkList" position="40,90" size="585,510" font="Regular;22" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" 
 			selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1" zPosition="3"/>
 		<!-- eLabel name="DEBUG" text="PANEL S126" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+	</screen>
+	
+	<!-- Flash Online -->
+	<screen name="FlashOnline" position="0,0" size="1280,720" title="Flash Online" flags="wfNoBorder">
+		<panel name="WallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<panel name="nRGY"/>
+		<widget name="info-flash" position="40,120" size="540,140" font="Regular;20" backgroundColor="bkwall" halign="left" transparent="1" zPosition="3" />
+		<widget name="info-online" position="40,300" size="540,40" font="Regular;20" backgroundColor="bkwall" halign="left" transparent="1" zPosition="3" />
+		<widget name="info-local" position="40,340" size="540,40" font="Regular;20" backgroundColor="bkwall" halign="left" transparent="1" zPosition="3"/>
+	</screen>
+	<screen name="doFlashImage" position="0,0" size="1280,720" title="Flash On the fly (select a image)" flags="wfNoBorder">
+		<panel name="WallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<panel name="nRGY"/>
+		<widget name="imageList" position="40,110" size="540,505" font="Regular;20" backgroundColor="bkwall" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+	</screen>
+	<screen name="DeviceBrowser" position="0,0" size="1280,720" title="Please select target medium" flags="wfNoBorder">
+		<panel name="WallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<panel name="nRG"/>
+		<panel name="sRG"/>
+		<widget source="message" render="Label" position="825,520" size="380,30" font="Regular;20" backgroundColor="bkwall" halign="center" transparent="1" zPosition="3" />
+		<widget name="filelist" position="40,110" size="540,505" backgroundColor="bkwall" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 	</screen>
 
 	<!-- BackupManager Log -->

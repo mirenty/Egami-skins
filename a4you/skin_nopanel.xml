@@ -166,13 +166,6 @@
 		<eLabel name="DEBUG" text="PANEL N017" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/>
 	</screen>
 
-	<!-- Restore -->
-		<screen name="RestoreMenu" title="Restore Backups" position="fill" flags="wfNoBorder">
-		<panel name="ButtonTemplate_RGYS"/>
-		<widget name="filelist" position="590,110" size="600,500" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png"/>
-		<eLabel name="DEBUG" text="PANEL N018" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/>
-	</screen>
-
 	<screen name="SoftwareManagerInfo" title="SoftwareManager information" position="fill" flags="wfNoBorder">
 		<panel name="ButtonTemplate_RS"/>
 		<widget source="list" render="Listbox" position="530,110" size="720,450" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" selectionDisabled="0">
