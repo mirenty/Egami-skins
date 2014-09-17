@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.01 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.02 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1896,13 +1896,13 @@ self.autoResize()
 	<screen name="IPKGMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
-		<widget name="filelist" position="590,120" size="600,300" font="Fixed;24" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget name="filelist" position="590,120" size="600,300" font="Regular;24" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
 		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="IPKGSource" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
-		<widget name="text" position="70,400" size="1150,30" font="Fixed;23" zPosition="3" transparent="1"/>
+		<widget name="text" position="70,400" size="1150,30" font="Regular;22" zPosition="3" transparent="1"/>
 		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="PacketManager" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1942,20 +1942,20 @@ self.autoResize()
 		<widget name="text" position="15,379" size="477,260" zPosition="2" font="Regular;22" foregroundColor="secondFG"/>
 		<widget name="list" position="520,82" size="755,583" scrollbarMode="showOnDemand" itemHeight="30" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
-	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="UpdatePluginMenu" title="Softwaremanager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RedTemplate 2"/>
-		<widget source="menu" render="Listbox" position="590,110" size="600,500" zPosition="3" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
+		<widget source="menu" render="Listbox" position="590,82" size="685,570" zPosition="3" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 			{"template": [
-					MultiContentEntryText(pos = (35,12),size = (590,40),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
+					MultiContentEntryText(pos = (45,9),size = (535,30),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
 				],
-			"fonts": [gFont("Regular",23)],
-			"itemHeight": 50
+			"fonts": [gFont("Regular",24)],
+			"itemHeight": 40
 			}
 			</convert>
 		</widget>
-		<widget source="menu" render="Listbox" position="5,400" size="477,250" backgroundColor="darkgrey" zPosition="3" selectionDisabled="1" transparent="1" foregroundColor="unf47d19" scrollbarMode="showOnDemand">
+		<widget source="menu" render="Listbox" position="10,385" size="477,140" zPosition="3" selectionDisabled="1" transparent="1" foregroundColor="greenlight" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 			{"template": [
 					MultiContentEntryText(pos = (0,0),size = (450,140),flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
@@ -3240,7 +3240,7 @@ self.autoResize()
 		<widget name="list" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
 		<widget name="uphops" position="20,400" size="450,25" halign="left" font="Regular;20"/>
 		<widget name="providers" position="20,440" size="450,25" halign="left" font="Regular;20"/>
-		<widget name="title" position="20,480" size="450,25" halign="left" font="Fixed;16"/>
+		<widget name="title" position="20,480" size="450,25" halign="left" font="Regular;16"/>
 		<widget name="reshare" position="20,520" size="450,25" halign="left" font="Regular;20"/>
 		<widget name="cards" position="20,560" size="450,25" halign="left" font="Regular;20"/>
 		<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
@@ -4944,7 +4944,30 @@ self.autoResize()
 			</convert>
 		</widget>
 	</screen>
-	<!-- ## BackUpManager ## -->
+	<!-- Flash Online -->
+	<screen name="FlashOnline" position="0,0" size="1280,720" title="Flash Online" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="RGY_Template"/>
+		<widget name="info-flash" position="590,120" size="540,140" font="Regular;20" backgroundColor="background" halign="left" transparent="1" zPosition="3" />
+		<widget name="info-online" position="590,300" size="540,40" font="Regular;20" backgroundColor="background" halign="left" transparent="1" zPosition="3" />
+		<widget name="info-local" position="590,340" size="540,40" font="Regular;20" backgroundColor="background" halign="left" transparent="1" zPosition="3"/>
+		<panel name="AtemioLogo"/>
+	</screen>
+	<screen name="doFlashImage" position="0,0" size="1280,720" title="Flash On the fly (select a image)" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="RGY_Template"/>
+		<widget name="imageList" position="520,120" size="540,505" font="Regular;20" backgroundColor="background" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+		<panel name="AtemioLogo"/>
+	</screen>
+	<!-- ## BackUpManager ## Tempory for AtemioBackupManager-->
+	<screen name="ImageBackup" position="0,0" size="1280,720" title="Image Backup" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="RGYB_Template"/>
+		<widget name="info-hdd" position="590,120" zPosition="1" size="450,100" font="Regular;20" backgroundColor="background" halign="left" valign="top" transparent="1" />
+		<widget name="info-usb" position="590,240" zPosition="1" size="450,200" font="Regular;20" backgroundColor="background" halign="left" valign="top" transparent="1" />
+		<widget name="info-yellow" position="590,380" zPosition="1" size="550,200" font="Regular;20" backgroundColor="background" halign="left" valign="top" transparent="1" />
+		<panel name="AtemioLogo"/>
+	</screen>
 	<screen name="AtemioBackupManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template"/>
