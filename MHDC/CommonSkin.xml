@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.02 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.03 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -233,7 +233,7 @@
 		<widget source="session.Event_Now" render="Progress" pixmap="MHDC/infobar/pbar.png" position="220,115" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1100,110" size="130,20" font="Regular;18" foregroundColor="foreground" backgroundColor="secondBG" transparent="1" halign="left">
+		<widget source="session.CurrentService" render="Label" position="1100,110" size="155,20" font="Regular;18" foregroundColor="foreground" backgroundColor="secondBG" transparent="1" halign="left">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MHDC/infobar/ico_dolby_on.png" position="905,76" size="60,24" zPosition="2" alphatest="on">
@@ -358,7 +358,7 @@
 		<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="MHDC/dvr/position_pointer1024.png:1012,0">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="150,63" size="150,30" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left">
+		<widget source="session.CurrentService" render="Label" position="150,63" size="155,30" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;20" borderColor="black" valign="center" halign="left">
@@ -495,7 +495,7 @@
 		<widget source="session.Event_Now" render="Progress" pixmap="MHDC/infobar/pbar.png" position="220,625" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1100,620" size="130,20" font="Regular;18" foregroundColor="foreground" backgroundColor="secondBG" transparent="1" halign="left">
+		<widget source="session.CurrentService" render="Label" position="1100,620" size="155,20" font="Regular;18" foregroundColor="foreground" backgroundColor="secondBG" transparent="1" halign="left">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MHDC/infobar/ico_dolby_on.png" position="905,586" size="60,24" zPosition="2" alphatest="on">
@@ -622,7 +622,7 @@
 		<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;20" borderColor="black" valign="center" halign="left">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="150,63" size="145,30" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left">
+		<widget source="session.CurrentService" render="Label" position="150,63" size="155,30" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
 
@@ -5267,7 +5267,7 @@ self.autoResize()
 		<widget source="session.CurrentService" render="Label" position="440,702" size="620,18" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;14" halign="right">
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1100,620" size="130,20" font="Regular;18" foregroundColor="foreground" backgroundColor="secondBG" transparent="1" halign="left">
+		<widget source="session.CurrentService" render="Label" position="1100,620" size="155,20" font="Regular;18" foregroundColor="foreground" backgroundColor="secondBG" transparent="1" halign="left">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MHDC/infobar/ico_dolby_on.png" position="905,586" size="60,24" zPosition="2" alphatest="on">
