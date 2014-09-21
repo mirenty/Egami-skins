@@ -2502,7 +2502,7 @@
 	</screen>
 
 	<!-- ATEMIO PANELS -->
-	<screen name="AtemioMenu" position="0,0" size="1280,720" flags="wfNoBorder" >
+	<screen name="AtemioPanel" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
