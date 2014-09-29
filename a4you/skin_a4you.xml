@@ -1330,11 +1330,11 @@
 		<widget source="nimlist" render="Listbox" position="40,130" size="585,420" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" zPosition="2" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (10, 3), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-				MultiContentEntryText(pos = (50, 26), size = (630, 50), font = 1, color=0x73c6ff, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+				MultiContentEntryText(pos = (0, 3), size = (540, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+				MultiContentEntryText(pos = (25, 26), size = (500, 140), font = 1, color=0x73c6ff, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
 				],
 				"fonts": [gFont("Regular", 20), gFont("Regular", 18)],
-				"itemHeight": 70
+				"itemHeight": 170
 				}
 			</convert>
 		</widget>
