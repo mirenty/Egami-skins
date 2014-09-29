@@ -2696,7 +2696,7 @@
 	</screen>
 
 	<!-- Devices Panels -->
-	<screen name="DevicesPanel" title="Device Panels" position="fill" flags="wfNoBorder">
+<!--	<screen name="DevicesPanel" title="Device Panels" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -2714,11 +2714,10 @@
 			</convert>
 		</widget>
 		<widget name="lab1" position="680,540" size="560,40" font="Regular;22" halign="center" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="2"/>
-		<!-- eLabel name="DEBUG" text="PANEL S120" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
-	</screen>
+	</screen>-->
 
 	<!-- Devices Config -->
-	<screen name="DevicesConf" title="Device Conf" position="fill" flags="wfNoBorder">
+<!--	<screen name="DevicesConf" title="Device Conf" position="fill" flags="wfNoBorder">
 		<panel name="ntWallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
@@ -2727,8 +2726,34 @@
 		<widget source="Title" render="Label" zPosition="1" position="40,80" size="585,55" halign="left" font="mediamenu;26" foregroundColor="#808080" backgroundColor="bkwall" transparent="1"/>
 		<widget name="config" position="40,120" size="585,275" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1"/>
 		<widget name="Linconn" position="40,420" size="585,20" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1"/>
-		<!-- eLabel name="DEBUG" text="PANEL S121" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+	</screen>-->
+
+	<screen name="HddSetup" title="Mount Devices" position="fill" flags="wfNoBorder">
+		<panel name="ntWallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<panel name="nRGYB"/>
+		<eLabel text="Mount Devices" position="40,30" size="585,30" halign="center" font="mediamenu;28" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" zPosition="1"/>
+		<widget name="menu" zPosition="1" position="40,80" size="585,495" halign="left" font="mediamenu;26" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" scrollbarMode="showOnDemand" itemHeight="70"/>
 	</screen>
+
+	<screen name="HddInfo" title="Mount Devices" position="fill" flags="wfNoBorder">
+		<panel name="ntWallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<panel name="nRGYB"/>
+		<eLabel text="Mount Info" position="40,30" size="585,30" halign="center" font="mediamenu;28" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" zPosition="1"/>
+		<widget name="model" position="40,80" size="520,25" font="Regular;18" foregroundColor="#73c6ff" backgroundColor="bkwall"/>
+		<widget name="serial" position="40,110" size="520,25" font="Regular;18" foregroundColor="#73c6ff" backgroundColor="bkwall"/>
+		<widget name="firmware" position="40,140" size="520,25" font="Regular;18" foregroundColor="#73c6ff" backgroundColor="bkwall"/>
+		<widget name="cylinders" position="40,170" size="520,25" font="Regular;18" foregroundColor="#73c6ff" backgroundColor="bkwall"/>
+		<widget name="heads" position="40,200" size="520,25" font="Regular;18" foregroundColor="#73c6ff" backgroundColor="bkwall"/>
+		<widget name="sectors" position="40,230" size="520,25" font="Regular;18" foregroundColor="#73c6ff" backgroundColor="bkwall"/>
+		<widget name="readDisk" position="40,260" size="520,25" font="Regular;18" foregroundColor="#73c6ff" backgroundColor="bkwall"/>
+		<widget name="readCache" position="40,290" size="520,25" font="Regular;18" foregroundColor="#73c6ff" backgroundColor="bkwall"/>
+		<widget name="temp" position="40,320" size="520,25" font="Regular;18" foregroundColor="#73c6ff" backgroundColor="bkwall"/>
+		<widget name="config" position="40,360" scrollbarMode="showOnDemand" size="520,30" foregroundColor="#73c6ff" backgroundColor="bkwall"/>
+		</screen>
 
 	<!-- Skin Selector -->
 	<screen name="SkinSelector" title="Skin Selector" position="fill" flags="wfNoBorder">
