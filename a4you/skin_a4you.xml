@@ -2458,18 +2458,26 @@
 	</screen>
 
 	<!-- Ipkg installer -->
-	<screen name="IpkgInstaller" title="IPKG Installer" position="fill" flags="wfNoBorder">
+
+	<screen name="Ipkinstall" title="IPKG Installer" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
 		<panel name="PigTemplate"/>
-		<panel name="sRGB"/>
-		<eLabel text="Install extensions" position="40,90" size="585,55" backgroundColor="bkwall" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
-		<widget name="list" position="40,160" size="585,450" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" zPosition="3" transparent="1"/>
-		<widget source="introduction" render="Label" position="680,570" size="560,27" font="Regular;24" halign="center" foregroundColor="73c6ff" backgroundColor="bkwall" zPosition="1" transparent="1"/>
-		<!-- eLabel name="DEBUG" text="PANEL S104" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+		<panel name="nRG"/>
+		<widget name="list" position="40,100" size="560,450" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" zPosition="3" transparent="1"/>
+		<widget name="info" position="680,570" size="560,27" font="Regular;24" halign="center" foregroundColor="73c6ff" backgroundColor="bkwall" zPosition="1" transparent="1"/>
 	</screen>
-	
+
+	<screen name="Getipk" title="Install status" position="fill" flags="wfNoBorder">
+		<panel name="WallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<panel name="PigTemplate"/>
+		<widget name="list" position="40,100" size="560,450" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" zPosition="3" transparent="1"/>
+		<widget name="info" position="680,570" size="560,27" font="Regular;24" halign="center" foregroundColor="73c6ff" backgroundColor="bkwall" zPosition="1" transparent="1"/>
+	</screen>
+
 	<!-- Ipkg installer Software Update -->
 	<screen name="UpdatePlugin" title="Plugin Update" position="center,center" size="700,230" backgroundColor="10000000">
 		<widget source="package" render="Label" position="10,30" size="680,32" font="Regular;28" halign="center" foregroundColor="bluette" backgroundColor="#10101010" transparent="1"/>
@@ -2959,76 +2967,76 @@
 	</screen>
 
 	<!-- History Zap -->
- 	<screen name="HistoryZapSelector" Title="History Zap" position="fill" size="620,300" flags="wfNoBorder">
+	<screen name="HistoryZapSelector" Title="History Zap" position="fill" size="620,300" flags="wfNoBorder">
 		<panel name="sWallTemplate"/>
 		<panel name="sPigTemplate"/>
 		<panel name="sClockTemplate"/>
 		<ePixmap pixmap="buttons/maxbar.png" position="760,90" size="15,480" zPosition="2" alphatest="blend"/>
- 		<widget source="menu" render="Listbox" position="40,90" size="735,480" scrollbarMode="showOnDemand" backgroundColor="bkwall" transparent="1" zPosition="1">
- 			<convert type="TemplatedMultiContent">
- 				{"template": [
- 						MultiContentEntryText(pos = (110, 0), size = (10, 60), font = 1, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
- 						MultiContentEntryText(pos = (135, 0), size = (265, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x00000000),
- 						MultiContentEntryText(pos = (410, 0), size = (335, 55), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00ffffff, color_sel = 0x00000000),
- 						MultiContentEntryText(pos = (140, 22), size = (260, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00073c6ff, color_sel = 0x00000000),
- 						MultiContentEntryText(pos = (140, 42), size = (260, 22), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x0073c6ff, color_sel = 0x00000000),
- 						MultiContentEntryPixmapAlphaBlend(pos=(0, 0), size=(100, 60), png=6, flags = BT_SCALE)
- 					],
- 				 "fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 18), gFont("Regular", 17)],
- 				 "itemHeight": 60
- 				}
- 			</convert>
- 		</widget>
+		<widget source="menu" render="Listbox" position="40,90" size="735,480" scrollbarMode="showOnDemand" backgroundColor="bkwall" transparent="1" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (110, 0), size = (10, 60), font = 1, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (135, 0), size = (265, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x00000000),
+						MultiContentEntryText(pos = (410, 0), size = (335, 55), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00ffffff, color_sel = 0x00000000),
+						MultiContentEntryText(pos = (140, 22), size = (260, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00073c6ff, color_sel = 0x00000000),
+						MultiContentEntryText(pos = (140, 42), size = (260, 22), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x0073c6ff, color_sel = 0x00000000),
+						MultiContentEntryPixmapAlphaBlend(pos=(0, 0), size=(100, 60), png=6, flags = BT_SCALE)
+					],
+				 "fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 18), gFont("Regular", 17)],
+				 "itemHeight": 60
+				}
+			</convert>
+		</widget>
 		<!-- eLabel name="DEBUG" text="PANEL S134" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
  	</screen>
 
-<!-- MessageBox -->
-<screen name="MessageBox" title="Message" position="240,175" size=" 800, 10">
- <widget name="text" position="110,30" size="680,0" font="Regular;22"/>
- <widget name="ErrorPixmap" pixmap="icons/input_error.png" position="30,30" size="53,53" alphatest="blend"/>
- <widget name="QuestionPixmap" pixmap="icons/input_question.png" position="30,30" size="53,53" alphatest="blend"/>
- <widget name="InfoPixmap" pixmap="icons/input_info.png" position="30,30" size="53,53" alphatest="blend"/>
- <widget name="list" position="20,95" size="760,320" itemHeight="32" transparent="1"/>
- <applet type="onLayoutFinish">
-# this should be factored out into some helper code, but currently demonstrates applets.
-from enigma import eSize, ePoint
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
-textsize = self["text"].getSize()
+	<!-- MessageBox -->
+	<screen name="MessageBox" title="Message" position="240,175" size=" 800, 10">
+		<widget name="text" position="110,30" size="680,0" font="Regular;22"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="30,30" size="53,53" alphatest="blend"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="30,30" size="53,53" alphatest="blend"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="30,30" size="53,53" alphatest="blend"/>
+		<widget name="list" position="20,95" size="760,320" itemHeight="32" transparent="1"/>
+			<applet type="onLayoutFinish">
+		# this should be factored out into some helper code, but currently demonstrates applets.
+		from enigma import eSize, ePoint
+		orgwidth = self.instance.size().width()
+		orgpos = self.instance.position()
+		textsize = self["text"].getSize()
 
-# y size still must be fixed in font stuff...
-textsize = (textsize[0] + 80, textsize[1] + 80)
-offset = 30
-if self.type == self.TYPE_YESNO:
-	offset = 70
-wsizex = textsize[0] + 120
-wsizey = textsize[1] + offset
-if (800 &gt; wsizex):
-	wsizex = 800
-wsize = (wsizex, wsizey)
+		# y size still must be fixed in font stuff...
+		textsize = (textsize[0] + 80, textsize[1] + 80)
+		offset = 30
+		if self.type == self.TYPE_YESNO:
+		offset = 70
+		wsizex = textsize[0] + 120
+		wsizey = textsize[1] + offset
+		if (800 &gt; wsizex):
+		wsizex = 800
+		wsize = (wsizex, wsizey)
 
-# resize
-self.instance.resize(eSize(*wsize))
+		# resize
+		self.instance.resize(eSize(*wsize))
 
-# resize label
-self["text"].instance.resize(eSize(*textsize))
+		# resize label
+		self["text"].instance.resize(eSize(*textsize))
 
-# move list
-listsize = (wsizex - 20, 64)
-self["list"].instance.move(ePoint(10, textsize[1]))
-self["list"].instance.resize(eSize(*listsize))
+		# move list
+		listsize = (wsizex - 20, 64)
+		self["list"].instance.move(ePoint(10, textsize[1]))
+		self["list"].instance.resize(eSize(*listsize))
 
-# center window
-newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
-		</applet>
-</screen>
- 
-<!-- ExtraMessageBox -->
-<screen name="ExtraMessageBox" title="Extra Message" position="80,100" size="560,400">
- <widget name="message" position="10,10" size="540,25" font="Regular;20"/>
- <widget name="menu" position="10,90" size="540,360" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
- <applet type="onLayoutFinish">
+		# center window
+		newwidth = wsize[0]
+		self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+			</applet>
+	</screen>
+
+	<!-- ExtraMessageBox -->
+	<screen name="ExtraMessageBox" title="Extra Message" position="80,100" size="560,400">
+		<widget name="message" position="10,10" size="540,25" font="Regular;20"/>
+		<widget name="menu" position="10,90" size="540,360" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+			<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
 
@@ -3067,18 +3075,18 @@ self["menu"].instance.resize(eSize(*listsize))
 # center window
 newwidth = wsize[0]
 self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3)))
-		</applet>
-</screen> 
+			</applet>
+	</screen> 
 
-<!-- MessageBoxSimple -->
-<screen name="MessageBoxSimple" title="Message" position="center,center" size="600,10" flags="wfNoBorder">
- <widget source="Title" render="Label" position="2,2" size="200,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left"/>
- <widget name="text" position="65,30" size="520,0" font="Regular;22"/>
- <widget name="ErrorPixmap" pixmap="icons/input_error.png" position="5,5" size="53,53" alphatest="on"/>
- <widget name="QuestionPixmap" pixmap="icons/input_question.png" position="5,5" size="53,53" alphatest="on"/>
- <widget name="InfoPixmap" pixmap="icons/input_info.png" position="5,5" size="53,53" alphatest="on"/>
- <widget name="list" position="100,100" size="480,375" selectionPixmap="buttons/listselect.png"/>
-	<applet type="onLayoutFinish">
+	<!-- MessageBoxSimple -->
+	<screen name="MessageBoxSimple" title="Message" position="center,center" size="600,10" flags="wfNoBorder">
+		<widget source="Title" render="Label" position="2,2" size="200,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left"/>
+		<widget name="text" position="65,30" size="520,0" font="Regular;22"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="5,5" size="53,53" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="5,5" size="53,53" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="5,5" size="53,53" alphatest="on"/>
+		<widget name="list" position="100,100" size="480,375" selectionPixmap="buttons/listselect.png"/>
+			<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 if self.timerRunning:
 	titleheight = 20
@@ -3117,6 +3125,6 @@ if self.type == self.TYPE_YESNO:
 	self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
-	</applet>
-</screen>
+			</applet>
+	</screen>
 </skin>
