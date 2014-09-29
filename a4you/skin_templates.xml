@@ -53,7 +53,7 @@
 		<ePixmap pixmap="buttons/maxbar.png" position="610,80" size="15,496" zPosition="2" alphatest="blend"/>
 	</screen>
 
-	<!--Setup Configs OK -->
+	<!--Setup Configs -->
 		<screen name="Setup" title="Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>

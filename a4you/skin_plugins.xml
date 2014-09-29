@@ -15,7 +15,7 @@
 
 	<!-- ********** AutoTimer ********** -->
 
-	<!-- AutoTimer OK -->
+	<!-- AutoTimer -->
 	<screen name="AutoTimer" title="Auto Timer" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -59,7 +59,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P004" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoTimer Help OK -->
+	<!-- AutoTimer Help -->
 	<screen name="AutoTimerHelp" title="AutoTimer Help" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -71,7 +71,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P005" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoTimer Import OK -->
+	<!-- AutoTimer Import -->
 	<screen name="AutoTimerImporter" title="Import AutoTimer" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -81,7 +81,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P006" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoTimer Wizard OK -->
+	<!-- AutoTimer Wizard -->
 	<screen name="AutoTimerWizard" title="AutoTimer Wizard" position="fill" flags="wfNoBorder">
 		<panel name="sWallTemplate"/>
 		<widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="Regular; 50" halign="left" backgroundColor="bkwall" transparent="1">
@@ -114,7 +114,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P007" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoTimer Setting OK -->
+	<!-- AutoTimer Setting -->
 	<screen name="AutoTimerSettings" title="AutoTimer Settings" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -125,7 +125,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P008" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoTimer Preview OK -->
+	<!-- AutoTimer Preview -->
 	<screen name="AutoTimerPreview" title="Preview AutoTimer" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -147,7 +147,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P009" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoTimer Editor OK -->
+	<!-- AutoTimer Editor -->
 	<screen name="AutoTimerEditor" title="Edit AutoTimer" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -159,7 +159,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P010" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoTimer Filter Editor OK -->
+	<!-- AutoTimer Filter Editor -->
 	<screen name="AutoTimerFilterEditor" title="Edit AutoTimer Filters" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -182,8 +182,7 @@
 	</screen>
 
 	<!-- ********** AutoBouquetsMaker ********** -->
-
-	<!-- AutoBouquetsMaker Config OK -->
+	<!-- AutoBouquetsMaker Config -->
 	<screen name="AutoBouquetsMaker_Setup" title="AutoBouquet Maker Setup" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -195,7 +194,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P013" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoBouquetsMaker Menu OK -->
+	<!-- AutoBouquetsMaker Menu -->
 	<screen name="AutoBouquetsMaker_Menu" title="AutoBouquet Maker Menu" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -215,7 +214,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P014" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoBouquetsMaker Config Providers OK -->
+	<!-- AutoBouquetsMaker Config Providers -->
 	<screen name="AutoBouquetsMaker_ProvidersSetup" title="AutoBouquet Maker Config" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -227,7 +226,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P015" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoBouquetsMaker Hide Selection OK -->
+	<!-- AutoBouquetsMaker Hide Selection -->
 	<screen name="AutoBouquetsMaker_HideSections" title="AutoBouquet Maker Hide" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -248,7 +247,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P016" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<!-- AutoBouquetsMaker Ordering OK -->
+	<!-- AutoBouquetsMaker Ordering -->
 	<screen name="AutoBouquetsMaker_Ordering" title="AutoBouquet Maker Ordering" position="center,center" size="600,500">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -268,7 +267,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P017" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoBouquetsMaker Logs OK -->
+	<!-- AutoBouquetsMaker Logs -->
 	<screen name="AutoBouquetsMaker_Log" title="Backup Log" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
@@ -278,7 +277,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL P018" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- AutoBouquetsMaker About OK -->
+	<!-- AutoBouquetsMaker About -->
 	<screen name="AutoBouquetsMaker_About" title="AutoBouquets Maker About" position="fill" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>

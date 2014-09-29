@@ -13,7 +13,7 @@
 		or your idea, and leave the credentials in the "About-box" as they are
 	-->
 
-	<!-- Video Wizzard OK -->
+	<!-- Video Wizzard -->
 	<screen name="VideoWizard" title="Welcome..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="sWallTemplate"/>
 		<widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="Regular; 50" halign="left" backgroundColor="bkwall" transparent="1">
@@ -51,7 +51,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL W001" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90" /-->
 	</screen>
 
-	<!-- Language Wizzard OK -->
+	<!-- Language Wizzard -->
 	<screen name="LanguageWizard" title="Language Selection..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="sWallTemplate"/>
 		<panel name="sRG"/>
@@ -87,13 +87,9 @@
 		<!-- eLabel name="DEBUG" text="PANEL W002" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90" /-->
 	</screen>
 
-	<!-- Position Wizzard OK -->
+	<!-- Position Wizzard -->
 	<screen name="StartWizard" title="Start Wizard..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="sWallTemplate"/>
-		<eLabel zPosition="99" position="0,0" size="30,720" backgroundColor="#ff000000"/>
-		<eLabel zPosition="99" position="0,0" size="1280,20" backgroundColor="#ff000000"/>
-		<eLabel zPosition="99" position="1250,0" size="30,720" backgroundColor="#ff000000"/>
-		<eLabel zPosition="99" position="0,700" size="1280,20" backgroundColor="#ff000000"/>
 		<widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="Regular; 50" halign="left" backgroundColor="bkwall" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -128,7 +124,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL W003" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90" /-->
 	</screen>
 
-	<!-- Network Wizard OK #4D5375 -->
+	<!-- Network Wizard -->
 	<screen name="NetworkWizard" title="Network Wizard" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="sWallTemplate"/>
 		<widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="Regular; 50" halign="left" backgroundColor="bkwall" transparent="1">
@@ -167,7 +163,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL W004" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90" /-->
 	</screen>
 
-	<!-- Update Wizard OK --> 
+	<!-- Update Wizard --> 
 	<screen name="InstallWizardIpkgUpdater" title="Update Wizard..." position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black">
 		<panel name="sWallTemplate"/>
 		<widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="Regular; 50" halign="left" backgroundColor="bkwall" transparent="1">
@@ -184,7 +180,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL W005" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90" /-->
 	</screen>
 
-	<!-- Restore Wizard OK -->
+	<!-- Restore Wizard -->
 	<screen name="MessageBoxWizard" title="Message Wizard..." position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black">
 		<panel name="sWallTemplate"/>
 		<widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="Regular; 50" halign="left" backgroundColor="bkwall" transparent="1">
@@ -369,7 +365,7 @@
 	</screen>
 
 	<screen name="ImageWizard" title="Image Wizard..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-		<eLabel backgroundColor="bkwall" position="40,25" size="1205,650" zPosition="-10"/>
+		<eLabel backgroundColor="bkwall" position="0,0" size="1280,720" zPosition="-10"/>
 		<widget backgroundColor="bkwall" font="Regular; 50" halign="left" position="1103,28" render="Label" size="140,60" source="global.CurrentTime" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>

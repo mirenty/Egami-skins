@@ -654,7 +654,7 @@
 		<widget name="FullDescription" position="40,60" size="870,140" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="#10000000" transparent="1"/>
 	</screen>
 	
-	<!-- Channel Selection OK) --> 
+	<!-- Channel Selection --> 
 	<screen name="ChannelSelection" title="Channel Selection" position="fill" flags="wfNoBorder">
 		<panel name="sWallTemplate"/>
 		<panel name="sPigTemplate"/>
@@ -1962,7 +1962,7 @@
 		<!-- eLabel name="DEBUG" text="PANEL S082" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- MediaPlayer (OKK) -->
+	<!-- MediaPlayer -->
 	<screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" backgroundColor="#000000" flags="wfNoBorder" >
 		<ePixmap pixmap="menu/bkmediap.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<ePixmap pixmap="menu/mediashadow.png" position="0,3" size="1280,720" zPosition="10" alphatest="blend"/>
