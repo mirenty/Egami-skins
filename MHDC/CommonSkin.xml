@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.05 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.06 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1119,9 +1119,9 @@
 	</screen> -->
 	<screen name="MessageBoxTemplate">
 		<widget name="text" position="65,8" size="520,0" font="Regular;22" />
-		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="0,0" size="53,53" alphatest="on" />
-		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,0" size="53,53" alphatest="on" />
-		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="0,0" size="53,53" alphatest="on" />
+		<widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="0,0" size="53,53" alphatest="on" />
+		<widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="0,0" size="53,53" alphatest="on" />
+		<widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="0,0" size="53,53" alphatest="on" />
 		<widget name="list" position="100,100" size="520,0" />
 		<applet type="onLayoutFinish">
 self.autoResize()
@@ -1136,9 +1136,9 @@ self.autoResize()
 	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="650,80" size="445,590" font="Regular;22"/>
-		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="550,110" size="53,53" alphatest="on"/>
-		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="550,110" size="53,53" alphatest="on"/>
-		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="550,110" size="53,53" alphatest="on"/>
+		<widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="550,110" size="53,53" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="550,110" size="53,53" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="550,110" size="53,53" alphatest="on"/>
 		<widget name="list" position="15,390" size="600,240" font="Regular;22"/>
 		<widget name="rc" pixmap="rc.png" position="1105,140" zPosition="10" size="154,500" transparent="0" alphatest="blend"/>
 		<panel name="AtemioLogo"/>
@@ -2074,7 +2074,7 @@ self.autoResize()
 	<screen flags="wfNoBorder" name="SystemMessage" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget source="text" position="680,110" size="440,500" font="Regular;20" halign="center" valign="center" render="Label"/>
-		<ePixmap pixmap="icons/input_error.png" position="590,110" size="53,53" alphatest="on"/>
+		<ePixmap pixmap="skin_default/icons/input_error.png" position="590,110" size="53,53" alphatest="on"/>
 		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ##VideoEnhancement## -->
