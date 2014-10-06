@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.06 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.07 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -4963,6 +4963,14 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template"/>
 		<widget name="imageList" position="520,120" size="540,505" font="Regular;20" backgroundColor="background" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+		<panel name="AtemioLogo"/>
+	</screen>
+	<screen name="DeviceBrowser" position="0,0" size="1280,720" title="Please select target medium" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="RG_Template"/>
+		<panel name="RG_Template 2"/>
+		<widget source="message" render="Label" position="15,385" size="380,30" font="Regular;20" backgroundColor="background" foregroundColor="greenlight" halign="left" transparent="1" zPosition="3" />
+		<widget name="filelist" position="520,120" size="540,505" backgroundColor="background" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- ## BackUpManager ## Tempory for AtemioBackupManager-->
