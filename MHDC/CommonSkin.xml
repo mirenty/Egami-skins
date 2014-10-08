@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.10 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.11 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -659,7 +659,6 @@
 		<widget source="ServiceEvent" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<ePixmap pixmap="MHDC/border/devider.png" position="505,90" size="2,570"/>
 		<widget name="list" backgroundColor="background" position="520,90" size="755,570" itemHeight="30" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="30" picServiceEventProgressbar="MHDC/window/progress.png" progressbarBorderWidth="1" progressBarWidth ="70" colorServiceDescription="#DBB96E" colorEventProgressbarBorderSelected="white" transparent="1" foregroundColorServiceNotAvail="#00656565" scrollbarMode="showOnDemand"/>
 		<widget source="ServiceEvent" render="Label" position="10,385" size="425,25" transparent="1" foregroundColor="secondFG" font="Regular;20" halign="left">
 			<convert type="EventName">NowName</convert>
