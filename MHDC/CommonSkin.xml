@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.08 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.09 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1261,7 +1261,7 @@ self.autoResize()
 		<widget name="config" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
 		<panel name="AtemioLogo"/>
 	</screen>
-	<screen name="ChoiceBox" position="0,0" size="1280,720" zPosition="10" flags="wfNoBorder">
+	<screen name="ChoiceBox" title="Choice Box" position="0,0" size="1280,720" zPosition="10" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="15,379" size="477,255" zPosition="2" font="Regular;24" foregroundColor="unf47d19"/>
 		<widget name="list" position="520,82" size="755,577" font="Regular;26" scrollbarMode="showOnDemand"/>
@@ -1937,6 +1937,24 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="15,379" size="477,260" zPosition="2" font="Regular;22" foregroundColor="secondFG"/>
 		<widget name="list" position="520,82" size="755,583" scrollbarMode="showOnDemand" itemHeight="30" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="ShowUpdatePackages" title="New Packages" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="RG_Template 2"/>
+			<widget source="list" render="Listbox" position="520,82" size="755,550" scrollbarMode="showOnDemand">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (5, 1), size = (700, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+							MultiContentEntryText(pos = (5, 27), size = (700, 24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+							MultiContentEntryPixmapAlphaTest(pos = (675, 0), size = (48, 48), png = 4), # index 4 is the status pixmap
+							MultiContentEntryPixmapAlphaTest(pos = (0, 49), size = (755, 2), png = 5), # index 4 is the div pixmap
+						],
+					"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+					"itemHeight": 55
+					}
+				</convert>
+			</widget>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="UpdatePluginMenu" title="Softwaremanager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
