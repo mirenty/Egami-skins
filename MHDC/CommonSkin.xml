@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.11 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.12 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1795,7 +1795,7 @@ self.autoResize()
 	</screen>
 	<screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<panel name="RG_Template"/>
+		<panel name="RGB_Template"/>
 		<panel name="MenuTemplate"/>
 		<widget name="list" position="520,82" size="755,550" font="Regular;26" scrollbarMode="showOnDemand"/>
 		<panel name="AtemioLogo"/>
