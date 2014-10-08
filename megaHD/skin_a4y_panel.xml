@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+	<!-- About Team -->
+	<screen name="AboutTeam" position="fill" title="About Team" flags="wfNoBorder" >
+		<panel name="GenericLayoutFullTemplate" />
+		<ePixmap pixmap="megaHD/menu/ico_info.png" position="920,435" size="256,256" zPosition="2" alphatest="blend" />
+		<widget name="about" font="Regular;24" position="60,90" size="515,490" halign="center" backgroundColor="background" transparent="1" />
+		<!-- eLabel name="DEBUG" text="PANEL AT000" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>'
+
+	<!-- ATEMIO PANELS -->
+	<screen name="AtemioPanel" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<ePixmap  position="0,0" zPosition="-1" size="1280,720" pixmap="megaHD/menu/panel.png" />
+		<widget source="Title" render="Label" zPosition="1" position="40,46" size="560,30" halign="center" font="Regular;20" foregroundColor="bluette" transparent="1" backgroundColor="transpBlack" />
+		<ePixmap position="940,500" size="300,300" pixmap="menu/a4y.png" alphatest="blend"/>
+		<widget source="list" render="Listbox" position="60,100" size="520,455" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (60, 2), size = (300, 30), font=0, flags = RT_HALIGN_LEFT | RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryText(pos = (70, 24), size = (640, 50), font=0, color=0x73c6ff, flags = RT_VALIGN_TOP, text = 2),
+					MultiContentEntryPixmapAlphaTest(pos=(5, 4), size=(40, 40), png = 3),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 50
+				}
+			</convert>
+		</widget>
+		<ePixmap position="55,565" size="40,40" pixmap="icons/flash.png" alphatest="blend"/>
+		<eLabel name="spaceused" text="% Flash Used..." position="100,520" size="535,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5"/>
+		<widget name="spaceused" position="100,583" size="480,18" foregroundColor="#73c6ff" backgroundColor="#4D5375" zPosition="3"/>
+		<!-- eLabel name="DEBUG" text="PANEL AT001" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>'
+
+
+	<!-- Ipk Install -->
+	<screen name="Ipkinstall" position="fill" title="Ipk Installer" flags="wfNoBorder" >
+		<panel name="GenericLayoutFullTemplateW"/>
+		<panel name="2Buttons"/>
+		<!--widget name="text" position="0,40" size="550,25" font="Regular;20" /-->
+		<widget name="list" position="60,90" size="730,350" scrollbarMode="showOnDemand" transparent="1" />
+		<!--widget name="pixmap" position="200,0" size="190,250" /-->
+		<widget name="info" position="60,470" size="730,25" font="Regular;20" foregroundColor="#ffffff" transparent="1" halign="center" valign="center" zPosition="4" />
+		<!-- eLabel name="DEBUG" text="PANEL AT006" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>'
+
+	<!-- GetIPK Info -->
+	<screen name="Getipk" position="fill" title="Install status" flags="wfNoBorder" >
+		<panel name="GenericLayoutFullTemplateW"/>
+		<!--widget name="text" position="0,0" size="550,25" font="Regular;20" /-->
+		<widget name="list" position="60,90" size="730,400" scrollbarMode="showOnDemand" transparent="1" />
+		<!--widget name="pixmap" position="200,0" size="190,250" /-->
+		<widget name="info" position="60,500" size="730,25" font="Regular;20" foregroundColor="#ffffff" transparent="1" halign="center" valign="center" zPosition="4" />
+		<!-- eLabel name="DEBUG" text="PANEL AT007" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- ATEMIO PANELS OK -->
+	<screen name="AtemioMenu" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="GenericLayoutFullTemplateW"/>
+		<ePixmap  position="870,500" size="300,300" pixmap="menu/a4y.png" alphatest="blend" />
+		<ePixmap pixmap="icons/info_on.png" position="60,85"  size="40,40" zPosition="10" alphatest="blend" />
+	  	<widget source="conn" render="Label" text="Select Option..." position="100,115" size="730,55" font="Regular;24" halign="left" valign="center" foregroundColor="#73c6ff" backgroundColor="black" zPosition="5" />
+		<ePixmap pixmap="buttons/maxbar.png" position="685,140"  size="15,400" zPosition="2" alphatest="blend" />
+	  	<widget source="list" render="Listbox" position="60,140" size="730,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" >
+	  		<convert type="TemplatedMultiContent">
+	  			{"template": [
+	  				MultiContentEntryText(pos = (60, 2), size = (300, 30), font=0, flags = RT_HALIGN_LEFT | RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryText(pos = (70, 24), size = (640, 50), font=0, color=0x73c6ff, flags = RT_VALIGN_TOP, text = 2),
+	  				MultiContentEntryPixmapAlphaTest(pos=(5, 4), size=(40, 40), png = 3),
+	  				],
+	  				"fonts": [gFont("Regular", 22)],
+	  				"itemHeight": 50
+	  			}
+	  		</convert>
+	  	</widget>
+		<ePixmap  position="50,565" size="40,40" pixmap="icons/flash.png" alphatest="blend" />
+		<eLabel name="spaceused" text="% Flash Used..." position="100,562" size="535,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black"  transparent="1" zPosition="5"/>
+	  	<widget name="spaceused" position="100,583" size="515,18" foregroundColor="#73c6ff" backgroundColor="#4D5375" zPosition="3" />
+		<!-- eLabel name="DEBUG"  text="PANEL AT008" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>'
+
+	<!-- SoftCamPanel -->
+	<screen name="SoftCamPanel" title="Softcam Panel" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="GenericLayoutFullTemplate"/>
+		<ePixmap pixmap="icons/ccc.png" position="60,90" size="51,51" zPosition="1" alphatest="blend" />
+		<widget name="cam"    position="125,100" size="520,28" font="Regular; 24" halign="left" foregroundColor="#73c6ff" backgroundColor="black" transparent="1" zPosition="2" />
+		<widget name="server" position="60,160"  size="520,24" font="Regular; 22" halign="left" foregroundColor="#73c6ff" backgroundColor="black" transparent="1" zPosition="2" />
+		<widget name="entries" position="60,160" size="520,300" transparent="1" />
+		<!-- Ico Crypt -->
+		<ePixmap pixmap="icons/cryptoff_ico.png" position="65,338" size="17,25" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/crypton_ico.png" position="65,338" size="17,25" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Channel -->
+		<widget source="session.CurrentService" render="Label" position="100,337" size="500,30" font="Regular;28" valign="center" halign="left" foregroundColor="bluette" backgroundColor="black" transparent="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<eLabel position="60,380" size="520,1" backgroundColor="#10202020" zPosition="1" />
+		<widget name="text"  position="60,375"  size="520,300" font="Regular;20" foregroundColor="#73c6ff" backgroundColor="black" transparent="1" zPosition="2" />
+		<widget name="text1" position="700,1390" size="520,300" font="Regular;20" foregroundColor="red" backgroundColor="black" transparent="1" zPosition="2" />
+
+
+		<ePixmap position="50,659" size="1200,50" pixmap="megaHD/buttons/3colorsRGB.png" zPosition="2" alphatest="blend" />
+		<widget position="100,668" size="210,21" name="key_red"    font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
+		<widget position="340,668" size="210,21" name="key_green"  font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
+		<widget position="580,668" size="210,21" name="key_blue"   font="Regular;19" halign="left" backgroundColor="black" transparent="1" zPosition="1" />
+
+
+		<!-- eLabel name="DEBUG"  text="PANEL AT009" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+</skin>
