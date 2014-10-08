@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.09 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.10 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -659,6 +659,7 @@
 		<widget source="ServiceEvent" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
+		<ePixmap pixmap="MHDC/border/devider.png" position="505,90" size="2,570"/>
 		<widget name="list" backgroundColor="background" position="520,90" size="755,570" itemHeight="30" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="30" picServiceEventProgressbar="MHDC/window/progress.png" progressbarBorderWidth="1" progressBarWidth ="70" colorServiceDescription="#DBB96E" colorEventProgressbarBorderSelected="white" transparent="1" foregroundColorServiceNotAvail="#00656565" scrollbarMode="showOnDemand"/>
 		<widget source="ServiceEvent" render="Label" position="10,385" size="425,25" transparent="1" foregroundColor="secondFG" font="Regular;20" halign="left">
 			<convert type="EventName">NowName</convert>
@@ -1263,7 +1264,7 @@ self.autoResize()
 	</screen>
 	<screen name="ChoiceBox" title="Choice Box" position="0,0" size="1280,720" zPosition="10" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="text" position="15,379" size="477,255" zPosition="2" font="Regular;24" foregroundColor="unf47d19"/>
+		<widget name="text" position="15,379" size="477,255" zPosition="2" font="Regular;24" foregroundColor="greenlight"/>
 		<widget name="list" position="520,82" size="755,577" font="Regular;26" scrollbarMode="showOnDemand"/>
 		<panel name="AtemioLogo"/>
 	</screen>
@@ -1855,7 +1856,7 @@ self.autoResize()
 		<panel name="RGYB_Template 2"/>
 		<panel name="MenuTemplate"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<widget source="introduction" render="Label" position="20,400" size="477,250" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="greenlight" transparent="1"/>
+		<widget source="introduction" render="Label" position="15,380" size="477,150" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="greenlight" transparent="1"/>
 	</screen>
 	<screen name="BackupScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<widget name="config" position="520,90" size="755,575" transparent="1" scrollbarMode="showOnDemand"/>
@@ -1944,10 +1945,10 @@ self.autoResize()
 			<widget source="list" render="Listbox" position="520,82" size="755,550" scrollbarMode="showOnDemand">
 				<convert type="TemplatedMultiContent">
 					{"template": [
-							MultiContentEntryText(pos = (5, 1), size = (700, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (5, 27), size = (700, 24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-							MultiContentEntryPixmapAlphaTest(pos = (675, 0), size = (48, 48), png = 4), # index 4 is the status pixmap
-							MultiContentEntryPixmapAlphaTest(pos = (0, 49), size = (755, 2), png = 5), # index 4 is the div pixmap
+							MultiContentEntryText(pos = (0, 1), size = (755, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+							MultiContentEntryText(pos = (0, 27), size = (755, 24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+							MultiContentEntryPixmapAlphaTest(pos = (690, 0), size = (48, 48), png = 4), # index 4 is the status pixmap
+							MultiContentEntryPixmapAlphaTest(pos = (0, 52), size = (755, 2), png = 5), # index 4 is the div pixmap
 						],
 					"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
 					"itemHeight": 55
@@ -1959,6 +1960,7 @@ self.autoResize()
 	<screen name="UpdatePluginMenu" title="Softwaremanager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RedTemplate 2"/>
+		<panel name="MenuTemplate"/>
 		<widget source="menu" render="Listbox" position="590,82" size="685,570" zPosition="3" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 			{"template": [
@@ -1984,27 +1986,26 @@ self.autoResize()
 	<screen name="PluginManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
-		<widget source="list" render="Listbox" position="520,82" size="755,586" transparent="1" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="520,82" size="755,550" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"templates":
-				{"default": (51,[
-				MultiContentEntryText(pos = (5,1), size = (430,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-				MultiContentEntryText(pos = (5,27), size = (430,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (435,0), size = (48,48), png = 5), # index 5 is the status pixmap
-				MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (503,2), png = 6), # index 6 is the div pixmap
+				{"default": (55,[
+				MultiContentEntryText(pos = (0,1), size = (755,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (0,27), size = (755,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (690,0), size = (48,48), png = 5), # index 5 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,52), size = (755,2), png = 6), # index 6 is the div pixmap
 				]),
-				"category": (40,[
-				MultiContentEntryText(pos = (5,0), size = (498,22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-				MultiContentEntryText(pos = (5,22), size = (498,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (503,2), png = 3), # index 3 is the div pixmap
+				"category": (55,[
+				MultiContentEntryText(pos = (0,0), size = (755,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (0,27), size = (755,24), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (0,52), size = (755,2), png = 3), # index 3 is the div pixmap
 				])
 				},
-				"fonts": [gFont("Regular",22),gFont("Regular",18),gFont("Regular",16)],
-				"itemHeight": 52
+				"fonts": [gFont("Regular",22),gFont("Regular",20),gFont("Regular",20)],
 				}
 			</convert>
 		</widget>
-		<widget source="status" render="Label" position="15,400" size="447,200" foregroundColor="unf47d19" transparent="1" font="Regular;22" halign="center"/>
+		<widget source="status" render="Label" position="15,400" size="447,200" foregroundColor="greenlight" transparent="1" font="Regular;22" halign="center"/>
 		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="PluginManagerInfo" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2040,7 +2041,7 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<widget source="status" render="Label" position="15,400" size="447,250" foregroundColor="unf47d19" transparent="1" font="Regular;22" halign="center"/>
+		<widget source="status" render="Label" position="15,400" size="447,250" foregroundColor="greenlight" transparent="1" font="Regular;22" halign="center"/>
 	</screen>
 	<screen flags="wfNoBorder" name="MPHelp" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
