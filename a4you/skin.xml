@@ -1818,11 +1818,11 @@
 		<panel name="ClockTemplate"/>
 		<panel name="fakeExit"/>
 		<widget source="TunerHeader" render="Label" position="40,90" size="585,40" font="Regular;30" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1"/>
-		<widget source="nims" render="Label" position="40,130" size="585,150" font="Regular;20" halign="left" backgroundColor="bkwall" transparent="1" valign="top"/>
-		<widget source="HDDHeader" render="Label" position="40,280" size="585,40" font="Regular;30" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1"/>
-		<widget source="hdd" render="Label" position="40,330" size="600,150" font="Regular;20" halign="left" backgroundColor="bkwall" transparent="1" valign="top"/>
-		<widget source="MountsHeader" render="Label" position="40,490" size="585,40" font="Regular;30" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1"/>
-		<widget source="mounts" render="Label" position="40,540" size="600,120" font="Regular;20" halign="left" backgroundColor="bkwall" transparent="1" valign="top"/>
+		<widget source="nims" render="Label" position="40,130" size="585,110" font="Regular;20" halign="left" backgroundColor="bkwall" transparent="1" valign="top"/>
+		<widget source="HDDHeader" render="Label" position="40,240" size="585,40" font="Regular;30" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1"/>
+		<widget source="hdd" render="Label" position="40,290" size="600,150" font="Regular;20" halign="left" backgroundColor="bkwall" transparent="1" valign="top"/>
+		<widget source="MountsHeader" render="Label" position="40,450" size="585,40" font="Regular;30" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1"/>
+		<widget source="mounts" render="Label" position="40,490" size="600,120" font="Regular;20" halign="left" backgroundColor="bkwall" transparent="1" valign="top"/>
 		<ePixmap position="870,500" size="300,300" pixmap="menu/devices.png" alphatest="blend"/>
 		<!--eLabel name="DEBUG" text="PANEL S075" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
@@ -1847,7 +1847,7 @@
 		<panel name="ClockTemplate"/>
 		<panel name="sR"/>
 		<widget source="Statustext" render="Label" position="40,90" size="120,25" font="Regular;22" halign="left" backgroundColor="bkwall" transparent="1"/>
-		<widget name="statuspic" position="125,92" size="30,25" pixmaps="buttons/green20.png,/buttons/red20.png" alphatest="blend" transparent="1"/>
+		<widget name="statuspic" position="158,92" size="30,25" pixmaps="buttons/green20.png,/buttons/red20.png" alphatest="blend" transparent="1"/>
 		<eLabel position="40,135" size="585,2" backgroundColor="#202020" zPosition="0"/>
 		<eLabel position="40,137" size="585,1" backgroundColor="#606060" zPosition="0"/>
 		<widget source="IFtext" render="Label" position="180,90" size="120,25" font="Regular;22" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1"/>
