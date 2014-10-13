@@ -1807,8 +1807,13 @@
 		<ePixmap position="60,100" size="140,140" pixmap="megaHD/skin_default/wizard.png" alphatest="blend" />
 		<eLabel text="Network Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2" />
 		<widget name="text" position="230,175" size="500,300" font="Regular;22" foregroundColor="#6dccff" backgroundColor="black"  transparent="1" />
-		<widget position="60,400" render="Listbox" scrollbarMode="showOnDemand" size="730,200" source="list" transparent="1" >
-			<convert type="StringList" />
+		<widget position="60,400" render="Listbox" scrollbarMode="showOnDemand" size="730,200" source="list" foregroundColor="#73c6ff" backgroundColor="#4D5375" transparent="1" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (20, 2), size = (700, 29), flags = RT_HALIGN_LEFT, text = 0) ],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 30
+				}
+			</convert>
 		</widget>
 		<widget name="config" position="60,360" size="730,250" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
 		<widget name="HelpWindow" position="120,220" zPosition="5" size="1,1" transparent="1" alphatest="on" />
@@ -1825,14 +1830,72 @@
 		<!-- eLabel name="DEBUG"  text="PANEL S086" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99" /-->
 	</screen>
 
+	<!-- Update Wizard OK --> 
+	<screen name="InstallWizardIpkgUpdater" title="Update Wizard..." position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black">
+		<panel name="GenericLayoutFullTemplateW"/>
+		<widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="Regular; 50" halign="left" backgroundColor="black" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" foregroundColor="#808080" backgroundColor="black" transparent="1">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="931,60" size="161,29" font="Regular; 16" halign="right" foregroundColor="#808080" backgroundColor="black" transparent="1">
+			<convert type="ClockToText">Format:%e. %b</convert>
+		</widget>
+		<ePixmap pixmap="icons/info_on.png" position="40,95" size="40,40" zPosition="10" alphatest="blend"/>
+		<widget source="statusbar" render="Label" position="100,100" size="720,250" font="Regular;22" foregroundColor="#ffffff" backgroundColor="black" transparent="1" zPosition="10"/>
+		<!--eLabel name="DEBUG" text="PANEL W005" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+	</screen>
+
+	
+	<!-- Restore Wizard OK -->
+	<screen name="MessageBoxWizard" title="Message Wizard..." position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black">
+		<panel name="GenericLayoutFullTemplateW"/>
+		<ePixmap position="60,100" size="140,140" pixmap="megaHD/skin_default/wizard.png" alphatest="blend" />
+		<eLabel text="Network Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2" />
+		<widget name="text" position="230,175" size="500,300" font="Regular;22" foregroundColor="#6dccff" backgroundColor="black"  transparent="1" />
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="40,95" size="53,53" alphatest="blend"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="40,95" size="53,53" alphatest="blend"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="40,95" size="53,53" alphatest="blend"/>
+		<widget name="text" position="100,100" size="670,140" font="Regular;22" backgroundColor="black" transparent="1"/>
+		<eLabel position="90,305" size="685,315" backgroundColor="#4D5375"/>
+		<ePixmap position="45,302" pixmap="icons/tv.png" size="40,40" alphatest="blend" zPosition="1"/>
+		<widget source="list" render="Listbox" position="60,400" size="730,200" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" 
+			foregroundColor="#73c6ff" backgroundColor="#4D5375" transparent="1" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (20, 2), size = (700, 29), flags = RT_HALIGN_LEFT, text = 0) ],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 30
+				}
+			</convert>
+		</widget>
+		<widget name="HelpWindow" position="120,220" zPosition="5" size="1,1" transparent="1" alphatest="on" />
+		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="19" />
+		<ePixmap position="890,0" size="320,720" pixmap="megaHD/menu/picwiz.png" alphatest="blend" />
+		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend" />
+		<widget name="wizard" position="0,0" size="0,0"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="megaHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="megaHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="megaHD/skin_default/arrowup.png" zPosition="11" alphatest="on" />
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="megaHD/skin_default/arrowup.png" zPosition="11" alphatest="on" />
+		<ePixmap position="60,660" size="30,30" pixmap="megaHD/buttons/key_red.png" alphatest="blend" />
+		<widget name="languagetext" position="110,661" size="750,26" font="Regular;22"  backgroundColor="black" foregroundColor="#ffffff" transparent="1" /> 
+		<!--eLabel name="DEBUG" text="PANEL W006" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+	</screen>
+	
 	<!-- Video Wizard OKK -->
 	<screen name="VideoWizard" position="0,0" size="1280,720" title="Select Video Output..." backgroundColor="black" flags="wfNoBorder">
 		<panel name="GenericLayoutFullTemplateW" />
 		<ePixmap position="60,100" size="140,140" pixmap="megaHD/skin_default/wizard.png" alphatest="blend" />
 		<eLabel text="Video Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2" />
 		<widget name="text" position="230,175" size="500,300" font="Regular;24" foregroundColor="#6dccff" backgroundColor="black"  transparent="1" />
-		<widget position="60,440" render="Listbox" scrollbarMode="showOnDemand" size="730,210" source="list" transparent="1" >
-			<convert type="StringList" />
+		<widget source="list" render="Listbox" position="60,440" size="730,210" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="#4D5375" transparent="1" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (20, 2), size = (700, 29), flags = RT_HALIGN_LEFT, text = 0) ],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 30
+				}
+			</convert>
 		</widget>
 		<widget name="config" position="60,440" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
 		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on" />
@@ -1855,8 +1918,13 @@
 		<ePixmap position="60,100" size="140,140" pixmap="megaHD/skin_default/wizard.png" alphatest="blend" />
 		<eLabel text=" Config Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2" />
 		<widget name="text" position="230,175" size="500,300" font="Regular;23" foregroundColor="#6dccff" backgroundColor="black"  transparent="1" />
-		<widget position="60,480" render="Listbox" scrollbarMode="showOnDemand" size="730,210" source="list" transparent="1" >
-			<convert type="StringList" />
+		<widget source="list" render="Listbox" position="60,480" size="730,210" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="#4D5375" transparent="1" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (20, 2), size = (700, 29), flags = RT_HALIGN_LEFT, text = 0) ],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 30
+				}
+			</convert>
 		</widget>
 		<widget name="config" position="60,480" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
 		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on" />
@@ -1879,8 +1947,13 @@
 		<ePixmap position="60,100" size="140,140" pixmap="megaHD/skin_default/wizard.png" alphatest="blend" />
 		<eLabel text="SatLists Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2" />
 		<widget name="text" position="230,175" size="500,300" font="Regular;23" foregroundColor="#6dccff" backgroundColor="black"  transparent="1" />
-		<widget position="60,340" render="Listbox" scrollbarMode="showOnDemand" size="730,210" source="list" transparent="1" >
-			<convert type="StringList" />
+		<widget position="60,340" render="Listbox" scrollbarMode="showOnDemand" size="730,210" source="list" transparent="1" zPosition="13">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 32
+				}
+			</convert>
 		</widget>
 		<widget name="config" position="60,340" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
 		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on" />
@@ -1906,6 +1979,14 @@
 		<widget position="60,340" render="Listbox" scrollbarMode="showOnDemand" size="730,210" source="list" transparent="1" >
 			<convert type="StringList" />
 		</widget>
+		<widget source="list" render="Listbox" position="60,340" size="730,210" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="#4D5375" transparent="1" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 32
+				}
+			</convert>
+		</widget>
 		<widget name="config" position="60,340" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
 		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on" />
 		<eLabel text="RC Control" position="900,45" size="300,40" font="Regular;24" halign="center" foregroundColor="bluette" backgroundColor="#101010" transparent="1" zPosition="19" />
@@ -1927,8 +2008,13 @@
 		<ePixmap position="60,100" size="140,140" pixmap="megaHD/skin_default/wizard.png" alphatest="blend" />
 		<eLabel text="Default Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2" />
 		<widget name="text" position="60,240" size="740,300" font="Regular;23" foregroundColor="#6dccff" backgroundColor="black"  transparent="1" />
-		<widget position="60,340" render="Listbox" scrollbarMode="showOnDemand" size="730,270" source="list" transparent="1" >
-			<convert type="StringList" />
+		<widget source="list" render="Listbox" position="60,340" size="730,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="#4D5375" transparent="1" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 32
+				}
+			</convert>
 		</widget>
 		<widget name="config" position="60,340" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
 		<widget name="HelpWindow" position="60,200" zPosition="5" size="1,1" transparent="1" alphatest="on" />
@@ -1967,6 +2053,55 @@
 		<ePixmap alphatest="blend" pixmap="megaHD/buttons/key_red.png" position="60,650" size="30,30" />
 		<widget font="Regular;22" name="languagetext" position="110,651" size="750,26" backgroundColor="black" foregroundColor="#538eff" transparent="1" /> 
 		<!-- eLabel name="DEBUG"  text="PANEL S092" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99" /-->
+	</screen>
+
+	<!-- CleanupWizard -->
+	<screen name="CleanupWizard" title="Cleanup Wizard..." position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplateW" />
+		<ePixmap position="60,100" size="140,140" pixmap="megaHD/skin_default/wizard.png" alphatest="blend" />
+		<eLabel text="Package Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2" />
+		<widget name="text" position="230,240" size="500,200" font="Regular;23" foregroundColor="#6dccff" backgroundColor="black"  transparent="1" />
+
+		<widget position="60,340" render="Listbox" scrollbarMode="showOnDemand" size="730,270" source="list" transparent="1" zPosition="13">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 32
+				}
+			</convert>
+		</widget>
+		<widget name="config" position="60,340" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
+		<widget name="rc" position="990,100" size="154,550" pixmaps="skin_default/rc.png" zPosition="10" alphatest="blend" />
+		<widget name="wizard" position="0,0" size="0,0"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="megaHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="megaHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="megaHD/skin_default/arrowup.png" zPosition="11" alphatest="on" />
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="megaHD/skin_default/arrowup.png" zPosition="11" alphatest="on" />
+		<ePixmap alphatest="blend" pixmap="megaHD/buttons/key_red.png" position="60,650" size="30,30" />
+		<widget font="Regular;22" name="languagetext" position="110,651" size="750,26" backgroundColor="black" foregroundColor="#538eff" transparent="1" /> 
+		<!--eLabel name="DEBUG" text="PANEL W009" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+	</screen>
+
+	<screen name="CleanupWizardConfiguration" title="Cleanup Wizard Settings" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="GenericLayoutFullTemplateW" />
+		<ePixmap position="60,100" size="140,140" pixmap="megaHD/skin_default/wizard.png" alphatest="blend" />
+		<eLabel text="Package Wizard..." position="230,125" size="500,60" font="Regular;34"  foregroundColor="white" backgroundColor="#10202020" transparent="1" zPosition="2" />
+		<widget name="text" position="230,240" size="500,200" font="Regular;23" foregroundColor="#6dccff" backgroundColor="black"  transparent="1" />
+		<widget name="config" position="60,340" size="730,270" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
+		<widget backgroundColor="black" font="Regular;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1"/>
+		<widget backgroundColor="black" font="Regular;22" halign="center" position="70,600" render="Label" size="700,25" source="status" transparent="1"/>
+		<ePixmap alphatest="blend" pixmap="buttons/red.png" position=" 70,635" size="30,40"/>
+		<ePixmap alphatest="blend" pixmap="buttons/green.png" position="360,635" size="30,40"/>
+		<widget backgroundColor="black" font="Regular;20" halign="left" name="key_red" position="105,637" size="240,24" transparent="1" zPosition="1"/>
+		<widget backgroundColor="black" font="Regular;20" halign="left" name="key_green" position="395,637" size="240,24" transparent="1" zPosition="1"/>
+		<ePixmap alphatest="blend" pixmap="menu/setup_selection.png" position="920,230" size="256,256" transparent="1" zPosition="2"/>
+		<!--eLabel name="DEBUG" text="PANEL W010" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
+	</screen>
+
+	<screen name="SoftwareUpdateChoices" title="Software Update..." position="center,center" size="560,225">
+		<widget name="list" position="0,0" size="560,150" itemHeight="28" font="Regular;22" foregroundColor="#ffffff" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="text" position="0,150" size="560,75" font="Regular;22" foregroundColor="#ffffff" backgroundColor="black" halign="center" transparent="0"/>
+		<!--eLabel name="DEBUG" text="PANEL W008b" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
 	<!-- Tutorial Wizard OKK -->
