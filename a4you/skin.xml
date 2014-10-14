@@ -1,8 +1,8 @@
 <skin>
 	<!--
-	##################### mmark_a4you_ATEMIO v.1.4.1 ########################
+	##################### mmark_a4you_ATEMIO v.1.4.2 ########################
 	#                                                                       #
-	#      mmark             Version 1.4.1 released          13-10-2014     #
+	#      mmark             Version 1.4.2 released          14-10-2014     #
 	#                                                                       #
 	#########################################################################
 		The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
@@ -3020,14 +3020,14 @@
 		<!--eLabel name="DEBUG" text="PANEL S134" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
  	</screen>
 
-<!-- MessageBox -->
-<screen name="MessageBox" title="Message" position="240,175" size=" 800, 10">
- <widget name="text" position="110,30" size="680,0" font="Regular;22"/>
- <widget name="ErrorPixmap" pixmap="icons/input_error.png" position="30,30" size="53,53" alphatest="blend"/>
- <widget name="QuestionPixmap" pixmap="icons/input_question.png" position="30,30" size="53,53" alphatest="blend"/>
- <widget name="InfoPixmap" pixmap="icons/input_info.png" position="30,30" size="53,53" alphatest="blend"/>
- <widget name="list" position="20,95" size="760,320" itemHeight="32" transparent="1"/>
- <applet type="onLayoutFinish">
+	<!-- MessageBox -->
+	<screen name="MessageBox" title="Message" position="240,175" size=" 800, 10">
+		<widget name="text" position="110,30" size="680,0" font="Regular;22"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="30,30" size="53,53" alphatest="blend"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="30,30" size="53,53" alphatest="blend"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="30,30" size="53,53" alphatest="blend"/>
+		<widget name="list" position="20,95" size="760,320" itemHeight="32" transparent="1"/>
+			<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
 orgwidth = self.instance.size().width()
@@ -3059,14 +3059,14 @@ self["list"].instance.resize(eSize(*listsize))
 # center window
 newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
-		</applet>
-</screen>
+			</applet>
+	</screen>
  
-<!-- ExtraMessageBox -->
-<screen name="ExtraMessageBox" title="Extra Message" position="80,100" size="560,400">
- <widget name="message" position="10,10" size="540,25" font="Regular;20"/>
- <widget name="menu" position="10,90" size="540,360" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
- <applet type="onLayoutFinish">
+	<!-- ExtraMessageBox -->
+	<screen name="ExtraMessageBox" title="Extra Message" position="80,100" size="560,400">
+		<widget name="message" position="10,10" size="540,25" font="Regular;20"/>
+		<widget name="menu" position="10,90" size="540,360" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+			<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
 
@@ -3105,18 +3105,18 @@ self["menu"].instance.resize(eSize(*listsize))
 # center window
 newwidth = wsize[0]
 self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3)))
-		</applet>
-</screen> 
+			</applet>
+	</screen> 
 
-<!-- MessageBoxSimple -->
-<screen name="MessageBoxSimple" title="Message" position="center,center" size="600,10" flags="wfNoBorder">
- <widget source="Title" render="Label" position="2,2" size="200,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left"/>
- <widget name="text" position="65,30" size="520,0" font="Regular;22"/>
- <widget name="ErrorPixmap" pixmap="icons/input_error.png" position="5,5" size="53,53" alphatest="on"/>
- <widget name="QuestionPixmap" pixmap="icons/input_question.png" position="5,5" size="53,53" alphatest="on"/>
- <widget name="InfoPixmap" pixmap="icons/input_info.png" position="5,5" size="53,53" alphatest="on"/>
- <widget name="list" position="100,100" size="480,375" selectionPixmap="buttons/listselect.png"/>
-	<applet type="onLayoutFinish">
+	<!-- MessageBoxSimple -->
+	<screen name="MessageBoxSimple" title="Message" position="center,center" size="600,10" flags="wfNoBorder">
+		<widget source="Title" render="Label" position="2,2" size="200,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left"/>
+		<widget name="text" position="65,30" size="520,0" font="Regular;22"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="5,5" size="53,53" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="5,5" size="53,53" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="5,5" size="53,53" alphatest="on"/>
+		<widget name="list" position="100,100" size="480,375" selectionPixmap="buttons/listselect.png"/>
+			<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 if self.timerRunning:
 	titleheight = 20
@@ -3155,6 +3155,27 @@ if self.type == self.TYPE_YESNO:
 	self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
-	</applet>
-</screen>
+			</applet>
+	</screen>
+	
+	<!-- Button Setup -->
+	<screen name="HotkeySetup" position="fill" flags="wfNoBorder" title="">
+		<panel name="sWallTemplate"/>
+		<panel name="sPigTemplate"/>
+		<panel name="sClockTemplate"/>
+		<panel name="sR"/>
+		<widget name="list" position="40,80" size="380,530" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" enableWrapAround="1"/>
+		<widget name="choosen" position="420,80" size="350,530" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" backgroundColor="bkwall" />
+		<!--widget name="description" position="580,650" size="480,250" zPosition="2" font="Regular;20" valign="center" halign="center"/-->
+	</screen>
+	<screen name="HotkeySetupSelect" position="fill" flags="wfNoBorder" title="">
+		<panel name="sWallTemplate"/>
+		<panel name="sPigTemplate"/>
+		<panel name="sClockTemplate"/>
+		<panel name="sRG"/>
+		<widget name="list" position="40,80" size="380,530" scrollbarMode="showAlways" font="Regular;22" itemHeight="28" transparent="1" enableWrapAround="1"/>
+		<widget name="choosen" position="420,80" size="350,530" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" backgroundColor="bkwall" />
+		<!--widget name="description" position="580,650" size="480,250" zPosition="2" font="Regular;20" valign="center" halign="center"/-->
+	</screen>
+	
 </skin>
