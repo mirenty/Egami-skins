@@ -934,4 +934,125 @@
 		<widget name="devicelist" position="40,90" size="560,500" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" transparent="1"/>
 		<widget name="ConnStatus" position="680,520" size="560,140" font="Regular;24" backgroundColor="bkwall" transparent="1"/>
 	</screen>
+	
+	<!-- IniMyTube -->
+	<screen name="MyTubePlayerMainScreen" title="MyTube - Browser" position="fill" flags="wfNoBorder" >
+		<panel name="WallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<panel name="sRGY"/>
+		<widget name="result" position="40,80" zPosition="3" size="400,50" font="Regular;21" backgroundColor="bkwall" halign="left"/>
+		<widget source="feedlist" render="Listbox" position="40,130" size="560,460" zPosition="1" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" >
+			<convert type="TemplatedMultiContent">
+			{"templates":
+				{"default": (77,[
+						MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (100, 75), png = 4), # index 4 is the thumbnail
+						MultiContentEntryText(pos = (100, 1), size = (500, 20), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
+						MultiContentEntryText(pos = (100, 24), size = (300, 16), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
+						MultiContentEntryText(pos = (100, 43), size = (300, 16), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
+						MultiContentEntryText(pos = (400, 24), size = (200, 16), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
+						MultiContentEntryText(pos = (400, 43), size = (200, 16), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
+					]),
+				"state": (77,[
+						MultiContentEntryText(pos = (10, 1), size = (560, 28), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (10, 22), size = (560, 46), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
+					])
+				},
+				"fonts": [gFont("Regular", 19),gFont("Regular", 15),gFont("Regular", 22),gFont("Regular", 18)],
+				"itemHeight": 75
+			}
+			</convert>
+		</widget>
+		<ePixmap pixmap="buttons/key_info.png" position="1175,27" size="60,25" alphatest="blend" zPosition="2"/>
+		<ePixmap pixmap="buttons/key_menu.png" position="1140,27" size="60,25" alphatest="blend" zPosition="2"/>
+		<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="620,495" zPosition="10" size="60,48" transparent="1" alphatest="on" />
+		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
+		<!--widget name="HelpWindow" position="160,255" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
+	</screen>
+
+	<screen name="MyTubeVideoInfoScreen" flags="wfNoBorder" position="fill" title="MyTube - Video Info" >
+		<panel name="WallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<panel name="sR"/>
+		<widget name="title" position="40,80" size="560,50" zPosition="5" valign="center" halign="center" font="Regular;22" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="starsbg" pixmap="~/starsbar_empty.png" position="520,250" zPosition="5" size="100,20" transparent="1" alphatest="on" />
+		<widget name="stars" pixmap="~/starsbar_filled.png" position="520,250" zPosition="6" size="100,20"  transparent="1" />
+		<widget source="infolist" render="Listbox" position="60,140" size="520,95" zPosition="6" scrollbarMode="showNever" selectionDisabled="1" transparent="1" backgroundColor="bkwall">
+			<convert type="TemplatedMultiContent">
+			{"templates":
+				{"default": (98,[
+						MultiContentEntryPixmapAlphaTest(pos = (0, 4), size = (130, 98), png = 0), # index 0 is the thumbnail
+						MultiContentEntryPixmapAlphaTest(pos = (130, 4), size = (130, 98), png = 1), # index 0 is the thumbnail
+						MultiContentEntryPixmapAlphaTest(pos = (260, 4), size = (130, 98), png = 2), # index 0 is the thumbnail
+						MultiContentEntryPixmapAlphaTest(pos = (390, 4), size = (130, 98), png = 3), # index 0 is the thumbnail
+					]),
+				"state": (90,[
+						MultiContentEntryText(pos = (10, 40), size = (550, 38), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
+					])
+				},
+				"fonts": [gFont("Regular", 20),gFont("Regular", 14),gFont("Regular", 28)],
+				"itemHeight": 98
+			}
+			</convert>
+		</widget>
+		<widget name="author" position="40,280" size="300,20" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top" />
+		<widget name="duration" position="370,280" size="200,20" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top" />
+		<widget name="published" position="40,305" size="300,20" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top" />
+		<widget name="views" position="370,305" size="200,20" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top" />
+		<widget name="tags" position="40,330" size="600,22" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top" />
+		<widget name="detailtext" position="40,380" size="560,280" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top"/>
+		<widget name="thumbnail" position="0,0" size="130,98" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
+	</screen>
+	
+	<screen name="MyTubeVideoHelpScreen" flags="wfNoBorder" position="fill" title="MyTube - Help" >
+		<panel name="WallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<panel name="sR"/>
+		<widget name="title" position="40,70" size="560,50" zPosition="5" valign="center" halign="center" font="Regular;24" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="detailtext" position="60,170" size="580,370" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top"/>
+	</screen>
+	
+	<screen name="MyTubePlayer" flags="wfNoBorder" position="fill" title="InfoBar" backgroundColor="transparent">
+		<ePixmap position="0,580" size="1280,140" pixmap="infobar/infobar.png" zPosition="-1" alphatest="off"/>
+		<ePixmap position="29,620" pixmap="skin_default/screws_mp.png" size="665,124" alphatest="on" />
+		<ePixmap position="48,620" pixmap="skin_default/icons/mp_buttons.png" size="120,30" alphatest="on" />
+		<widget source="session.CurrentService" render="Label" halign="center" position="230,595" size="800,40" font="Regular;22" backgroundColor="#263c59" shadowColor="#1d354c" shadowOffset="-1,-1" transparent="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1100,620" size="90,24" font="Regular;20" halign="right" backgroundColor="#4e5a74" transparent="1">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="390,635" size="100,30" font="Regular;18" halign="center" valign="center" backgroundColor="#06224f" shadowColor="#1d354c" shadowOffset="-1,-1" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="PositionGauge" position="490,645" size="270,10" zPosition="2" pointer="skin_default/position_pointer.png:540,0" transparent="1" foregroundColor="#20224f">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="740,635" size="130,30" font="Regular;18" halign="center" valign="center" backgroundColor="#06224f" shadowColor="#1d354c" shadowOffset="-1,-1" transparent="1">
+			<convert type="ServicePosition">Remaining</convert>
+		</widget>
+	</screen>
+
+	<screen name="MyTubeHistoryScreen" position="40,80" zPosition="6" size="560,530" flags="wfNoBorder" title="MyTube - History">
+		<widget source="historylist" render="Listbox" position="10,8" zPosition="7" size="540,530" scrollbarMode="showOnDemand" transparent="1" backgroundColor="bkwall" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (0, 1), size = (340, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+					],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+				"itemHeight": 25
+				}
+			</convert>
+		</widget>
+	</screen>
+
+	<screen name="MyTubeSettingsScreen" flags="wfNoBorder" position="fill" title="MyTube - Settings" >
+		<panel name="WallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<panel name="sRG"/>
+		<widget name="config" zPosition="2" position="40,140" size="560,450" scrollbarMode="showOnDemand" transparent="1" />
+	</screen>
 </skin>
