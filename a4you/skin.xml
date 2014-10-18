@@ -1756,15 +1756,15 @@
 
 	<!-- ChoiceBox -->
 	<screen name="ChoiceBox" title="Choice Box" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="ntWallTemplate"/>
-		<panel name="PigTemplate"/>
-		<panel name="ClockTemplate"/>
-		<eLabel text="Backup Panel" position="40,30" size="585,30" halign="center" font="mediamenu;28" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" zPosition="1"/>
-		<widget source="Title" render="Label" zPosition="1" position="40,80" size="585,55" halign="left" font="Regular;22" foregroundColor="#808080" backgroundColor="bkwall" transparent="1"/>
-		<ePixmap pixmap="buttons/maxbar.png" position="610,90" size="15,510" zPosition="2" alphatest="blend"/>
-		<widget name="list" position="40,120" size="585,200" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" itemHeight="25" backgroundColor="bkwall" transparent="1"/>
-		<widget name="text" zPosition="1" position="40,480" size="585,60" halign="left" font="Regular;20" foregroundColor="#808080" backgroundColor="bkwall" transparent="1"/>
-		<ePixmap position="440,400" size="300,300" pixmap="menu/choice.png" alphatest="blend"/>
+		<panel name="sWallTemplate"/>
+		<panel name="sPigTemplate"/>
+		<panel name="sClockTemplate"/>
+		<!--eLabel text="Choice Box" position="40,30" size="585,30" halign="center" font="mediamenu;28" foregroundColor="#808080" backgroundColor="bkwall" transparent="1" zPosition="1"/-->
+		<!--widget source="Title" render="Label" zPosition="1" position="40,80" size="585,55" halign="left" font="Regular;22" foregroundColor="#808080" backgroundColor="bkwall" transparent="1"/-->
+		<!--ePixmap pixmap="buttons/maxbar.png" position="610,90" size="15,510" zPosition="2" alphatest="blend"/-->
+		<widget name="list" position="40,120" size="685,200" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" itemHeight="25" backgroundColor="bkwall" transparent="1"/>
+		<widget name="text" zPosition="1" position="40,480" size="600,160" halign="left" font="Regular;20" foregroundColor="#808080" backgroundColor="bkwall" transparent="1"/>
+		<ePixmap position="540,400" size="300,300" pixmap="menu/choice.png" alphatest="blend"/>
 		<!--eLabel name="DEBUG" text="PANEL S071" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
