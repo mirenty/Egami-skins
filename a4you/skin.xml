@@ -2698,6 +2698,7 @@
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
+		<panel name="KeyMenuTemplate"/>
 		<widget source="menu" render="Listbox" position="40,80" size="585,495" font="Regular;24" scrollbarMode="showOnDemand" enableWrapAround="1"
 			backgroundPixmap="buttons/menuback.png" selectionPixmap="buttons/menuselect.png" backgroundColor="bkwall" transparent="1" >
 			<convert type="TemplatedMultiContent">
@@ -2720,6 +2721,16 @@
 		</widget>
 		<!--eLabel name="DEBUG" text="PANEL N013" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
+	
+	<!-- Software Manager Setup -->
+	<screen name="SoftwareManagerSetup" position="fill" title="SoftwareManager setup" flags="wfNoBorder" >
+		<panel name="WallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<widget name="config" position="40,110" size="520,500" scrollbarMode="showOnDemand" transparent="1" />
+		<widget source="introduction" render="Label" position="670,530" size="450,160" zPosition="10" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<!-- eLabel name="DEBUG"  text="PANEL S100" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99" /-->
+	</screen>	
 	
 	<screen name="PluginManager" title="Plugin manager" position="fill" flags="wfNoBorder">
 		<panel name="MenuTemplate"/>
