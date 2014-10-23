@@ -2,7 +2,7 @@
 	<!--
 	##################### mmark_a4you_ATEMIO v.1.4.2 ########################
 	#                                                                       #
-	#      mmark             Version 1.4.2 released          14-10-2014     #
+	#      mmark             Version 1.4.2 released          23-10-2014     #
 	#                                                                       #
 	#########################################################################
 		The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
@@ -2769,7 +2769,7 @@
 		<!--eLabel name="DEBUG" text="PANEL N018" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 	
-	<screen name="RestorePlugins" position="0,0" size="1280,720" title="Select Plugins" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="RestorePlugins" position="fill" title="Select Plugins" flags="wfNoBorder">
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
