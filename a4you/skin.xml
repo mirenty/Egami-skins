@@ -2768,6 +2768,24 @@
 		<widget name="filelist" position="40,80" size="585,500" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png"/>
 		<!--eLabel name="DEBUG" text="PANEL N018" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
+	
+	<screen name="RestorePlugins" position="0,0" size="1280,720" title="Select Plugins" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="WallTemplate"/>
+		<panel name="PigTemplate"/>
+		<panel name="ClockTemplate"/>
+		<panel name="sRG"/>
+		<widget source="menu" render="Listbox" position="40,80" size="585,425" backgroundColor="bkwall" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (50, 3), size = (495, 23), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryPixmapAlphaTest(pos = (5, 1), size = (24, 24), png = 1),
+					],
+					"fonts": [gFont("Regular", 19), gFont("Regular", 16)],
+					"itemHeight": 30
+				}
+			</convert>
+		</widget>
+	</screen>
 
 	<!-- Devices Panels -->
 	<screen name="DevicesPanel" title="Device Panels" position="fill" flags="wfNoBorder">
