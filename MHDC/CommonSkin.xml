@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.15 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.16 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -2084,6 +2084,11 @@ self.autoResize()
 	<screen name="RestoreScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="config" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand"/>
+		<panel name="AtemioLogo"/>
+	</screen>
+	<screen name="installedPlugins" position="0,0" size="1280,720" title="Install Plugins" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<widget name="label" position="520,110" size="755,580" font="Regular;20" transparent="1" foregroundColor="white" />
 		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="RestorePlugins" position="0,0" size="1280,720" title="Select Plugins" flags="wfNoBorder">
