@@ -1420,11 +1420,11 @@
 		<widget source="nimlist" render="Listbox" position="40,130" size="585,420" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall" zPosition="2" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (10, 3), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-				MultiContentEntryText(pos = (50, 26), size = (630, 50), font = 1, color=0x73c6ff, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+				MultiContentEntryText(pos = (0, 3), size = (540, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+				MultiContentEntryText(pos = (25, 26), size = (500, 140), font = 1, color=0x73c6ff, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
 				],
 				"fonts": [gFont("Regular", 20), gFont("Regular", 18)],
-				"itemHeight": 70
+				"itemHeight": 170
 				}
 			</convert>
 		</widget>
@@ -1991,7 +1991,7 @@
 		<!-- List -->
 		<ePixmap pixmap="buttons/maxbarblue.png" position="1205,75" size="15,418" zPosition="2" alphatest="blend"/>
 		<widget name="list" position="470,75" size="730,418" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" 
-			itemHeights="25,25,25" fontSizesOriginal="24,22,20" fontSizesCompact="22,18" fontSizesMinimal="22,18" backgroundColor="bkwall" transparent="1"/>
+			itemHeights="25,25,25" fontSizesOriginal="22,20,18" fontSizesCompact="20,16" fontSizesMinimal="20,16" backgroundColor="bkwall" transparent="1"/>
 		<!-- Music Name -->
 		<widget source="session.CurrentService" render="Label" position="610,607" size="480,20" font="Regular;19" noWrap="1" halign="center" zPosition="2" foregroundColor="#73c6ff" backgroundColor="#000000" transparent="1" >
 			<convert type="ServiceName">Name</convert>
@@ -2052,7 +2052,7 @@
 		<!--eLabel name="DEBUG" text="PANEL S082" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
 	</screen>
 
-	<!-- MediaPlayer (OKK) -->
+	<!-- MediaPlayer -->
 	<screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" backgroundColor="#000000" flags="wfNoBorder" >
 		<ePixmap pixmap="menu/bkmediap.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<ePixmap pixmap="menu/mediashadow.png" position="0,3" size="1280,720" zPosition="10" alphatest="blend"/>
