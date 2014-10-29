@@ -2,7 +2,7 @@
 	<!--
 	##################### mmark_a4you_ATEMIO v.1.4.2 ########################
 	#                                                                       #
-	#      mmark             Version 1.4.2 released          23-10-2014     #
+	#      mmark             Version 1.4.2 released          29-10-2014     #
 	#                                                                       #
 	#########################################################################
 		The Atemio4you skin has been build for Atemio 4you STB's by MMARK.
@@ -1579,12 +1579,9 @@
 		<panel name="sRG"/>
 		<widget name="header" position="680,35" size="580,60" font="mediamenu;28" noWrap="1" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1"/>
 		<widget name="config" position="40,90" size="585,396" itemHeight="33" font="Regular;22" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="buttons/listselect.png" backgroundColor="bkwall"/>
-		<eLabel text="SNR : SNR Db :" position="680,245" size="500,24" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="5"/>
+		<eLabel text="SNR : " position="680,245" size="500,24" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="5"/>
 		<widget source="Frontend" render="Label" position="750,245" size="225,24" font="Regular;22" halign="left" valign="center" transparent="1" backgroundColor="bkwall" >
 			<convert type="FrontendInfo">SNR</convert>
-		</widget>
-		<widget source="Frontend" render="Label" position="945,245" size="200,24" font="Regular;22" halign="left" backgroundColor="bkwall" transparent="1">
-			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
 		<widget source="Frontend" render="Progress" pixmap="infobar/bar_snr.png" position="676,270" size="548,10" borderWidth="1" borderColor="#606060">
 			<convert type="FrontendInfo">SNR</convert>
