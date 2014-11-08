@@ -7,4 +7,4 @@ Skins for Atemio
 - Magic HD Night by DeGroov
 - Magic HD Noire by DeGroov
 - megaHD by mmark
--
+- KravenHD by Kraven
