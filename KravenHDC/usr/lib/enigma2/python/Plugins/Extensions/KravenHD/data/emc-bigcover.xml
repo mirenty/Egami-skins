@@ -20,7 +20,7 @@
     <convert type="ClockToText">Format:%A</convert>
   </widget>
   <!--Uhr */-->
-  <widget name="list" position="491,109" size="755,351" itemHeight="32" BackColorSel="Amber" CoolFont="Regular;23" CoolSelectFont="Regular;23" CoolDateFont="Regular;23" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="550" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="150" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="640" CoolBarHPos="10" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="white" UnwatchedColor="KravenAccent1" WatchingColor="KravenGreen" FinishedColor="KravenAccent1" RecordingColor="red" foregroundColorSelected="white" scrollbarMode="showNever" transparent="1"  />
+  <widget name="list" position="491,109" size="755,351" itemHeight="32" BackColorSel="#00200E04" CoolFont="Regular;23" CoolSelectFont="Regular;23" CoolDateFont="Regular;23" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="550" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="150" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="640" CoolBarHPos="10" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="white" UnwatchedColor="KravenAccent1" WatchingColor="KravenGreen" FinishedColor="KravenAccent1" RecordingColor="red" foregroundColorSelected="white" scrollbarMode="showNever" transparent="1"  />
   <widget source="Title" render="Label" position="489,73" size="755,30" font="Regular; 20" foregroundColor="KravenAccent1" backgroundColor="KravenBackground" transparent="1" halign="right" />
   <widget name="wait" position="43,375" size="1198,50" zPosition="1" font="Regular; 32" foregroundColor="KravenAccent1" backgroundColor="KravenBackground" halign="center" valign="center" />
   <widget source="Service" render="Label" position="32,63" wrap="1" size="445,58" font="RegularLight; 24" halign="center" backgroundColor="KravenBackground" foregroundColor="white" transparent="1">
@@ -29,7 +29,7 @@
   <widget source="Service" render="Label" position="31,168" size="445,40" font="RegularLight; 22" halign="center" backgroundColor="KravenBackground" foregroundColor="white" transparent="1">
   <convert type="EMCMovieInfo">RecordServiceName</convert>
 </widget>
-  <widget source="Service" render="KravenRunningText" position="490,475" size="755,189" font="RegularLight; 22" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" foregroundColor="white" backgroundColor="transparent" alphatest="blend" halign="left" valign="top">
+  <widget source="Service" render="KravenRunningText" position="490,475" size="755,189" font="RegularLight; 22" options="movetype=running,direction=top,startpoint=0,startdelay=15000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" foregroundColor="white" backgroundColor="BackgroundKraven" zPosition="-8" halign="left" valign="top">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
   <widget source="Service" render="Label" position="32,130" size="445,30" font="RegularLight; 21" halign="center" backgroundColor="KravenBackground" foregroundColor="blue2" transparent="1">
@@ -60,6 +60,6 @@
   <convert type="EMCClockToText">InMinutes</convert>
 </widget>
 <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-<ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png"  alphatest="blend" />
+<ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/infobar.png"  alphatest="blend" />
 </screen>
 <!-- EMC BigCover */-->
