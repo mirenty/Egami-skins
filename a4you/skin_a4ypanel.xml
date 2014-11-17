@@ -166,7 +166,7 @@
 	</screen>
 
 	<!-- ATEMIO PANELS OK -->
-	<screen name="AtemioMenu" position="0,0" size="1280,720" flags="wfNoBorder" >
+	<screen name="AtemioMenu" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate"/>
@@ -192,16 +192,15 @@
 		<!--eLabel name="DEBUG"  text="PANEL AT008" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>'
 
-	<!-- SoftCamPanel -->
-	<screen name="SoftCamPanel" title="Softcam Panel" position="0,0" size="1280,720" flags="wfNoBorder" >
+	<!-- AtemioCamCenter -->
+	<screen name="AtemioCamCenter" title="Atemio Cam Center" position="fill" flags="wfNoBorder" >
 		<panel name="WallTemplate" />
 		<panel name="PigTemplate" />
 		<panel name="ClockTemplate"/>
-		<panel name="nRGB"/>
+		<panel name="sRGB"/>
 		<ePixmap pixmap="icons/ccc.png" position="45,80" size="51,51" zPosition="1" alphatest="blend" />
-		<widget name="cam"    position="120,90" size="580,28" font="Regular; 24" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="2" />
-		<widget name="server" position="45,120" size="580,24" font="Regular; 22" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="2" />
-		<widget name="entries" position="45,160" size="585,300" transparent="1" />
+		<widget name="menu" position="45,150" size="280,200" font="Regular; 24" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="2" />
+		<widget render="Label" source="text1" position="120,90" size="580,50" font="Regular; 30" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="2" />
 		<!-- Ico Crypt -->
 		<ePixmap pixmap="infobar/cryptoff_ico.png" position="45,360" size="17,25" zPosition="1" alphatest="blend" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/crypton_ico.png" position="45,360" size="17,25" zPosition="2" alphatest="blend">
@@ -214,26 +213,48 @@
 		</widget>
 		<eLabel position="40,400" size="580,1" backgroundColor="#10202020" zPosition="1" />
 		<!-- Emu Info  -->
-		<eLabel text="EMU :" position="40,415" size="60,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
- 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="135,415" size="250,34" font="Regular;20" valign="top" halign="left" foregroundColor="foreground" backgroundColor="bkwall" transparent="1" zPosition="10" >
+		<eLabel text="Crypt Info :" position="45,415" size="120,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
+ 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="70,445" size="250,34" font="Regular;20" valign="top" halign="left" foregroundColor="foreground" backgroundColor="bkwall" transparent="1" zPosition="10" >
 			<convert type="PliExtraInfo">EmuInfoCrypt</convert>
 		</widget>
 		<!-- Ico Crypt -->
-		<ePixmap pixmap="infobar/ico_crypt_off.png" position="102,419" size="21,15" zPosition="0" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_crypt_on.png" position="102,419" size="21,15" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="infobar/ico_crypt_off.png" position="45,449" size="21,15" zPosition="0" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_crypt_on.png" position="45,449" size="21,15" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Sat Freq Info  -->
- 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="102,445" size="250,24" font="Regular;20" valign="top" halign="left" foregroundColor="bluette" backgroundColor="bkwall" transparent="1" zPosition="10" >
+ 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="45,475" size="250,24" font="Regular;20" valign="top" halign="left" foregroundColor="bluette" backgroundColor="bkwall" transparent="1" zPosition="10" >
 			<convert type="PliExtraInfo">EmuInfoCryptSpecial</convert>
 		</widget>
 		<!-- Share Info -->
-		<eLabel text="SERVER " position="40,525" size="150,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
-		<widget source="session.CurrentService" render="Label" position="40,550" size="580,60" font="Regular;22" valign="center" halign="left" foregroundColor="#007983b5" backgroundColor="bkwall" transparent="1" zPosition="5" >
+		<eLabel text="ECM Info:" position="45,525" size="150,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
+		<widget source="session.CurrentService" render="Label" position="33,530" size="580,60" font="Regular;22" valign="center" halign="left" foregroundColor="#007983b5" backgroundColor="bkwall" transparent="1" zPosition="5" >
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
 		<!--eLabel name="DEBUG"  text="PANEL AT009" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	
+	<!-- AtemioCamCenter -->
+	<screen name="CamCenterPackages" title="Install SoftCams" position="fill" flags="wfNoBorder" >
+		<panel name="WallTemplate" />
+		<panel name="PigTemplate" />
+		<panel name="ClockTemplate"/>
+		<panel name="sRG"/>
+		<widget source="key_ok" render="Label" position="570,656" zPosition="1" size="220,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1"/>
+		<widget source="list" render="Listbox" position="65,100" size="510,520" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (5, 1), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (5, 26), size = (540, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+						MultiContentEntryPixmapAlphaTest(pos = (545, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+						MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (510, 2), png = 5), # index 4 is the div pixmap
+					],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 14)],
+				"itemHeight": 52
+				}
+			</convert>
+		</widget>
 	</screen>
 </skin>
 
