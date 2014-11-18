@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.16 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.17 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -5062,7 +5062,7 @@ self.autoResize()
 		<panel name="AtemioLogo"/>
 	</screen>
 	<!-- Atemio SoftCamPanel -->
-	<screen name="SoftCamPanel" position="0,0" size="1280,720" title="Softcam Panel" flags="wfNoBorder">
+	<!--<screen name="SoftCamPanel" position="0,0" size="1280,720" title="Softcam Panel" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGB_Template"/>
 		<widget name="entries" position="520,90" size="755,150" />
@@ -5091,7 +5091,7 @@ self.autoResize()
 			</convert>
 		</widget>
 		<panel name="AtemioLogo"/>
-	</screen>
+	</screen>-->
 	<screen flags="wfNoBorder" name="VIXCronManager" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
