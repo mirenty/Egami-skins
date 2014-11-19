@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.18 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.19 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -2670,13 +2670,17 @@ self.autoResize()
 		<eLabel text="'OK' = Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 		<panel name="AtemioLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="FastScanScreen" position="0,0" size="1280,720">
+	<screen name="FastScanScreen" title="FastScan Screen" position="0,0" size="1280,720"  flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
+		<panel name="ButtonRed"/>
+		<eLabel text="Cancel" position="50,682" size="220,26" backgroundColor="background" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
+		<panel name="ButtonGreen"/>
+		<eLabel text="Save" position="340,682" size="220,26" backgroundColor="background" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="config" scrollbarMode="showOnDemand" itemHeight="32" font="Regular;24" position="520,82" size="755,555" transparent="1"/>
 		<widget name="introduction" font="Regular;24" position="520,640" size="755,25" halign="center" transparent="1"/>
 		<panel name="AtemioLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="FastScanStatus" position="0,0" size="1280,720">
+	<screen flags="wfNoBorder" name="FastScanStatus" title="" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="frontend" pixmap="icons/scan-s.png" position="590,110" size="64,64" transparent="1" alphatest="on"/>
 		<widget name="scan_state" position="660,110" zPosition="2" size="400,30" font="Regular;18"/>
