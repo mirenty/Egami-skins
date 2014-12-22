@@ -2907,7 +2907,7 @@
 		<panel name="WallTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ClockTemplate"/>
-		<panel name="nRGY"/>
+		<panel name="nRGYB"/>
 		<widget name="imageList" position="40,110" size="540,505" font="Regular;20" backgroundColor="bkwall" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 	</screen>
 	<screen name="DeviceBrowser" position="0,0" size="1280,720" title="Please select target medium" flags="wfNoBorder">
