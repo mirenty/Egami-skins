@@ -2472,7 +2472,7 @@
 			foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43"
 			selectionPixmap="aDreamy/box/slider.png" backgroundPixmap="aDreamy/box/sliderb.png" >
  			<convert type="TemplatedMultiContent">
- 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (550, 40), flags = RT_HALIGN_LEFT, text = 0)],
+ 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (550, 40), flags = RT_HALIGN_LEFT, text = 1)],
  				"fonts": [gFont("Regular", 24)],
  				"itemHeight": 45
  				}
