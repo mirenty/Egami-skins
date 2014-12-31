@@ -28,7 +28,7 @@
 		<eLabel position="50,295" size="685,1" backgroundColor="#303030" zPosition="1" />
 		<eLabel position="745,100" size="2,510"  backgroundColor="#202020" zPosition="0" />
 		<widget name="config" position="50,320" size="650,240" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
-		<widget source="list" render="Listbox" position="50,100" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
+		<widget source="list" render="Listbox" position="50,330" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (690, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 					"fonts": [gFont("Regular", 22)],
@@ -48,7 +48,7 @@
 		<panel name="p900_Date"/>
 		<panel name="sRG"/>
 		<!-- Code -->
-		<widget name="text" position="50,100" size="690,270" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="text" position="50,540" size="690,270" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget source="languages" render="Listbox" position="50,100" size="690,400" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -84,7 +84,7 @@
 		<eLabel position="50,295" size="685,1" backgroundColor="#303030" zPosition="1" />
 		<eLabel position="745,100" size="2,510"  backgroundColor="#202020" zPosition="0" />
 		<widget name="config" position="50,320" size="650,240" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
-		<widget source="list" render="Listbox" position="50,100" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
+		<widget source="list" render="Listbox" position="50,330" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (690, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 					"fonts": [gFont("Regular", 22)],
@@ -112,7 +112,6 @@
 		<eLabel position="50,295" size="685,1" backgroundColor="#303030" zPosition="1" />
 		<eLabel position="745,100" size="2,510"  backgroundColor="#202020" zPosition="0" />
 		<widget name="config" position="50,320" size="650,240" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
-
 		<widget source="list" render="Listbox" position="50,100" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (690, 29), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -136,7 +135,7 @@
 		<panel name="p900_Date"/>
 		<!-- Code -->
 		<ePixmap pixmap="icons/info_on.png" position="40,95" size="40,40" zPosition="10" alphatest="blend"/>
-		<widget source="statusbar" render="Label" position="50,100" size="650,250" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="1"/>
+		<widget source="statusbar" render="Label" position="50,140" size="650,250" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!--eLabel name="DEBUG" text="W005" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
