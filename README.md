@@ -3,10 +3,10 @@ Atemio-Skins
 
 Skins for Atemio
 
-- a4you by mmark
+- Atemio4You by mmark
 - Magic HD Night by DeGroov
 - Magic HD Noire by DeGroov
-- megaHD by mmark
+- MegaHD by mmark
 - KravenHD by Kraven
 - KravenZeroHD by Kraven
 - aDreamy by mmark
