@@ -1835,7 +1835,7 @@
 			<convert type="EventName">Name</convert>
 		</widget>
 		<!-- FullDescription -->
-		<widget source="Event" render="RGScrollLabel" position="420,80" size="510,110" font="Regular;20" halign="center" foregroundColor="#ffffff" backgroundColor="header" transparent="1">
+		<widget source="Event" render="EGScrollLabel" position="420,80" size="510,110" font="Regular;20" halign="center" foregroundColor="#ffffff" backgroundColor="header" transparent="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<!-- Time -->
@@ -1911,7 +1911,7 @@
 		</widget>
 		<eLabel position="840,290" size="400,1" backgroundColor="ltbluette" zPosition="1" />
 		<!-- Extended Description --> 
-		<widget source="Service" render="RGScrollLabel" position="840,330" size="400,250" font="Regular;20" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2">
+		<widget source="Service" render="EGScrollLabel" position="840,330" size="400,250" font="Regular;20" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<!-- DiskSpace --> 
