@@ -1,12 +1,11 @@
-Atemio-Skins
+Egami-Skins
 ============
 
-Skins for Atemio
+Skins for EGAMI
 
 - Atemio4You by mmark
 - Magic HD Night by DeGroov
 - Magic HD Noire by DeGroov
-- MegaHD by mmark
 - KravenHD by Kraven
 - KravenZeroHD by Kraven
-- aDreamy by mmark
+- eDreamy by mmark
