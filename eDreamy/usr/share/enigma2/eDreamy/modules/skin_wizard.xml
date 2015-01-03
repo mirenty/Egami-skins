@@ -25,7 +25,7 @@
 		<eLabel position="50,295" size="685,1" backgroundColor="#303030" zPosition="1" />
 		<eLabel position="745,100" size="2,510"  backgroundColor="#202020" zPosition="0" />
 		<widget name="config" position="50,320" size="650,240" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
-		<widget source="list" render="Listbox" position="50,100" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
+		<widget source="list" render="Listbox" position="50,330" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (690, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 					"fonts": [gFont("Regular", 22)],
@@ -45,7 +45,7 @@
 		<panel name="p900_Date"/>
 		<panel name="sRG"/>
 		<!-- Code -->
-		<widget name="text" position="50,100" size="690,270" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="text" position="50,540" size="690,270" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget source="languages" render="Listbox" position="50,100" size="690,400" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -81,7 +81,7 @@
 		<eLabel position="50,295" size="685,1" backgroundColor="#303030" zPosition="1" />
 		<eLabel position="745,100" size="2,510"  backgroundColor="#202020" zPosition="0" />
 		<widget name="config" position="50,320" size="650,240" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
-		<widget source="list" render="Listbox" position="50,100" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
+		<widget source="list" render="Listbox" position="50,330" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (690, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 					"fonts": [gFont("Regular", 22)],
@@ -110,7 +110,7 @@
 		<eLabel position="745,100" size="2,510"  backgroundColor="#202020" zPosition="0" />
 		<widget name="config" position="50,320" size="650,240" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
 
-		<widget source="list" render="Listbox" position="50,100" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
+		<widget source="list" render="Listbox" position="50,330" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (690, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 					"fonts": [gFont("Regular", 22)],
@@ -145,8 +145,8 @@
 		<widget name="ErrorPixmap"    pixmap="icons/input_error.png"    position="50,100" size="53,53" alphatest="blend"/>
 		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="50,100" size="53,53" alphatest="blend"/>
 		<widget name="InfoPixmap"     pixmap="icons/input_info.png"     position="50,100" size="53,53" alphatest="blend"/>
-		<widget name="text" position="50,100" size="690,270" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1"/>
-		<widget source="list" render="Listbox" position="50,100" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
+		<widget name="text" position="50,540" size="690,270" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1"/>
+		<widget source="list" render="Listbox" position="50,330" size="690,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (690, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 					"fonts": [gFont("Regular", 22)],
