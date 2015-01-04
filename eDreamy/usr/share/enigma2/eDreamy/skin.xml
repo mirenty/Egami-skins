@@ -689,11 +689,11 @@
 		<eLabel position="830,230" size="1,330"   backgroundColor="#10202020" zPosition="0" />
 		<eLabel position="830,230" size="415,1"   backgroundColor="#10202020" zPosition="0" />
 		<!-- Interlinea 23 -->
-		<widget source="ServiceEvent" render="EGScrollLabel" position="835,235" size="405,290" font="Regular;20" foregroundColor="white" backgroundColor="bluette" valign="top" halign="center" noWrap="1" transparent="1" zPosition="1" >
+		<widget source="ServiceEvent" render="EGScrollLabel" position="835,235" size="405,290" font="Regular;20" foregroundColor="white" backgroundColor="black" valign="top" halign="center" noWrap="1" transparent="1" zPosition="1" >
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<!-- Channel Reference  -->
-		<widget position="835,535" size="405,25" source="ServiceEvent" render="Label" halign="center" font="Regular;19" foregroundColor="ltbluette" backgroundColor="bluette" zPosition="1" transparent="1" >
+		<widget position="835,535" size="405,25" source="ServiceEvent" render="Label" halign="center" font="Regular;19" foregroundColor="ltbluette" backgroundColor="black" zPosition="1" transparent="1" >
 			  <convert type="ServiceName2">Reference</convert>
 		</widget>  
 		<!-- Next Event -->
@@ -701,7 +701,7 @@
 		<eLabel position="830,567" size="1,55"   backgroundColor="#10202020" zPosition="0" />
 		<eLabel position="830,567" size="415,1"  backgroundColor="#10202020" zPosition="0" />
                 <!-- Epg Event Next -->
-                <widget source="ServiceEvent" render="NextEpgInfo" position="840,573" size="405,46" font="Regular;19" foregroundColor="yellow" backgroundColor="bluette" transparent="1" zPosition="2" />
+                <widget source="ServiceEvent" render="NextEpgInfo" position="840,573" size="405,46" font="Regular;19" foregroundColor="yellow" backgroundColor="black" transparent="1" zPosition="2" />
 		<!--eLabel name="Debug" text="S023" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	
