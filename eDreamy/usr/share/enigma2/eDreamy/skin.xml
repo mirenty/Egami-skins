@@ -263,23 +263,23 @@
 	</screen>
 
 	<!-- Virtual Keyboard -->
-	<screen name="VirtualKeyBoard" title="Virtual KeyBoard" position="center,center" size="700,300" zPosition="99" backgroundColor="#10101010" >
-		<widget name="list" position="5,70" size="700,300" selectionDisabled="1" backgroundColor="#10101010"/>
-		<eLabel position="5,5" size="690,50" backgroundColor="#10808080"/>
-		<eLabel position="7,7" size="686,46" backgroundColor="#10101010" zPosition="1"/>
-		<widget name="header" position="5,62" size="730,26" font="Regular;18" transparent="1" noWrap="1" foregroundColor="#ffffff" backgroundColor="#10101010"/>
-		<widget name="text" position="10,10" size="670,40" font="Regular;36" transparent="1" noWrap="1" halign="right" foregroundColor="#ffffff" backgroundColor="#10101010" zPosition="5"/>
-		<ePixmap pixmap="buttons/redpanel.png" position="575,70" size="25,25" alphatest="blend"/>
-		<eLabel text="Canc" position="610,67" size="220,28" font="Regular;24" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="#10101010" transparent="1"/>
-		<ePixmap pixmap="buttons/greenpanel.png" position="575,120" size="25,25" alphatest="blend"/>
-		<eLabel text="OK" position="610,117" size="220,28" font="Regular;24" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="#10101010" transparent="1"/>
-		<ePixmap pixmap="buttons/yellowpanel.png" position="575,170" size="25,25" alphatest="blend"/>
-		<widget source="country" render="Label" position="610,167" size="220,28" font="Regular;24" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="#10101010" transparent="1"/>
-		<ePixmap pixmap="buttons/bluepanel.png" position="575,220" size="25,25" alphatest="blend"/>
-		<eLabel text="Upper" position="610,217" size="220,28" font="Regular;24" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="#10101010" transparent="1"/>
+	<screen name="VirtualKeyBoard" title="Virtual KeyBoard" position="center,center" size="850,400" zPosition="99" backgroundColor="un10101010">
+		<widget name="list" position="8,94" size="700,300" selectionDisabled="1" backgroundColor="un10101010" />
+		<eLabel position="5,5" size="690,50" backgroundColor="un10808080" />
+		<eLabel position="7,7" size="686,46" backgroundColor="un10101010" zPosition="1" />
+		<widget name="header" position="5,62" size="730,26" font="Regular;18" transparent="1" noWrap="1" foregroundColor="unffffff" backgroundColor="un10101010" />
+		<widget name="text" position="10,10" size="670,40" font="Regular;36" transparent="1" noWrap="1" halign="right" foregroundColor="unffffff" backgroundColor="un10101010" zPosition="5" />
+		<ePixmap pixmap="buttons/redpanel.png" position="575,70" size="25,25" alphatest="blend" />
+		<eLabel text="Cancel" position="610,67" size="220,28" font="Regular;24" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="un10101010" transparent="1" />
+		<ePixmap pixmap="buttons/greenpanel.png" position="575,120" size="25,25" alphatest="blend" />
+		<eLabel text="OK" position="610,117" size="220,28" font="Regular;24" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="un10101010" transparent="1" />
+		<ePixmap pixmap="buttons/yellowpanel.png" position="575,170" size="25,25" alphatest="blend" />
+		<widget source="country" render="Label" position="610,167" size="220,28" font="Regular;24" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="un10101010" transparent="1" />
+		<ePixmap pixmap="buttons/bluepanel.png" position="575,220" size="25,25" alphatest="blend" />
+		<eLabel text="Upper" position="610,217" size="220,28" font="Regular;24" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="un10101010" transparent="1" />
 		<!--eLabel name="Debug" text="S016" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
-
+	
 	<!-- Numerical help dialog -->
 	<screen name="NumericalTextInputHelpDialog" position="50,505" size="607,128" backgroundColor="grey" zPosition="2" flags="wfNoBorder" >
 		<eLabel position="2,2" size="605,126" backgroundColor="#404040" zPosition="-1" />
