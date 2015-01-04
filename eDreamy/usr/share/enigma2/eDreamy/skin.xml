@@ -2,6 +2,7 @@
 	<!--
 	##################### mmark_Dreamy_Egami v.1.3.0 ########################
 	#                                                                       #
+	#      a4tech             Version 1.3.1 released          04-01-2015     #
 	#      mmark             Version 1.3.0 released          01-01-2015     #
 	#      mmark             Version 1.2.0 released          29-12-2014     #
 	#      mmark             Version 1.1.0 released          12-12-2014     #
@@ -647,9 +648,10 @@
 		<ePixmap position="805,100" size="10,510" pixmap="box/maxbar.png" alphatest="blend" zPosition="2"/>
 		<widget name="list" position="45,100" size="770,518" scrollbarMode="showOnDemand" transparent="1" zPosition="1" 
 			serviceItemHeight="30" serviceNumberFont="Regular;22" serviceNameFont="Regular;20" serviceInfoFont="Regular;20" 
-			foregroundColor="#ffffff" foregroundColorSelected="#ffffff" backgroundColor="header" backgroundColorSelected="bluette"
+			foregroundColor="#ffffff" foregroundColorSelected="#ffffff" backgroundColor="header" backgroundColorSelected="trbluette"
 			colorServiceDescription="#49bbff" colorServiceDescriptionSelected="#a1daff" foregroundColorServiceNotAvail="#303030" 
 			colorEventProgressbarBorder="grey" colorEventProgressbarBorderSelected="white" picServiceEventProgressbar="eDreamy/progcl.png" />
+		
 		<!-- Service Channel -->
 		<eLabel position="830,20" size="415,50" backgroundColor="header" zPosition="0" />
 		<eLabel position="830,20" size="1,50"   backgroundColor="#202020" zPosition="0" />
@@ -663,7 +665,7 @@
 		<eLabel position="830,78" size="415,1"   backgroundColor="#10202020" zPosition="0" />
 		<!-- Service Name -->
 		<widget source="ServiceEvent" render="Picon" position="835,85" size="130,80" zPosition="1" alphatest="blend" transparent="1" >
-			<convert type="DERefString">ServicelistRef</convert>
+			<convert type="EGRefString">ServicelistRef</convert>
 		</widget>
 		<!-- Event Name - Time -->
 		<eLabel text="Start Time :" position="975,95" size="120,24" font="Regular;22" backgroundColor="#101010" foregroundColor="yellow" transparent="1" zPosition="1" />
@@ -691,13 +693,15 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<!-- Channel Reference  -->
-		<widget position="835,535" size="405,25" source="ServiceEvent" render="DEShowReference" halign="center" font="Regular;19" foregroundColor="ltbluette" backgroundColor="bluette" zPosition="1" transparent="1" />
+		<widget position="835,535" size="405,25" source="ServiceEvent" render="Label" halign="center" font="Regular;19" foregroundColor="ltbluette" backgroundColor="bluette" zPosition="1" transparent="1" >
+			  <convert type="ServiceName2">Reference</convert>
+		</widget>  
 		<!-- Next Event -->
 		<eLabel position="830,567" size="415,55" backgroundColor="trbluette" zPosition="0" />
 		<eLabel position="830,567" size="1,55"   backgroundColor="#10202020" zPosition="0" />
 		<eLabel position="830,567" size="415,1"  backgroundColor="#10202020" zPosition="0" />
                 <!-- Epg Event Next -->
-                <widget source="ServiceEvent" render="DENextEvent" position="840,573" size="405,46" font="Regular;19" foregroundColor="yellow" backgroundColor="bluette" transparent="1" zPosition="2" />
+                <widget source="ServiceEvent" render="NextEpgInfo" position="840,573" size="405,46" font="Regular;19" foregroundColor="yellow" backgroundColor="bluette" transparent="1" zPosition="2" />
 		<!--eLabel name="Debug" text="S023" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	
@@ -818,7 +822,7 @@
 		<eLabel position="45,470" size="770,1" backgroundColor="#404040"/>
 		<!-- Service Name -->
 		<widget source="ServiceEvent" render="Picon" position="45,480" size="130,80" zPosition="1" alphatest="blend" transparent="1" >
-			<convert type="DERefString">ServicelistRef</convert>
+			<convert type="EGRefString">ServicelistRef</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="45,570" size="60,25" font="Regular; 22" foregroundColor="#ffffff" backgroundColor="#10101010" noWrap="1" transparent="1" zPosition="2" >
 			<convert type="EventTime">StartTime</convert>
