@@ -1936,6 +1936,7 @@
 
 		<!-- Servicename -->
 		<ePixmap pixmap="eDreamy/icons/icon_event.png" position="40,532" size="40,30" alphatest="blend" />
+
 		<widget source="session.CurrentService" render="Label" position="85,528" size="810,27" font="Regular;24" valign="top" noWrap="1" backgroundColor="bluette" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -1944,9 +1945,9 @@
 		<widget source="session.CurrentService" render="Label" position="1130,540" size="100,30" font="Regular;20" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" >
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<ePixmap position="45,570" size="130,81" pixmap="eDreamy/menu/dmmmedia.png" zPosition="1" alphatest="blend" />
+		<widget name="statusicon" position="75,580" size="50,50" alphatest="blend" zPosition="5" pixmaps="eDreamy/icons/play.png,eDreamy/icons/pause.png,eDreamy/icons/stop.png,eDreamy/icons/forward.png,eDreamy/icons/backward.png,eDreamy/icons/slow.png" />
 		<!-- Elapsed time -->
-		<widget source="session.CurrentService" render="Label" position="190,580" size="100,40" font="Regular;34" halign="right" backgroundColor="header" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="170,580" size="120,40" font="Regular;34" halign="right" backgroundColor="header" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<!-- Progressbar (movie position)-->
@@ -1954,12 +1955,13 @@
 		<widget source="session.CurrentService" render="Progress" position="310,599" size="620,5" pixmap="eDreamy/box/progress_small.png" transparent="1" zPosition="3" >
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="PositionGauge" position="310,599" size="620,5" transparent="1">
+		<widget source="session.CurrentService" render="PositionGauge" position="280,592" size="620,15" zPosition="4" pointer="eDreamy/bars/pointerdvd.png:820,0" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
+		
 		<!-- Remaining time -->
-		<widget source="session.CurrentService" render="Label" position="950,580" size="100,40" font="Regular;34" halign="left" foregroundColor="red" backgroundColor="header" transparent="1">
-			<convert type="ServicePosition">Remaining,Negate</convert>
+		<widget source="session.CurrentService" render="Label" position="950,580" size="220,40" font="Regular;34" halign="left" foregroundColor="red" backgroundColor="header" transparent="1">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
 		<eLabel position="0,648" size="1280,1" backgroundColor="#404040" zPosition="5" />
 		<!-- Audio icon (is there multichannel audio?) -->
@@ -1993,6 +1995,16 @@
 		<widget source="session.CurrentService" render="Label" position="455,655" size="100,36" font="Regular;30" halign="left"  foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="3" >
 			<convert type="ServiceInfo">VideoHeight</convert>	
 		</widget>
+		<!-- DateTime -->
+		<widget source="global.CurrentTime" render="Label" position="920,656" size="200,30" font="Regular;26" halign="left" foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="3" >
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1100,656" size="300,30" font="Regular;26" halign="left" foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="3">
+			<convert type="ClockToText">Format %H:%M:%S</convert>
+		</widget>
+		<widget name="state" position="550,656" size="720,30" font="Regular;30" halign="left" foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="3" />
+		<widget name="eventname" position="960,656" size="0,0" font="Regular;30" halign="left" foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="3" />
+		<widget name="speed" position="1100,656"  size="0,0"  font="Regular;30" halign="left" foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="3" />
 		<!--eLabel name="Debug" text="S083" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
