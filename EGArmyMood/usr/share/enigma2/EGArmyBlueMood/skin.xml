@@ -388,7 +388,7 @@
 		</widget>
 		<widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="375,40" size="100,32" zPosition="2" font="Regular;28" halign="left" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background" />
 		<widget source="session.CurrentService" render="Label" position="375,40" size="530,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
-		    <convert type="EGServiceName">Name</convert>
+		    <convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="220,146" 	size="200,22" zPosition="2"	font="Regular;18" backgroundColor="transpBlack" halign="left" foregroundColor="white" transparent="1" >
 			<convert type="ServiceName">Provider</convert>
@@ -491,7 +491,7 @@
 		</widget>
 		<widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="375,522" size="100,32" zPosition="2" font="Regular;28" halign="left" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background" />
 		<widget source="session.CurrentService" render="Label" position="375,522" size="530,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
-			<convert type="EGServiceName">Name</convert>
+			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="60,656" size="270,24" zPosition="2" font="Regular;20" backgroundColor="transpBlack" halign="left" foregroundColor="white" transparent="1" >
 			<convert type="ServiceName">Provider</convert>
@@ -541,13 +541,6 @@
 		<widget source="session.RecordState" render="Pixmap" pixmap="EGArmyBlueMood/icons/icon_rec.png" position="817,655" zPosition="4" size="44,30" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="EGArmyBlueMood/icons/ico_line_off.png" position="860,659" size="20,20" zPosition="3" alphatest="blend" />
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="EGArmyBlueMood/icons/ico_line_on.png" position="860,659" size="20,20" zPosition="4" alphatest="blend" >
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="EGArmyBlueMood/icons/ico_line_on.png" position="860,659" size="20,20" zPosition="4" alphatest="blend" >
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>			
 		<widget source="session.CurrentService" render="Pixmap" pixmap="EGArmyBlueMood/icons/icon_dolby.png" position="571,655" zPosition="4" size="70,30" alphatest="on" >
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
@@ -644,7 +637,7 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="60,59" size="370,30" halign="left" font="Regular;20" zPosition="3" transparent="1" foregroundColor="white" backgroundColor="transpBlack">
-			<convert type="ServiceInfo">Freq_Info</convert>
+			<convert type="PliExtraInfo">TransponderInfo</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label"  position="60,38" size="590,20" halign="left" font="Display;15" zPosition="4" foregroundColor="grey" transparent="1" backgroundColor="transpBlack">
 			<convert type="EGExtraInfo">NetInfo</convert>
