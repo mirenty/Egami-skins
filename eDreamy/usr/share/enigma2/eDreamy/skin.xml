@@ -464,12 +464,8 @@
 			<convert type="ServiceInfo">VideoHeight</convert>	
 		</widget>
 		<!-- Emu Info -->
- 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="998,2540" size="250,34" font="Regular;20" halign="right" foregroundColor="#10101010" backgroundColor="header" transparent="1" zPosition="3" >
-			<convert type="PliExtraInfo">EmuInfoCrypt</convert>
-		</widget>
-		<!-- Emu Info -->
- 		<widget source="session.CurrentService" render="Label" text="Share :" position="848,540" size="400,34" font="Regular;20" halign="right" foregroundColor="#505050" backgroundColor="header" transparent="1" zPosition="6" >
-			<convert type="PliExtraInfo">EmuInfoCryptSpecial</convert>
+ 		<widget source="session.CurrentService" render="Label" position="848,540" size="400,34" font="Regular;20" halign="right" foregroundColor="#505050" backgroundColor="header" transparent="1" zPosition="6" >
+			<convert type="EGExtraInfo">CryptoBar</convert>
 		</widget>
 		<!-- Picon -->
 		<widget source="session.CurrentService" render="Picon" position="35,575" size="130,80" alphatest="blend" zPosition="1" >
@@ -580,13 +576,25 @@
 		<eLabel position="0,58" size="1280,5"   backgroundColor="bluette"   zPosition="5" />
 		<eLabel position="0,0"  size="1280,1"   backgroundColor="bluette"   zPosition="5" />
 		<eLabel position="0,58" size="128,1"    backgroundColor="bluette"   zPosition="5" />
-		<eLabel text="FREQ:" position="40,25" size="60,34" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="10"/>
-		<widget source="session.CurrentService" render="Label" position="105,26" size="620,34" font="Regular;20" valign="top" halign="left" foregroundColor="foreground" backgroundColor="header" transparent="1" zPosition="10" >
+		<eLabel text="FREQ:" position="40,30" size="60,34" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="10"/>
+		<widget source="session.CurrentService" render="Label" position="105,30" size="620,34" font="Regular;18" halign="left" foregroundColor="foreground" backgroundColor="header" transparent="1" zPosition="10" >
 			<convert type="PliExtraInfo">ServiceInfoFreq</convert>
 		</widget>
 		<!-- Share Info -->
-		<widget source="session.CurrentService" render="Label" position="665,15" size="580,42" font="Regular;19" halign="right" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="6" >
-			<convert type="CryptoInfo">VerboseInfo</convert>
+		<widget source="session.CurrentService" render="Label" position="40,5" size="280,42" font="Regular;19" halign="left" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="6" >
+			<convert type="EGExtraInfo">E-C-N</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="135,5" size="580,42" font="Regular;19" halign="left" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="6" >
+			<convert type="EGExtraInfo">CamName</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="665,5" size="580,42" font="Regular;19" halign="right" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="6" >
+			<convert type="EGExtraInfo">NetInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="645,30" size="580,42" font="Regular;19" halign="left" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="6" >
+			<convert type="PliExtraInfo">CryptoSpecial</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="865,30" size="380,42" font="Regular;19" halign="right" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="6" >
+			<convert type="EGExtraInfo">EcmInfo</convert>
 		</widget>
 		<ePixmap pixmap="eDreamy/menu/eventnow.png" position="0,90" size="1280,403" alphatest="on" transparent="1" zPosition="6" />
 		<!-- EVENTS Info -->
@@ -1952,10 +1960,10 @@
 		</widget>
 		<!-- Progressbar (movie position)-->
 		<eLabel position="310,601" size="620,1" backgroundColor="bluette" zPosition="1" />
-		<widget source="session.CurrentService" render="Progress" position="310,599" size="620,5" pixmap="eDreamy/box/progress_small.png" transparent="1" zPosition="3" >
+		<widget source="session.CurrentService" render="Progress" position="310,599" size="620,4" pixmap="eDreamy/box/progress_small.png" transparent="1" zPosition="3">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="PositionGauge" position="280,592" size="620,15" zPosition="4" pointer="eDreamy/bars/pointerdvd.png:820,0" transparent="1">
+		<widget source="session.CurrentService" render="PositionGauge" position="310,593" size="620,15" zPosition="4" pointer="eDreamy/bars/pointerdvd.png:890,0" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		
