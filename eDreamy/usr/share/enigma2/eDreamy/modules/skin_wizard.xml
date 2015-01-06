@@ -16,7 +16,7 @@
 		<panel name="p900_Date"/>
 		<!-- Code -->
 		<widget name="wizard" position="1020,415" size="160,180" pixmap="eDreamy/menu/wizard.png" zPosition="1" />
-		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="blend" zPosition="2" />
+		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png" alphatest="blend" zPosition="2" />
 		<widget name="arrowdown"  position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowup"    position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
@@ -35,7 +35,7 @@
 		</widget>
 		<ePixmap position="50,658"  pixmap="eDreamy/buttons/redpanel.png" size="22,22" alphatest="blend" zPosition="2" />
 		<widget name="languagetext" position="90,642"  size="180,55" zPosition="1" font="Regular;22" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="bluette" transparent="1" />
-		<widget name="portpic" position="45,343" size="40,40" zPosition="2" alphatest="on" transparent="1"/>
+		<!--<widget name="portpic" position="45,343" size="40,40" zPosition="2" alphatest="on" transparent="1"/>-->
 		<!--eLabel name="DEBUG" text="W001" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -43,7 +43,7 @@
 	<screen name="LanguageWizard" title="Language Selection..." position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p900_Template"/>
 		<panel name="p900_Date"/>
-		<panel name="sRG"/>
+		<panel name="sRGYB"/>
 		<!-- Code -->
 		<widget name="text" position="50,540" size="690,270" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget source="languages" render="Listbox" position="50,100" size="690,400" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1">
@@ -58,7 +58,7 @@
 			</convert>
 		</widget>
 		<widget name="wizard" position="1020,415" size="160,180" pixmap="eDreamy/menu/wizard.png" zPosition="1" />
-		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="blend" zPosition="2" />
+		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png" alphatest="blend" zPosition="2" />
 		<widget name="arrowdown"  position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowup"    position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
@@ -72,7 +72,7 @@
 		<panel name="p900_Date"/>
 		<!-- Code -->
 		<widget name="wizard" position="1020,415" size="160,180" pixmap="eDreamy/menu/wizard.png" zPosition="1" />
-		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="blend" zPosition="2" />
+		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png" alphatest="blend" zPosition="2" />
 		<widget name="arrowdown"  position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowup"    position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
@@ -100,7 +100,7 @@
 		<panel name="p900_Date"/>
 		<!-- Code -->
 		<widget name="wizard" position="1020,415" size="160,180" pixmap="eDreamy/menu/wizard.png" zPosition="1" />
-		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="blend" zPosition="2" />
+		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png" alphatest="blend" zPosition="2" />
 		<widget name="arrowdown"  position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowup"    position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
@@ -133,7 +133,7 @@
 		<panel name="p900_Date"/>
 		<!-- Code -->
 		<ePixmap pixmap="icons/info_on.png" position="40,95" size="40,40" zPosition="10" alphatest="blend"/>
-		<widget source="statusbar" render="Label" position="50,100" size="650,250" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="1"/>
+		<widget source="statusbar" render="Label" position="110,100" size="650,250" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!--eLabel name="DEBUG" text="W005" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -155,7 +155,7 @@
 			</convert>
 		</widget>
 		<widget name="wizard" position="1020,415" size="160,180" pixmap="eDreamy/menu/wizard.png" zPosition="1" />
-		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="blend" zPosition="2" />
+		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png" alphatest="blend" zPosition="2" />
 		<widget name="arrowdown"  position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowup"    position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
@@ -183,7 +183,7 @@
 			</convert>
 		</widget>
 		<widget name="wizard" position="1020,415" size="160,180" pixmap="eDreamy/menu/wizard.png" zPosition="1" />
-		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="blend" zPosition="2" />
+		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png" alphatest="blend" zPosition="2" />
 		<widget name="arrowdown"  position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowup"    position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
@@ -200,7 +200,7 @@
 		<widget name="text"   position="50,100" size="690,270" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 		<eLabel position="50,295" size="685,1" backgroundColor="#303030" zPosition="1" />
 		<eLabel position="745,100" size="2,510"  backgroundColor="#202020" zPosition="0" />
-		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="blend" zPosition="2" />
+		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png" alphatest="blend" zPosition="2" />
 		<widget name="arrowdown"  position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowup"    position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
 		<widget name="arrowup2"   position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
@@ -225,7 +225,7 @@
 			</convert>
 		</widget>
 		<widget name="wizard" position="1020,415" size="160,180" pixmap="eDreamy/menu/wizard.png" zPosition="1" />
-		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="blend" zPosition="2" />
+		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png" alphatest="blend" zPosition="2" />
 		<widget name="arrowdown"  position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowup"    position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
@@ -253,7 +253,7 @@
 			</convert>
 		</widget>
 		<widget name="wizard" position="1020,415" size="160,180" pixmap="eDreamy/menu/wizard.png" zPosition="1" />
-		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="blend" zPosition="2" />
+		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png" alphatest="blend" zPosition="2" />
 		<widget name="arrowdown"  position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowup"    position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
@@ -287,7 +287,7 @@
 			</convert>
 		</widget>
 		<widget name="wizard" position="1020,415" size="160,180" pixmap="eDreamy/menu/wizard.png" zPosition="1" />
-		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="blend" zPosition="2" />
+		<widget name="rc"         position="810,100" size="160,500"  pixmaps="skin_default/rc.png" alphatest="blend" zPosition="2" />
 		<widget name="arrowdown"  position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowup"    position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
