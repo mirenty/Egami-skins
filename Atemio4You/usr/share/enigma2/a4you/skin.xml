@@ -478,14 +478,14 @@
 			<convert type="EventName">NameNow</convert>
 		</widget>
 		<widget source="session.Event_Now" render="EGScrollLabel" position="410,105" size="820,200" font="Regular; 20" halign="left" valign="top" foregroundColor="#ffffff" backgroundColor="bkinfobar"  zPosition="1" transparent="1">
-			<convert type="EventName">FullDescription</convert>
+			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<!-- Event Next -->
 		<widget source="session.Event_Next" render="Label" position="410,328" size="790,24" font="Regular;22" halign="left" foregroundColor="red" backgroundColor="bkblue" noWrap="1" transparent="1" zPosition="1">
 			<convert type="EventName">NameNext</convert>
 		</widget>
 		<widget source="session.Event_Next" render="EGScrollLabel" position="410,365" size="820,200" font="Regular; 20" halign="block" valign="top" foregroundColor="#ffffff" backgroundColor="bkinfobar" zPosition="1" transparent="1">
-			<convert type="EventName">FullDescription</convert>
+			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<!-- TeleText -->
 		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_txt_on.png" position="1195,72" size="45,21" zPosition="2" alphatest="on">
