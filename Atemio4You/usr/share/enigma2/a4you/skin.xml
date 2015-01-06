@@ -2088,11 +2088,11 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/16_9.png" position="860,50" size="40,21" zPosition="10" alphatest="on">
-			<convert type="ServiceInfo">IsSDAndWidescreen</convert>
+			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/4_3.png" position="860,50" size="40,21" zPosition="10" alphatest="blend">
-			<convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
+			<convert type="ServiceInfo">IsNotWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- eLabel name="DEBUG"  text="PANEL S083" position="200,400" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="90"/-->
