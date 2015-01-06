@@ -448,11 +448,11 @@
 		</widget>
 		<!-- Screen -->
 		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_format_4_3.png" position="120,415" size="40,21" zPosition="3" alphatest="on">
-			<convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
+			<convert type="ServiceInfo">IsNotWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_format_16_9.png" position="120,415" size="40,21" zPosition="3" alphatest="on">
-			<convert type="ServiceInfo">IsSDAndWidescreen</convert>
+			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_format_hd.png" position="120,415" size="40,21" zPosition="4" alphatest="on">
@@ -460,11 +460,11 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Resolution  -->
- 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="165,415" size="150,24" font="Regular;20" valign="top" halign="left" foregroundColor="#ffffff" backgroundColor="bkwall" transparent="1" zPosition="10">
+ 		<widget source="session.CurrentService" render="Label" position="165,415" size="150,24" font="Regular;20" valign="top" halign="left" foregroundColor="#ffffff" backgroundColor="bkwall" transparent="1" zPosition="10">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
 		<!-- Codec  -->
- 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="320,415" size="200,24" font="Regular;20" valign="top" halign="left" foregroundColor="#ffffff" backgroundColor="bkwall" transparent="1" zPosition="10">
+ 		<widget source="session.CurrentService" render="Label" position="320,415" size="200,24" font="Regular;20" valign="top" halign="left" foregroundColor="#ffffff" backgroundColor="bkwall" transparent="1" zPosition="10">
 			<convert type="PliExtraInfo">VideoCodec</convert>
 		</widget>
 		<!-- widget render="VideoSize" source="session.CurrentService" position="150,485" size="200,22" font="Regular;20" halign="left" foregroundColor="#ffffff" backgroundColor="bkwall" transparent="1" zPosition="1" /-->
@@ -478,14 +478,14 @@
 			<convert type="EventName">NameNow</convert>
 		</widget>
 		<widget source="session.Event_Now" render="EGScrollLabel" position="410,105" size="820,200" font="Regular; 20" halign="left" valign="top" foregroundColor="#ffffff" backgroundColor="bkinfobar"  zPosition="1" transparent="1">
-			<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<!-- Event Next -->
 		<widget source="session.Event_Next" render="Label" position="410,328" size="790,24" font="Regular;22" halign="left" foregroundColor="red" backgroundColor="bkblue" noWrap="1" transparent="1" zPosition="1">
 			<convert type="EventName">NameNext</convert>
 		</widget>
 		<widget source="session.Event_Next" render="EGScrollLabel" position="410,365" size="820,200" font="Regular; 20" halign="block" valign="top" foregroundColor="#ffffff" backgroundColor="bkinfobar" zPosition="1" transparent="1">
-			<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<!-- TeleText -->
 		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_txt_on.png" position="1195,72" size="45,21" zPosition="2" alphatest="on">
