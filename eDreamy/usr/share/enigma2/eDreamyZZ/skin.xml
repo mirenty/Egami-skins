@@ -68,6 +68,7 @@
 		<color name="ltbluette"   value="#49bbff" />
 		<color name="header"      value="#20000000" />
 		<color name="dreamy"      value="#182963" />
+		<color name="un505050" value="#00505050" />
 	</colors>
 
 	<!-- Main screen colors (id=0 Framebuffer) DRE -->
