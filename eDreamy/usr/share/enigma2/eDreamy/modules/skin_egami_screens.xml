@@ -337,7 +337,7 @@
 	<screen name="ButtonSetup" position="fill" title="EGAMI Quick Button Setup" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
 		<panel name="p800_Ext" />
-		<panel name="nR" />
+		<panel name="nRG"/>
 		<!-- Date -->
 		<widget source="global.CurrentTime" render="Label" position="830,32" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
 			<convert type="ClockToText">Format %A %B %d</convert>
