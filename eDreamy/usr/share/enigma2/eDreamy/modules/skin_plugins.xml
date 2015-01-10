@@ -967,4 +967,81 @@
 		<widget name="key_yellow" position="725,620" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
 		<widget name="key_blue" position="1029,620" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
 	</screen>
+	<screen name="EMCMediaCenter" position="fill"  title="MoviePlayer" backgroundColor="transparent" flags="wfNoBorder">
+		<eLabel position="0,540" size="1280,180" backgroundColor="header" zPosition="-1" />
+		<!-- *** Blue Panel Channel *** -->
+		<eLabel position="980,540" size="280,1" backgroundColor="bluette" zPosition="-1" />
+		<ePixmap pixmap="eDreamy/buttons/bclose.png" position="0,520" size="1000,40" zPosition="-1" alphatest="blend" />
+		<ePixmap position="960,525" size="30,30" pixmap="eDreamy/buttons/rec_off.png" zPosition="1" alphatest="blend" />
+		<!--eLabel name="Debug" text="P004" position="40,10" size="500,48" font="Regular;44" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!-- Servicename -->
+		<widget name="Cover" position="40,520" size="108,127" zPosition="1" alphatest="on" backgroundColor="transparent" foregroundColor="transparent" />
+		<widget source="session.CurrentService" render="Label" position="169,528" size="777,27" font="Regular;24" valign="top" noWrap="1" backgroundColor="bluette" transparent="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<!-- movie length -->
+		<eLabel text="Time :" position="1060,540" size="70,30" font="Regular;20" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2" />
+		<widget source="session.CurrentService" render="Label" position="1130,540" size="100,30" font="Regular;20" foregroundColor="unffffff" backgroundColor="header" transparent="1" zPosition="3">
+			<convert type="ServicePosition">Length</convert>
+		</widget> 
+		<!-- Elapsed time -->
+		<widget source="session.CurrentService" render="Label" position="170,580" size="120,40" font="Regular;34" halign="right" backgroundColor="header" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<!-- Progressbar (movie position)-->
+		<eLabel position="310,601" size="620,1" backgroundColor="bluette" zPosition="1" />
+		<widget source="session.CurrentService" render="Progress" position="310,599" size="620,4" pixmap="eDreamy/box/progress_small.png" transparent="1" zPosition="3">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="PositionGauge" position="310,593" size="620,15" zPosition="4" pointer="eDreamy/bars/pointerdvd.png:890,0" transparent="1">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<!-- Remaining time -->
+		<widget source="session.CurrentService" render="Label" position="950,580" size="220,40" font="Regular;34" halign="left" foregroundColor="red" backgroundColor="header" transparent="1">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<eLabel position="0,648" size="1280,1" backgroundColor="un404040" zPosition="5" />
+		<!-- Audio icon (is there multichannel audio?) -->
+		<ePixmap pixmap="eDreamy/icons/ico_dolby_off.png" position="45,658" size="130,30" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="eDreamy/icons/ico_dolby_on.png" position="45,658" size="130,30" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- HDTV icon -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="eDreamy/icons/ico_hd_off.png" position="200,658" size="50,30" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">0,720</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="eDreamy/icons/ico_hd_on.png" position="200,658" size="50,30" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">721,1980</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Videoformat icon (16:9?) -->
+		<ePixmap pixmap="eDreamy/icons/ico_format_off.png" position="275,658" size="50,30" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="eDreamy/icons/ico_format_on.png" position="275,658" size="50,30" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Panel Video Resolution  -->
+		<widget source="session.CurrentService" render="Label" position="320,655" size="100,36" font="Regular;30" halign="right" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3">
+		  <convert type="ServiceInfo">VideoWidth</convert>
+		</widget>
+		<eLabel text="x" position="431,656" size="15,36" font="Regular;26" foregroundColor="unffffff" backgroundColor="header" transparent="1" zPosition="3" />
+		<widget source="session.CurrentService" render="Label" position="455,655" size="100,36" font="Regular;30" halign="left" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3">
+			<convert type="ServiceInfo">VideoHeight</convert>
+		</widget>
+		<!-- DateTime -->
+		<widget source="global.CurrentTime" render="Label" position="920,656" size="200,30" font="Regular;26" halign="left" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1100,656" size="300,30" font="Regular;26" halign="left" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3">
+			<convert type="ClockToText">Format %H:%M:%S</convert>
+		</widget>
+		<widget name="state" position="550,656" size="720,30" font="Regular;30" halign="left" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3" />
+		<widget name="eventname" position="960,656" size="0,0" font="Regular;30" halign="left" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3" />
+		<widget name="speed" position="1100,656" size="0,0" font="Regular;30" halign="left" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3" />
+		<!--eLabel name="Debug" text="S083" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+      </screen>
 </skin>
