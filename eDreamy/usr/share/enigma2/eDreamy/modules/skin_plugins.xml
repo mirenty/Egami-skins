@@ -905,4 +905,66 @@
 		<widget name="title" position="0,0" size="0,0"/>
 		<!--eLabel name="Debug" text="PE023g" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
 	</screen>
+	<screen name="NumberZapExt" position="332,351" size="700,160" title="Channel"> 
+		<widget name="chPicon" position="474,10" size="220,132" alphatest="on" /> 
+		<widget name="number" position="5,35" size="190,30" halign="right" font="Regular;26" foregroundColor="white" /> 
+		<widget name="chNum" position="210,34" size="240,30" halign="left" font="Regular;26" foregroundColor="white" /> 
+		<widget name="channel" position="5,77" size="190,30" halign="right" font="Regular;26" foregroundColor="white" /> 
+		<widget name="chName" position="209,75" size="254,30" halign="left" font="Regular;24" noWrap="1" foregroundColor="white" />
+		<widget name="bouquet" position="5,115" size="190,30" halign="right" font="Regular;26" foregroundColor="white" /> 
+		<widget name="chBouq" position="210,115" size="256,30" halign="left" font="Regular;24" noWrap="1" foregroundColor="white" /> 
+	</screen>
+
+	<!-- EMCSelection -->
+	<screen name="EMCSelection" position="5,54" size="1270,660" title="Enhanced Movie Center" backgroundColor="background">
+		<ePixmap pixmap="skin_default/icons/clock.png" position="659,43" zPosition="1" size="26,26" alphatest="on" />
+		<eLabel text="E n h a n c e d  M o v i e  C e n t e r" position="31,6" size="492,30" font="Regular; 26" foregroundColor="blue" backgroundColor="black" transparent="1" halign="center" />
+		<widget source="global.CurrentTime" render="Label" position="687,41" size="160,30" font="Regular;25" foregroundColor="yellow" backgroundColor="black" shadowColor="#000000" halign="left" transparent="1">
+			<convert type="EMCClockToText">WithSeconds</convert>
+		</widget>
+		<widget source="Title" render="Label" position="587,83" size="340,34" font="Regular; 24" foregroundColor="yellow" backgroundColor="black" transparent="1" halign="center" />
+		<widget source="global.CurrentTime" render="Label" position="632,6" size="210,30" font="Regular;25" halign="center" foregroundColor="green" backgroundColor="black" shadowColor="#000000" transparent="1">
+			<convert type="EMCClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+		<widget source="session.VideoPicture" render="Pig" position="946,12" size="290,163" zPosition="-10" backgroundColor="unff000000" />
+		<!-- Cover Mini Tv -->
+		<widget name="Cover" position="10,43" size="496,524" zPosition="0" alphatest="blend" />
+		<widget name="list" position="529,187" size="731,280" itemHeight="28" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="445" CoolFolderSize="445" CoolTitleColor="0" CoolDatePos="800" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="800" CoolBarPos="590" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/cursor.png" DefaultColor="#FFFFFF" UnwatchedColor="#FFFFFF" WatchingColor="#3486F4" FinishedColor="#46D93A" RecordingColor="#9F1313" BackColorSel="#00000000" foregroundColorSelected="#ffffff" backgroundColor="black" scrollbarMode="showNever" transparent="1" />
+		<widget name="wait" position="583,131" size="350,50" zPosition="1" font="Regular;32" foregroundColor="white" backgroundColor="black" halign="center" valign="center" />
+		<widget source="Service" render="Label" position="606,141" size="70,24" font="Regular;20" halign="left" foregroundColor="yellow" backgroundColor="black" transparent="1">
+			<convert type="EMCServiceTime">StartTime</convert>
+			<convert type="EMCClockToText">Format:%H:%M </convert>
+		</widget>
+		<widget source="Service" render="Label" position="659,141" size="70,24" font="Regular;20" foregroundColor="yellow" backgroundColor="black" transparent="1">
+			<convert type="EMCServiceTime">EndTime</convert>
+			<convert type="EMCClockToText">Format:- %H:%M </convert>
+		</widget>
+		<widget source="Service" render="Label" position="738,141" size="120,24" font="Regular;20" halign="left" foregroundColor="yellow" backgroundColor="black" transparent="1">
+			<convert type="EMCServiceTime">Duration</convert>
+			<convert type="EMCClockToText">Format:%Hh:%Mmin</convert>
+		</widget>
+		<widget source="Service" render="Label" position="797,141" size="133,24" font="Regular;20" foregroundColor="yellow" halign="right" backgroundColor="black" transparent="1">
+			<convert type="EMCMovieInfo">FileSize</convert>
+		</widget>
+		<!-- EMC Short Description -->
+		<widget source="Service" render="Label" position="599,472" size="632,22" font="Regular; 19" zPosition="2" foregroundColor="white" backgroundColor="black" transparent="1" halign="center">
+			<convert type="EMCMovieInfo">ShortDescription</convert>
+		</widget>
+		<widget source="Service" render="Label" position="599,494" size="631,122" font="Regular;19" foregroundColor="white" backgroundColor="black" transparent="1" halign="left" valign="top">
+			<convert type="EMCEventName">ExtendedDescription</convert>
+		</widget>
+		<widget source="Service" render="Label" position="124,571" size="300,24" font="Regular;19" foregroundColor="yellow" halign="center" backgroundColor="black" transparent="1">
+			<convert type="EMCServiceTime">StartTime</convert>
+			<convert type="EMCClockToText">Date</convert>
+		</widget>
+		<ePixmap name="VideoBackground" pixmap="eDreamy/tv2.png" position="941,8" size="299,172" transparent="0" zPosition="-1" />
+		<ePixmap pixmap="eDreamy/buttons/redpanel.png" position="69,625" size="26,26" alphatest="blend" />
+		<ePixmap pixmap="eDreamy/buttons/greenpanel.png" position="374,625" size="26,26" alphatest="blend" />
+		<ePixmap pixmap="eDreamy/buttons/yellowpanel.png" position="677,625" size="26,26" alphatest="blend" />
+		<ePixmap pixmap="eDreamy/buttons/bluepanel.png" position="988,625" size="26,26" alphatest="blend" />
+		<widget name="key_red" position="98,620" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<widget name="key_green" position="418,620" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<widget name="key_yellow" position="725,620" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<widget name="key_blue" position="1029,620" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
+	</screen>
 </skin>
