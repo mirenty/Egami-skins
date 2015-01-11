@@ -975,7 +975,7 @@
 		<ePixmap position="960,525" size="30,30" pixmap="eDreamy/buttons/rec_off.png" zPosition="1" alphatest="blend" />
 		<!--eLabel name="Debug" text="P004" position="40,10" size="500,48" font="Regular;44" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 		<!-- Servicename -->
-		<widget name="Cover" position="40,520" size="108,127" zPosition="1" alphatest="on" backgroundColor="transparent" foregroundColor="transparent" />
+		<widget name="Cover" position="5,457" size="162,190" zPosition="1" alphatest="on" backgroundColor="transparent" foregroundColor="transparent" />
 		<widget source="session.CurrentService" render="Label" position="169,528" size="777,27" font="Regular;24" valign="top" noWrap="1" backgroundColor="bluette" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
