@@ -549,7 +549,8 @@
 		<eLabel position="430,20"  size="430,1"  backgroundColor="bluette" zPosition="-1" />
 		<eLabel position="520,98"  size="340,5"  backgroundColor="bluette" zPosition="-1" />
 		<eLabel position="430,100" size="430,1"  backgroundColor="bluette" zPosition="-1" />
-		<widget source="session.CurrentService" render="PiconUni" path="Icons" position="430,20" size="80,80" zPosition="2" alphatest="blend">
+		
+		<!--<widget source="session.CurrentService" render="PiconUni" path="Icons" position="430,20" size="80,80" zPosition="2" alphatest="blend">
 			<convert type="YWeather">picon</convert>
 		</widget>
 		<ePixmap position="525,30" size="12,35" pixmap="eDreamy/icons/temp.png" alphatest="blend" zPosition="1" />
@@ -565,6 +566,22 @@
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="527,68" size="200,40" font="Regular; 24" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="2" >
 			<convert type="YWeather">city</convert>
+		</widget>-->
+		
+		<!-- MSN Weather -->
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="430,20" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5"> 
+			<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/eDreamy/msn/,png</convert> 
+		</widget> 
+		<ePixmap position="525,30" size="12,35" pixmap="eDreamy/icons/temp.png" alphatest="blend" zPosition="1" /> 
+		<widget source="session.MSNWeather" render="Label" position="545,35" size="90,40" font="Regular; 30" halign="left" foregroundColor="red" backgroundColor="black" transparent="1" zPosition="2"> 
+			<convert type="MSNWeather">temperature_current</convert> 
+		</widget> 
+		<ePixmap position="635,40" size="35,25" pixmap="eDreamy/icons/wind.png" alphatest="blend" zPosition="1" /> 
+		<widget source="session.MSNWeather" render="Label" position="680,40" size="150,30" font="Regular; 22" halign="left" foregroundColor="yellow" backgroundColor="black" transparent="1" zPosition="2"> 
+			<convert type="MSNWeather">winddisplay</convert> 
+		</widget> 
+		<widget source="session.MSNWeather" render="Label" position="527,68" size="329,30" font="Regular; 20" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="2"> 
+			<convert type="MSNWeather">city</convert> 
 		</widget>
 		<!--eLabel name="Debug" text="S021" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
