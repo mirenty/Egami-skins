@@ -1148,43 +1148,127 @@
 		</widget>
 		<ePixmap position="21,670" size="53,25" pixmap="eDreamy/buttons/key_menu.png" alphatest="blend" zPosition="1" />
 	</screen>
-	<!-- TODO -->
-	<screen name="SHOUTcastWidget" position="40,88" title="SHOUTcast" size="1200,600">
-		<ePixmap position="5,0" zPosition="4" size="140,40" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
-		<ePixmap position="150,0" zPosition="4" size="140,40" pixmap="skin_default/buttons/green.png" transparent="1" alphatest="on" />
-		<ePixmap position="295,0" zPosition="4" size="140,40" pixmap="skin_default/buttons/yellow.png" transparent="1" alphatest="on" />
-		<ePixmap position="440,0" zPosition="4" size="140,40" pixmap="skin_default/buttons/blue.png" transparent="1" alphatest="on" />
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" position="585,10" zPosition="0" size="35,25" alphatest="on" />
-		<widget render="Label" source="key_red" position="5,0" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-		<widget render="Label" source="key_green" position="150,0" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-		<widget render="Label" source="key_yellow" position="295,0" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-		<widget render="Label" source="key_blue" position="440,0" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="headertext" position="5,52" zPosition="1" size="571,26" font="Regular; 22" transparent="1" backgroundColor="black" foregroundColor="white" />
-		<widget name="statustext" position="622,497" zPosition="1" size="569,90" font="Regular;20" halign="center" valign="center" transparent="0" backgroundColor="black" />
-		<widget name="list" position="9,89" zPosition="2" size="575,486" scrollbarMode="showOnDemand" transparent="0" backgroundColor="black" />
-		<widget name="titel" position="621,411" zPosition="1" size="569,40" font="Regular;18" transparent="1" backgroundColor="black" foregroundColor="white" />
-		<widget name="station" position="628,8" zPosition="1" size="560,54" font="Regular; 22" transparent="1" backgroundColor="black" foregroundColor="white" />
-		<widget name="console" position="621,453" zPosition="1" size="568,40" font="Regular;18" transparent="1" backgroundColor="black" />
-		<widget name="cover" zPosition="2" position="623,73" size="565,325" alphatest="blend" />
-		<ePixmap position="1079,562" zPosition="4" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" transparent="1" alphatest="on" />
-	</screen>
-	<!-- TODO -->
-	<screen name="IPTVPlayerWidget" position="5,54" size="1270,660" title="IPTV Player">
-		<widget source="global.CurrentTime" render="Label" position="1050,9" size="200,50" font="Regular;50" halign="right" foregroundColor="foreground" backgroundColor="background" transparent="1">
-			<convert type="ClockToText">Default</convert>
+	<screen name="SHOUTcastWidget" position="0,center" size="1280,720" title="SHOUTcast" backgroundColor="background">
+		<eLabel position="35,20" size="790,50" backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="35,20" size="790,1" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="35,20" size="1,50" backgroundColor="un101010" zPosition="-1" />
+		<!-- Middle -->
+		<eLabel position="35,78" size="790,545" backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="35,76" size="575,5" backgroundColor="bluette" zPosition="10" />
+		<eLabel position="35,78" size="790,1" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="35,78" size="1,545" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="35,623" size="790,1" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="605,621" size="220,5" backgroundColor="bluette" zPosition="10" />
+		<!-- Footer -->
+		<eLabel position="35,633" size="790,65" backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="35,633" size="790,1" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="35,633" size="1,65" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="830,633" size="145,65" backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="830,633" size="145,1" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="830,633" size="1,65" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="980,633" size="265,65" backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="980,633" size="265,1" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="980,633" size="1,65" backgroundColor="un101010" zPosition="-1" />
+		<!-- Code -->
+		<widget source="Title" render="Label" position="115,31" size="276,40" font="Regular;26" halign="left" foregroundColor="ltbluette" backgroundColor="un10000000" transparent="1" zPosition="1" />
+		<ePixmap position="33,18" size="35,35" pixmap="eDreamy/buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="50,33" size="45,50" pixmap="eDreamy/icons/list.png" alphatest="blend" zPosition="2" />
+		<!-- Clock %d.%m.%Y - %H:%M:%S -->
+		<ePixmap position="838,653" size="45,30" pixmap="eDreamy/icons/select.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="990,650" size="35,35" pixmap="eDreamy/icons/clock50.png" alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="990,645" size="250,40" font="Regular;38" halign="right" foregroundColor="orange" backgroundColor="un10101010" transparent="1" zPosition="1">
+		      <convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
-		<widget name="console" position="610,74" zPosition="1" size="641,151" font="Regular; 20" transparent="1" backgroundColor="background" foregroundColor="white" />
-		<widget name="playerlogo" zPosition="4" position="800,17" size="120,35" alphatest="blend" transparent="1" />
-		<widget name="headertext" position="13,11" zPosition="1" size="708,50" font="Regular; 24" transparent="1" backgroundColor="background" foregroundColor="yellow" />
-		<widget name="list" position="22,89" zPosition="2" size="576,516" foregroundColor="white" backgroundColor="background" transparent="1" />
-		<eLabel position="6,650" size="290, 5" zPosition="-10" backgroundColor="red" />
-		<eLabel position="303,650" size="290, 5" zPosition="-10" backgroundColor="green" />
-		<eLabel position="601,650" size="290, 5" zPosition="-10" backgroundColor="yellow" />
-		<eLabel position="901,650" size="290,5" zPosition="-10" backgroundColor="blue" />
-		<widget source="key_red" render="Label" position="21,623" size="260,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="foreground" backgroundColor="black" transparent="1" />
-		<widget source="key_green" render="Label" position="319,623" size="260,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="foreground" backgroundColor="black" transparent="1" />
-		<widget source="key_yellow" render="Label" position="612,623" size="260,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="foreground" backgroundColor="black" transparent="1" />
-		<widget source="key_blue" render="Label" position="915,623" size="265,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="foreground" backgroundColor="black" transparent="1" />
-		<widget name="cover" zPosition="2" position="612,232" size="639,378" alphatest="blend" transparent="1" />
+		<ePixmap position="425,658" pixmap="eDreamy/buttons/yellowpanel.png" size="22,22" alphatest="blend" zPosition="2" />
+		<ePixmap position="615,658" pixmap="eDreamy/buttons/bluepanel.png" size="22,22" alphatest="blend" zPosition="2" />
+		<widget render="Label" source="key_yellow" position="453,648" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<ePixmap position="45,658" pixmap="eDreamy/buttons/redpanel.png" size="22,22" alphatest="blend" zPosition="2" />
+		<widget render="Label" source="key_green" position="266,648" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget render="Label" source="key_blue" position="649,648" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<ePixmap position="235,658" pixmap="eDreamy/buttons/greenpanel.png" size="22,22" alphatest="blend" zPosition="2" />
+		<widget render="Label" source="key_red" position="73,648" size="151,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="headertext" position="48,85" zPosition="1" size="571,26" font="Regular; 22" transparent="1" backgroundColor="black" foregroundColor="red" />
+		<widget name="cover" zPosition="2" position="837,235" size="402,319" alphatest="blend" backgroundColor="transparent" />
+		<widget name="station" position="836,22" zPosition="1" size="405,47" font="Regular; 22" transparent="1" backgroundColor="black" foregroundColor="green" halign="center" />
+		<ePixmap position="805,100" size="10,510" pixmap="box/maxbar.png" alphatest="blend" zPosition="2" />
+		<widget name="list" position="45,120" zPosition="1" size="770,490" scrollbarMode="showOnDemand" transparent="0" backgroundColor="black" />
+		<widget name="titel" position="835,82" zPosition="1" size="407,67" font="Regular; 22" transparent="1" backgroundColor="bkblue" foregroundColor="white" halign="center" />
+		<eLabel position="830,20" size="415,50" backgroundColor="dreamy" zPosition="0" />
+		<eLabel position="830,20" size="1,50" backgroundColor="un202020" zPosition="0" />
+		<eLabel position="830,20" size="415,1" backgroundColor="un202020" zPosition="0" />
+		<widget name="console" position="836,155" zPosition="1" size="406,62" font="Regular;18" transparent="1" backgroundColor="black" halign="center" />
+		<widget name="statustext" position="837,570" zPosition="1" size="404,49" font="Regular;20" halign="center" valign="center" transparent="0" backgroundColor="rds_text_bg" />
+		<eLabel position="830,78" size="415,145" backgroundColor="dreamy" zPosition="0" />
+		<eLabel position="830,78" size="1,145" backgroundColor="un10202020" zPosition="0" />
+		<eLabel position="830,78" size="415,1" backgroundColor="un10202020" zPosition="0" />
+		<eLabel position="830,230" size="415,330" backgroundColor="rds_text_bg" zPosition="0" />
+		<eLabel position="830,230" size="1,330" backgroundColor="un10202020" zPosition="0" />
+		<eLabel position="830,230" size="415,1" backgroundColor="un10202020" zPosition="0" />
+		<eLabel position="830,567" size="415,55" backgroundColor="rds_text_bg" zPosition="0" />
+		<eLabel position="830,567" size="1,55" backgroundColor="un10202020" zPosition="0" />
+		<eLabel position="830,567" size="415,1" backgroundColor="un10202020" zPosition="0" />
+		<eLabel text="Menu" position="890,645" size="200,40" font="Regular;22" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<eLabel text="Info" position="890,665" size="200,40" font="Regular;22" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<ePixmap position="376,28" zPosition="4" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" transparent="1" alphatest="on" />
+		<!--eLabel name="Debug" text="S023" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="IPTVPlayerWidget" position="0,center" size="1280,720" title="IPTV Player" backgroundColor="background">
+		<eLabel position="35,20" size="790,50" backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="35,20" size="790,1" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="35,20" size="1,50" backgroundColor="un101010" zPosition="-1" />
+		<!-- Middle -->
+		<eLabel position="35,78" size="790,545" backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="35,76" size="575,5" backgroundColor="bluette" zPosition="10" />
+		<eLabel position="35,78" size="790,1" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="35,78" size="1,545" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="35,623" size="790,1" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="605,621" size="220,5" backgroundColor="bluette" zPosition="10" />
+		<!-- Footer -->
+		<eLabel position="35,633" size="790,65" backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="35,633" size="790,1" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="35,633" size="1,65" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="830,633" size="145,65" backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="830,633" size="145,1" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="830,633" size="1,65" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="980,633" size="265,65" backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="980,633" size="265,1" backgroundColor="un101010" zPosition="-1" />
+		<eLabel position="980,633" size="1,65" backgroundColor="un101010" zPosition="-1" />
+		<!-- Code -->
+		<widget source="Title" render="Label" position="115,31" size="276,40" font="Regular;26" halign="left" foregroundColor="ltbluette" backgroundColor="un10000000" transparent="1" zPosition="1" />
+		<ePixmap position="33,18" size="35,35" pixmap="eDreamy/buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="50,33" size="45,50" pixmap="eDreamy/icons/list.png" alphatest="blend" zPosition="2" />
+		<!-- Clock %d.%m.%Y - %H:%M:%S -->
+		<ePixmap position="838,653" size="45,30" pixmap="eDreamy/icons/select.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="990,650" size="35,35" pixmap="eDreamy/icons/clock50.png" alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="990,645" size="250,40" font="Regular;38" halign="right" foregroundColor="orange" backgroundColor="un10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>
+		<ePixmap position="425,658" pixmap="eDreamy/buttons/yellowpanel.png" size="22,22" alphatest="blend" zPosition="2" />
+		<ePixmap position="615,658" pixmap="eDreamy/buttons/bluepanel.png" size="22,22" alphatest="blend" zPosition="2" />
+		<widget render="Label" source="key_yellow" position="453,648" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<ePixmap position="45,658" pixmap="eDreamy/buttons/redpanel.png" size="22,22" alphatest="blend" zPosition="2" />
+		<widget render="Label" source="key_green" position="266,648" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 20" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget render="Label" source="key_blue" position="649,648" size="140,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<ePixmap position="235,658" pixmap="eDreamy/buttons/greenpanel.png" size="22,22" alphatest="blend" zPosition="2" />
+		<widget render="Label" source="key_red" position="73,648" size="151,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="headertext" position="48,85" zPosition="1" size="765,26" font="Regular; 22" transparent="1" backgroundColor="black" foregroundColor="red" />
+		<widget name="cover" zPosition="2" position="837,235" size="402,319" alphatest="blend" backgroundColor="transparent" />
+		<ePixmap position="805,100" size="10,510" pixmap="box/maxbar.png" alphatest="blend" zPosition="2" />
+		<widget name="list" position="45,120" zPosition="1" size="770,490" scrollbarMode="showOnDemand" transparent="0" backgroundColor="black" />
+		<widget name="console" position="835,86" zPosition="1" size="406,129" font="Regular; 20" transparent="1" backgroundColor="background" foregroundColor="white" />
+		<eLabel position="830,20" size="415,50" backgroundColor="dreamy" zPosition="0" />
+		<eLabel position="830,20" size="1,50" backgroundColor="un202020" zPosition="0" />
+		<eLabel position="830,20" size="415,1" backgroundColor="un202020" zPosition="0" />
+		<eLabel position="830,78" size="415,145" backgroundColor="dreamy" zPosition="0" />
+		<eLabel position="830,78" size="1,145" backgroundColor="un10202020" zPosition="0" />
+		<eLabel position="830,78" size="415,1" backgroundColor="un10202020" zPosition="0" />
+		<eLabel position="830,230" size="415,330" backgroundColor="rds_text_bg" zPosition="0" />
+		<eLabel position="830,230" size="1,330" backgroundColor="un10202020" zPosition="0" />
+		<eLabel position="830,230" size="415,1" backgroundColor="un10202020" zPosition="0" />
+		<eLabel position="830,567" size="415,55" backgroundColor="rds_text_bg" zPosition="0" />
+		<eLabel position="830,567" size="1,55" backgroundColor="un10202020" zPosition="0" />
+		<eLabel position="830,567" size="415,1" backgroundColor="un10202020" zPosition="0" />
+		<widget name="playerlogo" zPosition="4" position="984,28" size="120,35" alphatest="blend" transparent="1" />
+		<!--eLabel name="Debug" text="S023" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 </skin>

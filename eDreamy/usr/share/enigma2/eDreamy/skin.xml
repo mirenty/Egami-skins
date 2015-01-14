@@ -1117,15 +1117,69 @@
 		<!--eLabel name="Debug" text="S042" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
-	<!-- ChoiceBox -->
+	<!-- ChoiceBox
 	<screen name="ChoiceBox" title="Choice Box" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="p700_Template"/>
 		<widget name="list" position="50,100" size="675,340" scrollbarMode="showOnDemand" itemHeight="26" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="text" position="50,540" size="675,160" halign="left" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap position="50,648"  size="350,44"  pixmap="eDreamy/icons/egami_logo.png"  alphatest="blend" zPosition="2" />
+		eLabel name="Debug" text="S043" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"
+	</screen> -->
+	<screen name="ChoiceBox" title="Choice Box" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p700_Template"/>
+		<widget name="list" position="50,100" size="675,340" scrollbarMode="showOnDemand" itemHeight="26" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="text" position="50,540" size="675,160" halign="left" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="50,648"  size="350,44"  pixmap="eDreamy/icons/egami_logo.png"  alphatest="blend" zPosition="2" />
+		<eLabel position="830,200" size="415,421" backgroundColor="un10101010" zPosition="-10" />
+		<widget font="Regular; 22" backgroundColor="black" halign="left" position="900,218" render="Label" size="333,32" source="session.CurrentService" transparent="1" foregroundColor="white" zPosition="6">
+			<convert type="BoxInfo">Uptime</convert>
+		</widget>
+		<ePixmap position="840,209" size="50,50" zPosition="3" pixmap="eDreamy/icons/net1.png" alphatest="blend" />
+		<ePixmap position="840,274" zPosition="1" size="50,50" pixmap="eDreamy/icons/cpu_1.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="900,274" size="333,8" foregroundColor="ltbluette" backgroundColor="un10000000" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="CpuUsage">$0</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="900,286" size="333,38" font="Regular; 16" halign="left" valign="center" transparent="0" zPosition="6" foregroundColor="yellow" backgroundColor="black">
+			<convert type="CpuUsage">CPU Utilization:$0 (Core #1: $1, Core #2: $2)</convert>
+		</widget>
+		<ePixmap position="840,331" zPosition="1" size="50,50" pixmap="eDreamy/icons/ram_1.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="900,346" size="333,8" foregroundColor="ltbluette" backgroundColor="un10000000" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">MemTotal</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" zPosition="6" position="900,354" size="333,26" halign="left" valign="center" font="Regular; 16" transparent="0" foregroundColor="yellow" backgroundColor="black">
+			<convert type="pliLayoutInfo">MemTotal</convert>
+		</widget>
+		<ePixmap position="840,388" zPosition="1" size="50,50" pixmap="eDreamy/icons/swap_1.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" foregroundColor="ltbluette" backgroundColor="un10000000" position="900,403" size="333,8" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">SwapTotal</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" zPosition="6" position="900,415" size="333,26" halign="left" valign="center" font="Regular; 16" transparent="0" foregroundColor="yellow" backgroundColor="black">
+			<convert type="pliLayoutInfo">SwapTotal</convert>
+		</widget>
+		<ePixmap position="840,448" zPosition="1" size="50,50" pixmap="eDreamy/icons/flash1.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="900,468" size="333,8" foregroundColor="ltbluette" backgroundColor="un10000000" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">FleshInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" zPosition="6" position="900,478" size="333,26" halign="left" valign="center" font="Regular; 16" transparent="0" foregroundColor="yellow" backgroundColor="black">
+			<convert type="pliLayoutInfo">Flesh</convert>
+		</widget>
+		<ePixmap position="840,507" zPosition="1" size="50,50" pixmap="eDreamy/icons/hdd_1.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" foregroundColor="ltbluette" backgroundColor="un10000000" position="900,523" size="333,8" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">HddInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" zPosition="6" position="900,533" size="333,26" halign="left" valign="center" font="Regular; 16" transparent="0" foregroundColor="yellow" backgroundColor="black">
+			<convert type="pliLayoutInfo">HddInfo</convert>
+		</widget>
+		<ePixmap position="840,565" zPosition="1" size="50,50" pixmap="eDreamy/icons/usb_1.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" foregroundColor="ltbluette" backgroundColor="un10000000" position="900,578" size="333,8" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="pliLayoutInfo">UsbInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" zPosition="6" position="900,588" size="333,26" halign="left" valign="center" font="Regular; 16" transparent="0" foregroundColor="yellow" backgroundColor="black">
+		  <convert type="pliLayoutInfo">UsbInfo</convert>
+		</widget>
 		<!--eLabel name="Debug" text="S043" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
-
+	
 	<!-- Network Browser -->
 	<screen name="ShowUpdatePackages" position="fill" title="New Packages" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="p900_Template"/>
