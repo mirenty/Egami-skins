@@ -24,7 +24,7 @@
 		<font name="LCD"         filename="lcd.ttf"         scale="100"/>
 		<font name="Console"     filename="tuxtxt.ttf"      scale="100"/>
 		<font name="Fixed"       filename="andale.ttf"      scale="100"/>
-		<font name="Regular"     filename="verdana.ttf"   scale="93"/>
+		<font name="Regular"     filename="/share/enigma2/eDreamy/fonts/verdana.ttf"   scale="93"/>
 		<font name="Replacement" filename="ae_AlMateen.ttf" scale="100" replacement="1"/>
 	</fonts>
 
