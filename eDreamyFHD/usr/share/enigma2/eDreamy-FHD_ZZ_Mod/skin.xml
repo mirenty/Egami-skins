@@ -1062,7 +1062,7 @@
 			<convert type="MyServiceInfoEX">IsFta</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="\nS\nY\nS\nT\nE\nM\n" position="1318,620" size="34,240" font="Regular; 26" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="blue" foregroundColor="white" borderWidth="2" borderColor="black" />
+		<eLabel text="\nS\nY\nS\nT\nE\nM\n" position="1318,620" size="34,270" font="Regular; 26" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="blue" foregroundColor="white" borderWidth="2" borderColor="black" />
 		<eLabel position="1324,602" size="410,4" foregroundColor="black" backgroundColor="darkgrey" zPosition="1" />
 		<widget source="session.CurrentService" render="Label" position="1355,623" size="380,30" font="Regular; 26" halign="left" valign="center" transparent="1" zPosition="6" foregroundColor="green" backgroundColor="secondBG" borderWidth="2">
 			<convert type="CpuUsage">Global CPU Use: $0</convert>
@@ -1084,6 +1084,9 @@
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1356,828" size="380,30" zPosition="3" font="Regular; 26" halign="left" valign="center" transparent="1" noWrap="0" backgroundColor="secondBG" foregroundColor="grey" borderWidth="2">
 			<convert type="pliLayoutInfo">UsbInfo,Short</convert>
+		</widget>
+		<widget font="Regular; 26" backgroundColor="secondBG" halign="left" position="1356,863" render="Label" size="555,30" source="session.CurrentService" transparent="1" foregroundColor="green"> 
+			<convert type="BoxInfo">Uptime</convert> 
 		</widget>
 		<!--<eLabel name="DEBUG" text="S043" position="40,25" size="500,50" font="Regular;40" backgroundColor="#un10000000" foregroundColor="#unbc0004" transparent="1" zPosition="99" />-->
 	</screen>
