@@ -318,21 +318,20 @@
 		<!-- eLabel name="DEBUG" text="S020" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
-	<!-- Virtual Keyboard FHD (NOT COMPATIBLE) -->
-	<screen name="VirtualKeyBoard" title="Virtual KeyBoard" position="center,center" size="800,350" zPosition="99" backgroundColor="#10101010" >
-		<widget name="list" position="5,110" size="520,375" font="Regular;30" selectionDisabled="1" backgroundColor="#10101010" transparent="1" />
-		<eLabel position="5,5" size="790,50" backgroundColor="#10808080"/>
-		<eLabel position="7,7" size="786,46" backgroundColor="#10101010" zPosition="1"/>
-		<widget name="text"   position="10,10" size="770,40" font="Regular;36" transparent="1" noWrap="1" halign="right" foregroundColor="#ffffff" backgroundColor="#10101010" zPosition="5"/>
-		<widget name="header" position="5,62"  size="800,40" font="Regular;30" transparent="1" noWrap="1" foregroundColor="#ffffff" backgroundColor="#10101010"/>
-		<ePixmap pixmap="buttons/redpanel.png" position="575,110" size="30,30" alphatest="blend"/>
-		<eLabel text="Canc" position="620,107" size="220,40" font="Regular;30" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="#10101010" transparent="1"/>
-		<ePixmap pixmap="buttons/greenpanel.png" position="575,160" size="30,30" alphatest="blend"/>
-		<eLabel text="OK" position="620,157" size="220,40" font="Regular;30" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="#10101010" transparent="1"/>
-		<ePixmap pixmap="buttons/yellowpanel.png" position="575,210" size="30,30" alphatest="blend"/>
-		<widget source="country" render="Label" position="620,207" size="220,37" font="Regular;30" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="#10101010" transparent="1"/>
-		<ePixmap pixmap="buttons/bluepanel.png" position="575,260" size="30,30" alphatest="blend"/>
-		<eLabel text="Upper" position="620,257" size="220,40" font="Regular;30" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="#10101010" transparent="1"/>
+	<screen name="VirtualKeyBoard" title="Virtual KeyBoard" position="center,center" size="950,500" zPosition="99" backgroundColor="#10101010">
+		<widget name="list" position="5,110" size="604,398" font="Regular;30" selectionDisabled="1" backgroundColor="#10101010" transparent="1" />
+		<eLabel position="5,5" size="790,50" backgroundColor="#10808080" />
+		<eLabel position="7,7" size="786,46" backgroundColor="#10101010" zPosition="1" />
+		<widget name="text" position="10,10" size="770,40" font="Regular;36" transparent="1" noWrap="1" halign="right" foregroundColor="#ffffff" backgroundColor="#10101010" zPosition="5" />
+		<widget name="header" position="5,62" size="800,40" font="Regular;30" transparent="1" noWrap="1" foregroundColor="#ffffff" backgroundColor="#10101010" />
+		<ePixmap pixmap="buttons/redpanel.png" position="575,110" size="30,30" alphatest="blend" />
+		<eLabel position="620,107" size="280,40" font="Regular;30" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="#10101010" transparent="1" text="Exit" />
+		<ePixmap pixmap="buttons/greenpanel.png" position="575,160" size="30,30" alphatest="blend" />
+		<eLabel position="620,157" size="280,40" font="Regular;30" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="#10101010" transparent="1" text="Save" />
+		<ePixmap pixmap="buttons/yellowpanel.png" position="575,210" size="30,30" alphatest="blend" />
+		<widget source="country" render="Label" position="620,207" size="280,37" font="Regular;30" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="#10101010" transparent="1" />
+		<ePixmap pixmap="buttons/bluepanel.png" position="575,260" size="30,30" alphatest="blend" />
+		<eLabel position="620,257" size="280,40" font="Regular;30" halign="left" zPosition="2" foregroundColor="grey" backgroundColor="#10101010" transparent="1" text="Caps" />
 		<!-- eLabel name="DEBUG" text="S021" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
