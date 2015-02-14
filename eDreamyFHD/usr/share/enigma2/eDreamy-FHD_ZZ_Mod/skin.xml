@@ -503,7 +503,7 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText">Default</convert>
 	  </widget>
-	  <widget source="session.Event_Now" render="Label" position="595,875" size="850,44" font="Regular;38" backgroundColor="header" transparent="1">
+	  <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=10,repeat=3,always=0,oneshot=1,startdelay=100" position="595,875" size="850,44" font="Regular;38" backgroundColor="header" transparent="1">
 	    <convert type="EventName">Name</convert>
 	  </widget>
 	  <widget source="session.Event_Now" render="Label" position="1450,875" size="200,44" font="Regular;38" foregroundColor="ltbluette" backgroundColor="header" halign="right" transparent="1">
@@ -520,7 +520,7 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText">Default</convert>
 	  </widget>
-	  <widget source="session.Event_Next" render="Label" position="597,940" size="850,44" font="Regular;38" foregroundColor="green" backgroundColor="header" transparent="1">
+	  <widget source="session.Event_Next" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=10,repeat=3,always=0,oneshot=1,startdelay=100" position="597,940" size="850,44" font="Regular;38" foregroundColor="green" backgroundColor="header" transparent="1">
 	    <convert type="EventName">Name</convert>
 	  </widget>
 	  <widget source="session.Event_Next" render="Label" position="1450,940" size="200,44" font="Regular;38" foregroundColor="#10808080" backgroundColor="header" halign="right" transparent="1">
