@@ -198,7 +198,7 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" zPosition="3" position="391,689" size="566,20" font="Regular; 17" halign="center" transparent="1" backgroundColor="black" foregroundColor="grey" borderColor="black" borderWidth="1" valign="center">
-      <convert type="EcmInfoLine">EcmInfo</convert>
+      <convert type="EGExtraInfo">NetInfo</convert>
     </widget>
     <widget source="session.FrontendInfo" render="FixedLabel" position="963,689" size="20,20" backgroundColor="background" transparent="1" zPosition="3" text="A" foregroundColor="blue" font="Regular; 17" halign="center">
       <convert type="FrontendInfo">NUMBER</convert>
