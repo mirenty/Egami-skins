@@ -529,13 +529,4 @@
 		<ePixmap position="70,988"  pixmap="eDreamy-FHD/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
 		<eLabel text="Exit" position="120,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 	</screen>
-	<screen name="NumberZapExt" position="654,463" size="700,160" title="Channel">
-        <widget name="chPicon" position="474,10" size="220,132" alphatest="on" />
-        <widget name="number" position="5,35" size="190,30" halign="right" font="Regular;26" foregroundColor="white" />
-        <widget name="chNum" position="210,34" size="240,30" halign="left" font="Regular;26" foregroundColor="white" />
-        <widget name="channel" position="5,77" size="190,30" halign="right" font="Regular;26" foregroundColor="white" />
-        <widget name="chName" position="209,75" size="254,30" halign="left" font="Regular;24" noWrap="1" foregroundColor="white" />
-        <widget name="bouquet" position="5,115" size="190,30" halign="right" font="Regular;26" foregroundColor="white" />
-        <widget name="chBouq" position="215,115" size="254,30" halign="left" font="Regular;24" noWrap="1" foregroundColor="white" />
-    </screen>
 </skin>
