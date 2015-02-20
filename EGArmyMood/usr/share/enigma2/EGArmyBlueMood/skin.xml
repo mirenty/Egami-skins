@@ -4189,7 +4189,10 @@ self["list"].instance.setItemHeight(25)
 		<panel name="FullscreenTopPanel2" />
 		<panel name="FullscreenPIGPanel" />
 		<ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="EGArmyBlueMood/menu/icons_gp.png" alphatest="on" />
-		<widget source="list" render="Listbox" position="80,105" zPosition="1" size="710,500" scrollbarMode="showOnDemand" selectionPixmap="EGArmyBlueMood/icons/listselection710x50-fs8.png"  transparent="1"/>
+		<widget name="list" position="80,105" zPosition="1" size="710,500" scrollbarMode="showOnDemand" selectionPixmap="EGArmyBlueMood/icons/listselection710x50-fs8.png"  transparent="1"/>
+		<widget name="description" position="480,660" size="682,50" font="Regular; 22" foregroundColor="white" valign="top" backgroundColor="transpBlack" transparent="1" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenRed1Panel" />
 	</screen>	
 	<screen name="EGExtrasMenu" position="0,0" size="1280,720" title="EGAMI Extras Menu" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel2" />
