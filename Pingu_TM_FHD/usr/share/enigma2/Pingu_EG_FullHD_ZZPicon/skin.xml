@@ -96,11 +96,48 @@
     <font filename="venus.ttf" name="PG" scale="100" />
     <font filename="ae_AlMateen.ttf" name="Replacement" replacement="1" scale="100" />
     <font filename="/usr/share/enigma2/Pingu_EG_FullHD/fonts/Roboto-Medium.ttf" name="Regular" scale="100" />
-   <alias name="ChoiceList" font="Regular" size="28" height="50" />
-   <alias name="Body" font="Regular" size="28" height="50" />
-   <alias name="TextNormal" font="Regular" size="28" height="50" />
+   <alias name="Body" font="Regular" size="42" height="60" />
+		<alias name="TextNormal" font="Regular" size="42" height="60" />
+		<alias name="ChoiceList" font="Regular" size="28" height="60" />
+		<alias name="FileList" font="Regular" size="42" height="60"/>
+		<alias name="FileListMulti" font="Regular" size="42" height="60"/>
+		<alias name="PluginBrowser0" font="Regular" size="38" height="75"/>
+		<alias name="PluginBrowser1" font="Regular" size="30"/>
+		<alias name="ServiceInfo" font="Regular" size="42" height="6"/>
+		<alias name="SelectionList" font="Regular" size="42" height="60"/>
+		<alias name="VirtualKeyboard" font="Regular" size="34" height="45"/>
+		<alias name="HelpMenuList" font="Regular" size="40" height="60"/>
+		<alias name="HelpMenuListExt0" font="Regular" size="32" height="75"/>
+		<alias name="HelpMenuListExt1" font="Regular" size="32"/>
+	</fonts>
 
-  </fonts>
+	<parameters>
+		<parameter name="FileListIcon" value="10,7,53,38"/>
+		<parameter name="FileListName" value="80,3,900,60"/>
+		<parameter name="FileListMultiLock" value="10,5,50,50"/>
+		<parameter name="FileListMultiIcon" value="70,5,50,50"/>
+		<parameter name="FileListMultiName" value="130,3,1000,60"/>
+		<parameter name="ChoicelistIcon" value="10,4,67,48"/>
+		<parameter name="ChoicelistDash" value="0,4,1000,60"/>
+		<parameter name="ChoicelistName" value="80,4,1000,60"/>
+		<parameter name="PluginBrowserIcon" value="10,8,150,60"/>
+		<parameter name="PluginBrowserName" value="180,0,40"/>
+		<parameter name="PluginBrowserDescr" value="180,38,35"/>
+		<parameter name="PluginBrowserDownloadIcon" value="10,0,90,75"/>
+		<parameter name="PluginBrowserDownloadName" value="120,0,40"/>
+		<parameter name="PluginBrowserDownloadDescr" value="120,38,35"/>
+		<parameter name="ServiceInfo" value="0,0,450,50"/>
+		<parameter name="ServiceInfoLeft" value="0,0,450,50"/>
+		<parameter name="ServiceInfoRight" value="450,0,1000,60"/>
+		<parameter name="SelectionListLock" value="10,5,35,35"/>
+		<parameter name="SelectionListLockOff" value="10,5,35,35"/>
+		<parameter name="SelectionListDescr" value="60,4,1000,60"/>
+		<parameter name="ConfigListSeperator" value="300"/>
+		<parameter name="VirtualKeyboard" value="45,45"/>
+		<parameter name="HelpMenuListHlp" value="0,0,900,60"/>
+		<parameter name="HelpMenuListExtHlp0" value="0,0,900,60"/>
+		<parameter name="HelpMenuListExtHlp1" value="0,42,900,60"/>
+	</parameters>
   <subtitles>
     <sub font="Regular;50" foregroundColor="subtiCol" name="Subtitle_TTX" shadowColor="#08101010" shadowOffset="2,2" />
     <sub font="Regular;50" foregroundColor="subtiCol" name="Subtitle_Regular" shadowColor="#08101010" shadowOffset="2,2" />
@@ -1978,8 +2015,7 @@
     <widget backgroundColor="2ndBG" font="Regular;30" foregroundColor="foreground" transparent="1" halign="center" position="1650,215" render="Label" size="250,40" source="global.CurrentTime" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%d. %B</convert>
     </widget>&gt;
-  <widget name="list" position="49,138" scrollbarMode="showOnDemand" size="900,700" /><widget backgroundColor="trBlack2" font="Regular;28" foregroundColor="3rdFG" halign="center" position="45,900" render="Label" size="910,100" source="introduction" valign="center" zPosition="10" /><ePixmap alphatest="on" pixmap="Pingu_EG_FullHD/images/buttons/key_red.png" position="39,1032" size="60,30" /><widget backgroundColor="2ndBG" transparent="1" font="Regular;28" foregroundColor="foreground" halign="left" noWrap="1" position="70,1025" render="Label" size="350,40" source="key_red" valign="center" zPosition="1" /><ePixmap alphatest="on" pixmap="Pingu_EG_FullHD/images/buttons/key_green.png" position="425,1032" size="60,55" /><widget backgroundColor="2ndBG" transparent="1" font="Regular;28" foregroundColor="foreground" halign="left" noWrap="1" position="460,1025" render="Label" size="350,40" source="key_green" valign="center" zPosition="1" /><ePixmap position="1647,15" zPosition="-2" size="260,260" pixmap="Pingu_EG_FullHD/
-&#xA;bk2.png" /><ePixmap position="0,1010" size="1920,90" zPosition="-2" pixmap="Pingu_EG_FullHD/ck6.png" /><ePixmap alphatest="on" pixmap="Pingu_EG_FullHD/bac4.png" position="0,101" size="1000,790" zPosition="-1" /><ePixmap position="0,5" zPosition="-2" size="1008,110" pixmap="Pingu_EG_FullHD/bk33.png" /><ePixmap position="0,889" zPosition="-2" size="1008,121" pixmap="Pingu_EG_FullHD/bk333.png" /></screen>
+  <widget name="list" position="49,138" scrollbarMode="showOnDemand" size="900,700" /><widget backgroundColor="trBlack2" font="Regular;28" foregroundColor="3rdFG" halign="center" position="45,900" render="Label" size="910,100" source="introduction" valign="center" zPosition="10" /><ePixmap alphatest="on" pixmap="Pingu_EG_FullHD/images/buttons/key_red.png" position="39,1032" size="60,30" /><widget backgroundColor="2ndBG" transparent="1" font="Regular;28" foregroundColor="foreground" halign="left" noWrap="1" position="70,1025" render="Label" size="350,40" source="key_red" valign="center" zPosition="1" /><ePixmap alphatest="on" pixmap="Pingu_EG_FullHD/images/buttons/key_green.png" position="425,1032" size="60,55" /><widget backgroundColor="2ndBG" transparent="1" font="Regular;28" foregroundColor="foreground" halign="left" noWrap="1" position="460,1025" render="Label" size="350,40" source="key_green" valign="center" zPosition="1" /><ePixmap position="1647,15" zPosition="-2" size="260,260" pixmap="Pingu_EG_FullHD/&#xA;bk2.png" /><ePixmap position="0,1010" size="1920,90" zPosition="-2" pixmap="Pingu_EG_FullHD/ck6.png" /><ePixmap alphatest="on" pixmap="Pingu_EG_FullHD/bac4.png" position="0,101" size="1000,790" zPosition="-1" /><ePixmap position="0,5" zPosition="-2" size="1008,110" pixmap="Pingu_EG_FullHD/bk33.png" /><ePixmap position="0,889" zPosition="-2" size="1008,121" pixmap="Pingu_EG_FullHD/bk333.png" /></screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="IPKGMenu" position="0,0" size="1920,1080" title="Select upgrade source to edit.">
     <widget backgroundColor="2ndBG" font="PG; 32" foregroundColor="gold" halign="center" position="49,18" render="Label" size="909,75" source="Title" valign="center" transparent="1" zPosition="1" />
     <widget backgroundColor="2ndBG" font="Regular;50" foregroundColor="3rdFG" transparent="1" halign="center" position="1670,35" render="Label" size="210,80" source="global.CurrentTime" valign="center" zPosition="1">
@@ -3430,7 +3466,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			      {"template": [
 			      MultiContentEntryText(pos = (175, 0), size = (750, 34), font=0, text = 0),
 			      MultiContentEntryText(pos = (175, 34), size = (750, 34), font=1, color = 0x6da6ff, text = 1),
-			      MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (150, 60), png = 2),
+			      MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (150, 60), png = 2, flags = BT_SCALE),
 			      ],
 			      "fonts": [gFont("Regular", 28),gFont("Regular", 22)],
 			      "itemHeight": 70

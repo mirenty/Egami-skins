@@ -96,8 +96,49 @@
     <font filename="venus.ttf" name="PG" scale="100" />
     <font filename="ae_AlMateen.ttf" name="Replacement" replacement="1" scale="100" />
     <font filename="/usr/share/enigma2/Pingu_EG_FullHD/fonts/Roboto-Medium.ttf" name="Regular" scale="100" />
-   <alias name="ChoiceList" font="Regular" size="28" height="50" />
-  </fonts>
+   <alias name="Body" font="Regular" size="42" height="60" />
+		<alias name="TextNormal" font="Regular" size="42" height="60" />
+		<alias name="ChoiceList" font="Regular" size="28" height="60" />
+		<alias name="FileList" font="Regular" size="42" height="60"/>
+		<alias name="FileListMulti" font="Regular" size="42" height="60"/>
+		<alias name="PluginBrowser0" font="Regular" size="38" height="75"/>
+		<alias name="PluginBrowser1" font="Regular" size="30"/>
+		<alias name="ServiceInfo" font="Regular" size="42" height="6"/>
+		<alias name="SelectionList" font="Regular" size="42" height="60"/>
+		<alias name="VirtualKeyboard" font="Regular" size="34" height="45"/>
+		<alias name="HelpMenuList" font="Regular" size="40" height="60"/>
+		<alias name="HelpMenuListExt0" font="Regular" size="32" height="75"/>
+		<alias name="HelpMenuListExt1" font="Regular" size="32"/>
+	</fonts>
+
+	<parameters>
+		<parameter name="FileListIcon" value="10,7,53,38"/>
+		<parameter name="FileListName" value="80,3,900,60"/>
+		<parameter name="FileListMultiLock" value="10,5,50,50"/>
+		<parameter name="FileListMultiIcon" value="70,5,50,50"/>
+		<parameter name="FileListMultiName" value="130,3,1000,60"/>
+		<parameter name="ChoicelistIcon" value="10,4,67,48"/>
+		<parameter name="ChoicelistDash" value="0,4,1000,60"/>
+		<parameter name="ChoicelistName" value="80,4,1000,60"/>
+		<parameter name="PluginBrowserIcon" value="10,8,150,60"/>
+		<parameter name="PluginBrowserName" value="180,0,40"/>
+		<parameter name="PluginBrowserDescr" value="180,38,35"/>
+		<parameter name="PluginBrowserDownloadIcon" value="10,0,90,75"/>
+		<parameter name="PluginBrowserDownloadName" value="120,0,40"/>
+		<parameter name="PluginBrowserDownloadDescr" value="120,38,35"/>
+		<parameter name="ServiceInfo" value="0,0,450,50"/>
+		<parameter name="ServiceInfoLeft" value="0,0,450,50"/>
+		<parameter name="ServiceInfoRight" value="450,0,1000,60"/>
+		<parameter name="SelectionListLock" value="10,5,35,35"/>
+		<parameter name="SelectionListLockOff" value="10,5,35,35"/>
+		<parameter name="SelectionListDescr" value="60,4,1000,60"/>
+		<parameter name="ConfigListSeperator" value="300"/>
+		<parameter name="VirtualKeyboard" value="45,45"/>
+		<parameter name="HelpMenuListHlp" value="0,0,900,60"/>
+		<parameter name="HelpMenuListExtHlp0" value="0,0,900,60"/>
+		<parameter name="HelpMenuListExtHlp1" value="0,42,900,60"/>
+	</parameters>
+	
   <subtitles>
     <sub font="Regular;50" foregroundColor="subtiCol" name="Subtitle_TTX" shadowColor="#08101010" shadowOffset="2,2" />
     <sub font="Regular;50" foregroundColor="subtiCol" name="Subtitle_Regular" shadowColor="#08101010" shadowOffset="2,2" />
@@ -326,7 +367,7 @@
     <convert type="PliExtraInfo">CryptoBar</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" zPosition="3" position="617,1017" size="848,37" font="Regular; 25" halign="center" transparent="1" backgroundColor="black" foregroundColor="grey" borderColor="black" borderWidth="1" valign="center">
-    <convert type="EcmInfoLine">EcmInfo</convert>
+    <convert type="EGExtraInfo">NetInfo</convert>
   </widget>
   <widget source="session.CurrentService" render="ChannelNumber" position="274,833" size="141,45" font="PG; 36" halign="center" valign="center" noWrap="1" foregroundColor="gold" backgroundColor="black" borderColor="black" borderWidth="1" transparent="1" zPosition="1" />
   <widget source="session.CurrentService" render="Label" position="430,833" size="915,45" font="PG; 36" noWrap="1" transparent="1" foregroundColor="green" borderColor="black" borderWidth="1" zPosition="1" backgroundColor="black">
@@ -3475,7 +3516,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			      {"template": [
 			      MultiContentEntryText(pos = (175, 0), size = (750, 34), font=0, text = 0),
 			      MultiContentEntryText(pos = (175, 34), size = (750, 34), font=1, color = 0x6da6ff, text = 1),
-			      MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (150, 60), png = 2),
+			      MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (150, 60), png = 2, flags = BT_SCALE),
 			      ],
 			      "fonts": [gFont("Regular", 28),gFont("Regular", 22)],
 			      "itemHeight": 70
