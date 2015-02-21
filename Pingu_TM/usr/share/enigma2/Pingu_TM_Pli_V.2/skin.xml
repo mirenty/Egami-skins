@@ -85,6 +85,7 @@
     <font filename="CH.ttf" name="Clock" scale="100" />
     <font filename="venus.ttf" name="PG" scale="100" />
     <font filename="nmsbd.ttf" name="Arial" scale="100" /> -->
+    <font name="Replacement" filename="ae_AlMateen.ttf" scale="100" replacement="1" />
     <font filename="/usr/share/enigma2/Pingu_TM_Pli_V.2/font/venus.ttf" name="PG" scale="95" />
     <font filename="/usr/share/enigma2/Pingu_TM_Pli_V.2/font/OpenSans-Regular.ttf" name="Regular" scale="95" />
   </fonts>
@@ -137,7 +138,7 @@
     <color name="WindowTitleForeground" color="white" />
     <color name="WindowTitleBackground" color="background" />
   </windowstyle>
-  <screen name="InfoBar" position="center,-1" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="InfoBar" position="center,center" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="-2,495" zPosition="-2" size="1280,238" pixmap="Pingu_TM_Pli_V.2/infobarC.png" />
     <ePixmap position="267,572" size="991,4" zPosition="5" pixmap="Pingu_TM_Pli_V.2/pg.png" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="1020,547" size="144,30" font="Regular; 19" halign="left" backgroundColor="PGBack" borderColor="black" borderWidth="1" transparent="1" foregroundColor="Amethyst">
@@ -198,7 +199,7 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" zPosition="3" position="391,689" size="566,20" font="Regular; 17" halign="center" transparent="1" backgroundColor="black" foregroundColor="grey" borderColor="black" borderWidth="1" valign="center">
-      <convert type="EGExtraInfo">NetInfo</convert>
+      <convert type="EcmInfoLine">EcmInfo</convert>
     </widget>
     <widget source="session.FrontendInfo" render="FixedLabel" position="963,689" size="20,20" backgroundColor="background" transparent="1" zPosition="3" text="A" foregroundColor="blue" font="Regular; 17" halign="center">
       <convert type="FrontendInfo">NUMBER</convert>
@@ -275,7 +276,7 @@
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="38,521" size="204,23" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderColor="black" borderWidth="1" font="Regular; 17" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="6,521" size="242,23" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderColor="black" borderWidth="1" font="Replacement; 16" valign="center" halign="center">
       <convert type="EGExtraInfo">CryptoBar</convert>
     </widget>
     <eLabel name="new eLabel" position="1006,689" size="20,20" text="C" transparent="1" halign="center" zPosition="1" font="Regular; 17" backgroundColor="background" foregroundColor="grey" />
@@ -372,34 +373,34 @@
     <widget source="session.CurrentService" render="Label" position="471,656" zPosition="1" size="467,30" font="Regular; 20" halign="left" backgroundColor="PGBack" transparent="1" foregroundColor="Amethyst">
       <convert type="PliExtraInfo">TransponderInfo</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_hbbtv_on.png" position="450,45" size="43,22" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_hbbtv_on.png" position="480,45" size="43,22" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_txt_on.png" position="403,45" size="43,22" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_txt_on.png" position="433,45" size="43,22" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_subtitle_on.png" position="498,45" zPosition="1" size="43,22" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_subtitle_on.png" position="528,45" zPosition="1" size="43,22" alphatest="blend">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="Pingu_TM_Pli_V.2/icons/ico_sub_on.png" position="543,45" render="Pixmap" size="43,22" source="session.CurrentService" zPosition="2">
+    <widget alphatest="blend" pixmap="Pingu_TM_Pli_V.2/icons/ico_sub_on.png" position="573,45" render="Pixmap" size="43,22" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_rec_on.png" position="255,45" size="43,22" zPosition="2" alphatest="blend">
+    <widget source="session.RecordState" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_rec_on.png" position="285,45" size="43,22" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_hd_on.png" position="354,45" size="43,22" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_hd_on.png" position="384,45" size="43,22" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_format_on.png" position="304,45" size="43,22" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_format_on.png" position="334,45" size="43,22" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_dolby_on.png" position="208,45" size="43,22" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Pingu_TM_Pli_V.2/icons/ico_dolby_on.png" position="238,45" size="43,22" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -462,19 +463,19 @@
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="12,43" size="204,23" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular; 17" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="12,43" size="222,23" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Replacement; 15" valign="center" halign="center">
       <convert type="EGExtraInfo">CryptoBar</convert>
     </widget>
     <eLabel name="new eLabel" position="166,653" size="25,30" text="C" transparent="1" halign="center" zPosition="1" font="Regular; 24" backgroundColor="background" foregroundColor="grey" />
     <eLabel name="new eLabel" position="189,653" size="25,30" text="D" transparent="1" halign="center" zPosition="1" font="Regular; 24" backgroundColor="background" foregroundColor="grey" valign="center" />
-    <ePixmap position="304,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_format_off.png" alphatest="blend" />
-    <ePixmap position="354,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_hd_off.png" alphatest="blend" />
-    <ePixmap position="255,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_rec_off.png" alphatest="blend" />
-    <ePixmap position="403,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_txt_off.png" alphatest="blend" />
-    <ePixmap position="543,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_sub_off.png" alphatest="blend" />
-    <ePixmap position="498,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_subtitle_off.png" alphatest="blend" />
-    <ePixmap position="208,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_dolby_off.png" alphatest="blend" />
-    <ePixmap position="450,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_hbbtv_off.png" alphatest="blend" />
+    <ePixmap position="334,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_format_off.png" alphatest="blend" />
+    <ePixmap position="384,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_hd_off.png" alphatest="blend" />
+    <ePixmap position="285,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_rec_off.png" alphatest="blend" />
+    <ePixmap position="433,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_txt_off.png" alphatest="blend" />
+    <ePixmap position="573,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_sub_off.png" alphatest="blend" />
+    <ePixmap position="528,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_subtitle_off.png" alphatest="blend" />
+    <ePixmap position="238,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_dolby_off.png" alphatest="blend" />
+    <ePixmap position="480,45" size="43,22" zPosition="1" pixmap="Pingu_TM_Pli_V.2/icons/ico_hbbtv_off.png" alphatest="blend" />
     <eLabel name="divider" position="687,130" size="1,495" backgroundColor="grey" foregroundColor="grey" />
     <eLabel name="divider" position="725,212" size="500,1" backgroundColor="grey" foregroundColor="grey" />
     <eLabel name="divider" position="35,631" size="645,1" backgroundColor="grey" foregroundColor="grey" />
@@ -4292,5 +4293,4 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
     </widget>
     <!-- eLabel name="DEBUG"  text="PANEL S106" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
   </screen>
-	
 </skin>

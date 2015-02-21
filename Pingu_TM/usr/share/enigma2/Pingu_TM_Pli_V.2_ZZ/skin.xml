@@ -3052,7 +3052,7 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
     </widget>
     <eLabel name="linia zegar" position="465,95" size="1,540" backgroundColor="fresh" zPosition="3" transparent="0" foregroundColor="blue" />
     <eLabel name="prog_bg" position="114,413" size="270,1" backgroundColor="grey" />
-    <widget name="MainList" position="484,115" size="750,531" zPosition="3" backgroundColorSelected="black" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black" itemHeight="40" transparent="1" />
+    <widget name="MainList" position="484,115" size="750,531" zPosition="3" backgroundColorSelected="black" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black" itemHeight="90" transparent="1" />
     <widget backgroundColor="black" font="Regular;24" foregroundColor="white" position="485,75" render="Label" size="750,35" source="Titel" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="black" font="Regular;24" foregroundColor="white" position="485,75" render="Label" size="750,35" source="Titel2" transparent="1" valign="center" zPosition="1" />
     <ePixmap position="89,451" size="70,30" zPosition="10" pixmap="Pingu_TM_Pli_V.2/buttons/key_menu.png" transparent="1" alphatest="blend" />
