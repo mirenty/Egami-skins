@@ -250,12 +250,6 @@
 		<eLabel text="PiP-Zap" position="0,0" size="120,26" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center"/>
 	</screen>
 
-	<!-- PiP Zap -->
-	<screen name="PictureInPicture" title="PictureInPicture" position="center,60" size="240,192" flags="wfNoBorder">
-		<widget name="video" position="0,0" size="240,135" backgroundColor="transparent"/>
-		<!--eLabel name="Debug" text="S014" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
-	</screen>
-
 	<!-- ScreenSaver -->
 	<screen name="Screensaver" title="ScreenSaver" position="fill" flags="wfNoBorder">
 		<eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
