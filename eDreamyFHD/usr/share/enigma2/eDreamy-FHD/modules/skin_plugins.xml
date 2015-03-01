@@ -2189,4 +2189,11 @@ flags=RT_HALIGN_CENTER, text=2),], "fonts": [gFont("Regular", 32), gFont("Regula
 		<!-- Channel Reference  
 		 <widget position="835,535" size="405,25" source="ServiceEvent" render="EGShowReference" halign="center" font="Regular;19" foregroundColor="ltbluette" backgroundColor="bluette" zPosition="1" transparent="1" /> -->
 	</screen>
+	<screen name="InternetRadioInformationScreen" position="13,88" size="1900,980" backgroundColor="#00000000" title="Internet Radio Informations">
+		<ePixmap position="54,925" pixmap="eDreamy-FHD/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget render="Label" source="key_red" position="106,918" size="264,48" zPosition="5" valign="center" halign="center" backgroundColor="red" font="Regular; 28" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget render="Label" source="headertext" position="50,16" zPosition="1" size="1825,89" font="Regular; 32" transparent="1" foregroundColor="#fcc000" backgroundColor="#00000000" />
+		<widget name="text" position="50,120" size="1825,750" font="Regular; 30" transparent="1" backgroundColor="#00000000" />
+	</screen>
+
 </skin>
