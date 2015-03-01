@@ -993,7 +993,7 @@
 		<widget name="list" position="72,140" size="1170,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="2" />
 		<widget name="text" position="70,700" size="1170,160" halign="left" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap position="960,645" size="256,256" pixmap="menu/input.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="60,970" size="700,90" pixmap="eDreamy-FHD/icons/atemio_logo.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970" size="700,90" pixmap="eDreamy-FHD/icons/egami_logo.png" alphatest="blend" zPosition="2" />
 		<eLabel text="\nS\nE\nR\nV\nI\nC\nE\n" position="1318,58" size="34,250" font="Regular; 26" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="red" foregroundColor="white" borderWidth="2" borderColor="black" />
 		<eLabel text="VPID" position="1352,58" size="70,30" font="Regular; 26" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="green" noWrap="1" borderWidth="2" />
 		<widget font="Regular; 26" position="1421,58" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="green" borderWidth="2">

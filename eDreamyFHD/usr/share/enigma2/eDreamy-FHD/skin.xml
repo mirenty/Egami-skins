@@ -960,7 +960,7 @@
 		<widget name="list" position="70,180" size="1170,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="2" />
 		<widget name="text" position="70,700" size="1170,160" halign="left" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap position="960,645" size="256,256" pixmap="menu/input.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="60,970"  size="700,90"  pixmap="eDreamy-FHD/icons/atemio_logo.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="700,90"  pixmap="eDreamy-FHD/icons/egami_logo.png"  alphatest="blend" zPosition="2" />
 		<!-- eLabel name="DEBUG" text="S115" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
