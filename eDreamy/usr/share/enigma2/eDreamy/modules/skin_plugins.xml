@@ -40,7 +40,7 @@
 		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="80,410" zPosition="1" size="60,25" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<!--eLabel name="Debug" text="P001" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P001A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoTimer DRE -->
@@ -51,7 +51,7 @@
 		<panel name="sRGYB"/>
 		<widget name="config" position="50,100" size="685,500" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/timer_edit.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P002" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P001B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Auto Timer DRE -->
@@ -62,7 +62,7 @@
 		<panel name="sRGYB"/>
 		<widget name="config" position="50,100" size="685,500" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/timer_edit.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P003" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P001C" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Auto Timer DRE -->
@@ -74,7 +74,7 @@
 		<panel name="M"/>
 		<widget name="entries" position="50,100" size="685,510" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/timer_edit.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P004" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P001D" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Auto Timer DRE -->
@@ -85,7 +85,7 @@
 		<widget source="parent.Title" render="Label" position="50,100" size="685,24" font="Regular;20" backgroundColor="header" transparent="1"/>
 		<widget source="entry" render="Label" position="50,130" size="585,24" font="Regular;20" backgroundColor="header" transparent="1"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/timer_edit.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P005" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P001E" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoTimer Help DRE -->
@@ -97,7 +97,7 @@
 		<widget render="Label" source="title" position="50,80" size="720,60" zPosition="5" valign="center" halign="center" font="Regular;26" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<widget name="detailtext" font="Regular;22" position="50,150" size="685,460" halign="center" backgroundColor="header" transparent="1"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P006" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P001F" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoTimer Import DRE -->
@@ -109,7 +109,7 @@
 		<panel name="sRG"/>
 		<widget name="list" position="50,100" size="685,450" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/timer_edit.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P007" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P001G" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoTimer Setting DRE -->
@@ -122,7 +122,7 @@
 		<widget source="help" render="Label" position="50,470" size="685,140" font="Regular;20" valign="bottom" halign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" />
 		<ePixmap position="700,90" size="300,300" pixmap="menu/timer_edit.png" alphatest="blend"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/timer_edit.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P008" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P001H" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoTimer Preview DRE -->
@@ -144,7 +144,7 @@
 				}
 			</convert>
 		</widget>
-		<!--eLabel name="Debug" text="P009" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P001I" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoTimer Editor DRE -->
@@ -156,7 +156,7 @@
 		<ePixmap position="725,100" size="15,360" pixmap="eDreamy/bars/maxbar.png" zPosition="4" alphatest="blend"/>
 		<widget name="config" position="50,100" size="685,360" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
 		<widget source="help" render="Label" position="50,520" size="690,140" font="Regular;20" halign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" />
-		<!--eLabel name="Debug" text="P010" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P001J" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoTimer Filter Editor DRE -->
@@ -166,7 +166,7 @@
 		<panel name="p900_Date"/>
 		<panel name="sRGYB"/>
 		<widget name="config" position="50,100" size="685,480" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header"/>
-		<!--eLabel name="Debug" text="P011" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P001K" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- MPHelp DRE -->
@@ -178,7 +178,7 @@
 		<widget render="Label" source="title" position="50,90" size="685,50" font="Regular;24" zPosition="5" valign="center" halign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<widget name="detailtext" position="50,150" size="685,400" font="Regular;22" halign="center" backgroundColor="header" transparent="1"/>
 		<ePixmap position="750,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P012" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P001L" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ********** AutoBouquetsMaker ********** -->
@@ -192,7 +192,7 @@
 		<widget name="config" position="50,100" size="685,230" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<widget name="description" position="50,360" size="685,400" font="Regular;20" halign="left" valign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<widget name="pleasewait" position="50,100" size="685,230" font="Regular;32" halign="left" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2"/>
-		<!--eLabel name="Debug" text="P013" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P002A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquetsMaker Menu DRE -->
@@ -213,7 +213,7 @@
 			</convert>
 		</widget>
 		<ePixmap position="750,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P014" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P002B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquetsMaker Config Providers DRE -->
@@ -226,7 +226,7 @@
 		<widget name="description" position="50,400" size="585,200" font="Regular;20" halign="left" valign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<widget name="pleasewait" position="50,100" size="585,230" font="Regular;32" halign="left" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2"/>
 		<ePixmap position="750,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P015" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P002C" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquetsMaker Hide Selection DRE -->
@@ -248,7 +248,7 @@
 			</convert>
 		</widget>
 		<ePixmap position="750,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P016" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P002D" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- AutoBouquetsMaker Ordering DRE -->
@@ -269,7 +269,7 @@
 		</widget>
 		<widget name="pleasewait" position="50,100" size="585,140" font="Regular;18" halign="center" valign="center" backgroundColor="header" transparent="1" zPosition="1"/>
 		<ePixmap position="750,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P017" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P002E" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquetsMaker Logs DRE -->
@@ -280,7 +280,7 @@
 		<panel name="fakeExit"/>
 		<widget name="list" position="50,100" size="685,500" font="Regular;16" backgroundColor="header" transparent="1"/>
 		<ePixmap position="750,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P018" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P002F" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoBouquetsMaker About DRE -->
@@ -292,7 +292,7 @@
 		<widget name="about" position="50,100" size="685,500" font="Regular;20" backgroundColor="header" transparent="1"/>
 		<widget name="oealogo" position="240,470" size="200,135" zPosition="4" transparent="1" alphatest="blend"/>
 		<ePixmap position="750,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P019" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P002G" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ********** Picture Player ********** DRE -->
@@ -305,7 +305,7 @@
 		<ePixmap position="725,100" size="15,360" pixmap="eDreamy/bars/maxbar.png" zPosition="4" alphatest="blend"/>
 		<widget name="config" position="50,100" size="685,510" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="750,440" size="300,300" pixmap="menu/missing.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P020" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P003A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<screen name="picshow" title="PicturePlayer Show" position="fill" backgroundColor="transparent" flags="wfNoBorder">
@@ -319,7 +319,7 @@
 		<widget name="filelist" position="50,100" size="470,510" itemHeight="30" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<widget name="thn" position="525,440" size="200,170" alphatest="on" zPosition="1"/>
 		<widget name="label" position="770,580" size="450,25" font="Regular;22" backgroundColor="header" transparent="1" zPosition="2"/>
-		<!--eLabel name="Debug" text="P021" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P003B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<screen name="Pic_Exif" title="PictirePlayer Exif" position="fill" backgroundColor="transparent" flags="wfNoBorder">
@@ -339,7 +339,7 @@
 			</convert>
 		</widget>
 		<ePixmap position="750,440" size="300,300" pixmap="menu/missing.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P022" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P003C" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<screen name="Pic_Full_View" title="PictirePlayer FullView" position="fill" flags="wfNoBorder">
@@ -349,7 +349,7 @@
 		<widget name="point" position="27,27" size="21,21" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on"/>
 		<widget name="play_icon" position="30,30" size="16,16" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on"/>
 		<widget source="file" render="Label" position="70,25" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" foregroundColor="foreground" backgroundColor="black" transparent="1" borderWidth="2"/>
-		<!--eLabel name="Debug" text="P023" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P003D" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ********** HDMI-CEC Setup ********** DRE -->
@@ -363,7 +363,7 @@
 		<widget name="config" position="50,100" size="685,450" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<widget source="current_address" render="Label" position="50,540" size="685,30" zPosition="10" font="Regular;21" halign="left" valign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<widget source="fixed_address"   render="Label" position="50,580" size="540,30" zPosition="10" font="Regular;21" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="header" transparent="1"/>
-		<!--eLabel name="Debug" text="P024" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P004A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ********** OpenWeb-If Config ********** DRE -->
@@ -376,7 +376,7 @@
 		<ePixmap position="780,440" size="300,300" pixmap="menu/web_browser.png" alphatest="blend"/>
 		<widget name="lab1" position="50,100" size="685,60" zPosition="1" font="Regular;24" valign="top" transparent="1"/>
 		<widget name="config" position="50,160" size="685,350" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
-		<!--eLabel name="Debug" text="P025" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P005A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ********** Micom Firmware Upgrade ********** DRE -->
@@ -389,7 +389,7 @@
 		<widget name="file_list" position="50,100" size="685,450" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<widget source="status" render="Label" position="50,580" zPosition="5" size="685,75" font="Regular;20" halign="left" valign="center" backgroundColor="header" transparent="1"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/ico_egami.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P026" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P006A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<screen name="FirmwareUpgrade" position="fill" title="Firmware Upgrade" backgroundColor="transparent" flags="wfNoBorder">
@@ -403,7 +403,7 @@
 		<widget name="newversion"       position="370,140" size="100,25" font="Regular;22" backgroundColor="header" transparent="1"/>
 		<widget source="status" render="Label" position="50,500" size="685,75" font="Regular;22" backgroundColor="header" transparent="1"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/ico_egami.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P027" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P006B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ********** Cron Manager ********** DRE -->
@@ -415,7 +415,7 @@
 		<panel name="nRGYB"/>
 		<widget name="menu" position="50,100" size="685,500" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/cron.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P028" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P007A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
  	</screen>
 
  	<screen name="CronTimers" title="Cronmanager Menu" position="fill" backgroundColor="transparent" flags="wfNoBorder">
@@ -431,7 +431,7 @@
  		<widget name="labrun"      position="290,180" size="300,28" font="Regular;24" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="green"  zPosition="1"/>
  		<widget name="key"         position="50, 500" size="685,80" font="Regular;18" halign="center" valign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/cron.png" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P029" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P007B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
  	</screen>
 
 	<!-- ********** Cron Manager ********** DRE -->
@@ -464,7 +464,7 @@
         	<widget source="key_green"  render="Label" position="443,605" zPosition="1" size="140,22" font="Regular;18" halign="center" valign="center" backgroundColor="header" transparent="1" />
         	<widget source="key_yellow" render="Label" position="697,605" zPosition="1" size="140,22" font="Regular;18" halign="center" valign="center" backgroundColor="header" transparent="1" />
         	<widget source="key_blue"   render="Label" position="951,605" zPosition="1" size="140,22" font="Regular;18" halign="center" valign="center" backgroundColor="header" transparent="1" />
-		<!--eLabel name="Debug" text="P030" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P008A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
         </screen>
 
 	<!-- ********** CrossEPG ********** -->
@@ -480,7 +480,7 @@
 		<ePixmap position="1080,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
 		<widget name="config" position="40,100" size="685,300" font="Regular;22" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<widget name="information" position="990,280" size="250,300" halign="center" valign="center" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
-		<!--eLabel name="Debug" text="P031" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P009A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Cross EPG Menu DRE -->
@@ -502,7 +502,7 @@
 				}
 			</convert>
 		</widget>
-		<!--eLabel name="Debug" text="P032" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P009B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Cross EPG Info DRE -->
@@ -523,7 +523,7 @@
 		<widget name="channels_count"     position="50,383" size="685,25" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1"/>
 		<widget name="events_count"       position="50,413" size="685,25" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1"/>
 		<widget name="hashes_count"       position="50,443" size="685,25" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1"/>
-		<!--eLabel name="Debug" text="P033" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P009C" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Cross Extra DRE -->
@@ -535,7 +535,7 @@
 		<ePixmap position="780,440" size="300,300" pixmap="menu/crossepg.png" alphatest="blend"/>
 		<ePixmap pixmap="box/maxbar.png" position="725,100" size="10,500" zPosition="2" alphatest="blend"/>
 		<widget name="menu" position="50,100" size="685,500" font="Regular;22" scrollbarMode="showOnDemand"  backgroundColor="header" transparent="1"/>
-		<!--eLabel name="Debug" text="P034" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P009D" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Cross Providers DRE -->
@@ -557,7 +557,7 @@
 				}
 			</convert>
 		</widget>
-		<!--eLabel name="Debug" text="P035" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P009E" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Cross Ordering DRE -->
@@ -579,7 +579,7 @@
 				}
 			</convert>
 		</widget>
-		<!--eLabel name="Debug" text="P036" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P009F" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Cross About DRE -->
@@ -592,7 +592,7 @@
 		<widget name="about"        position="50,90" size="585,510" font="Regular;18" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<widget name="rytec_pix"    position="50,530" size="0,70" alphatest="blend"/>
 		<widget name="krkadoni_pix" position="160,530" size="0,22" alphatest="blend"/>
-		<!--eLabel name="Debug" text="P037" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P009G" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ********** EPG Import ********** -->
@@ -609,7 +609,7 @@
 		<widget name="config" position="50,100" size="585,500" scrollbarMode="showOnDemand"  backgroundColor="header" transparent="1"/>
 		<widget name="status" position="990,100" size="250,60" font="Regular;20"/>
 		<widget name="statusbar" position="990,200" size="250,20" font="Regular;18"/>
-		<!--eLabel name="Debug" text="P038" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P010A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- EPG Import Sources -->
@@ -620,7 +620,7 @@
 		<panel name="nRG"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/swapp.png" alphatest="blend"/>
 		<widget name="list"  position="50,100" size="685,510" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
-		<!--eLabel name="Debug" text="P039" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P010B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- EPG Import Log -->
@@ -631,7 +631,7 @@
 		<panel name="nRB"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/swapp.png" alphatest="blend"/>
 		<widget name="list" position="50,100" size="685,510" scrollbarMode="showOnDemand"  backgroundColor="header" transparent="1"/>
-		<!--eLabel name="Debug" text="P040" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P010C" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ********** IMDB ********** -->
@@ -652,16 +652,144 @@
 		<widget name="ratinglabel" position="40,300" size="250,20" font="Regular;18" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<widget name="starsbg" position="340,297" size="170,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="0" transparent="1" alphatest="on"/>
 		<widget name="stars" position="340,297" size="170,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" transparent="1"/>
-		<!--eLabel name="Debug" text="P041" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P011A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<screen name="IMDbLCDScreen" position="0,0" size="132,64" title="IMDB Plugin">
 		<widget name="headline" position="4,0" size="128,22" font="Regular;20"/>
 		<widget source="parent.title" render="Label" position="6,26" size="120,34" font="Regular;14"/>
-		<!--eLabel name="Debug" text="P042" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P011B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
-	<!-- *** PLUGIN - MyTube Player *** -->
+	<!-- ********** Internet Radio ********** -->
+
+	<screen name="InternetRadioScreen" position="fill" flags="wfNoBorder" backgroundColor="#000000" title="InternetRadio">
+		<ePixmap position="fill" pixmap="eDreamy/menu/webradio.png" transparent="1" alphatest="on" zPosition="-1" />
+		<widget name="video" position="fill" transparent="1" zPosition="10"/>
+		<widget name="headertext" position="270,60" size="500,70"  font="Regular;28" halign="center" valign="bottom" foregroundColor="yellow" backgroundColor="#001842" transparent="1" zPosition="1"/>
+		<widget name="list"       position="45,170" size="770,320" scrollbarMode="showOnDemand" backgroundColor="#001842" transparent="1" zPosition="2" />
+		<widget name="console"    position="45,575" size="770,70"  font="Regular;22" halign="center" valign="center" foregroundColor="red" backgroundColor="#001842" transparent="1" zPosition="2" />
+		<eLabel position="45,650" size="770,1" backgroundColor="#606060" zPosition="2"/>
+		<widget name="statustext" position="50,580" size="770,60"  font="Regular;20" halign="celnter" backgroundColor="#001842" transparent="1"  zPosition="1"/>
+		<widget name="cover" position="869,29" size="376,294" zPosition="2" />
+		<widget name="station"    position="880,360" size="330,60" font="Regular;24" backgroundColor="#001842" transparent="1" zPosition="2" />
+		<eLabel name="stationCap" position="880,440" size="330,60" font="Regular;24" text="Station:" backgroundColor="#001842" transparent="1" zPosition="4" />
+		<eLabel name="titleCap"   position="880,520" size="330,60" font="Regular;24" text="Title:"   backgroundColor="#001842" transparent="1" zPosition="4" />
+		<eLabel name="title"      position="880,550" size="330,60" font="Regular;24" text="Title:"   backgroundColor="#001842" transparent="1" zPosition="4" />
+		<ePixmap pixmap="eDreamy/buttons/redpanel.png"  position="880,665"  size="26,26" alphatest="blend" />
+		<widget source="key_red" render="Label"         position="920,665"  size="190,30" zPosition="1" font="Regular;22" halign="left" foregroundColor="#ffffff" backgroundColor="#001842" transparent="1" />
+		<ePixmap pixmap="eDreamy/buttons/greypanel.png" position="1080,665" size="26,26" alphatest="blend" />
+		<eLabel  text="Menu - Info"                     position="1120,665"  size="190,30" font="Regular;22" foregroundColor="#ffffff"  backgroundColor="#001842" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="eDreamy/buttons/greenpanel.png"  position="50,665"  size="26,26" alphatest="blend" />
+		<widget source="key_green"  render="Label"        position="90,665"  size="150,30" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="#001842" transparent="1" />
+		<ePixmap pixmap="eDreamy/buttons/yellowpanel.png" position="250,665" size="26,26" alphatest="blend" />
+		<widget source="key_yellow" render="Label"        position="290,665" size="150,30" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="#001842" transparent="1" />
+		<ePixmap pixmap="eDreamy/buttons/bluepanel.png"   position="450,665" size="26,26" alphatest="blend" />
+		<widget source="key_blue"   render="Label"        position="490,665" size="150,30" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="#001842" transparent="1" />
+		<widget name="progress_0"  zPosition="3" position="830,470"  size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_1"  zPosition="3" position="855,470"  size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_2"  zPosition="3" position="880,470"  size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_3"  zPosition="3" position="905,470"  size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_4"  zPosition="3" position="930,470"  size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_5"  zPosition="3" position="955,470"  size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_6"  zPosition="3" position="980,470"  size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_7"  zPosition="3" position="1005,470" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_8"  zPosition="3" position="1030,470" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_9"  zPosition="3" position="1055,470" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_10" zPosition="3" position="1080,470" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_11" zPosition="3" position="1105,470" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_12" zPosition="3" position="1130,470" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_13" zPosition="3" position="1155,470" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_14" zPosition="3" position="1180,470" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_15" zPosition="3" position="1205,470" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="top_0"  position="830,465"  zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_1"  position="855,465"  zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_2"  position="880,465"  zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_3"  position="905,465"  zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_4"  position="930,465"  zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_5"  position="955,465"  zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_6"  position="980,465"  zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_7"  position="1005,465" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_8"  position="1030,465" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_9"  position="1055,465" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_10" position="1080,465" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_11" position="1105,465" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_12" position="1130,465" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_13" position="1155,465" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_14" position="1180,465" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_15" position="1205,465" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<!-- eLabel name="Debug" text="P012A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="InternetRadioFullScreen" position="fill" flags="wfNoBorder" backgroundColor="#000000" title="InternetRadio">
+		<widget name="station" position="50,120"  size="1180,80" font="Regular;26" halign="center" foregroundColor="#356835" backgroundColor="#00000000"  transparent="1"  zPosition="1" />
+		<widget name="cover"   position="500,250" size="250,250" zPosition="2" />
+		<widget name="title"   position="50,550"  size="1180,80" font="Regular;24" halign="center" foregroundColor="#4e9a4e" backgroundColor="#00000000" transparent="1" zPosition="1" />
+		<widget name="progress_0" zPosition="3" position="440,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_1" zPosition="3" position="465,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_2" zPosition="3" position="490,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_3" zPosition="3" position="515,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_4" zPosition="3" position="540,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_5" zPosition="3" position="565,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_6" zPosition="3" position="590,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_7" zPosition="3" position="615,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_8" zPosition="3" position="640,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_9" zPosition="3" position="665,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_10" zPosition="3" position="690,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_11" zPosition="3" position="715,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_12" zPosition="3" position="740,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_13" zPosition="3" position="765,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_14" zPosition="3" position="790,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="progress_15" zPosition="3" position="815,240" size="25,200" transparent="1" orientation="orBottomToTop" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green-fs8.png" />
+		<widget name="top_0" position="440,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_1" position="465,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_2" position="490,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_3" position="515,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_4" position="540,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_5" position="565,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_6" position="590,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_7" position="615,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_8" position="640,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_9" position="665,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_10" position="690,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_11" position="715,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_12" position="740,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_13" position="765,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_14" position="790,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<widget name="top_15" position="815,235" zPosition="6" size="25,5" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetRadio/images/bar_green_top-fs8.png" />
+		<!-- eLabel name="Debug" text="P012B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="InternetRadioSetup" position="fill" title="InternetRadio Setup" flags="wfNoBorder" >
+		<panel name="p900_Template"/>
+		<panel name="p900_Logo"/>
+		<panel name="p900_Date"/>
+		<panel name="sRG"/> 
+		<widget name="config" position="50,100" size="685,500" font="Regular;22" scrollbarMode="showOnDemand"  backgroundColor="header" transparent="1"/>
+		<!-- eLabel name="Debug" text="P012C" position="40,25" size="500,50" font="Regular;40" backgroundColor="#001842" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="InternetRadioInformationScreen" position="fill" title="Streaming Information" flags="wfNoBorder" >
+		<panel name="p900_Template"/>
+		<panel name="p900_Date"/>
+		<panel name="sR"/> 
+		<widget source="headertext" render="Label" position="50,100" size="1180,60" font="Regular;24" foregroundColor="#fcc000" backgroundColor="#001842" transparent="1" zPosition="1" />
+		<widget name="text" position="50,150" size="1180,400" font="Regular;24"  backgroundColor="#001842" transparent="1" />
+		<!-- eLabel name="Debug" text="P012D" position="40,25" size="500,50" font="Regular;40" backgroundColor="#001842" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="InternetRadioStreamripperRecordingPath" position="center,center" size="560,320" title="Select record path for streamripper">
+		<panel name="p900_Template"/>
+		<panel name="p900_Logo"/>
+		<panel name="p900_Date"/>
+		<panel name="sRG"/> 
+		<widget name="target"   position="50,100" size="685,26" valign="center" font="Regular;24" transparent="1" zPosition="1" />
+		<widget name="filelist" position="50,150" size="560,220" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+		<!-- eLabel name="Debug" text="P012E" position="40,25" size="500,50" font="Regular;40" backgroundColor="#001842" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- **********  MyTube Player ********** -->
+	
 	<screen name="MyTubePlayerMainScreen" position="center,85"  size="920,580" title="MyTube - Browser">
 		<ePixmap pixmap="eDreamy/buttons/redpanel.png"    position="10,15"  size="25,25" alphatest="blend"/>
 		<ePixmap pixmap="eDreamy/buttons/greenpanel.png"  position="210,15" size="25,25" alphatest="blend"/>
@@ -699,7 +827,7 @@
 		<widget name="HelpWindow" position="338,530" zPosition="1" size="1,1"/>
 		<widget name="thumbnail" position="0,0" size="130,94" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
 		<widget name="ButtonBlue" position="0,0" size="0,0"/>
-		<!--eLabel name="Debug" text="PE023" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
+		<!--eLabel name="Debug" text="P013A" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
 	</screen>
 
 	<!-- MyTube Player -->
@@ -788,7 +916,7 @@
 	        <widget source="session.CurrentService" render="Label" zPosition="4" position="550,655" size="100,36"  font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" >
             		<convert type="ServiceInfo">Framerate</convert>	
             	</widget>
-		<!--eLabel name="Debug" text="PE023a" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
+		<!--eLabel name="Debug" text="P013B" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
 	</screen>
 
 	<!-- MyTube Player -->
@@ -804,7 +932,7 @@
 				}
 			</convert>
 		</widget>
-		<!--eLabel name="Debug" text="PE023b" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
+		<!--eLabel name="Debug" text="P013C" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
 	</screen>
 
 	<!-- MyTube Player -->
@@ -816,7 +944,7 @@
 		<eLabel	position="10,50" size="800,1" backgroundColor="#303030"/>
 		<widget name="config" position="10,60" size="800,450" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="title" position="0,0" size="0,0"/>
-		<!--eLabel name="Debug" text="PE23c" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
+		<!--eLabel name="Debug" text="P013D" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
 	</screen>
 
 	<!-- MyTube Player -->
@@ -833,7 +961,7 @@
 				}
 			</convert>
 		</widget>
-		<!--eLabel name="Debug" text="PE023d" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
+		<!--eLabel name="Debug" text="P013E" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
 	</screen>
 
 	<!-- MyTube Player -->
@@ -855,7 +983,7 @@
 			</convert>
 		</widget>
 		<widget name="title" position="0,0" size="0,0"/>
-		<!--eLabel name="Debug" text="PE023e" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
+		<!--eLabel name="Debug" text="P013F" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
 	</screen>
 
 	<!-- MyTube Player -->
@@ -865,7 +993,7 @@
 		<eLabel	position="10,50" size="800,1" backgroundColor="#303030"/>
 		<widget name="detailtext" position="10,60" size="800,450" font="Regular;22" halign="left" valign="top"/>
 		<widget name="title" position="0,0" size="0,0"/>
-		<!--eLabel name="Debug" text="PE023f" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
+		<!--eLabel name="Debug" text="P013G" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
 	</screen>
 
 	<!-- MyTube Player -->
@@ -903,19 +1031,24 @@
 		<widget name="detailtext" position="220,255" size="690,270" font="Regular;20"/>
 		<widget name="thumbnail" position="0,0" size="150,110" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
 		<widget name="title" position="0,0" size="0,0"/>
-		<!--eLabel name="Debug" text="PE023g" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
+		<!--eLabel name="Debug" text="P013H" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
 	</screen>
-	<screen name="NumberZapExt" position="332,351" size="700,160" title="Channel"> 
-		<widget name="chPicon" position="474,10" size="220,132" alphatest="on" /> 
-		<widget name="number" position="5,35" size="190,30" halign="right" font="Regular;26" foregroundColor="white" /> 
-		<widget name="chNum" position="210,34" size="240,30" halign="left" font="Regular;26" foregroundColor="white" /> 
-		<widget name="channel" position="5,77" size="190,30" halign="right" font="Regular;26" foregroundColor="white" /> 
-		<widget name="chName" position="209,75" size="254,30" halign="left" font="Regular;24" noWrap="1" foregroundColor="white" />
-		<widget name="bouquet" position="5,115" size="190,30" halign="right" font="Regular;26" foregroundColor="white" /> 
-		<widget name="chBouq" position="210,115" size="256,30" halign="left" font="Regular;24" noWrap="1" foregroundColor="white" /> 
+	
+	<!-- **********  NumberZap ********** -->
+	
+	<screen name="NumberZapExt" position="332,351"    size="700,160" title="Channel"> 
+		<widget name="chPicon" position="474,10"  size="220,132" alphatest="on" /> 
+		<widget name="number"  position="5,35"    size="190,30" halign="right" font="Regular;26" foregroundColor="white" /> 
+		<widget name="chNum"   position="210,34"  size="240,30" halign="left"  font="Regular;26" foregroundColor="white" /> 
+		<widget name="channel" position="5,77"    size="190,30" halign="right" font="Regular;26" foregroundColor="white" /> 
+		<widget name="chName"  position="209,75"  size="254,30" halign="left"  font="Regular;24" foregroundColor="white" noWrap="1" />
+		<widget name="bouquet" position="5,115"   size="190,30" halign="right" font="Regular;26" foregroundColor="white" /> 
+		<widget name="chBouq"  position="210,115" size="256,30" halign="left"  font="Regular;24" foregroundColor="white" noWrap="1" /> 
+		<!--eLabel name="Debug" text="P014A" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
 	</screen>
 
-	<!-- EMCSelection -->
+	<!-- **********  EMC MediaCentern ********** -->
+	
 	<screen name="EMCSelection" position="5,54" size="1270,660" title="Enhanced Movie Center" backgroundColor="background">
 		<ePixmap pixmap="skin_default/icons/clock.png" position="659,43" zPosition="1" size="26,26" alphatest="on" />
 		<eLabel text="E n h a n c e d  M o v i e  C e n t e r" position="31,6" size="492,30" font="Regular; 26" foregroundColor="blue" backgroundColor="black" transparent="1" halign="center" />
@@ -966,7 +1099,9 @@
 		<widget name="key_green" position="418,620" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
 		<widget name="key_yellow" position="725,620" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
 		<widget name="key_blue" position="1029,620" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<!--eLabel name="Debug" text="P015A" position="40,5" size="500,50" font="Regular;48" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99" /-->
 	</screen>
+	
 	<screen name="EMCMediaCenter" position="fill"  title="MoviePlayer" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel position="0,540" size="1280,180" backgroundColor="header" zPosition="-1" />
 		<!-- *** Blue Panel Channel *** -->
@@ -1042,8 +1177,11 @@
 		<widget name="state" position="550,656" size="720,30" font="Regular;30" halign="left" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3" />
 		<widget name="eventname" position="960,656" size="0,0" font="Regular;30" halign="left" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3" />
 		<widget name="speed" position="1100,656" size="0,0" font="Regular;30" halign="left" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3" />
-		<!--eLabel name="Debug" text="S083" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P015B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
+	
+	<!-- **********  MSN Weather ********** -->
+
 	<screen name="MSNWeatherPlugin" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder" backgroundColor="transpBlack">
 		<ePixmap pixmap="eDreamy/msn_weather_icons/background.png" position="6,-2" size="1280,720" zPosition="-1" transparent="1" alphatest="blend" />
 		<!--day1-->
@@ -1147,28 +1285,32 @@
 			<convert type="ClockToText">Format:%e. %b</convert>
 		</widget>
 		<ePixmap position="21,670" size="53,25" pixmap="eDreamy/buttons/key_menu.png" alphatest="blend" zPosition="1" />
+		<!--eLabel name="Debug" text="P016A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
+	
+	<!-- **********  ShoutCast ********** -->
+
 	<screen name="SHOUTcastWidget" position="0,center" size="1280,720" title="SHOUTcast" backgroundColor="background">
-		<eLabel position="35,20" size="790,50" backgroundColor="dreamy" zPosition="-1" />
-		<eLabel position="35,20" size="790,1" backgroundColor="black" zPosition="-1" />
-		<eLabel position="35,20" size="1,50" backgroundColor="black" zPosition="-1" />
+		<eLabel position="35,20"   size="790,50"  backgroundColor="dreamy"  zPosition="-1" />
+		<eLabel position="35,20"   size="790,1"   backgroundColor="black"   zPosition="-1" />
+		<eLabel position="35,20"   size="1,50"    backgroundColor="black"   zPosition="-1" />
 		<!-- Middle -->
-		<eLabel position="35,78" size="790,545" backgroundColor="dreamy" zPosition="-1" />
-		<eLabel position="35,76" size="575,5" backgroundColor="bluette" zPosition="10" />
-		<eLabel position="35,78" size="790,1" backgroundColor="black" zPosition="-1" />
-		<eLabel position="35,78" size="1,545" backgroundColor="black" zPosition="-1" />
-		<eLabel position="35,623" size="790,1" backgroundColor="black" zPosition="-1" />
-		<eLabel position="605,621" size="220,5" backgroundColor="bluette" zPosition="10" />
+		<eLabel position="35,78"   size="790,545" backgroundColor="dreamy"  zPosition="-1" />
+		<eLabel position="35,76"   size="575,5"   backgroundColor="bluette" zPosition="10" />
+		<eLabel position="35,78"   size="790,1"   backgroundColor="black"   zPosition="-1" />
+		<eLabel position="35,78"   size="1,545"   backgroundColor="black"   zPosition="-1" />
+		<eLabel position="35,623"  size="790,1"   backgroundColor="black"   zPosition="-1" />
+		<eLabel position="605,621" size="220,5"   backgroundColor="bluette" zPosition="10" />
 		<!-- Footer -->
-		<eLabel position="35,633" size="790,65" backgroundColor="dreamy" zPosition="-1" />
-		<eLabel position="35,633" size="790,1" backgroundColor="black" zPosition="-1" />
-		<eLabel position="35,633" size="1,65" backgroundColor="black" zPosition="-1" />
-		<eLabel position="830,633" size="145,65" backgroundColor="dreamy" zPosition="-1" />
-		<eLabel position="830,633" size="145,1" backgroundColor="black" zPosition="-1" />
-		<eLabel position="830,633" size="1,65" backgroundColor="black" zPosition="-1" />
-		<eLabel position="980,633" size="265,65" backgroundColor="dreamy" zPosition="-1" />
-		<eLabel position="980,633" size="265,1" backgroundColor="black" zPosition="-1" />
-		<eLabel position="980,633" size="1,65" backgroundColor="black" zPosition="-1" />
+		<eLabel position="35,633"  size="790,65"  backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="35,633"  size="790,1"   backgroundColor="black"  zPosition="-1" />
+		<eLabel position="35,633"  size="1,65"    backgroundColor="black"  zPosition="-1" />
+		<eLabel position="830,633" size="145,65"  backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="830,633" size="145,1"   backgroundColor="black"  zPosition="-1" />
+		<eLabel position="830,633" size="1,65"    backgroundColor="black"  zPosition="-1" />
+		<eLabel position="980,633" size="265,65"  backgroundColor="dreamy" zPosition="-1" />
+		<eLabel position="980,633" size="265,1"   backgroundColor="black"  zPosition="-1" />
+		<eLabel position="980,633" size="1,65"    backgroundColor="black"  zPosition="-1" />
 		<!-- Code -->
 		<widget source="Title" render="Label" position="115,31" size="276,40" font="Regular;26" halign="left" foregroundColor="ltbluette" backgroundColor="black" transparent="1" zPosition="1" />
 		<ePixmap position="33,18" size="35,35" pixmap="eDreamy/buttons/angle30.png" alphatest="blend" zPosition="2" />
@@ -1210,8 +1352,11 @@
 		<eLabel text="Menu" position="890,645" size="200,40" font="Regular;22" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
 		<eLabel text="Info" position="890,665" size="200,40" font="Regular;22" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
 		<ePixmap position="376,28" zPosition="4" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" transparent="1" alphatest="on" />
-		<!--eLabel name="Debug" text="S023" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P017A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
+	
+	<!-- **********  IPTV Player ********** -->
+
 	<screen name="IPTVPlayerWidget" position="0,center" size="1280,720" title="IPTV Player" backgroundColor="background">
 		<eLabel position="35,20" size="790,50" backgroundColor="dreamy" zPosition="-1" />
 		<eLabel position="35,20" size="790,1" backgroundColor="black" zPosition="-1" />
@@ -1269,6 +1414,6 @@
 		<eLabel position="830,567" size="1,55" backgroundColor="black" zPosition="0" />
 		<eLabel position="830,567" size="415,1" backgroundColor="black" zPosition="0" />
 		<widget name="playerlogo" zPosition="4" position="984,28" size="120,35" alphatest="blend" transparent="1" />
-		<!--eLabel name="Debug" text="S023" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="Debug" text="P018A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 </skin>
