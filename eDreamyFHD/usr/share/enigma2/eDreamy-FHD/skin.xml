@@ -1235,11 +1235,10 @@
 	<screen name="HarddiskSetup" title="Harddisk Setup" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p700_Template"/>
 		<panel name="p700_Logo"/>
-		<panel name="ButtonRed"/>
+		<panel name="sR"/>
 		<widget name="model"    position="70,180" size="820,30" font="Regular;32" backgroundColor="header" foregroundColor="#73c6ff" transparent="1" zPosition="1" />
 		<widget name="capacity" position="70,240" size="820,25" font="Regular;30" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="bus"      position="70,290" size="820,25" font="Regular;30" backgroundColor="header" transparent="1" zPosition="1" />
-		<widget name="initializetext" position="70,612" size="190,55" font="Regular;22" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="1" />
 		<!-- eLabel name="DEBUG" text="S130" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
