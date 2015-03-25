@@ -1850,92 +1850,8 @@ flags=RT_HALIGN_CENTER, text=2),], "fonts": [gFont("Regular", 32), gFont("Regula
   <widget name="key_blue" position="954,980" size="275,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
   <!-- List Channel -->
   <ePixmap position="1230,160" size="10,765" pixmap="box/maxbar.png" alphatest="blend" zPosition="2" />
-  <!-- Event Title -->
-  <!-- Service Name -->
-  <!-- Event Name - Time -->
-  <!-- Interlinea 23 size 450 -->
-  <!-- Channel Reference  
-		<widget position="835,535" size="405,25" source="ServiceEvent" render="EGShowReference" halign="center" font="Regular;19" foregroundColor="ltbluette" backgroundColor="bluette" zPosition="1" transparent="1" />
-		-->
 </screen>
-<screen name="IPTVPlayerWidget" position="0,0" size="1920,1080" title="Egami_IPTVPlayer" backgroundColor="transparent" flags="wfNoBorder">
-  <!-- Panel SatType -->
-  <ePixmap pixmap="eDreamy-FHD/adio.png" position="50,140" size="1200,800" zPosition="-2" transparent="1" alphatest="blend" />
-  <widget name="console" position="1266,148" zPosition="1" size="594,243" font="Regular; 28" transparent="1" backgroundColor="background" foregroundColor="white" />
-  <widget name="headertext" position="66,153" zPosition="1" size="1167,36" font="Regular; 22" transparent="1" backgroundColor="black" foregroundColor="red" />
-  <widget name="playerlogo" zPosition="4" position="1352,36" size="372,83" alphatest="blend" transparent="1" />
-  <widget name="cover" zPosition="2" position="1268,419" size="595,511" alphatest="blend" backgroundColor="transparent" />
-  <widget render="Label" source="key_blue" position="679,980" size="222,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-  <widget render="Label" source="key_green" position="399,980" size="236,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-  <widget render="Label" source="key_red" position="109,980" size="238,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-  <ePixmap position="640,988" pixmap="eDreamy-FHD/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-  <ePixmap position="360,988" pixmap="eDreamy-FHD/buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-  <ePixmap position="70,988" pixmap="eDreamy-FHD/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-  <eLabel position="50,30" size="1200,95" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="50,30" size="1200,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,125" size="1202,1" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1250,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <!-- Code -->
-  <ePixmap position="48,28" size="52,52" pixmap="eDreamy-FHD/buttons/angle30.png" alphatest="blend" zPosition="2" />
-  <ePixmap position="75,50" size="52,70" pixmap="eDreamy-FHD/icons/list.png" alphatest="blend" zPosition="2" />
-  <widget source="Title" render="Label" position="139,42" size="730,73" font="Regular; 56" halign="left" foregroundColor="yellow" backgroundColor="black" transparent="1" zPosition="1" />
-  <!-- Middle -->
-  <eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
-  <eLabel position="50,140" size="1200,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1250,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,940" size="1200,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="900,937" size="352,10" backgroundColor="bluette" zPosition="0" />
-  <!-- Footer -->
-  <eLabel position="50,955" size="1200,95" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="50,955" size="1200,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1520,955" size="250,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1260,955" size="250,95" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="1260,955" size="250,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1260,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1520,955" size="350,95" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="1520,955" size="350,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1520,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <!-- Analogic Clock -->
-  <widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050" alphatest="blend">
-    <convert type="ExtraNumText">secHand</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
-    <convert type="ExtraNumText">minHand</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
-    <convert type="ExtraNumText">hourHand</convert>
-  </widget>
-  <!-- Clock %d.%m.%Y - %H:%M:%S -->
-  <ePixmap position="1275,975" size="90,60" pixmap="eDreamy-FHD/icons/select.png" alphatest="blend" zPosition="2" />
-  <ePixmap position="1535,970" size="80,80" pixmap="eDreamy-FHD/icons/clock50.png" alphatest="blend" zPosition="2" />
-  <widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" zPosition="1">
-    <convert type="ClockToText">Format:%H:%M:%S</convert>
-  </widget>
-  <eLabel position="1260,30" size="610,95" backgroundColor="rds_text_bg" zPosition="-2" />
-  <eLabel position="1260,30" size="610,2" backgroundColor="bluette" zPosition="-2" />
-  <eLabel position="1260,30" size="2,95" backgroundColor="bluette" zPosition="-2" />
-  <eLabel position="1260,125" size="610,2" backgroundColor="bluette" zPosition="-2" />
-  <eLabel position="1260,140" size="610,802" backgroundColor="trbluette" zPosition="-2" />
-  <ePixmap position="910,988" pixmap="eDreamy-FHD/buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
-  <widget render="Label" source="key_blue" position="954,980" size="275,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-  <eLabel text="Menu" position="1390,965" size="200,43" font="Regular;32" valign="center" foregroundColor="unb0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
-  <eLabel text="Info" position="1390,1002" size="200,43" font="Regular;32" valign="center" foregroundColor="unb0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
-  <!-- List Channel -->
-  <ePixmap position="1230,192" size="8,733" pixmap="box/maxbar.png" alphatest="blend" zPosition="2" />
-  <widget name="list" position="64,194" font="Regular;28" itemHeight="50" zPosition="1" size="1174,738" scrollbarMode="showOnDemand" transparent="0" backgroundColor="background" />
-  <!-- Event Title -->
-  <eLabel position="1260,140" size="610,260" backgroundColor="rds_text_bg" zPosition="0" />
-  <eLabel position="1260,400" size="610,10" backgroundColor="unff101010" zPosition="0" />
-  <!-- Service Name -->
-  <!-- Event Name - Time -->
-  <!-- Interlinea 23 size 450 -->
-  <!-- Channel Reference  
-		<widget position="835,535" size="405,25" source="ServiceEvent" render="EGShowReference" halign="center" font="Regular;19" foregroundColor="ltbluette" backgroundColor="bluette" zPosition="1" transparent="1" />
-		-->
-</screen>
+
 <screen name="MovieMenu" position="0,0" size="1920,1080" title="EMC menu" backgroundColor="transparent" flags="wfNoBorder">
   <!-- Date -->
   <widget source="global.CurrentTime" render="Label" position="730,30" size="400,95" font="Regular;35" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1">
@@ -2496,6 +2412,140 @@ flags=RT_HALIGN_CENTER, text=2),], "fonts": [gFont("Regular", 32), gFont("Regula
 			}
 			</convert>
 		</widget>
+	</screen>
+    
+	<screen name="ConfigMenu" position="center,center" size="1920,1080" title="IPTV Player - ustawienia" backgroundColor="transparent" flags="wfNoBorder">
+		<widget source="Title" render="Label" zPosition="1" position="130,44" size="1099,73" halign="center" font="Regular; 58" foregroundColor="blue" transparent="1" backgroundColor="transpBlack" />
+		<widget name="config" position="66,164" size="1174,765" enableWrapAround="1" backgroundColor="background" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" />
+		<widget name="key_green" position="399,980" size="236,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="key_red" position="109,980" size="238,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<ePixmap position="365,988" pixmap="eDreamy-FHD/buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,988" pixmap="eDreamy-FHD/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="650,988" pixmap="eDreamy-FHD/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="key_yellow" position="684,980" size="220,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<eLabel position="50,30" size="1200,95" backgroundColor="rds_text_bg" zPosition="-1" />
+		<eLabel position="50,30" size="1200,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,125" size="1202,1" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1250,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="eDreamy-FHD/buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="eDreamy-FHD/icons/list.png" alphatest="blend" zPosition="2" />
+		<!-- Middle -->
+		<eLabel position="50,140" size="1200,800" backgroundColor="rds_text_bg" zPosition="-1" />
+		<eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
+		<eLabel position="50,140" size="1200,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1250,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,940" size="1200,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="900,937" size="352,10" backgroundColor="bluette" zPosition="0" />
+		<!-- Footer -->
+		<eLabel position="50,955" size="1200,95" backgroundColor="rds_text_bg" zPosition="-1" />
+		<eLabel position="50,955" size="1200,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1520,955" size="250,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1260,955" size="250,95" backgroundColor="rds_text_bg" zPosition="-1" />
+		<eLabel position="1260,955" size="250,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1260,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95" backgroundColor="rds_text_bg" zPosition="-1" />
+		<eLabel position="1520,955" size="350,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1520,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050" alphatest="blend">
+		  <convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+		  <convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
+		  <convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S -->
+		<ePixmap position="1275,975" size="90,60" pixmap="eDreamy-FHD/icons/select.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80" pixmap="eDreamy-FHD/icons/clock50.png" alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" zPosition="1">
+		  <convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>
+		<ePixmap position="910,988" pixmap="eDreamy-FHD/buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="key_blue" position="954,980" size="275,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<ePixmap position="1230,164" size="10,765" pixmap="box/maxbar.png" alphatest="blend" zPosition="2" />
+	</screen>
+
+	<screen name="IPTVPlayerWidget" position="0,0" size="1920,1080" title="Egami_IPTVPlayer" backgroundColor="transparent" flags="wfNoBorder">
+		<ePixmap pixmap="eDreamy-FHD/adio.png" position="50,140" size="1200,800" zPosition="-2" transparent="1" alphatest="blend" />
+		<widget name="console" position="1266,148" zPosition="1" size="594,243" font="Regular; 28" transparent="1" backgroundColor="background" foregroundColor="white" />
+		<widget name="headertext" position="66,153" zPosition="1" size="1000,36" font="Regular; 22" transparent="1" backgroundColor="black" foregroundColor="red" />
+		<widget name="playerlogo" zPosition="4" position="1352,36" size="372,83" alphatest="blend" transparent="1" />
+		<widget name="cover" zPosition="2" position="1268,419" size="595,511" alphatest="blend" backgroundColor="transparent" />
+		<widget render="Label" source="key_blue" position="679,980" size="222,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget render="Label" source="key_green" position="399,980" size="236,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget render="Label" source="key_red" position="109,980" size="238,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<ePixmap position="640,988" pixmap="eDreamy-FHD/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="360,988" pixmap="eDreamy-FHD/buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,988" pixmap="eDreamy-FHD/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<eLabel position="50,30" size="1200,95" backgroundColor="rds_text_bg" zPosition="-1" />
+		<eLabel position="50,30" size="1200,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,125" size="1202,1" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1250,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="eDreamy-FHD/buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="eDreamy-FHD/icons/list.png" alphatest="blend" zPosition="2" />
+		<widget source="Title" render="Label" position="139,42" size="730,73" font="Regular; 56" halign="left" foregroundColor="yellow" backgroundColor="black" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
+		<eLabel position="50,140" size="1200,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1250,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,940" size="1200,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="900,937" size="352,10" backgroundColor="bluette" zPosition="0" />
+		<!-- Footer -->
+		<eLabel position="50,955" size="1200,95" backgroundColor="rds_text_bg" zPosition="-1" />
+		<eLabel position="50,955" size="1200,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1520,955" size="250,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1260,955" size="250,95" backgroundColor="rds_text_bg" zPosition="-1" />
+		<eLabel position="1260,955" size="250,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1260,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95" backgroundColor="rds_text_bg" zPosition="-1" />
+		<eLabel position="1520,955" size="350,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1520,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050" alphatest="blend">
+		  <convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+		  <convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
+		  <convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S -->
+		<ePixmap position="1275,975" size="90,60" pixmap="eDreamy-FHD/icons/select.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80" pixmap="eDreamy-FHD/icons/clock50.png" alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" zPosition="1">
+		  <convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>
+		<eLabel position="1260,30" size="610,95" backgroundColor="rds_text_bg" zPosition="-2" />
+		<eLabel position="1260,30" size="610,2" backgroundColor="bluette" zPosition="-2" />
+		<eLabel position="1260,30" size="2,95" backgroundColor="bluette" zPosition="-2" />
+		<eLabel position="1260,125" size="610,2" backgroundColor="bluette" zPosition="-2" />
+		<eLabel position="1260,140" size="610,802" backgroundColor="trbluette" zPosition="-2" />
+		<ePixmap position="910,988" pixmap="eDreamy-FHD/buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget render="Label" source="key_blue" position="954,980" size="275,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<eLabel text="Menu" position="1390,965" size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<eLabel text="Info" position="1390,1002" size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<!-- List Channel -->
+		<ePixmap position="1230,192" size="8,733" pixmap="box/maxbar.png" alphatest="blend" zPosition="2" />
+		<widget name="list" position="64,194" font="Regular;28" itemHeight="50" zPosition="1" size="1174,738" scrollbarMode="showOnDemand" transparent="0" backgroundColor="background" />
+		<!-- Event Title -->
+		<eLabel position="1260,140" size="610,260" backgroundColor="rds_text_bg" zPosition="0" />
+		<eLabel position="1260,400" size="610,10" backgroundColor="#ff101010" zPosition="0" />
+		<widget name="spinner" zPosition="2" position="1100,165" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="spinner_1" zPosition="1" position="1100,165" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="spinner_2" zPosition="1" position="1115,165" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="spinner_3" zPosition="1" position="1130,165" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="spinner_4" zPosition="1" position="1145,165" size="16,16" transparent="1" alphatest="blend" />
 	</screen>
 
 </skin>
