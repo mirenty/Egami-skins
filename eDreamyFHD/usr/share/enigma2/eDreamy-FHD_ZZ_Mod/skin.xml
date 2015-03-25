@@ -210,7 +210,7 @@
 	<!-- Volumebar FHD -->
 	<screen name="Volume" position="center,50" size="800,50" zPosition="10" title="Volume" flags="wfNoBorder">
 		<ePixmap position="0,0" size="800,50" pixmap="eDreamy-FHD/skin_default/volbg.png" zPosition="1" />
-		<widget name="Volume" position="54,21" size="700,6" pixmap="eDreamy-FHD/skin_default/volbar.png" transparent="1" zPosition="2"/>
+		<widget name="Volume" position="44,22" size="700,6" pixmap="eDreamy-FHD/skin_default/volbar.png" transparent="1" zPosition="2" />
 		<!-- eLabel name="DEBUG" text="S005" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
