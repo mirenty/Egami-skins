@@ -630,21 +630,123 @@
 	</screen>
 	
 	<!--  EGAMI FileManager FHD -->
-	<screen name="EGFileManager" position="fill" title="File Commander" backgroundColor="transparent" flags="wfNoBorder" >
+	<screen name="FileCommanderScreen" position="fill"  title="File Commander" backgroundColor="transparent" flags="wfNoBorder">
+		<eLabel position="50,30" size="1820,95" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,30" size="1820,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,125" size="1820,1" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1870,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="eDreamy-FHD/buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="eDreamy-FHD/icons/list.png" alphatest="blend" zPosition="2" />
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;45" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<eLabel position="52,138" size="1820,800" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
+		<eLabel position="50,140" size="1820,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1870,center" size="2,800" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,940" size="1200,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1520,937" size="352,10" backgroundColor="bluette" zPosition="0" />
+		<!-- Footer -->
+		<eLabel position="50,955" size="1200,95" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,955" size="1200,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="50,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1520,955" size="250,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1260,955" size="250,95" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1260,955" size="250,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1260,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1520,955" size="350,2" backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="1520,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050" alphatest="blend">
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60" pixmap="eDreamy-FHD/icons/select.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80" pixmap="eDreamy-FHD/icons/clock50.png" alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>		
+		<widget source="global.CurrentTime" render="Label" position="1345,30" size="500,95" font="Regular;35" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format %A %d %B</convert>
+		</widget>
+		<ePixmap position="910,988" pixmap="eDreamy-FHD/buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="key_blue" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="640,988" pixmap="eDreamy-FHD/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="key_yellow" position="680,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="360,988" pixmap="eDreamy-FHD/buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="key_green" position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="70,988" pixmap="eDreamy-FHD/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="key_red" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<eLabel text="Menu" position="1390,965" size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<eLabel text="Info" position="1390,1002" size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<widget name="list_left_head" position="72,162" size="890,60" font="Regular;24" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" zPosition="1" transparent="1" />
+		<widget name="list_left" position="70,240" size="890,640" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="950,240" size="10,640" pixmap="eDreamy-FHD/box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+		<widget name="list_right_head" position="990,160" size="870,60" font="Regular;24" foregroundColor="ltbluette" halign="center" valign="center" backgroundColor="bluette" zPosition="2" transparent="1" />
+		<widget name="list_right" position="990,240" size="870,640" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="1850,240" size="10,640" pixmap="eDreamy-FHD/box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+		<widget position="1120,2667" size="210,21" name="key_menu" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1" />
+		<!-- eLabel name="DEBUG" text="PE041" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!--  File Comander Setup FHD --> 
+	<screen name="FileCommanderConfigScreen" position="fill" title="File Commander - Settings" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="p800_Date" />
+		<panel name="p800_Ext" />
+		<panel name="nRG" />
+		<ePixmap pixmap="eDreamy-FHD/menu/setup_selection.png" position="960,640" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<widget name="config" position="70,180"  size="820,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
+		<widget name="help" position="1260,480" size="600,440" font="Regular;26" halign="center" valign="top" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="1"/>
+		<!-- eLabel name="DEBUG" text="P008a" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!--  File Comander FileSelect FHD --> 
+        <screen name="FileCommanderScreenFileSelect" position="fill" title="File Commander" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="p800_Template" />
 		<panel name="p800_DateMid" />
 		<panel name="nRGYB" />
 		<panel name="MI" />
-		<widget name="list_left_text" position="70,160" size="570,60" font="Regular;24" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" zPosition="1" />
+		<widget name="list_left_head" position="70,160" size="570,60" font="Regular;24" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" zPosition="1" />
 		<widget name="list_left"      position="70,240" size="570,640" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
-		<ePixmap position="630,240"   size="10,640" pixmap="eDreamy-FHD/box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
-		<widget name="list_right_text" position="660,160" size="580,60" font="Regular;24" foregroundColor="ltbluette" halign="center" valign="center" backgroundColor="bluette" zPosition="2" />
+		<ePixmap position="630,240"   size="10,520" pixmap="eDreamy-FHD/box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+		<widget name="list_right_head" position="660,160" size="580,50" font="Regular;24" foregroundColor="ltbluette" halign="center" backgroundColor="bluette" zPosition="2" />
 		<widget name="list_right"      position="660,240" size="580,640" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
-		<ePixmap position="1230,240"   size="10,640" pixmap="eDreamy-FHD/box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
-		<widget  position="1120,2667" size="210,21" name="key_menu"   font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" zPosition="1" transparent="1" />
-		<!-- eLabel name="DEBUG" text="PE041" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
+		<ePixmap position="1230,240"   size="10,520" pixmap="eDreamy-FHD/box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+		<!-- eLabel name="DEBUG" text="P008b" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+        </screen>
 
+	<!--  File Comander TaskListScreen (Import) FHD --> 
+	<screen name="TaskListScreen" position="fill" title="Task list" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_DateMid" />
+		<panel name="nR" />
+		<widget source="tasklist" render="Listbox" position="70,180" size="1170,700" zPosition="7" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (5, 1), size = (1160, 34), font=1, color=0x3faaff, flags = RT_HALIGN_LEFT, text = 1), # name
+					MultiContentEntryText(pos = (5, 35), size = (250, 34), font=1, flags = RT_HALIGN_LEFT, text = 2), # state
+					MultiContentEntryProgress(pos = (270, 35), size = (500, 34), percent = -3), # progress
+					MultiContentEntryText(pos = (790, 35), size = (350, 34), font=1, flags = RT_HALIGN_RIGHT, text = 4), # percentage
+					],
+					"fonts": [gFont("Regular", 30),gFont("Regular", 30)],
+					"itemHeight": 70
+				}
+			</convert>
+		</widget>
+		<!-- eLabel name="DEBUG" text="P008c" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
 	<!--  EGAMI Choose Mount FHD -->
 	<screen name="EGDeviceManager_Setup" position="fill" title="EGAMI Devices Panel" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="p800_Template" />
