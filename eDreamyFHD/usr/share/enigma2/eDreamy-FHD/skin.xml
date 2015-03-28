@@ -1056,6 +1056,10 @@
 		<panel name="p800_Logo"/>
 		<panel name="nRGYB"/>
 		<panel name="MI"/>
+		 <widget source="Event" render="Label" position="1280,260" size="580,600" font="Regular;32" halign="center" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="2">
+     <convert type="EventName">ExtendedDescription</convert>
+     </widget>
+    <eLabel position="1260,140" size="610,802" backgroundColor="#201b3c85" zPosition="-2" />
 		<ePixmap pixmap="eDreamy-FHD/box/maxbar.png" position="900,180" size="10,720" alphatest="blend" zPosition="2" />
 		<widget name="list" position="70,180" size="840,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2" />
 		<widget name="number" position="170,1900" size="500,60" font="Regular;34" valign="center" halign="left" foregroundColor="#73c6ff" backgroundColor="transparent" transparent="1" borderColor="black" borderWidth="2" zPosition="2" />
