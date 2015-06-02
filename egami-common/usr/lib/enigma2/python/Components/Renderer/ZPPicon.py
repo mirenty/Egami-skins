@@ -5,7 +5,7 @@ from enigma import iServiceInformation, iPlayableService, iPlayableServicePtr
 from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, resolveFilename
 
 class ZPPicon(Renderer):
-    searchPaths = ('/media/hdd/ZPPicon/%s/', '/media/usb/ZPPicon/%s/', '/usr/share/enigma2/ZPPicon/%s/', '/usr/share/enigma2/%s/', '/media/usb/%s/')
+    searchPaths = ('/ZPPicon/%s/', '/media/hdd/ZPPicon/%s/', '/media/usb/ZPPicon/%s/', '/usr/share/enigma2/ZPPicon/%s/', '/usr/share/enigma2/%s/', '/media/usb/%s/')
 
     def __init__(self):
         Renderer.__init__(self)
