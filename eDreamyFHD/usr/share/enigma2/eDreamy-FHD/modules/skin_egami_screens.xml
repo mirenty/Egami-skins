@@ -108,7 +108,7 @@
 		<panel name="p800_Logo" />
 		<panel name="p800_Ext" />
 		<panel name="p800_Date" />
-		<panel name="nR" />
+		<panel name="nRG" />
 		<ePixmap pixmap="eDreamy-FHD/menu/buttonselect.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
 		<ePixmap position="900,180" size="10,720" pixmap="eDreamy-FHD/box/maxbar.png" alphatest="blend" transparent="1" zPosition="2" />
