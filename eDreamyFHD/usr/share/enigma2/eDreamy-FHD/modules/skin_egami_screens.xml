@@ -85,7 +85,7 @@
 		<panel name="nRG"/>
 		<ePixmap pixmap="eDreamy-FHD/menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="status" position="70,180" size="820,40" font="Regular;35" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" />      
-		<widget name="menu" position="70,250" size="820,560" font="Regular;30" itemHeight="70" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="menu" position="70,250" size="820,660" font="Regular;30" itemHeight="70" scrollbarMode="showOnDemand" transparent="1"/>
 		<!-- eLabel name="DEBUG" text="PE005" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>	
 
@@ -98,7 +98,7 @@
 		<ePixmap pixmap="eDreamy-FHD/menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="status" position="70,180" size="820,40" font="Regular;35" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" />      
 		<ePixmap position="895,180" size="15,720" pixmap="eDreamy-FHD/box/maxbargh.png" alphatest="blend" transparent="1" zPosition="4" />
-		<widget name="menu" position="70,250" size="840,560" font="Regular;30" itemHeight="72" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+		<widget name="menu" position="70,250" size="840,660" font="Regular;30" itemHeight="72" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 		<!-- eLabel name="DEBUG" text="PE006" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
