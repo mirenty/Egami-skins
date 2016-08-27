@@ -13,7 +13,7 @@ lastPiconPath = None
 def initPiconPaths():
 	global searchPaths
 	searchPaths = []
-	for mp in ('/usr/share/enigma2/ZZPicon/', '/', '/usr/share/enigma2/'):
+	for mp in ('/usr/share/enigma2/ZZPicon/', '/'):
 		onMountpointAdded(mp)
 	for part in harddiskmanager.getMountedPartitions():
 		mp = path = os.path.join(part.mountpoint, 'usr/share/enigma2/ZZPicon')
@@ -24,13 +24,6 @@ def onMountpointAdded(mountpoint):
 	global searchPaths
 	try:
 		path = os.path.join(mountpoint, 'ZZPicon/picon') + '/'
-		if os.path.isdir(path) and path not in searchPaths:
-			for fn in os.listdir(path):
-				if fn.endswith('.png'):
-					print "[Picon] adding path:", path
-					searchPaths.append(path)
-					break
-		path = os.path.join(mountpoint, 'picon') + '/'
 		if os.path.isdir(path) and path not in searchPaths:
 			for fn in os.listdir(path):
 				if fn.endswith('.png'):
@@ -48,13 +41,7 @@ def onMountpointRemoved(mountpoint):
 		print "[Picon] removed path:", path
 	except:
 		pass
-	path = os.path.join(mountpoint, 'picon') + '/'
-	try:
-		searchPaths.remove(path)
-		print "[Picon] removed path:", path
-	except:
-		pass
-	
+
 def onPartitionChange(why, part):
 	if why == 'add':
 		onMountpointAdded(part.mountpoint)
