@@ -578,7 +578,7 @@
 		<eLabel position="810,148" size="500,5"   backgroundColor="bluette" zPosition="-1" />
 		<eLabel position="660,150" size="650,1"   backgroundColor="bluette" zPosition="-1" />
 <widget render="MSNWeatherPixmap" source="session.MSNWeather" position="675,30" size="120,120" zPosition="2" alphatest="blend">
-  <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/eDreamy/msn/,png</convert>
+  <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/eDreamy-FHD/msn/,png</convert>
 </widget>
   <widget source="session.MSNWeather" render="Label" position="810,35" size="495,50" font="Regular; 40" halign="left" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="2">
     <convert type="MSNWeather">city</convert>
@@ -588,7 +588,7 @@
     <convert type="MSNWeather">temperature_current</convert>
   </widget>
   <ePixmap position="970,100" size="70,40" pixmap="eDreamy-FHD/icons/wind.png" alphatest="blend" zPosition="1" />
-  <widget source="session.MSNWeather" render="Label" position="1045,100" size="257,50" font="Regular; 32" halign="left" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2">
+  <widget source="session.MSNWeather" render="Label" position="1045,75" size="257,70" font="Regular; 32" halign="left" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2">
     <convert type="MSNWeather">winddisplay</convert>
   </widget>
 		<!-- *** RightUp Tuner Panel *** -->
