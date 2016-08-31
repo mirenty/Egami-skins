@@ -518,10 +518,6 @@
 		<widget name="key_green"  position="400,1007"  size="300,40" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 		<widget name="key_yellow" position="700,1007"  size="300,40" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 		<widget name="key_blue"   position="1000,1007" size="300,40" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<eLabel text="Record"     position="100,1007"   size="300,40" font="Regular;34" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" />
-		<eLabel text="Plugins"    position="400,1007"   size="300,40" font="Regular;34" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" />
-		<eLabel text="Extensions" position="700,1007"   size="300,40" font="Regular;34" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" />
-		<eLabel text="Egami"      position="1000,1007"  size="300,40" font="Regular;34" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" />
 		<!-- Teletext icon (is teletext available?) -->
 		<ePixmap pixmap="eDreamy-FHD/icons/ico_txt_off.png" position="1245,1000" size="140,50" zPosition="1" alphatest="blend" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="eDreamy-FHD/icons/ico_txt_on.png" position="1245,1000" size="140,50" zPosition="2" alphatest="blend">
