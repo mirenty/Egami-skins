@@ -656,13 +656,14 @@
 		</widget>
 		<!-- Cam Name  -->
 		<widget source="session.CurrentService" render="Label" position="1680,913" size="200,40" font="Regular;30" halign="left" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3" >
-			<convert type="CaidInfo2">CurCam</convert>
+			<convert type="EGExtraInfo">CamName</convert>
 		</widget>
 		<!-- ECM Time -->
-		<eLabel text="Ecm:" position="1680,952" size="60,40" font="Regular;28" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="3" />
-		<eLabel text="ms"   position="1832,953" size="50,40" font="Regular;28" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="3" />
- 		<widget source="session.CurrentService" render="Label" position="1750,952" size="80,40" font="Regular;30" halign="rigt" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
-			<convert type="CaidInfo2">Delay</convert>
+		<widget source="session.CurrentService" render="Label"  position="1680,952" size="60,40" font="Regular;28" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="3" >
+			<convert type="EGExtraInfo">EcmInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1750,952" size="80,40" font="Regular;30" halign="rigt" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
+			<convert type="EGExtraInfo">E-C-N</convert>
 		</widget>
 		<!-- ALL Emu Line 
 		<widget source="session.CurrentService" render="Label" position="230,639" size="350,30" halign="left" font="Regular;29" foregroundColor="white" transparent="1" backgroundColor="black" zPosition="12" >
@@ -678,7 +679,7 @@
 		<eLabel position="0,910"  size="1920,1"   backgroundColor="bluette" zPosition="-1" />
 		<!-- *** Net Info *** -->
  		<widget source="session.CurrentService" render="Label" position="430,30" size="1440,40" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="0" zPosition="9" >
-			<convert type="CaidInfo2">Default</convert>
+			<convert type="EGExtraInfo">NetInfo</convert>
 		</widget>
 		<!-- *****  Box SatType ***** --> 
 		<ePixmap pixmap="box/blackbox.png" position="50,30" size="370,320" alphatest="blend" zPosition="0" />
@@ -749,7 +750,7 @@
 				<convert type="ServiceName">Reference</convert>
 			</widget>
 			<widget source="ServiceEvent" render="Picon" position="80,320" size="340,210" zPosition="1" alphatest="blend" transparent="5" >
-				<convert type="DRRefString">ServicelistRef</convert>
+				<convert type="EGRefString">ServicelistRef</convert>
 			</widget>
 		<!-- ***** BlackBox ***** --> 
 		<ePixmap pixmap="box/blackbox.png" position="50,550" size="370,350" alphatest="blend" zPosition="2" />
@@ -765,11 +766,11 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap pixmap="icons/emupic.png" position="65,777" size="80,105" scale="1" alphatest="blend" zPosition="2" />
- 		<widget source="session.CurrentService" render="Label" position="170,795" size="260,40" font="Regular;34" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
-			<convert type="CaidInfo2">CryptInfo2</convert>
+ 		<widget source="session.CurrentService" render="Label" position="170,795" size="560,40" font="Regular;34" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
+			<convert type="PliExtraInfo">CryptoSpecial</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="170,850" size="260,40" font="Regular;34" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="3" >
-			<convert type="CaidInfo2">CurCam</convert>
+			<convert type="EGExtraInfo">CamName</convert>
 		</widget>
 		<!-- ***** Close Box Channel ***** --> 
 		<!-- Blinking pixmap (recording in progress) -->
@@ -904,7 +905,7 @@
 		<eLabel position="1260,140" size="610,260" backgroundColor="#10101010" zPosition="0" />
 		<eLabel position="1260,400" size="610,10"  backgroundColor="#FF101010" zPosition="0" />
 		<widget source="ServiceEvent" render="Picon" position="1280,150" size="220,132" zPosition="1" alphatest="blend" transparent="1" >
-			<convert type="DRRefString">ServicelistRef</convert>
+			<convert type="EGRefString">ServicelistRef</convert>
 		</widget>
 		<!-- Event Name - Time -->
 		<eLabel text="Start Time :"                  position="1540,165" size="200,40" font="Regular;32" halign="left" backgroundColor="header" foregroundColor="yellow" transparent="1" zPosition="1" />
