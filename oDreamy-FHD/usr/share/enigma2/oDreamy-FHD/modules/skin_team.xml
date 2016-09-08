@@ -631,10 +631,32 @@
 		<widget name="lb_aspectratio" position="180,460" size="730,40" font="Regular;32" zPosition="2" foregroundColor="grey" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="lb_videosize"   position="180,510" size="400,40" font="Regular;32" zPosition="2" foregroundColor="grey" backgroundColor="transpBlack" transparent="1"/>
 		<ePixmap pixmap="icons/inet.png" position="70,570" size="90,55" alphatest="blend" zPosition="2" />
-		<widget name="ecminfo" position="180,590" size="730,400" font="Regular;30" zPosition="2" foregroundColor="#58bcff" backgroundColor="header" transparent="1"/>
+		<widget name="ecminfo" position="180,590" size="730,380" font="Regular;29" zPosition="2" foregroundColor="#58bcff" backgroundColor="header" transparent="1"/>
 		<!-- eLabel name="DEBUG" text="EG02" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
+	<!-- Permanent Clock Setup -->
+	<screen name="PermanentClockMenu" position="fill" title="Permanent Clock Setup" backgroundColor="#ff000000" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>		
+		<panel name="p800_DateMid"/>
+		<widget name="list" position="70,180" size="820,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="2" />
+		<ePixmap position="955,640" size="300,300" pixmap="menu/timer_edit.png" alphatest="blend"/>
+		<ePixmap position="60,970" size="700,90" pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
+	</screen>
+	
+	<!-- Permanent Clock Panel -->
+	<screen name="PermanentClockScreen" position="20,20" size="180,80" zPosition="10" backgroundColor="#55000000" title="Clock" flags="wfNoBorder">
+		<widget source="global.CurrentTime" render="Label" zPosition="1" position="10,10" size="160,60" font="Regular;40" 
+		        valign="center" halign="center" foregroundColor="ltbluette" backgroundColor="#f00000000" shadowColor="#80000000" shadowOffset="2,1" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="blue" position="10,70" render="Progress" size="160,5" source="session.Event_Now" zPosition="2" >
+			<convert type="EventTime">Progress</convert>
+		</widget>
+	</screen>
+
+	
 	<!--  EGAMI EmuManager FHD -->
 	<screen name="EGEmuManagerStarting" position="center,150" size="700,260" title="EGAMI StartCam" >
 	        <widget name="text" position="10,10" size="680,100" halign="center" valign="center" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
@@ -679,7 +701,31 @@
 		<widget name="Preview" position="1370,705" size="390,220" alphatest="on" zPosition="10"/> 
 		<ePixmap position="960,645" size="300,300" pixmap="menu/missing.png" alphatest="blend"/>
 		<!--eLabel name="DEBUG" text="S241" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/--> 
-	</screen> <!-- ########## END EGAMI TEAM PANELS ########## -->
+	</screen> 
+	<screen name="InternetRadioScreen" position="fill" title="Internet Radio" backgroundColor="transpBlack" flags="wfNoBorder"> 
+		<panel name="p800_Template" /> <panel name="p800_Ext_BiN"/> <panel name="p800_Date" /> 
+		<panel name="sRGYB"/> 
+		<panel name="M"/> <!-- List Channel --> 
+		<widget name="list" position="70,180" size="1160,700" font="Regular;30" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" /> 
+		<widget name="station" position="1270,45" size="590,80" font="Regular; 30" transparent="1" backgroundColor="header" foregroundColor="green" halign="center" zPosition="1" /> 
+		<ePixmap position="1500,150" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend"/> 
+		<widget name="title" position="1290,280" size="550,120" font="Regular; 32" transparent="1" backgroundColor="bluette" foregroundColor="ltbluette" halign="center" zPosition="1" /> 
+		<eLabel position="1260,380" size="610,10" backgroundColor="#FF000000" zPosition="1"/> <eLabel position="1260,390" size="610,120" backgroundColor="header" /> 
+		<eLabel text="INTERNET RADIO EGAMI" position="1260,390" size="610,110" font="Regular; 50" backgroundColor="header" halign="center" valign="center" transparent="1" foregroundColor="bluette" zPosition="1"/> 
+		<widget name="statustext" position="1260,390" size="610,110" font="Regular; 28" backgroundColor="header" halign="center" valign="center" transparent="1" foregroundColor="ltbluette" zPosition="2" /> 
+		<widget name="console" position="1260,390" size="610,110" font="Regular; 28" backgroundColor="header" halign="center" valign="center" transparent="1" foregroundColor="#808080" zPosition="2" /> 
+		<eLabel position="1260,510" size="660,440" backgroundColor="#FF000000" /> 
+		<widget name="cover" position="1261,520" size="608,420" alphatest="blend" backgroundColor="transparent" zPosition="2" /> 
+	</screen>
+	<!-- Screens -->
+	<screen name="SmartConsole" position="center,center" size="654,250" flags="wfTitle" title="Please wait...">
+		<widget position="18,20" size="598,40" source="status" render="Label" font="Regular;23" valign="top" zPosition="1"/>
+		<widget position="18,70" size="598,20" source="text" render="Label" font="Regular;23" valign="bottom" zPosition="1"/>
+		<widget position="16,115" size="596,12" source="activityslider" render="Progress" css="slider_midle_horizontal" transparent="1" zPosition="1" />
+		<widget position="16,140" size="596,22" source="slider" render="Progress" css="slider_big_horizontal" transparent="1" zPosition="1" />
+		<widget position="16,20" size="1730,830" name="console" source="console" render="ScrollLabel" font="Regular;23" valign="bottom" autoScroll="off" step="40" css="slider_vertical" scrollbarMode="showOnDemand" zPosition="2"/>
+		<widget position="16,530" size="1730,20" source="consolestatus" render="Label" font="Regular;23" valign="bottom" zPosition="2"/>
+	</screen>
 	
 	<!-- ########## END EGAMI TEAM PANELS ########## -->
 

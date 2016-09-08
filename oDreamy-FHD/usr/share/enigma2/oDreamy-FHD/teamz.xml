@@ -11,7 +11,7 @@
 
 	<ruleset name="ColorKeys">	
 		<rule type="marker"  Name="pli"              Red=""           Green=""            Yellow="Audio"      Blue="Extensions" >  </rule>			
-		<rule type="marker"  Name="egami"            Red="EPG"        Green="Plugins"     Yellow="Extensions" Blue="Cam" >         </rule>		
+		<rule type="marker"  Name="egami"            Red="EPG"        Green="Plugins"     Yellow="Extensions" Blue="EGAMI" >         </rule>		
 		<rule type="marker"  Name="openatv"          Red="InfoPanel"  Green="Plugins"     Yellow="Audio"      Blue="" >            </rule>	
 		<rule type="marker"  Name="opennfr"          Red="SoftCam"    Green=""            Yellow="Extensions" Blue="QuickMenu" >   </rule>	
 		<rule type="marker"  Name="openvix"          Red=""           Green=""            Yellow=""           Blue="" >            </rule>	

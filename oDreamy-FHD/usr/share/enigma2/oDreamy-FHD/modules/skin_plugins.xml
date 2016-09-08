@@ -4558,29 +4558,6 @@
 		<ePixmap position="955,640" size="300,300" pixmap="menu/net.png" alphatest="blend"/>
 	</screen>
 
-	<!-- ********** Permanent Clock FHD ********** P086 -->
-
-	<!-- Permanent Clock Setup -->
-	<screen name="PermanentClockMenu" position="fill" title="Permanent Clock Setup" backgroundColor="#ff000000" flags="wfNoBorder">
-		<panel name="p800_Template"/>
-		<panel name="p800_Logo"/>		
-		<panel name="p800_DateMid"/>
-		<widget name="list" position="70,180" size="820,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="2" />
-		<ePixmap position="955,640" size="300,300" pixmap="menu/timer_edit.png" alphatest="blend"/>
-		<ePixmap position="60,970" size="700,90" pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
-	</screen>
-	
-	<!-- Permanent Clock Panel -->
-	<screen name="PermanentClockScreen" position="20,20" size="180,80" zPosition="10" backgroundColor="#ff000000" title="Clock" flags="wfNoBorder">
-		<widget source="global.CurrentTime" render="Label" zPosition="1" position="10,10" size="160,60" font="Regular;40" 
-		        valign="center" halign="center" foregroundColor="#60cecece" backgroundColor="#ff000000" shadowColor="#80000000" shadowOffset="2,1" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget backgroundColor="yellow" position="10,70" render="Progress" size="160,5" source="session.Event_Now" zPosition="2" >
-			<convert type="EventTime">Progress</convert>
-		</widget>
-	</screen>
-
 	<!-- ********** DJCrash List Downloader FHD ********** P087 -->
 
 	<!-- Dj List Setup Panel -->

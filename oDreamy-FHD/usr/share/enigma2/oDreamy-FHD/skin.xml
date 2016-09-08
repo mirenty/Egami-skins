@@ -651,19 +651,19 @@
 		<eLabel position="0,990" size="1920,2"   backgroundColor="#202020" zPosition="-1" />
 		<eLabel position="0,988" size="300,6"    backgroundColor="#202020" zPosition="-1" />
 		<!-- Crypt Info  -->
- 		<widget source="session.CurrentService" render="Label" position="1680,875" size="200,40" font="Regular;30" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
-			<convert type="CaidInfo2">CryptInfo2</convert>
-		</widget>
-		<!-- Cam Name  -->
-		<widget source="session.CurrentService" render="Label" position="1680,913" size="200,40" font="Regular;30" halign="left" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3" >
+ 		<widget source="session.CurrentService" render="Label" position="1670,825" size="250,40" font="Regular;26" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
 			<convert type="EGExtraInfo">CamName</convert>
 		</widget>
+		<!-- Cam Name  -->
+		<widget source="session.CurrentService" render="Label" position="1670,860" size="250,40" font="Regular;24" halign="left" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3" >
+			<convert type="EGExtraInfo">E-C-N</convert>
+		</widget>
 		<!-- ECM Time -->
-		<widget source="session.CurrentService" render="Label"  position="1680,952" size="60,40" font="Regular;28" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="3" >
+		<widget source="session.CurrentService" render="Label"  position="1670,930" size="250,70" font="Regular;24" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="3" >
 			<convert type="EGExtraInfo">EcmInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1750,952" size="80,40" font="Regular;30" halign="rigt" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
-			<convert type="EGExtraInfo">E-C-N</convert>
+		<widget source="session.CurrentService" render="Label" position="1670,895" size="250,40" font="Regular;24" halign="rigt" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
+			<convert type="PliExtraInfo">CryptoBar</convert>
 		</widget>
 		<!-- ALL Emu Line 
 		<widget source="session.CurrentService" render="Label" position="230,639" size="350,30" halign="left" font="Regular;29" foregroundColor="white" transparent="1" backgroundColor="black" zPosition="12" >
@@ -722,11 +722,11 @@
 		<widget source="session.CurrentService" render="Label" position="280,40" size="120,40" font="Regular;34" halign="left" text="DVB-T" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" >
 			<convert type="ServiceOrbitalPosition"/>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="150,90" size="100,40" font="Regular;34" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="1" >
+		<widget source="session.CurrentService" render="Label" position="150,90" size="140,40" font="Regular;34" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="1" >
 			<convert type="PliExtraInfo">TunerSystem</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="280,90" size="100,40" font="Regular;34" halign="left" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" >
-			<convert type="CaidInfo2">CAID</convert>
+			<convert type="EGExtraInfo">E-C-N</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="60,160" size="330,120" font="Regular;34" halign="left" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" >
 			<convert type="ServiceName">Provider</convert>
@@ -766,10 +766,10 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap pixmap="icons/emupic.png" position="65,777" size="80,105" scale="1" alphatest="blend" zPosition="2" />
- 		<widget source="session.CurrentService" render="Label" position="170,795" size="560,40" font="Regular;34" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
+ 		<widget source="session.CurrentService" render="Label" position="70,725" size="500,40" font="Regular;31" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
 			<convert type="PliExtraInfo">CryptoSpecial</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="170,850" size="260,40" font="Regular;34" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="3" >
+		<widget source="session.CurrentService" render="Label" position="150,850" size="280,40" font="Regular;31" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="3" >
 			<convert type="EGExtraInfo">CamName</convert>
 		</widget>
 		<!-- ***** Close Box Channel ***** --> 
@@ -788,7 +788,7 @@
 		<widget source="session.Event_Now" render="Progress" position="250,930" size="1400,45" foregroundColor="bluette" backgroundColor="#20202020" transparent="0" zPosition="2" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="260,930" size="1400,45" font="Regular;38" backgroundColor="#20202020" transparent="1" zPosition="3" >
+		<widget source="session.Event_Now" render="Label" position="260,930" size="1400,45" font="Regular;38" foregroundColor="black" backgroundColor="#20202020" transparent="1" zPosition="3" >
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="1670,930" size="200,44" font="Regular;38" foregroundColor="ltbluette" backgroundColor="header" halign="right" transparent="1">
@@ -3016,7 +3016,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
-		<panel name="nRG"/>
+		<panel name="nRGYB"/>
 		<ePixmap position="950,645" size="256,256" pixmap="menu/scansat.png" alphatest="blend" zPosition="2" />
 		<eLabel text="Choose Tuner" position="70,175" size="820,100" font="Regular;50" foregroundColor="#505050" backgroundColor="header" transparent="1" zPosition="1"/>
 		<eLabel position="70,240" size="820,1" backgroundColor="#303030" zPosition="1"/>
@@ -3033,6 +3033,7 @@
 		</widget>
 		<eLabel text="Exit"   position="120,955" size="210,95" font="Regular;32" valign="center" backgroundColor="header" transparent="1" zPosition="1"/>
 		<eLabel text="Config" position="400,955" size="210,95" font="Regular;32" valign="center" backgroundColor="header" transparent="1" zPosition="1"/>
+		<eLabel text="Info" position="950,955" size="250,95" font="Regular;32" valign="center" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!--eLabel name="DEBUG" text="S246" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3535,16 +3536,16 @@
 		<ePixmap position="1460,180" size="256,256" pixmap="menu/ico_team.png" alphatest="blend"/>
 		<widget name="wizard" position="1480,580" size="200,294" pixmap="oDreamy-FHD/menu/wizard.png" alphatest="blend" zPosition="1" />
 		<widget name="text"   position="70,180" size="820,300" font="Regular;30" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1" />
-		<eLabel position="70,470" size="820,1" backgroundColor="#303030" zPosition="1" />
+		<eLabel position="70,260" size="820,1" backgroundColor="#303030" zPosition="1" />
 		<ePixmap pixmap="box/maxbar.png" position="900,180" size="10,720" zPosition="2" alphatest="blend"/>
-		<widget source="languages" render="Listbox" position="70,180" size="820,720" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1">
+		<widget source="languages" render="Listbox" position="70,280" size="820,615" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (100, 5), size = (700, 60), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
 					MultiContentEntryPixmap(pos = (5, 5), size = (80, 56), png = 2), # index 2 is the pixmap
 					],
 					"fonts": [gFont("Regular", 32)],
-					"itemHeight": 80
+					"itemHeight": 56
 				}
 			</convert>
 		</widget>
@@ -3623,7 +3624,7 @@
 	</screen>
 	
 	<!-- Update Wizard FHD --> 
-	<screen name="InstallWizardIpkgUpdater" title="Update Wizard..." position="fill" backgroundColor="transparent0" flags="wfNoBorder" >
+	<screen name="InstallWizardIpkgUpdater" title="Update Wizard..." position="fill" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_Ext_Bi"/>
