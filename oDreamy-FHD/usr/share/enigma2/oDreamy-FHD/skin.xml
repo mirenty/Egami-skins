@@ -205,6 +205,7 @@
 		<color name="WindowTitleBackground"              color="#000000" />
 	</windowstyle>
 
+    
 	<!-- RDS info FHD -->
 	<screen name="RdsInfoDisplay" position="fill" backgroundColor="transparent" flags="wfNoBorder" zPosition="-2">
 		<widget name="RassLogo"  position="70,600" size="100,50" pixmap="skin_default/icons/rass_logo.png"/>
@@ -3944,6 +3945,18 @@ if self.type == self.TYPE_YESNO:
 newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
 			</applet>
+	</screen>
+
+	<screen name="Animmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="transparent" flags="wfNoBorder"> 
+	      <eLabel position="0,810" size="1920,270" backgroundColor="header" zPosition="-1" /> 
+	      <ePixmap pixmap="oDreamy-FHD/buttons/closebar.png" position="0,780" size="1670,60" zPosition="-1" alphatest="blend" />
+	      <eLabel position="0,810" size="1920,1" backgroundColor="bluette" zPosition="-1" /> 
+	      <widget name="title" position="500,789" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="white" backgroundColor="black" font="Regular; 46" transparent="1" /> 
+	      <widget source="label1" render="Label" position="50,850" size="320,200" font="Regular;32" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="black" transparent="1" />
+	      <widget source="label2" render="Label" position="425,850" size="320,200" font="Regular;32" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="black" transparent="1" />
+	      <widget source="label3" render="Label" position="800,850" size="320,200" font="Regular;32" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="blue" backgroundColor="black" transparent="1" />
+	      <widget source="label4" render="Label" position="1175,850" size="320,200" font="Regular;32" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="black" transparent="1" /> 
+	      <widget source="label5" render="Label" position="1550,850" size="320,200" font="Regular;32" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="black" transparent="1" /> 
 	</screen>
 
 	<!-- ExtraMessageBox -->
