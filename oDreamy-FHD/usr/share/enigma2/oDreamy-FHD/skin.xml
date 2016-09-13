@@ -3958,7 +3958,33 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	      <widget source="label4" render="Label" position="1175,850" size="320,200" font="Regular;32" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="black" transparent="1" /> 
 	      <widget source="label5" render="Label" position="1550,850" size="320,200" font="Regular;32" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="white" backgroundColor="black" transparent="1" /> 
 	</screen>
-
+	<screen name="Iconmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="transparent" flags="wfNoBorder"> 
+		<ePixmap pixmap="oDreamy-FHD/buttons/closebar.png" position="0,780" size="1670,60" zPosition="-1" alphatest="blend" />
+		<widget name="title" position="500,785" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="white" backgroundColor="black" font="Regular; 46" transparent="1" /> 
+		<widget source="label1" render="Label" position="15,850" size="300,200" font="Regular;32" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<widget source="label1s" render="Label" position="15,850" size="300,200" font="Regular;32" halign="center" valign="center" zPosition="2" foregroundColor="red" backgroundColor="black" transparent="1" />
+		<widget name="pixmap1" position="15,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label2" render="Label" position="325,850" size="300,200" font="Regular;32" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<widget source="label2s" render="Label" position="325,850" size="300,200" font="Regular;32" halign="center" valign="center" zPosition="2" foregroundColor="red" backgroundColor="black" transparent="1" />
+		<widget name="pixmap2" position="325,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label3" render="Label" position="635,850" size="300,200" font="Regular;32" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<widget source="label3s" render="Label" position="635,850" size="300,200" font="Regular;32" halign="center" valign="center" zPosition="2" foregroundColor="red" backgroundColor="black" transparent="1" />
+		<widget name="pixmap3" position="635,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label4" render="Label" position="985,850" size="300,200" font="Regular;32" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="black" transparent="1" /> 
+		<widget source="label4s" render="Label" position="985,850" size="300,200" font="Regular;32" halign="center" valign="center" zPosition="2" foregroundColor="red" backgroundColor="black" transparent="1" /> 
+		<widget name="pixmap4" position="985,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label5" render="Label" position="1295,850" size="300,200" font="Regular;32" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="black" transparent="1" /> 
+		<widget source="label5s" render="Label" position="1295,850" size="300,200" font="Regular;32" halign="center" valign="center" zPosition="2" foregroundColor="red" backgroundColor="black" transparent="1" /> 
+		<widget name="pixmap5" position="1295,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label6" render="Label" position="1605,850" size="300,200" font="Regular;32" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="black" transparent="1" /> 
+		<widget source="label6s" render="Label" position="1605,850" size="300,200" font="Regular;32" halign="center" valign="center" zPosition="2" foregroundColor="red" backgroundColor="black" transparent="1" /> 
+		<widget name="pixmap6" position="1605,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<ePixmap position="1595,788" size="45,45" pixmap="oDreamy-FHD/buttons/rec_off.png" alphatest="blend" zPosition="1" />
+		<widget source="session.RecordState" render="Pixmap" position="1595,788" size="45,45" pixmap="oDreamy-FHD/buttons/rec_on.png" alphatest="blend" zPosition="2">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+	</screen>
+	
 	<!-- ExtraMessageBox -->
 	<screen name="ExtraMessageBox" title="Extra Message" position="center,255" size="900,200">
 		<!--eLabel name="DEBUG" text="S280" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
