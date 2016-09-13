@@ -660,7 +660,7 @@
 			<convert type="EGExtraInfo">E-C-N</convert>
 		</widget>
 		<!-- ECM Time -->
-		<widget source="session.CurrentService" render="Label"  position="1670,930" size="250,70" font="Regular;24" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="3" >
+		<widget source="session.CurrentService" render="Label"  position="1670,930" size="280,70" font="Regular;23" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="3" >
 			<convert type="EGExtraInfo">EcmInfo</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1670,895" size="250,40" font="Regular;24" halign="rigt" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
@@ -736,8 +736,8 @@
 		<widget source="session.FrontendStatus" render="Label" position="135,245" size="130,40" font="Regular;32" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<eLabel text="Ber:" position="220,245" size="100,40" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
-		<widget source="session.FrontendStatus" render="Label" position="290,245" size="130,40" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1" noWrap="1" zPosition="1" >
+		<eLabel text="Ber:" position="260,245" size="100,40" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="session.FrontendStatus" render="Label" position="330,245" size="130,40" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1" noWrap="1" zPosition="1" >
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
 		<eLabel position="60,286" size="350,1" backgroundColor="#808080" zPosition="1" />
