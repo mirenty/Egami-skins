@@ -2347,7 +2347,8 @@
 
  	<screen name="EMCSelection" position="fill" title="Enhanced Movie Center" backgroundColor="#FF000000" flags="wfNoBorder"> <panel name="p800_Template" /> 
 		<panel name="p800_Date" /> 
-		<panel name="nRGYB" /> <panel name="MI" /> 
+		<panel name="nRGYB" /> 
+		<panel name="MI" /> 
 		<eLabel position="1260,30" size="610,96" backgroundColor="#201b3c85" zPosition="-2" /> 
 		<eLabel position="1262,32" size="606,92" backgroundColor="#20000000" zPosition="-2" /> 
 		<eLabel position="1260,140" size="610,210" backgroundColor="#201b3c85" zPosition="-2" /> 
@@ -2360,9 +2361,11 @@
 		<ePixmap position="1275,156" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend" zPosition="2" /> 
 		<widget source="Service" render="Label" position="1420,170" size="615,40" font="Regular; 32" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1"> 
 			<convert type="EMCServiceTime">StartTime</convert> <convert type="EMCClockToText">Date</convert>
-		</widget> <widget source="Service" render="Label" position="1420,225" size="150,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1">
+		</widget> 
+		<widget source="Service" render="Label" position="1420,225" size="150,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1">
 			<convert type="EMCServiceTime">StartTime</convert> <convert type="EMCClockToText">Format:%H:%M </convert>
-		</widget> <widget source="Service" render="Label" position="1530,225" size="150,40" font="Regular; 36" foregroundColor="yellow" backgroundColor="bluette" transparent="1"> 
+		</widget> 
+		<widget source="Service" render="Label" position="1530,225" size="150,40" font="Regular; 36" foregroundColor="yellow" backgroundColor="bluette" transparent="1"> 
 			<convert type="EMCServiceTime">EndTime</convert> <convert type="EMCClockToText">Format:- %H:%M </convert> 
 		</widget>
 		<widget source="Service" render="Label" position="1610,227" size="250,40" font="Regular; 32" halign="right" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1"> 
