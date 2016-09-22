@@ -2621,7 +2621,7 @@
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
 		<panel name="sRG"/>
-		<widget source="author" render="Label" position="70,180" size="700,50" font="Regular;38" foregroundColor="ltbluette" backgroundColor="background" transparent="1" zPosition="10" />
+		<widget source="author" render="Label" position="70,180" size="700,50" font="Regular;38" foregroundColor="ltbluette"  transparent="1" zPosition="10" />
 		<widget name="statuspic"  position="830,180" size=" 100,100" alphatest="on"/>
 		<widget name="detailtext" position="70,260"  size="820,440" font="Regular;32" backgroundColor="header" transparent="1" />
 		<widget name="screenshot" position="70,670"  size="450,250" borderWidth="2" borderColor="#cccccc" alphatest="blend" />
@@ -2648,7 +2648,7 @@
 				}
 			</convert>
 		</widget>
-		<widget source="status" render="Label" position="70,840" size="555,40" foregroundColor="ltbluette" backgroundColor="background" transparent="1" font="Regular;32" halign="center"/>
+		<widget source="status" render="Label" position="70,840" size="555,40" foregroundColor="ltbluette"  transparent="1" font="Regular;32" halign="center"/>
 		<ePixmap position="960,640" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="DEBUG" text="S217" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -2671,7 +2671,7 @@
 				}
 			</convert>
 		</widget>
-		<widget source="status" render="Label" position="70,840" size="820,40" backgroundColor="background" transparent="1" font="Regular;32" halign="center"/>
+		<widget source="status" render="Label" position="70,840" size="820,40"  transparent="1" font="Regular;32" halign="center"/>
 		<ePixmap position="960,640" size="256,256" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="DEBUG" text="S218" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -2993,6 +2993,7 @@
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
 		<panel name="sRGY"/>
+		<ePixmap alphatest="blend" pixmap="box/osd.png" position="0,0" size="1920,1080" zPosition="-10" />
 		<widget name="config" position="70,180" size="820,360" itemHeight="45" font="Regular;32" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#20000000" transparent="0"/>
 		<widget source="status" render="Label" position="70,740" size="820,120" font="Regular;32" backgroundColor="#20000000" halign="center" valign="center" transparent="1" zPosition="10"/>
 		<ePixmap position="960,645" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
