@@ -592,7 +592,7 @@
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="615,875" size="850,44" font="Regular;38" backgroundColor="header" transparent="1">
+		<widget font="Regular;38" halign="left" valign="center" noWrap="1" position="520,875" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="850,44" source="session.Event_Now" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="1455,875" size="200,44" font="Regular;38" foregroundColor="ltbluette" backgroundColor="header" halign="right" transparent="1">
@@ -609,7 +609,7 @@
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="615,940" size="850,44" font="Regular;38" foregroundColor="#505050" backgroundColor="header" transparent="1">
+		<widget font="Regular;38" halign="left" valign="center" noWrap="1" position="520,940" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="850,44" source="session.Event_Next" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="1455,940" size="200,44" font="Regular;38" foregroundColor="#505050" backgroundColor="header" halign="right" transparent="1">
@@ -2260,7 +2260,7 @@
 		</widget>
 		<eLabel position="1280,460" size="580,1" backgroundColor="ltbluette" zPosition="1" />
 		<!-- Extended Description --> 
-		<widget source="Service" render="Label" position="1280,480" size="580,260" font="Regular;30" halign="center" foregroundColor="grey" backgroundColor="bluette" transparent="1" zPosition="2">
+		<widget source="Service" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="1280,480" size="580,260" font="Regular;30" foregroundColor="grey" backgroundColor="bluette" transparent="1" halign="center" valign="top">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<eLabel position="1280,800" size="580,1" backgroundColor="ltbluette" zPosition="1" />
