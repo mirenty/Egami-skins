@@ -3668,12 +3668,12 @@
 		<widget source="global.CurrentTime" render="Label" position="1260,35" size="500,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" zPosition="10">
 			<convert type="ClockToText">Format:%A %d %B</convert>
 		</widget>
-		<widget name="timeline0" pixmap="boh/timeline.png" position="0,220" size="2,700" zPosition="1"/>
-		<widget name="timeline1" pixmap="boh/timeline.png" position="0,220" size="2,700" zPosition="1"/>
-		<widget name="timeline2" pixmap="boh/timeline.png" position="0,220" size="2,700" zPosition="1"/>
-		<widget name="timeline3" pixmap="boh/timeline.png" position="0,220" size="2,700" zPosition="1"/>
-		<widget name="timeline4" pixmap="boh/timeline.png" position="0,220" size="2,700" zPosition="1"/>
-		<widget name="timeline5" pixmap="boh/timeline.png" position="0,220" size="2,700" zPosition="1"/>
+		<widget name="timeline0" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
+		<widget name="timeline1" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
+		<widget name="timeline2" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
+		<widget name="timeline3" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
+		<widget name="timeline4" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
+		<widget name="timeline5" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
 		<!-- Event Name -->
 		<widget source="Event" render="Label" position="1280,310" size="570,80" font="Regular;32" foregroundColor="#b0b0b0" backgroundColor="#101010" halign="center" valign="center" transparent="1" zPosition="1" >
 			<convert type="EventName">Name</convert>
@@ -3759,15 +3759,12 @@
 		<!-- Time -->
 		<widget name="bouquetlist"  position="60,180" size="1180,80" itemHeight="35" scrollbarMode="showNever" foregroundColor="red" backgroundColor="header" transparent="0" zPosition="4"/>
 		<widget name="timeline_now" position="2,220"  size="19,700"  pixmap="epg/timeline-now.png" alphatest="on" zPosition="3"/>
-		<widget source="global.CurrentTime" render="Label" position="1260,35" size="500,40" font="RegularLight; 32" foregroundColor="red" halign="left" transparent="1" zPosition="10">
-			<convert type="ClockToText">Format:%A %d %B</convert>
-		</widget>
-		<widget name="timeline0" pixmap="boh/timeline.png" position="0,220" size="2,700" zPosition="1"/>
-		<widget name="timeline1" pixmap="boh/timeline.png" position="0,220" size="2,700" zPosition="1"/>
-		<widget name="timeline2" pixmap="boh/timeline.png" position="0,220" size="2,700" zPosition="1"/>
-		<widget name="timeline3" pixmap="boh/timeline.png" position="0,220" size="2,700" zPosition="1"/>
-		<widget name="timeline4" pixmap="boh/timeline.png" position="0,220" size="2,700" zPosition="1"/>
-		<widget name="timeline5" pixmap="boh/timeline.png" position="0,220" size="2,700" zPosition="1"/>
+		<!--<widget name="timeline0" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
+		<widget name="timeline1" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
+		<widget name="timeline2" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
+		<widget name="timeline3" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
+		<widget name="timeline4" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
+		<widget name="timeline5" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>-->
 		<!-- Event Name -->
 		<widget source="Event" render="Label" position="1280,310" size="570,80" font="Regular;32" foregroundColor="#b0b0b0" backgroundColor="#101010" halign="center" valign="center" transparent="1" zPosition="1" >
 			<convert type="EventName">Name</convert>

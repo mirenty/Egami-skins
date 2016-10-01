@@ -698,14 +698,14 @@
 		<eLabel position="1665,880" size="2,100" backgroundColor="#303030" zPosition="-1" />
 		<eLabel position="410,990" size="1920,2" backgroundColor="#202020" zPosition="-1" />
 		
-		<widget backgroundColor="black" borderColor="black" borderWidth="1" font="Regular; 28" foregroundColor="foreground" halign="center" position="1678,861" render="Label" size="224,28" alphatest="blend" source="global.CurrentTime" transparent="1" zPosition="50">
+		<widget backgroundColor="black" borderColor="black" borderWidth="1" font="Regular; 28" foregroundColor="foreground" halign="center" position="1678,861" render="Label" size="224,28" source="global.CurrentTime" transparent="1" zPosition="50">
 			<convert type="ClockToText">Format:%d.%B</convert>
 		</widget>
 		<widget backgroundColor="black" font="Regular; 54" foregroundColor="white" halign="center" position="1712,900" render="Label" size="175,72" zPosition="50" source="global.CurrentTime" transparent="1" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		
-		<widget source="global.CurrentTime" render="Label" position="1691,820" size="200,30" font="Regular; 28" borderWidth="1" borderColor="black" zPosition="50" alphatest="blend" halign="center" backgroundColor="black" transparent="1" foregroundColor="foreground">
+		<widget source="global.CurrentTime" render="Label" position="1691,820" size="200,30" font="Regular; 28" borderWidth="1" borderColor="black" zPosition="50" halign="center" backgroundColor="black" transparent="1" foregroundColor="foreground">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
 		<!--eLabel name="DEBUG" text="S103" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -786,9 +786,6 @@
 			<!-- Picon -->
 			<widget source="session.CurrentService" render="Picon" position="80,320" size="400,170" alphatest="blend" zPosition="5" >
 				<convert type="ServiceName">Reference</convert>
-			</widget>
-			<widget source="ServiceEvent" render="Picon" position="80,320" size="400,170" zPosition="1" alphatest="blend" transparent="5" >
-				<convert type="EGRefString">ServicelistRef</convert>
 			</widget>
 		<!-- ***** BlackBox ***** --> 
 		<ePixmap pixmap="box/blackbox.png" position="50,550" size="370,350" alphatest="blend" zPosition="2" />
@@ -899,11 +896,11 @@
 			position="485,690" size="1375,195" font="Regular;28" halign="center" valign="top" foregroundColor="#808080" backgroundColor="header" transparent="1" zPosition="2" >
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget name="key_red"    position="100,1007"  size="0,40" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<!--<widget name="key_red"    position="100,1007"  size="0,40" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 		<widget name="key_green"  position="400,1007"  size="0,40" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 		<widget name="key_yellow" position="700,1007"  size="0,40" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 		<widget name="key_blue"   position="1000,1007" size="0,40" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<!--eLabel name="DEBUG" text="S104" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		eLabel name="DEBUG" text="S104" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Channel selection - TV FHD -->
@@ -943,8 +940,8 @@
 		<eLabel position="1260,140" size="610,260" backgroundColor="#10101010" zPosition="0" />
 		<eLabel position="1260,400" size="610,10"  backgroundColor="#FF101010" zPosition="0" />
 		<widget source="ServiceEvent" render="Picon" position="1240,150" size="329,140" zPosition="1" alphatest="blend" transparent="1" >
-   <convert type="EGRefString">ServicelistRef</convert>
-  </widget>
+			<convert type="EGRefString">ServicelistRef</convert>
+		</widget>
 		<!-- Event Name - Time -->
 		<eLabel text="Start Time :"                  position="1540,165" size="200,40" font="Regular;32" halign="left" backgroundColor="header" foregroundColor="yellow" transparent="1" zPosition="1" />
 		<widget source="ServiceEvent" render="Label" position="1730,165" size="200,40" font="Regular;32" halign="left" backgroundColor="header" transparent="1" zPosition="1" >
