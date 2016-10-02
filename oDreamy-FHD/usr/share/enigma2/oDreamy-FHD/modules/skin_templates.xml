@@ -17,6 +17,7 @@
 	<screen name="MenuTemplate" >
 		<panel name="p700_Template" />
 		<panel name="p700_Date" />
+		<panel name="menu_sort" />
 		<!-- menu list -->
 		<ePixmap position="830,160" size="400,700" pixmap="menu/teamlogo.png"    alphatest="blend" zPosition="1" />
 		<ePixmap pixmap="box/maxbargh.png" position="805,180" size="15,720" alphatest="blend" zPosition="5" />
@@ -33,7 +34,17 @@
 		<ePixmap position="60,970"  size="700,90"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
 		<ePixmap pixmap="menu/ico_master.png" position="860,645" size="256,256" alphatest="blend" zPosition="5" />
 	</screen> 
-
+	
+	<!-- Button Templates Menu Sort -->
+	<screen name="menu_sort">
+		<widget name="green"  position="530,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="490,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="yellow" position="800,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="760,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="blue" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+	</screen>
+	
  	<!-- Menu Icons Template FHD -->
 	<screen name="MenuIconsTemplate">
 		<widget source="menu" render="Pixmap" pixmap="menu/media_player.png"         position="860,645" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
