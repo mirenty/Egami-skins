@@ -1002,7 +1002,7 @@
 		<!-- Service Picon -->
 		<eLabel position="1260,140" size="610,260" backgroundColor="#10101010" zPosition="0" />
 		<eLabel position="1260,400" size="610,10"  backgroundColor="#FF101010" zPosition="0" />
-		<widget source="ServiceEvent" render="Picon" position="1240,150" size="329,140" zPosition="1" alphatest="blend" transparent="1" >
+		<widget source="ServiceEvent" render="Picon" position="1260,155" size="282,120" zPosition="1" alphatest="blend" transparent="1" >
 			<convert type="EGRefString">ServicelistRef</convert>
 		</widget>
 		<!-- Event Name - Time -->
@@ -2499,34 +2499,34 @@
 
 	<!-- Timeshift state -->
 	<screen name="TimeshiftState" title="TimeShift" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
-		<eLabel  position="0,880"   size="1920,200" backgroundColor="header" zPosition="-1" />
-		<ePixmap position="0,850"   size="1720,60" pixmap="oDreamy-FHD/buttons/closebarmp.png"  alphatest="blend" zPosition="-1" />
-		<ePixmap position="1575,858" size="60,65"  pixmap="oDreamy-FHD/buttons/rec_off.png" alphatest="blend" zPosition="1"  />
-		<eLabel                   position="50,30" size="210,90" backgroundColor="header" zPosition="1" />
-		<widget name="speed"      position="50,0"  size="200,90" font="Regular;50" halign="right" valign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2" />
+		<eLabel position="0,880" size="1920,200" backgroundColor="header" zPosition="-1" />
+		<ePixmap position="0,850" size="1720,60" pixmap="oDreamy-FHD/buttons/closebarmp.png" alphatest="blend" zPosition="-1" />
+		<ePixmap position="1575,858" size="60,65" pixmap="oDreamy-FHD/buttons/rec_off.png" alphatest="blend" zPosition="1" />
+		<eLabel position="50,30" size="210,90" backgroundColor="header" zPosition="1" />
+		<widget name="speed" position="125,50" size="120,50" font="Regular;50" halign="right" valign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2" />
 		<widget name="statusicon" position="60,50" size="50,50" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" alphatest="on" zPosition="2" />
-		<widget name="state"      position="60,850"  size="50,52"   font="Regular;48" halign="left" foregroundColor="yellow" backgroundColor="bluette" transparent="1" zPosition="2"/>
-		<widget name="eventname"  position="140,858" size="1580,50" font="Regular;40" halign="left" foregroundColor="white"  backgroundColor="bluette" transparent="1" zPosition="2"/>
+		<widget name="state" position="60,850" size="50,52" font="Regular;48" halign="left" foregroundColor="yellow" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="eventname" position="140,858" size="1580,50" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="2" />
 		<!-- Picon -->
-		<widget source="session.CurrentService" render="Picon" position="50,920" size="329,140" alphatest="blend" zPosition="1" >
+		<widget source="session.CurrentService" render="Picon" position="10,930" size="282,120" alphatest="blend" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="300,960" size="200,50" font="Regular;40" halign="left" foregroundColor="yellow" backgroundColor="header" zPosition="3" >
+		<widget source="session.CurrentService" render="Label" position="300,960" size="200,50" font="Regular;40" halign="left" foregroundColor="yellow" backgroundColor="header" zPosition="3">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1650,960" size="200,50" font="Regular;40" halign="right" foregroundColor="yellow" backgroundColor="header" zPosition="3" >
+		<widget source="session.CurrentService" render="Label" position="1650,960" size="200,50" font="Regular;40" halign="right" foregroundColor="yellow" backgroundColor="header" zPosition="3">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 		<eLabel position="480,980" size="1210,3" backgroundColor="bluette" zPosition="5" />
-		<widget source="session.CurrentService" render="Progress" position="480,977" size="1210,9" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="6" >
+		<widget source="session.CurrentService" render="Progress" position="480,977" size="1210,9" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="6">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget name="PTSSeekBack"    position="480,961" size="1210,0" pixmap="slider_back.png" alphatest="on" zPosition="2"/>
-		<widget name="PTSSeekPointer" position="480,961" size="15,13"  pixmap="icons/pointer.png" alphatest="blend" zPosition="7"/>
+		<widget name="PTSSeekBack" position="480,961" size="1210,0" pixmap="slider_back.png" alphatest="on" zPosition="2" />
+		<widget name="PTSSeekPointer" position="480,961" size="15,13" pixmap="icons/pointer.png" alphatest="blend" zPosition="7" />
 		<widget source="global.CurrentTime" render="Label" position="1600,880" size="250,50" font="Regular;34" halign="right" foregroundColor="ltbluette" backgroundColor="header" transparent="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
-		<eLabel text="T I M E S H I F T" position="500,895" size="1220,170" font="Regular;150" foregroundColor="#20101010" backgroundColor="header" transparent="1" zPosition="1"/>
+		<eLabel text="T I M E S H I F T" position="500,895" size="1220,170" font="Regular;150" foregroundColor="#20101010" backgroundColor="header" transparent="1" zPosition="1" />
 		<!--eLabel name="DEBUG" text="S087" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
