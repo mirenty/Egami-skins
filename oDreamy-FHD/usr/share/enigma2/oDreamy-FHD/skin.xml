@@ -728,7 +728,7 @@
 	    <convert type="MSNWeather">temperature_current</convert>
 	  </widget>
 	  <ePixmap position="970,100" size="70,40" pixmap="oDreamy-FHD/icons/wind.png" alphatest="blend" zPosition="1" />
-	  <widget source="session.MSNWeather" render="Label" position="1045,100" size="257,75" font="Regular; 32" halign="left" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2">
+	  <widget source="session.MSNWeather" render="Label" position="1045,70" size="257,100" font="Regular; 32" halign="left" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2">
 	    <convert type="MSNWeather">winddisplay</convert>
 	  </widget>
 	  <!-- *** RightUp Tuner Panel *** -->
