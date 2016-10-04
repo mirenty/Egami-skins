@@ -626,4 +626,60 @@
 		</widget>
 	</screen>
 
+	<!-- MSNWeather -->
+	<screen name="weatPanel">
+	    <eLabel position="450,0" size="1420,80" backgroundColor="header" transparent="0" zPosition="0"/>
+		<widget noWrap="1" backgroundColor="header" foregroundColor="ltbluette" font="Regular;24" render="Label" position="640,30" size="110,26" source="session.MSNWeather" zPosition="1" halign="center" transparent="1">
+			<convert type="MSNWeather">city</convert>
+		</widget>		
+		<widget noWrap="1" backgroundColor="header" font="Regular;26" foregroundColor="ltbluette" render="Label" position="505,30" size="75,37" source="session.MSNWeather" transparent="1" zPosition="2" halign="center">
+			<convert type="MSNWeather">temperature_current</convert>
+		</widget>
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="580,25" size="50,46" source="session.MSNWeather" transparent="0" zPosition="1">
+			<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy-FHD/msn/,png</convert>
+		</widget>		
+		<widget noWrap="1" backgroundColor="header" font="Regular; 20" render="Label" position="455,50" size="45,25" source="session.MSNWeather" zPosition="1" halign="center" transparent="1" foregroundColor="yellow">
+			<convert type="MSNWeather">temperature_low,day2</convert>
+		</widget>				
+		<widget noWrap="1" backgroundColor="header" font="Regular; 20" render="Label" position="455,25" size="45,25" source="session.MSNWeather" zPosition="1" halign="center" transparent="1" foregroundColor="red">
+			<convert type="MSNWeather">temperature_high,day2</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="header" foregroundColor="ltbluette" font="Regular;24" render="Label" position="920,30" size="110,26" source="session.MSNWeather" zPosition="1" halign="center" transparent="1">
+			<convert type="MSNWeather">weekday,day3</convert>
+		</widget>
+		<widget alphatest="blend" render="MSNWeatherPixmap" foregroundColor="ltbluette" position="1065,25" size="42,42" source="session.MSNWeather" transparent="1" zPosition="1">
+			<convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/oDreamy-FHD/msn/,png</convert>
+		</widget>		
+		<widget noWrap="1" backgroundColor="header" foregroundColor="yellow" font="Regular; 20" render="Label" position="1125,50" size="45,25" source="session.MSNWeather" zPosition="1" halign="center" transparent="1">
+			<convert type="MSNWeather">temperature_low,day3</convert>
+		</widget>			
+		<widget noWrap="1" backgroundColor="header" foregroundColor="red" font="Regular; 20" render="Label" position="1125,25" size="45,25" source="session.MSNWeather" zPosition="1" halign="center" transparent="1">
+		<convert type="MSNWeather">temperature_high,day3</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="header" foregroundColor="ltbluette" font="Regular;24" render="Label" position="1245,30" size="110,26" source="session.MSNWeather" zPosition="1" halign="center" transparent="1">
+			<convert type="MSNWeather">weekday,day4</convert>
+		</widget>
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="1385,25" size="42,42" source="session.MSNWeather" transparent="1" zPosition="1">
+			<convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/oDreamy-FHD/msn/,png</convert>
+		</widget>		
+		<widget noWrap="1" backgroundColor="header" font="Regular; 20" render="Label" position="1445,50" size="45,25" source="session.MSNWeather" zPosition="1" halign="center" transparent="1" foregroundColor="yellow">
+			<convert type="MSNWeather">temperature_low,day4</convert>
+		</widget>	
+		<widget noWrap="1" backgroundColor="header" font="Regular; 20" render="Label" position="1445,25" size="45,25" source="session.MSNWeather" zPosition="1" halign="center" transparent="1" foregroundColor="red">
+			<convert type="MSNWeather">temperature_high,day4</convert>
+		</widget>		
+		<widget noWrap="1" backgroundColor="header" foregroundColor="ltbluette" font="Regular;24" render="Label" position="1570,30" size="110,26" source="session.MSNWeather" zPosition="1" halign="center" transparent="1">
+			<convert type="MSNWeather">weekday,day5</convert>
+		</widget>
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="1710,25" size="42,42" source="session.MSNWeather" transparent="1" zPosition="1">
+			<convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/oDreamy-FHD/msn/,png</convert>
+		</widget>		
+		<widget noWrap="1" backgroundColor="header" font="Regular; 20" render="Label" position="1770,50" size="45,25" source="session.MSNWeather" zPosition="1" halign="center" transparent="1" foregroundColor="yellow">
+			<convert type="MSNWeather">temperature_low,day5</convert>
+		</widget>	
+		<widget noWrap="1" backgroundColor="header" font="Regular; 20" render="Label" position="1770,25" size="45,25" source="session.MSNWeather" zPosition="1" halign="center" transparent="1" foregroundColor="red">
+			<convert type="MSNWeather">temperature_high,day5</convert>
+		</widget>		
+	</screen>
+	
 </skin>
