@@ -776,11 +776,10 @@
 
 	<!-- secondinfobar FHD -->
 	<screen name="SecondInfoBar" position="fill" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-	<panel name="weatPanel"/>		
 		<eLabel position="0,910"  size="1920,170" backgroundColor="header"  zPosition="-1" />
 		<eLabel position="0,910"  size="1920,1"   backgroundColor="bluette" zPosition="-1" />
 		<!-- *** Net Info *** -->
- 		<widget source="session.CurrentService" render="Label" position="1200,995" size="450,60" font="Regular;24" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="0" zPosition="9" >
+ 		<widget source="session.CurrentService" render="Label" position="430,30" size="1440,40" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="0" zPosition="9" >
 			<convert type="EGExtraInfo">NetInfo</convert>
 		</widget>
 		<!-- *****  Box SatType ***** --> 
@@ -846,14 +845,11 @@
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<!-- ***** BlueBox ***** --> 
-		<ePixmap pixmap="box/bluebox.png" position="50,305" size="370,280" alphatest="blend" zPosition="1" />
+			<ePixmap pixmap="box/bluebox.png" position="70,305" size="370,280" alphatest="blend" zPosition="1" />
 			<!-- Picon -->
-		<widget source="session.CurrentService" render="Picon" position="65,320" size="340,210" alphatest="blend" zPosition="5" >
-			<convert type="ServiceName">Reference</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Picon" position="65,320" size="340,210" zPosition="1" alphatest="blend" transparent="5" >
-			<convert type="EGRefString">ServicelistRef</convert>
-		</widget>		
+			<widget source="session.CurrentService" render="Picon" position="80,320" size="400,170" alphatest="blend" zPosition="5" >
+				<convert type="ServiceName">Reference</convert>
+			</widget>
 		<!-- ***** BlackBox ***** --> 
 		<ePixmap pixmap="box/blackbox.png" position="50,550" size="370,350" alphatest="blend" zPosition="2" />
 		<eLabel text="Ch." position="60,580" size="80,60" font="Regular;50" backgroundColor="#10000000" foregroundColor="#ffffff" transparent="1" zPosition="9"/>
@@ -931,12 +927,9 @@
 		<widget source="session.RecordState" render="Pixmap" position="1544,93" size="45,45" pixmap="oDreamy-FHD/buttons/rec_on.png" alphatest="blend" zPosition="2" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="460,160" size="110,35" font="Regular;34" halign="center" foregroundColor="yellow" backgroundColor="#10083980" transparent="1" zPosition="2" >
+		<widget source="session.Event_Now" render="Label" position="470,160" size="1420,50" font="Regular;34" halign="center" foregroundColor="yellow" backgroundColor="#10083980" transparent="1" zPosition="2" >
 			<convert type="EventName">NameNow</convert>
 		</widget>
-		<widget font="Regular;34" halign="left" valign="center" noWrap="1" position="590,160" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="1135,40" source="session.Event_Now" foregroundColor="yellow" backgroundColor="#10083980" transparent="1" zPosition="2">
-			<convert type="EventName">Name</convert>
-		</widget>		
 		<!-- Progressbar (current event duration) -->
 		<widget source="session.Event_Now" render="Progress" position="465,210" size="1390,8" borderWidth="2" borderColor="#20202020" foregroundColor="ltbluette" transparent="1" zPosition="4" >
 			<convert type="EventTime">Progress</convert>
@@ -959,12 +952,9 @@
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="460,630" size="165,37" font="Regular;34" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2" >
+		<widget source="session.Event_Next" render="Label" position="485,630" size="1395,50" font="Regular;34" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2" >
 			<convert type="EventName">NameNext</convert>
 		</widget>
-		<widget font="Regular;34" halign="left" valign="center" noWrap="1" position="655,630" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="1070,40" source="session.Event_Next" foregroundColor="yellow" backgroundColor="#10083980" transparent="1" zPosition="2">
-			<convert type="EventName">Name</convert>
-		</widget>			
 		<widget source="session.Event_Next" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1"
 			position="485,690" size="1375,195" font="Regular;28" halign="center" valign="top" foregroundColor="#808080" backgroundColor="header" transparent="1" zPosition="2" >
 			<convert type="EventName">ExtendedDescription</convert>
