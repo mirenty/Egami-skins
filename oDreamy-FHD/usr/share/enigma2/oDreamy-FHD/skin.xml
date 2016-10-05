@@ -582,7 +582,7 @@
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<!-- Picon -->
-		<widget source="session.CurrentService" render="Picon" position="5,840" size="400,170" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" render="Picon" position="5,845" size="400,170" alphatest="blend" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<!-- *** Event (now) *** -->
@@ -637,13 +637,13 @@
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<!-- tuners in use? -->
-		<widget source="session.CurrentService" render="Label" position="468,1013" size="770,45" font="Regular; 28" halign="left" foregroundColor="#808080" backgroundColor="#10101010" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="Label" position="468,1020" size="770,45" font="Regular; 28" halign="left" foregroundColor="#808080" backgroundColor="#10101010" transparent="1" zPosition="3">
 			<convert type="PliExtraInfo">TransponderInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="5,1013" size="400,45" font="Regular; 30" halign="center" foregroundColor="#808080" backgroundColor="#10101010" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="Label" position="5,1020" size="400,45" font="Regular; 30" halign="center" foregroundColor="#808080" backgroundColor="#10101010" transparent="1" zPosition="3">
 			<convert type="PliExtraInfo">CryptoBar</convert>
 		</widget>
-		<eLabel text="SOURCE:" zPosition="4" position="1725,820" size="120,26" font="Regular;23" transparent="1" foregroundColor="ltbluette" backgroundColor="header" halign="center" />
+		<eLabel text="SOURCE:" zPosition="4" position="1730,820" size="120,26" font="Regular;23" transparent="1" foregroundColor="ltbluette" backgroundColor="header" halign="center" />
 		<!-- Card / Network / Emu  -->
 		<widget source="session.CurrentService" render="Label" position="1665,860" size="250,26" font="Regular;23" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" zPosition="3">
 			<convert type="EGExtraInfo">E-C-N</convert>
@@ -704,11 +704,11 @@
 	    <convert type="ExtraNumText">secHand</convert>
 	  </widget>
 	  <!-- Time -->
-	  <widget source="global.CurrentTime" render="Label" position="200,30" size="380,70" font="Regular;60" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1">
+	  <widget source="global.CurrentTime" render="Label" position="180,30" size="380,70" font="Regular;60" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1">
 	    <convert type="ClockToText">Format:%H:%M:%S</convert>
 	  </widget>
 	  <!-- Date -->
-	  <widget source="global.CurrentTime" render="Label" position="135,100" size="460,60" font="Regular; 30" halign="right" foregroundColor="#808080" backgroundColor="header" noWrap="1" transparent="1" zPosition="1">
+	  <widget source="global.CurrentTime" render="Label" position="135,100" size="460,60" font="Regular; 30" halign="center" foregroundColor="#808080" backgroundColor="header" noWrap="1" transparent="1" zPosition="1">
 	    <convert type="ClockToText">Date</convert>
 	  </widget>
 	  <!-- ***** CenterUp Meteo Panel ***** -->
@@ -723,12 +723,12 @@
 	  <widget source="session.MSNWeather" render="Label" position="810,35" size="495,50" font="Regular; 40" halign="left" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="2">
 	    <convert type="MSNWeather">city</convert>
 	  </widget>
-	  <ePixmap position="810,91" size="50,50" pixmap="oDreamy-FHD/icons/temp.png" alphatest="blend" zPosition="1" />
+	  <ePixmap position="810,92" size="50,50" pixmap="oDreamy-FHD/icons/temp.png" alphatest="blend" zPosition="1" />
 	  <widget source="session.MSNWeather" render="Label" position="860,95" size="110,50" font="Regular; 40" halign="left" foregroundColor="red" backgroundColor="header" transparent="1" zPosition="2">
 	    <convert type="MSNWeather">temperature_current</convert>
 	  </widget>
-	  <ePixmap position="970,100" size="70,40" pixmap="oDreamy-FHD/icons/wind.png" alphatest="blend" zPosition="1" />
-	  <widget source="session.MSNWeather" render="Label" position="1045,70" size="257,100" font="Regular; 32" halign="left" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2">
+	  <ePixmap position="950,90" size="70,40" pixmap="oDreamy-FHD/icons/wind.png" alphatest="blend" zPosition="1" />
+	  <widget source="session.MSNWeather" render="Label" position="1020,80" size="290,100" font="Regular; 30" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2">
 	    <convert type="MSNWeather">winddisplay</convert>
 	  </widget>
 	  <!-- *** RightUp Tuner Panel *** -->
