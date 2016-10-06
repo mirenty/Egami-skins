@@ -779,7 +779,7 @@
 		<eLabel position="0,910"  size="1920,170" backgroundColor="header"  zPosition="-1" />
 		<eLabel position="0,910"  size="1920,1"   backgroundColor="bluette" zPosition="-1" />
 		<!-- *** Net Info *** -->
- 		<widget source="session.CurrentService" render="Label" position="430,30" size="1440,40" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="0" zPosition="9" >
+ 		<widget source="session.CurrentService" render="Label" position="450,30" size="1420,40" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="0" zPosition="9" >
 			<convert type="EGExtraInfo">NetInfo</convert>
 		</widget>
 		<!-- *****  Box SatType ***** --> 
