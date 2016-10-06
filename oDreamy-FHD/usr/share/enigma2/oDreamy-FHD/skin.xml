@@ -845,11 +845,11 @@
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<!-- ***** BlueBox ***** --> 
-			<ePixmap pixmap="box/bluebox.png" position="70,305" size="370,280" alphatest="blend" zPosition="1" />
-			<!-- Picon -->
-			<widget source="session.CurrentService" render="Picon" position="80,320" size="400,170" alphatest="blend" zPosition="5" >
-				<convert type="ServiceName">Reference</convert>
-			</widget>
+		<ePixmap pixmap="box/bluebox.png" position="50,350" size="370,190" alphatest="blend" zPosition="1" />
+		<!-- Picon -->
+		<widget source="session.CurrentService" render="Picon" position="40,360" size="400,170" alphatest="blend" zPosition="5" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
 		<!-- ***** BlackBox ***** --> 
 		<ePixmap pixmap="box/blackbox.png" position="50,550" size="370,350" alphatest="blend" zPosition="2" />
 		<eLabel text="Ch." position="60,580" size="80,60" font="Regular;50" backgroundColor="#10000000" foregroundColor="#ffffff" transparent="1" zPosition="9"/>
