@@ -927,9 +927,12 @@
 		<widget source="session.RecordState" render="Pixmap" position="1544,93" size="45,45" pixmap="oDreamy-FHD/buttons/rec_on.png" alphatest="blend" zPosition="2" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="470,160" size="1420,50" font="Regular;34" halign="center" foregroundColor="yellow" backgroundColor="#10083980" transparent="1" zPosition="2" >
+		<widget source="session.Event_Now" render="Label" position="465,160" size="110,40" font="Regular;34" halign="center" foregroundColor="yellow" backgroundColor="#10083980" transparent="1" zPosition="2" >
 			<convert type="EventName">NameNow</convert>
 		</widget>
+		<widget source="session.Event_Now" render="DRRunningText" position="590,160" size="1135,40" font="Regular;34" halign="left" valign="center" noWrap="1" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" foregroundColor="yellow" backgroundColor="#10083980" transparent="1" zPosition="2" >
+			<convert type="EventName">Name</convert>
+		</widget>				
 		<!-- Progressbar (current event duration) -->
 		<widget source="session.Event_Now" render="Progress" position="465,210" size="1390,8" borderWidth="2" borderColor="#20202020" foregroundColor="ltbluette" transparent="1" zPosition="4" >
 			<convert type="EventTime">Progress</convert>
@@ -952,9 +955,12 @@
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="485,630" size="1395,50" font="Regular;34" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2" >
+		<widget source="session.Event_Next" render="Label" position="465,630" size="165,40" font="Regular;34" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2" >
 			<convert type="EventName">NameNext</convert>
 		</widget>
+		<widget  source="session.Event_Next" render="DRRunningText" font="Regular;34" halign="left" valign="center" noWrap="1" position="655,630" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="1070,40" foregroundColor="yellow" backgroundColor="#10083980" transparent="1" zPosition="2" >
+			<convert type="EventName">Name</convert>
+		</widget>			
 		<widget source="session.Event_Next" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1"
 			position="485,690" size="1375,195" font="Regular;28" halign="center" valign="top" foregroundColor="#808080" backgroundColor="header" transparent="1" zPosition="2" >
 			<convert type="EventName">ExtendedDescription</convert>
