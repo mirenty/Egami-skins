@@ -3387,7 +3387,7 @@
 		<ePixmap pixmap="icons/msn/temp_high_low.png"    position="350,60"  size="28,120"    alphatest="blend" transparent="1" zPosition="3"  />
 		<widget source="currentTemp"   render="Label"    position="400,55"  size="250,120"   font="Regular;70" foregroundColor="yellow"  backgroundColor="header" transparent="1" zPosition="3" />
 		<widget source="feelsliketemp" render="Label"    position="350,150" size="300,120"   font="Regular;34" foregroundColor="white"   backgroundColor="header" transparent="1" zPosition="3" />
-		<widget source="weekday1_temp" render="Label" position="350,230" size="300,100" font="Regular;32" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="weekday1_temp" render="Label"    position="350,230" size="300,100"    font="Regular;32" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="weekday1_icon" position="400,330" size="210,170"  zPosition="1" transparent="1" alphatest="blend">
       <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/oDreamy/msn2/,png</convert>
     </widget>
@@ -3782,10 +3782,10 @@
 		<panel name="MI"/>
 		<eLabel position="1260,140" size="610,260" backgroundColor="#10101010" zPosition="0" />
 		<eLabel position="1260,400" size="610,10"  backgroundColor="#FF101010" zPosition="0" />
-		<ePixmap pixmap="buttons/key_8_epg.png" position="985,50" size="60,35" alphatest="blend" zPosition="2" />
-		<widget name="page" position="1015,55" size="200,30" font="Regular;17" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
-		<ePixmap pixmap="buttons/key_9_epg.png" position="985,92" size="60,50" alphatest="blend" zPosition="2" />
-		<widget name="primetime" position="1015,95" size="250,25" font="Regular;17" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
+		<ePixmap pixmap="buttons/key_8.png" position="985,45" size="60,35" alphatest="blend" zPosition="2" />
+		<widget name="page" position="1025,55" size="200,30" font="Regular;17" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
+		<ePixmap pixmap="buttons/key_9.png" position="985,85" size="60,50" alphatest="blend" zPosition="2" />
+		<widget name="primetime" position="1025,95" size="250,25" font="Regular;17" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
 		<ePixmap pixmap="buttons/vkey_prev_next.png" position="782,45" size="60,25" alphatest="blend" zPosition="2" />
 		<widget name="change_bouquet" position="830,55" size="200,25" font="Regular;17" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
 		<ePixmap pixmap="buttons/vkey_ch.png" position="782,85" size="60,30" alphatest="blend" zPosition="2" />
