@@ -1370,7 +1370,52 @@
 
 	<!-- GraphicalEPG FHD -->
 	<screen name="GraphicalEPG" title="E.P Guide" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
-		<panel name="GraphicalEPGPIG"/>
+		<panel name="p800_Date"/>	
+		<panel name="sRGYB"/>
+		<panel name="MI"/>
+		<eLabel position="0,115"    size="1920,5"    backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="0,0"      size="1920,115"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="0,955"    size="1200,110"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="0,955"    size="1198,110"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1162,957" size="448,110"   backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1322,957" size="600,110"   backgroundColor="#20000000" zPosition="-1" />		
+		<ePixmap position="5,15"    size="52,52"     pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="33,35"   size="52,70"     pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<ePixmap pixmap="buttons/key_8_epg.png" position="1035,45" size="60,35" alphatest="blend" zPosition="2" />
+		<widget name="page" position="1065,45" size="200,30" font="Regular;20" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
+		<ePixmap pixmap="buttons/key_9_epg.png" position="1035,85" size="60,50" alphatest="blend" zPosition="2" />
+		<widget name="primetime" position="1065,85" size="350,25" font="Regular;20" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
+		<ePixmap pixmap="buttons/vkey_prev_next.png" position="782,40" size="60,25" alphatest="blend" zPosition="2" />
+		<widget name="change_bouquet" position="830,45" size="200,25" font="Regular;20" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
+		<ePixmap pixmap="buttons/vkey_ch.png" position="782,80" size="60,30" alphatest="blend" zPosition="2" />
+		<widget name="jump" position="830,85" size="200,25" font="Regular;20" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />			
+    	<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050" alphatest="blend" >
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>				
+		<!-- Channels + Bar -->
+		<widget name="timeline_text" position="5,120" size="1895,300" font="Regular;30"  selectionDisabled="1" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1"/>
+		<widget name="list" position="5,145" size="1920,820" itemHeight="70" scrollbarMode="showNever" backgroundColor="header" EntryBackgroundColor="#2f4974" EntryBackgroundColorSelected="#688cbf" EntryBorderColor="grey"  transparent="1"/>
+		<!-- Bouquet -->
+		<widget name="lab1" position="70,225" size="1150,390" halign="center" transparent="0" valign="center" zPosition="20"/>
+		<widget name="timeline_now" position="80,214" size="13,700" pixmap="epg/timeline-now2.png" alphatest="blend" zPosition="21" />
+		<!-- Time -->
+		<widget name="bouquetlist"  position="60,180" size="1180,80" itemHeight="35" scrollbarMode="showNever" foregroundColor="red" backgroundColor="header" transparent="0" zPosition="4"/>
+		<widget name="timeline_now" position="2,140" size="39,820" pixmap="epg/timeline-now.png" alphatest="on" zPosition="3" />
+		<ePixmap position="1370,38" size="165,80"   pixmap="oDreamy-FHD/icons/logosmall.png" alphatest="blend" zPosition="2" />
 	</screen>
 		
 	<!-- EPG Search FHD -->
