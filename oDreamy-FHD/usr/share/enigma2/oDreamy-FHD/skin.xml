@@ -3129,10 +3129,10 @@
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (10, 3), size = (800, 40), color=0x73c6ff, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-				MultiContentEntryText(pos = (30, 37), size = (800, 60), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+				MultiContentEntryText(pos = (30, 37), size = (800, 120), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_WRAP,text = 2), # index 2 is a description of the nim settings,
 				],
 				"fonts": [gFont("Regular", 32), gFont("Regular", 30)],
-				"itemHeight": 110
+				"itemHeight": 150
 				}
 			</convert>
 		</widget>
@@ -3239,11 +3239,11 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="network"       position="220,180" size="600,50" valign="center" zPosition="2" font="Regular;38" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
-		<widget name="transponder"   position="220,230" size="600,50" valign="center" zPosition="2" font="Regular;34" backgroundColor="header" transparent="1"/>
-		<widget name="pass"          position="70,290"  size="750,50" valign="center" font="Regular;32" foregroundColor="yellow" backgroundColor="header"  transparent="1"/>
-		<widget name="scan_state"    position="70,340"  size="750,90" valign="center" zPosition="2" font="Regular;34" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
-		<widget name="scan_progress" position="70,430"  size="820,25" borderWidth="2" borderColor="#cccccc" foregroundColor="bluette" />
-		<widget name="servicelist"   position="70,500"  size="820,400" selectionDisabled="1" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="transponder"   position="220,230" size="600,80" valign="center" zPosition="2" font="Regular;34" backgroundColor="header" transparent="1"/>
+		<widget name="pass"          position="70,320"  size="750,50" valign="center" font="Regular;32" foregroundColor="yellow" backgroundColor="header"  transparent="1"/>
+		<widget name="scan_state"    position="70,370"  size="750,90" valign="center" zPosition="2" font="Regular;34" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
+		<widget name="scan_progress" position="70,460"  size="820,25" borderWidth="2" borderColor="#cccccc" foregroundColor="bluette" />
+		<widget name="servicelist"   position="70,530"  size="820,370" selectionDisabled="1" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
 		<!--eLabel name="DEBUG" text="S250" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
