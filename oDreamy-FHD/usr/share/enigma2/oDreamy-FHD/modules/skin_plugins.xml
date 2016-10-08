@@ -3387,7 +3387,7 @@
 		<ePixmap pixmap="icons/msn/temp_high_low.png"    position="350,60"  size="28,120"    alphatest="blend" transparent="1" zPosition="3"  />
 		<widget source="currentTemp"   render="Label"    position="400,55"  size="250,120"   font="Regular;70" foregroundColor="yellow"  backgroundColor="header" transparent="1" zPosition="3" />
 		<widget source="feelsliketemp" render="Label"    position="350,150" size="300,120"   font="Regular;34" foregroundColor="white"   backgroundColor="header" transparent="1" zPosition="3" />
-		<widget source="weekday1_temp" render="Label"    position="350,230" size="300,80"    font="Regular;32" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="weekday1_temp" render="Label" position="350,230" size="300,100" font="Regular;32" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="weekday1_icon" position="400,330" size="210,170"  zPosition="1" transparent="1" alphatest="blend">
       <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/oDreamy/msn2/,png</convert>
     </widget>
