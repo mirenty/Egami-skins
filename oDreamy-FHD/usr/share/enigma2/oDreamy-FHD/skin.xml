@@ -1375,10 +1375,10 @@
 		<panel name="MI"/>
 		<eLabel position="0,115"    size="1920,5"    backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="0,0"      size="1920,115"  backgroundColor="#20000000" zPosition="-1" />
-		<eLabel position="0,955"    size="1200,110"  backgroundColor="#201b3c85" zPosition="-1" />
-		<eLabel position="0,955"    size="1198,110"  backgroundColor="#20000000" zPosition="-1" />
-		<eLabel position="1162,957" size="448,110"   backgroundColor="#20000000" zPosition="-1" />
-		<eLabel position="1322,957" size="600,110"   backgroundColor="#20000000" zPosition="-1" />		
+		<eLabel position="0,955"    size="1200,150"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="0,955"    size="1198,150"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1162,957" size="448,150"   backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1322,957" size="600,150"   backgroundColor="#20000000" zPosition="-1" />		
 		<ePixmap position="5,15"    size="52,52"     pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="33,35"   size="52,70"     pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
 		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
@@ -1407,7 +1407,7 @@
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>				
 		<!-- Channels + Bar -->
-		<widget name="timeline_text" position="5,120" size="1895,300" font="Regular;30"  selectionDisabled="1" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1"/>
+		<widget name="timeline_text" position="5,120" size="1920,300" font="Regular;30"  selectionDisabled="1" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1"/>
 		<widget name="list" position="5,145" size="1920,820" itemHeight="70" scrollbarMode="showNever" backgroundColor="header" EntryBackgroundColor="#2f4974" EntryBackgroundColorSelected="#688cbf" EntryBorderColor="grey"  transparent="1"/>
 		<!-- Bouquet -->
 		<widget name="lab1" position="70,225" size="1150,390" halign="center" transparent="0" valign="center" zPosition="20"/>
