@@ -3781,11 +3781,11 @@
 		<panel name="sRGYB"/>
 		<panel name="MI"/>
 		<eLabel position="1260,140" size="610,260" backgroundColor="#10101010" zPosition="0" />
-		<eLabel position="1260,400" size="610,10"  backgroundColor="#FF101010" zPosition="0" />
-		<ePixmap pixmap="buttons/key_8.png" position="985,45" size="60,35" alphatest="blend" zPosition="2" />
-		<widget name="page" position="1025,55" size="200,30" font="Regular;17" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
-		<ePixmap pixmap="buttons/key_9.png" position="985,85" size="60,50" alphatest="blend" zPosition="2" />
-		<widget name="primetime" position="1025,95" size="250,25" font="Regular;17" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
+		<eLabel position="1260,400" size="610,10"  backgroundColor="#FF101010" zPosition="0" />		
+		<ePixmap pixmap="buttons/key_8_epg.png" position="985,50" size="60,35" alphatest="blend" zPosition="2" />
+		<widget name="page" position="1015,55" size="200,30" font="Regular;17" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
+		<ePixmap pixmap="buttons/key_9_epg.png" position="985,92" size="60,50" alphatest="blend" zPosition="2" />
+		<widget name="primetime" position="1015,95" size="250,25" font="Regular;17" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
 		<ePixmap pixmap="buttons/vkey_prev_next.png" position="782,45" size="60,25" alphatest="blend" zPosition="2" />
 		<widget name="change_bouquet" position="830,55" size="200,25" font="Regular;17" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
 		<ePixmap pixmap="buttons/vkey_ch.png" position="782,85" size="60,30" alphatest="blend" zPosition="2" />
