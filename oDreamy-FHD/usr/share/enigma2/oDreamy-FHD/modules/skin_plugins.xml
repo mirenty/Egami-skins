@@ -3798,7 +3798,7 @@
 		<widget name="timeline_now" position="80,214" size="13,700" pixmap="epg/timeline-now2.png" alphatest="blend" zPosition="21"/>
 		<!-- Time -->
 		<widget name="bouquetlist"  position="60,180" size="1180,80" itemHeight="35" scrollbarMode="showNever" foregroundColor="red" backgroundColor="header" transparent="0" zPosition="4"/>
-		<widget name="timeline_now" position="2,220"  size="19,700"  pixmap="epg/timeline-now.png" alphatest="on" zPosition="3"/>
+		<widget name="timeline_now" position="2,220"  size="19,700"  pixmap="epg/timeline-now-pig.png" alphatest="on" zPosition="3"/>
 		<!--<widget name="timeline0" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
 		<widget name="timeline1" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
 		<widget name="timeline2" pixmap="box/timeline.png" position="0,220" size="2,700" zPosition="1"/>
