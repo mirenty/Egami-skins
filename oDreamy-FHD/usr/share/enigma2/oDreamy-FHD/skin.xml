@@ -779,7 +779,7 @@
 		<eLabel position="0,910"  size="1920,170" backgroundColor="header"  zPosition="-1" />
 		<eLabel position="0,910"  size="1920,1"   backgroundColor="bluette" zPosition="-1" />
 		<!-- *** Net Info *** -->
- 		<widget source="session.CurrentService" render="Label" position="430,30" size="1440,40" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="0" zPosition="9" >
+ 		<widget source="session.CurrentService" render="Label" position="450,30" size="1420,40" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="0" zPosition="9" >
 			<convert type="EGExtraInfo">NetInfo</convert>
 		</widget>
 		<!-- *****  Box SatType ***** --> 
@@ -845,11 +845,11 @@
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<!-- ***** BlueBox ***** --> 
-			<ePixmap pixmap="box/bluebox.png" position="70,305" size="370,280" alphatest="blend" zPosition="1" />
-			<!-- Picon -->
-			<widget source="session.CurrentService" render="Picon" position="80,320" size="400,170" alphatest="blend" zPosition="5" >
-				<convert type="ServiceName">Reference</convert>
-			</widget>
+		<ePixmap pixmap="box/bluebox.png" position="50,350" size="370,190" alphatest="blend" zPosition="1" />
+		<!-- Picon -->
+		<widget source="session.CurrentService" render="Picon" position="40,360" size="400,170" alphatest="blend" zPosition="5" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
 		<!-- ***** BlackBox ***** --> 
 		<ePixmap pixmap="box/blackbox.png" position="50,550" size="370,350" alphatest="blend" zPosition="2" />
 		<eLabel text="Ch." position="60,580" size="80,60" font="Regular;50" backgroundColor="#10000000" foregroundColor="#ffffff" transparent="1" zPosition="9"/>
@@ -927,9 +927,12 @@
 		<widget source="session.RecordState" render="Pixmap" position="1544,93" size="45,45" pixmap="oDreamy-FHD/buttons/rec_on.png" alphatest="blend" zPosition="2" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="470,160" size="1420,50" font="Regular;34" halign="center" foregroundColor="yellow" backgroundColor="#10083980" transparent="1" zPosition="2" >
+		<widget source="session.Event_Now" render="Label" position="465,160" size="110,40" font="Regular;34" halign="center" foregroundColor="yellow" backgroundColor="#10083980" transparent="1" zPosition="2" >
 			<convert type="EventName">NameNow</convert>
 		</widget>
+		<widget source="session.Event_Now" render="DRRunningText" position="590,160" size="1135,40" font="Regular;34" halign="left" valign="center" noWrap="1" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" foregroundColor="yellow" backgroundColor="#10083980" transparent="1" zPosition="2" >
+			<convert type="EventName">Name</convert>
+		</widget>				
 		<!-- Progressbar (current event duration) -->
 		<widget source="session.Event_Now" render="Progress" position="465,210" size="1390,8" borderWidth="2" borderColor="#20202020" foregroundColor="ltbluette" transparent="1" zPosition="4" >
 			<convert type="EventTime">Progress</convert>
@@ -952,9 +955,12 @@
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="485,630" size="1395,50" font="Regular;34" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2" >
+		<widget source="session.Event_Next" render="Label" position="465,630" size="165,40" font="Regular;34" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2" >
 			<convert type="EventName">NameNext</convert>
 		</widget>
+		<widget  source="session.Event_Next" render="DRRunningText" font="Regular;34" halign="left" valign="center" noWrap="1" position="655,630" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="1070,40" foregroundColor="yellow" backgroundColor="#10083980" transparent="1" zPosition="2" >
+			<convert type="EventName">Name</convert>
+		</widget>			
 		<widget source="session.Event_Next" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1"
 			position="485,690" size="1375,195" font="Regular;28" halign="center" valign="top" foregroundColor="#808080" backgroundColor="header" transparent="1" zPosition="2" >
 			<convert type="EventName">ExtendedDescription</convert>
@@ -1204,7 +1210,7 @@
 		<panel name="p800_Template"/>
 		<panel name="p800_DateMid"/>
 		<widget name="list" position="70,180" size="1170,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="2" />
-		<widget name="text" position="70,700" size="1170,160" halign="left" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="text" position="70,700" size="800,300" halign="left" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap position="960,645" size="256,256" pixmap="menu/input.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/team_logo.png"  alphatest="blend" zPosition="2" />
 		<!--eLabel name="DEBUG" text="S115" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -3298,10 +3304,10 @@
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
 		<panel name="sRG"/>
-		<ePixmap pixmap="icons/scan-s.png" position="70,170" size="64,64" zPosition="2" transparent="1" alphatest="blend"/>
-		<widget source="statusbar" render="Label" position="150,180" size="740,60" font="Regular;40" halign="left" valign="center" backgroundColor="header" zPosition="10" transparent="1"/>
-		<widget source="tunerstatusbar" render="Label" position="70,250" size="820,30" font="Regular;32" halign="left" valign="center" backgroundColor="header" transparent="1" zPosition="1" />
-		<widget name="config" position="70,300" size="820,630" itemHeight="45" font="Regular;32" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header"/>
+		<ePixmap pixmap="icons/scan-s.png" position="70,170" size="100,100" zPosition="2" transparent="1" alphatest="blend"/>
+		<widget source="statusbar" render="Label" position="180,280" size="740,80" font="Regular;32" halign="left" valign="center" backgroundColor="header" zPosition="10" transparent="1"/>
+		<widget source="tunerstatusbar" render="Label" position="180,345" size="820,80" font="Regular;32" halign="left" valign="center" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="config" position="70,300" size="820,630" itemHeight="45" font="Regular;24" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header"/>
 		<ePixmap position="960,645" size="300,300" pixmap="menu/scansat.png" alphatest="blend" zPosition="2" />
 		<!--eLabel name="DEBUG" text="S254" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
