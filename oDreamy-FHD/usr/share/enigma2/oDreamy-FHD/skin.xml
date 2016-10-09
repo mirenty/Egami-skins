@@ -1026,9 +1026,9 @@
 		<widget source="ServiceEvent" render="Progress" position="1280,295" pixmap="oDreamy-FHD/skin_default/progress_medium.png" size="570,5" borderWidth="1" borderColor="#20303030" zPosition="1" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1280,310" size="570,80" font="Regular;32" foregroundColor="#b0b0b0" backgroundColor="#101010" halign="center" valign="center" transparent="1" zPosition="1" >
-			<convert type="EventName">Name</convert>
-		</widget>
+    	        <widget source="ServiceEvent" render="DRRunningText" position="1280,310" size="570,40" font="Regular;34" options="movetype=running,startpoint=0,startdelay=4000,oneshot=2000,step=1,steptime=36,always=0,noWrap" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1">
+    			<convert type="EventName">Name</convert>
+    	        </widget>	
 		<!-- Interlinea 23 size 450 -->
 		<eLabel position="1260,810" size="610,10"  backgroundColor="#FF101010" zPosition="0" />
 		<eLabel position="1260,820" size="610,125" backgroundColor="#10101010" zPosition="0" />
@@ -1046,7 +1046,7 @@
 			steptime=36,
 			always=0,
 			noWrap" 
-			foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="5">
+			foregroundColor="white" backgroundColor="header" transparent="1" zPosition="5">
     			<convert type="DRNextEvents">Event1,onlyStart</convert>
     		</widget>
 		<!-- Next Event 2 -->
