@@ -727,6 +727,30 @@
 		<widget position="16,530" size="1730,20" source="consolestatus" render="Label" font="Regular;23" valign="bottom" zPosition="2"/>
 	</screen>
 	
+			<!--  EGAMI Plugin List -->
+		
+	<screen name="ChannelListUpdateMenu" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="p800_DateMid" />
+		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+		<widget source="list" render="Listbox" position="70,180" size="840,720" scrollbarMode="showOnDemand" transparent="1" backgroundColor="#10000000" zPosition="3">
+			  <convert type="TemplatedMultiContent">
+			      {"template": [
+			      MultiContentEntryText(pos = (170, 0), size = (650, 36), font=0, text = 0),
+			      MultiContentEntryText(pos = (170, 38), size = (650, 30), font=1, color = 0x6da6ff, text = 3),
+			      MultiContentEntryPixmapAlphaTest(pos = (2, 5), size = (150, 60), png = 1, flags = BT_SCALE),
+			      ],
+			      "fonts": [gFont("Regular", 32),gFont("Regular", 23)],
+			      "itemHeight": 80
+			      }
+			  </convert>
+		</widget>
+		<widget name="info" position="70,734" size="840,234" font="Regular; 32" halign="center" transparent="1" backgroundColor="#10000000" foregroundColor="blue" />
+		<eLabel text="Rango Polskie Listy Kanalow" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<ePixmap pixmap="menu/ico_listch.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
+	</screen>
+	
 	<!-- ########## END EGAMI TEAM PANELS ########## -->
 
 	<!-- ####################################### -->
