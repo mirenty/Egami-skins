@@ -706,7 +706,7 @@
 		<panel name="p800_Template" /> <panel name="p800_Ext_BiN"/> <panel name="p800_Date" /> 
 		<panel name="sRGYB"/> 
 		<panel name="M"/> <!-- List Channel --> 
-		<widget name="list" position="70,180" size="1160,700" font="Regular;30" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" /> 
+		<widget name="list" position="70,180" size="1160,720" font="Regular;30" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" /> 
 		<widget name="station" position="1270,45" size="590,80" font="Regular; 30" transparent="1" backgroundColor="header" foregroundColor="green" halign="center" zPosition="1" /> 
 		<ePixmap position="1500,150" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend"/> 
 		<widget name="title" position="1290,280" size="550,120" font="Regular; 32" transparent="1" backgroundColor="bluette" foregroundColor="ltbluette" halign="center" zPosition="1" /> 
@@ -725,6 +725,23 @@
 		<widget position="16,140" size="596,22" source="slider" render="Progress" css="slider_big_horizontal" transparent="1" zPosition="1" />
 		<widget position="16,20" size="1730,830" name="console" source="console" render="ScrollLabel" font="Regular;23" valign="bottom" autoScroll="off" step="40" css="slider_vertical" scrollbarMode="showOnDemand" zPosition="2"/>
 		<widget position="16,530" size="1730,20" source="consolestatus" render="Label" font="Regular;23" valign="bottom" zPosition="2"/>
+	</screen>
+	
+	<screen name="InternetRadioFullScreen" position="fill" title="Internet Radio Cover" backgroundColor="transpBlack" flags="wfNoBorder"> 
+		<panel name="p800_Template" /> 
+    <panel name="p800_Ext_BiN" /> 
+    <panel name="p800_Date" /> 
+		<panel name="M" />
+    <!-- List Channel --> 
+		<widget name="station" position="1260,570" size="610,120" font="Regular; 30" transparent="1" backgroundColor="header" foregroundColor="green" halign="center" zPosition="1" /> 
+		<ePixmap position="1500,150" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend" /> 
+		<widget name="title" position="1260,705" size="610,220" font="Regular; 32" transparent="1" backgroundColor="bluette" foregroundColor="ltbluette" halign="center" zPosition="1" /> 
+		<eLabel position="1260,380" size="610,10" backgroundColor="#FF000000" zPosition="1" /> <eLabel position="1260,390" size="610,120" backgroundColor="header" /> 
+		<eLabel text="INTERNET RADIO EGAMI" position="1260,390" size="610,110" font="Regular; 50" backgroundColor="header" halign="center" valign="center" transparent="1" foregroundColor="bluette" zPosition="1" /> 
+		<widget name="statustext" position="1260,390" size="610,110" font="Regular; 28" backgroundColor="header" halign="center" valign="center" transparent="1" foregroundColor="ltbluette" zPosition="2" /> 
+		<widget name="console" position="1260,390" size="610,110" font="Regular; 28" backgroundColor="header" halign="center" valign="center" transparent="1" foregroundColor="#808080" zPosition="2" /> 
+		<eLabel position="1260,510" size="610,440" backgroundColor="dreamy" /> 
+		<widget name="cover" position="68,178" size="1160,720" alphatest="blend" backgroundColor="transparent" zPosition="2" /> 
 	</screen>
 	
 			<!--  EGAMI Plugin List -->
