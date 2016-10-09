@@ -1130,7 +1130,7 @@
 	<screen name="EventView" position="fill" title="Eventview" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="p800_Template"/>
 		<panel name="p800_Ext"/>
-		<panel name="p800_Date"/>
+		<panel name="p800_DateMid" />
 		<panel name="nRGYB" />
 		<panel name="MI" />
 		<!-- Provider Name -->

@@ -3112,7 +3112,7 @@
 	<screen name="SHOUTcastWidget" position="fill" title="SHOUTcast" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
 		<panel name="p800_Ext_BiN"/>
-		<panel name="p800_Date" />
+		<panel name="p800_DateMid" />
 		<panel name="sRGYB"/>
 		<panel name="M"/>
 		<!-- List Channel -->
@@ -3125,7 +3125,7 @@
 		<eLabel text="SHOUTCAST"  position="1260,390" size="610,110" font="Regular; 99" backgroundColor="header" halign="center" valign="center" transparent="1" foregroundColor="#30101010" zPosition="1"/>
 		<widget name="statustext" position="1260,390" size="610,110" font="Regular; 28" backgroundColor="header" halign="center" valign="center" transparent="1" foregroundColor="ltbluette" zPosition="2" />
 		<widget name="console"    position="1260,390" size="610,110" font="Regular; 28" backgroundColor="header" halign="center" valign="center" transparent="1" foregroundColor="#808080"   zPosition="2" />
-		<eLabel                   position="1260,510" size="660,440" backgroundColor="#FF000000" />
+		<eLabel position="1260,510" size="610,440" backgroundColor="dreamy" />
 		<widget name="cover"      position="1261,520" size="608,420" alphatest="blend" backgroundColor="transparent" zPosition="2" />
 	</screen>
 	
