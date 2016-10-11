@@ -995,7 +995,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- List Channel --> 
-		<ePixmap position="1230,165" size="10,740" pixmap="oDreamy-FHD/box/maxbar.png" alphatest="blend" zPosition="2"/>
+		<ePixmap position="1230,165" size="10,750" pixmap="oDreamy-FHD/box/maxbar.png" alphatest="blend" zPosition="2"/>
 		<widget name="list" position="70,165" size="1170,750" scrollbarMode="showOnDemand" transparent="1" zPosition="1" 
 			serviceItemHeight="50" serviceNumberFont="Regular;32" serviceNameFont="Regular;30" serviceInfoFont="Regular;30" 
 			foregroundColor="#ffffff" foregroundColorSelected="#ffffff" backgroundColor="header" backgroundColorSelected="bluette"
