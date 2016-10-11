@@ -960,6 +960,16 @@
 	
 	<!-- ********** MyTube Player ********** P016 FHD -->
 	
+	<!-- YoutubeTVWindow -->
+        <screen backgroundColor="transparent" flags="wfNoBorder" name="YoutubeTVWindow" position="fill" title="Start YouTube TV">
+        <widget name="information" position="70,80" size="708,480" backgroundColor="header" transparent="1" />
+		<ePixmap pixmap="menu/ico_yt.png" position="530,500" size="256,256" alphatest="blend" />	
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="sRG"/>
+                <eLabel text="Exit" position="120,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />		
+        </screen>
+	
 	<!-- MyTube Main FHD -->
 	<screen name="MyTubePlayerMainScreen" position="center,130"  size="1600,850" title="MyTube - Browser">
 		<ePixmap pixmap="buttons/redpanel.png"    position="10,15"  size="30,30" alphatest="blend"/>
