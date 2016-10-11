@@ -3890,8 +3890,9 @@
 		<widget name="key_green" position="375,280" size="180,60" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" valign="center" font="Regular;28" halign="left" />
 		<widget name="key_yellow" position="650,280" size="170,60" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" valign="center" font="Regular;28" halign="left" />
 		<widget name="key_blue" position="900,280" size="245,60" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" valign="center" font="Regular;28" halign="left" />		
-		<eLabel text="Menu" position="1400,262"  size="200,43" font="Regular;28" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
-		<eLabel text="Info" position="1400,310" size="200,43" font="Regular;28" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<eLabel text="Menu" position="1390,262"  size="200,43" font="Regular;28" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<eLabel text="Info" position="1360,310" size="200,43" font="Regular;26" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<ePixmap position="1440,315" size="100,100" pixmap="buttons/key_help.png" alphatest="blend" zPosition="1" />
 		<ePixmap position="1275,280" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="1" />
 		<ePixmap position="1535,270" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="1" />
 		<widget source="global.CurrentTime" render="Watches" position="1539,274" size="60,60" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
