@@ -3736,7 +3736,7 @@
 	<!-- GraphicEPG FHD -->
 	<screen name="GraphicalInfoBarEPG" title="InfoBar EPG" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel name="MultiInfoBar" position="-2,880" size="1920,200" backgroundColor="header" transparent="0" zPosition="-10" />
-		<widget alphatest="blend" position="40,885" render="Picon" size="190,120" source="Service" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="0,895" render="Picon" size="235,100" source="Service" transparent="1" zPosition="4">
 		     <convert type="ServiceName">Reference</convert>
 		</widget>
 		<eLabel backgroundColor="#606060" position="40,1008" size="195,1" />
