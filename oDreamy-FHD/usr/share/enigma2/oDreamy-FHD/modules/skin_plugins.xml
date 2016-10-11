@@ -3866,7 +3866,7 @@
 	
 	    <!-- QuickEPG -->	
 	<screen name="QuickEPG" title="InfoBar QuickEPG" position="10,705" size="1840,350" backgroundColor="transparent" flags="wfNoBorder">
-                <eLabel position="48,0"     size="1952,241"  backgroundColor="#201b3c85" zPosition="-10" />
+                <eLabel position="48,0" size="1952,241"  backgroundColor="#201b3c85" zPosition="-10" />
 		<eLabel position="50,2"     size="1952,236"  backgroundColor="#20000000" zPosition="-10" />		
 		<eLabel position="50,260"   size="1200,100"  backgroundColor="#201b3c85" zPosition="-10" />
 		<eLabel position="52,262"   size="1198,98"   backgroundColor="#20000000" zPosition="-10" />
@@ -3876,7 +3876,8 @@
 		<eLabel position="1522,262" size="348,98"    backgroundColor="#20000000" zPosition="-10" />
 		<widget source="session.CurrentService" render="Label" position="90,15" size="850,55" font="Regular; 40" valign="top" noWrap="1" foregroundColor="yellow" backgroundColor="header" transparent="1">
 			<convert type="ServiceName">Name</convert>
-		</widget>		
+		</widget>
+		<ePixmap position="1150,60" size="10,160" pixmap="oDreamy-FHD/box/maxbar.png" alphatest="blend" zPosition="2" />
 		<widget name="list" position="60,60" size="1100,160" backgroundColor="header" foregroundColor="ltbluette" font="Regular; 20" scrollbarMode="showOnDemand" />
 		<widget source="Event" render="DRRunningText" position="1200,50" size="615,155" font="Regular;28" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" zPosition="1" halign="center" foregroundColor="white" backgroundColor="header" transparent="1">
 		       <convert type="EventName">ExtendedDescription</convert>
@@ -3905,7 +3906,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1530,245" size="250,95" font="Regular;35" halign="right" valign="center" foregroundColor="ltbluette" backgroundColor="#10101010" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1490,280" size="300,95" font="Regular;23" halign="right" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
+		<widget source="global.CurrentTime" render="Label" position="1490,290" size="300,95" font="Regular;23" halign="right" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
 			<convert type="ClockToText">Format %A %d %B</convert>
 		</widget>			
 	</screen>
