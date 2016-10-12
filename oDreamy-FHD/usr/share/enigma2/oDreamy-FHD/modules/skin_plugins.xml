@@ -723,7 +723,7 @@
  		<widget name="lab2"        position="70,240"  size="250,40" font="Regular;32" halign="left"   valign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
  		<widget name="labstop"     position="350,240" size="540,40" font="Regular;32" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="red"    zPosition="1"/>
  		<widget name="labrun"      position="350,240" size="540,40" font="Regular;32" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="green"  zPosition="1"/>
-		<widget source="list" render="Listbox" position="70,320" size="820,480" font="Regular;22" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="70,320" size="840,580" font="Regular;22" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList"/>
 		</widget>
  		<widget name="key"         position="70, 840" size="820,80" font="Regular;32" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
