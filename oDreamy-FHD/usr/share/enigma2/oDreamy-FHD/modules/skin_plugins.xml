@@ -726,7 +726,7 @@
 		<widget source="list" render="Listbox" position="70,320" size="840,580" font="Regular;22" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList"/>
 		</widget>
- 		<widget name="key"         position="70, 840" size="820,80" font="Regular;32" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
+ 		<widget name="key"         position="70, 905" size="820,40" font="Regular;25" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,640" size="300,300" pixmap="menu/cron.png" alphatest="blend"/>
  	</screen>
 	
