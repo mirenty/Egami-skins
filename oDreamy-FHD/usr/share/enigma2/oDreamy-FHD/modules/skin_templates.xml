@@ -196,7 +196,7 @@
 	<!-- Menu HDD HD -->
 	<screen name="menu_harddisk" position="fill" title="Main Menu HDD" backgroundColor="#FF000000" flags="wfNoBorder">
 		<panel name="MenuTemplate" />
-		<ePixmap pixmap="menu/ico_folder.png" position="860,645" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="menu/ico_storage.png" position="860,645" size="256,256" zPosition="2" alphatest="blend" />
 	</screen>
 	
 	<!-- Menu Information FHD -->
