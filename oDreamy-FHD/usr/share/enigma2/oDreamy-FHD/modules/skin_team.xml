@@ -1250,6 +1250,7 @@
 		<widget name="description" position="1260,560" size="610,300" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
 		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" zPosition="2" />
+		<widget name="footnote" position="1260,880" size="600,800" font="Regular;30" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="1" />
 		<!-- eLabel name="DEBUG" text="AT24" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 		
