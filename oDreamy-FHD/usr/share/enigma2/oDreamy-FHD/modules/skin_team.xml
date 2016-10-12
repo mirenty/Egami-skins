@@ -685,7 +685,7 @@
 		<panel name="p800_Date" /> 
 		<panel name="nRG" /> 
 		<widget name="lab1" position="70,180" font="Regular;28" itemHeight="40" size="820,840" scrollbarMode="showOnDemand" zPosition="1" transparent="1" /> 
-		<ePixmap pixmap="menu/missing.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
+		<ePixmap pixmap="menu/deviceusb.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
 		<!-- eLabel name="DEBUG" text="EG43" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen> 
 	
