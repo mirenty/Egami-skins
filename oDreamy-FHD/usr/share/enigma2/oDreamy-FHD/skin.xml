@@ -3192,7 +3192,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Date" />
 		<panel name="nRG" />
-		<panel name="MI"/>
+		<!--panel name="MI"/-->
 		<panel name="p800_Ext_BiN" />
 		<ePixmap position="1440,170" size="256,256" pixmap="menu/scansat.png" alphatest="blend" zPosition="2" />
 		<widget name="header" position="70,160" size="820,50" font="Regular;38" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
