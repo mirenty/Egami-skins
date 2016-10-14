@@ -1214,6 +1214,7 @@
 		<widget name="text" position="70,700" size="800,300" halign="left" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap position="960,645" size="256,256" pixmap="menu/input.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/team_logo.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="1390,970"  size="100,43"  pixmap="oDreamy-FHD/buttons/key_menu.png"  alphatest="on" zPosition="2" />
 		<!--eLabel name="DEBUG" text="S115" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
