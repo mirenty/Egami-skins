@@ -1620,29 +1620,29 @@
 		<ePixmap pixmap="buttons/greypanel.png" position="70,420" size="30,30" zPosition="1" alphatest="blend"/>
 		<widget name="AdapterInfo_OK" 		 position="70,180"   size="30,30"  zPosition="2" pixmap="buttons/greenpanel.png" alphatest="blend"/>
 		<widget name="Adaptertext" 		 position="120,178"  size="300,40" zPosition="1" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1"/>			
-		<widget name="Adapter" 			 position="1020,178" size="200,40" zPosition="1" font="Regular;32" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
+		<widget name="Adapter" 			 position="1020,178" size="200,60" zPosition="1" font="xRegular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
 		<widget name="NetworkInfo_Check"	 position="70,240"   size="30,30"  zPosition="2" pixmaps="buttons/greenpanel.png,buttons/redpanel.png" alphatest="blend"/>
 		<widget name="Networktext"		 position="120,238"  size="300,40" zPosition="1" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1"/>		
-		<widget name="Network" 			 position="1020,238" size="200,40" zPosition="1" font="Regular;32" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
+		<widget name="Network" 			 position="1020,238" size="200,60" zPosition="1" font="xRegular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
 		<widget name="DhcpInfo_Check" 		 position="70,300"   size="30,30"  zPosition="2" pixmaps="buttons/greenpanel.png,buttons/redpanel.png" alphatest="blend"/>
 		<widget name="Dhcptext" 		 position="120,298"  size="300,40" zPosition="1" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1"/>			
-		<widget name="Dhcp" 			 position="1020,298" size="200,40" zPosition="1" font="Regular;32" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
+		<widget name="Dhcp" 			 position="1020,298" size="200,60" zPosition="1" font="xRegular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
 		<widget name="IPInfo_Check" 		 position="70,360"   size="30,30"  zPosition="2" pixmaps="buttons/greenpanel.png,buttons/redpanel.png" alphatest="blend"/>
 		<widget name="IPtext" 			 position="120,358"  size="300,40" zPosition="1" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1"/>			
-		<widget name="IP" 			 position="1020,358" size="200,40" zPosition="1" font="Regular;32" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
+		<widget name="IP" 			 position="1020,358" size="200,60" zPosition="1" font="xRegular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
 		<widget name="DNSInfo_Check" 		 position="70,420"   size="30,30"  zPosition="2" pixmaps="buttons/greenpanel.png,buttons/redpanel.png" alphatest="blend"/>
 		<widget name="DNStext" 			 position="120,418"  size="300,40" zPosition="1" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1"/>		
-		<widget name="DNS" 			 position="1020,418" size="200,40" zPosition="1" font="Regular;32" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
+		<widget name="DNS" 			 position="1020,418" size="200,60" zPosition="1" font="xRegular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
 		<widget name="AdapterInfo" 		 position="315,178" size="200,40"  halign="center" zPosition="1"/>
-		<widget name="AdapterInfo_Text" 	 position="550,178" size="200,40"  halign="right"  zPosition="2" font="Regular;32" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="header"/>
+		<widget name="AdapterInfo_Text" 	 position="550,178" size="200,40"  halign="right"  zPosition="2" font="Regular;28" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="header"/>
 		<widget name="NetworkInfo" 		 position="315,238" size="200,50"  halign="center" zPosition="1"/>
-		<widget name="NetworkInfo_Text" 	 position="550,238" size="200,50"  halign="right"  zPosition="2" font="Regular;32" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="header"/>
+		<widget name="NetworkInfo_Text" 	 position="550,238" size="200,50"  halign="right"  zPosition="2" font="Regular;28" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="header"/>
 		<widget name="DhcpInfo" 		 position="315,298" size="200,50"  halign="center" zPosition="1"/>
-		<widget name="DhcpInfo_Text" 		 position="550,298" size="200,50"  halign="right"  zPosition="2" font="Regular;32" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="header"/>
+		<widget name="DhcpInfo_Text" 		 position="550,298" size="200,50"  halign="right"  zPosition="2" font="Regular;28" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="header"/>
 		<widget name="IPInfo" 			 position="315,358" size="200,50"  halign="center" zPosition="1"/>
-		<widget name="IPInfo_Text" 		 position="550,358" size="200,50"  halign="right"  zPosition="2" font="Regular;32" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="header"/>
+		<widget name="IPInfo_Text" 		 position="550,358" size="200,50"  halign="right"  zPosition="2" font="Regular;28" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="header"/>
 		<widget name="DNSInfo" 			 position="315,418" size="200,50"  halign="center" zPosition="1"/>
-		<widget name="DNSInfo_Text" 		 position="550,418" size="200,50"  halign="right"  zPosition="2" font="Regular;32" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="header"/>
+		<widget name="DNSInfo_Text" 		 position="550,418" size="200,50"  halign="right"  zPosition="2" font="Regular;28" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="header"/>
 		<widget name="InfoText"			 position="70,530"  size="1080,340" halign="center" valign="center" zPosition="2" font="Regular;34" transparent="1" foregroundColor="#73c6ff" backgroundColor="header"/>
 		<widget name="InfoTextBorder" 		 position="70,630"  size="1080,340" halign="right"  zPosition="2"/>
 		<widget name="EditSettingsButton" 	 position="980,960" size="230,90" zPosition="1"/>
