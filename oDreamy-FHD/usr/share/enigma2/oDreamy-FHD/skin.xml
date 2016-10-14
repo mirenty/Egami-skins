@@ -2205,8 +2205,8 @@
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid" />
 		<panel name="nRGYB"/>
-		<widget name="infolist" position="70,180" font="Regular;24" size="820,700" itemHeight="45" selectionDisabled="1" backgroundColor="header" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" position="50,550" size="685,20" font="Regular;20" transparent="1" zPosition="1">
+		<widget name="infolist" position="70,180" font="xRegular;20" size="820,700" itemHeight="45" selectionDisabled="1" backgroundColor="header" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" position="70,550" size="685,20" font="Regular;20" transparent="1" zPosition="1">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 		</widget>
 		<ePixmap position="960,640" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
