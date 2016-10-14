@@ -2190,9 +2190,9 @@
 		<panel name="p800_DateMid"/>
 		<panel name="sR"/>
 		<widget source="Statustext" render="Label" position="70,180" size="120,40" font="Regular;32" halign="left" backgroundColor="header" transparent="1"/>
-		<widget name="statuspic" position="170,181" size="30,30" pixmaps="buttons/greenpanel.png,/buttons/redpanel.png" alphatest="blend" transparent="1"/>
-		<widget source="IFtext" render="Label" position="260,180" size="120,40" font="Regular;32" halign="left" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
-		<widget source="IF"     render="Label" position="400,180" size="420,40" font="Regular;32" halign="left" transparent="1" backgroundColor="header" zPosition="10"/>
+		<widget name="statuspic" position="180,181" size="30,30" pixmaps="buttons/greenpanel.png,/buttons/redpanel.png" alphatest="blend" transparent="1"/>
+		<widget source="IFtext" render="Label" position="70,225" size="120,40" font="Regular;32" halign="left" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
+		<widget source="IF"     render="Label" position="300,225" size="420,40" font="Regular;32" halign="left" transparent="1" backgroundColor="header" zPosition="10"/>
 		<eLabel position="70,230" size="820,1" backgroundColor="#202020" zPosition="0"/>
 		<widget name="AboutScrollLabel" position="70,280" size="820,720" font="Regular;32" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,640" size="300,300" pixmap="menu/net.png" alphatest="blend"/>
