@@ -659,7 +659,8 @@
 		<!--<widget source="session.CurrentService" render="Label" position="850,1038" size="700,35" font="Regular;23" halign="left" foregroundColor="#808080" backgroundColor="#10101010" transparent="1" zPosition="3">
 			<convert type="EGExtraInfo">NetInfo</convert>
 		</widget>-->
-		<!-- HbbTV icon (is HbbTV active)-->		
+		<!-- HbbTV icon (is HbbTV active?)-->	
+		<ePixmap pixmap="icons/hbbtv_off.png" position="1075,1000" size="140,50" zPosition="0" alphatest="blend" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/hbbtv_on.png" position="1075,1000" size="140,50" zPosition="1" alphatest="blend">
 		        <convert type="ServiceInfo">HasHBBTV</convert>
 		        <convert type="ConditionalShowHide" />
