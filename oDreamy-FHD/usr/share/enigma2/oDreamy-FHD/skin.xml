@@ -2977,16 +2977,38 @@
 		<!--eLabel name="DEBUG" text="S233" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	
-	<!-- Video Enh Preview FHD -->
+	<!-- Video Enhancement Preview FHD -->
 	<screen name="VideoEnhancementPreview" position="fill" title="VideoEnhancementPreview" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="p800_Template"/>
-		<panel name="p800_Logo"/>
-		<panel name="p800_DateMid"/>
 		<panel name="sRG"/>
-		<widget source="introduction" render="Label" position="50,180" size="820,40" font="Regular;32" halign="left" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
-		<widget name="config" position="70, 250" size="820,630" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1"/>
-		<ePixmap position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend" zPosition="2" />
-		<!--eLabel name="DEBUG" text="S234" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<ePixmap position="48,28"   size="52,52"    pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50"   size="52,70"    pixmap="icons/list.png" alphatest="blend" zPosition="2" />		
+		<eLabel position="50,30"    size="1800,96"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,32"    size="1796,91"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,955"   size="1200,95"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,957"   size="1198,93"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1260,955" size="250,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1262,957" size="248,93"   backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1522,957" size="348,93"   backgroundColor="#20000000" zPosition="-1" />
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<widget name="config" position="900,33" size="820,630" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />	
+		<widget source="introduction" render="Label" position="750,980" size="600,40" font="Regular;32" halign="left" foregroundColor="yellow" backgroundColor="header" transparent="1" />		
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050" alphatest="blend" >
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>		
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png" alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>	
 	</screen>
 
 	<!-- Video Enh Setup FHD -->
