@@ -3778,8 +3778,8 @@
 		     <convert type="EventTime">EndTime</convert>
 		     <convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<eLabel position="750,826" size="350,3" backgroundColor="#201b3c85" />
-		<widget source="Event" render="Progress" position="750,824" size="350,6" foregroundColor="ltbluette" backgroundColor="#20303030" borderWidth="0" transparent="1" zPosition="2">
+		<eLabel position="750,826" size="350,3" backgroundColor="#20303030" zPosition="1" transparent="1" />
+		<widget source="Event" render="Progress" position="750,824" size="350,6" pixmap="oDreamy-FHD/skin_default/progress_medium.png" borderWidth="1" borderColor="#20303030" transparent="1" zPosition="2">
 		     <convert type="EventTime">Progress</convert>
 		</widget>		
 		<ePixmap pixmap="buttons/key_8_epg.png" position="1452,803" size="60,35" alphatest="blend" zPosition="2" />
