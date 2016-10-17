@@ -684,7 +684,8 @@
 		<panel name="p800_Template" /> 
 		<panel name="p800_Logo" /> 
 		<panel name="p800_Date" /> 
-		<panel name="nRG" /> 
+		<panel name="nRG" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="lab1" position="70,180" font="Regular;28" itemHeight="40" size="820,840" scrollbarMode="showOnDemand" zPosition="1" transparent="1" /> 
 		<ePixmap pixmap="menu/deviceusb.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
 		<!-- eLabel name="DEBUG" text="EG43" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
