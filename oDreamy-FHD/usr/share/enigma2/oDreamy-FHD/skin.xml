@@ -3491,6 +3491,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="text" position="70,180" size="820,50" font="Regular;42" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<eLabel position="70,230" size="820,1" backgroundColor="#404040"/>
 		<widget name="entries" position="70,250" size="820,665" itemHeight="35" font="Regular;30" backgroundColor="header" transparent="1"/>
