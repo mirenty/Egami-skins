@@ -717,6 +717,7 @@
 		<panel name="p800_DateMid"/>
 		<panel name="p800_Logo"/>
 		<panel name="nRGYB"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
  		<widget name="lab1"        position="70,180"  size="250,40" font="Regular;32" halign="left"   valign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
  		<widget name="labactive"   position="350,180" size="540,40" font="Regular;32" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="green"  zPosition="1"/>
  		<widget name="labdisabled" position="350,180" size="540,40" font="Regular;32" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="red"    zPosition="1"/>
