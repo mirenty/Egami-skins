@@ -1476,6 +1476,7 @@
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="hddlist" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2" />
 		<ePixmap position="960,640" size="256,256" pixmap="menu/folders.png" alphatest="blend"/>
 		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/team_logo.png"  alphatest="blend" zPosition="2" />
@@ -1489,6 +1490,7 @@
 		<panel name="p800_DateMid"/>
 		<!--panel name="fakeExit"/-->
 		<!--panel name="sR"/-->
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="model"    position="70,180" size="820,40" font="Regular;32" backgroundColor="header" foregroundColor="#73c6ff" transparent="1" zPosition="1" />
 		<widget name="capacity" position="70,240" size="820,40" font="Regular;32" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="bus"      position="70,290" size="820,40" font="Regular;32" backgroundColor="header" transparent="1" zPosition="1" />
