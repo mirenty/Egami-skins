@@ -1502,6 +1502,7 @@
 		<panel name="p800_Logo"/>
 		<panel name="p800_Date"/>
 		<panel name="p800_Ext"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />	
 		<widget name="list" position="70,180" size="840,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3" />
 		<ePixmap position="1140,390" zPosition="2" size="50,50" pixmap="icons/ram.png" alphatest="blend"/>
