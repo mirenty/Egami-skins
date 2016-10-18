@@ -1267,6 +1267,7 @@
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
 		<panel name="nRGYB"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="loglist" position="70,180" size="820,540" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<widget name="logentry" position="70,560" size="850,0" font="Regular;20" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
 		<ePixmap position="950,645" size="256,256" pixmap="menu/timer_edit.png" alphatest="blend"/>
