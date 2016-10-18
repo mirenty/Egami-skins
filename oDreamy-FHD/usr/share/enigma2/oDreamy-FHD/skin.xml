@@ -1429,7 +1429,9 @@
 		<panel name="p800_Date"/>
 		<panel name="p800_Ext"/>
 		<panel name="nRGYB"/>
-		<panel name="MI"/>
+		<panel name="M"/>
+		<eLabel text="Info" position="1370,1000" size="200,43" font="Regular;30" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<eLabel text="Exit" position="1435,975" size="200,95" font="Regular;30" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
 		<eLabel position="1260,140" size="610,260" backgroundColor="#10101010" zPosition="0" />
 		<eLabel position="1260,400" size="610,10"  backgroundColor="#FF101010" zPosition="0" />
 		<ePixmap pixmap="oDreamy-FHD/box/maxbar.png" position="1230,180" size="10,720" alphatest="blend" zPosition="2" />
