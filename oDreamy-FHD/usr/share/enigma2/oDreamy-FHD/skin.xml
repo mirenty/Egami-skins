@@ -219,9 +219,9 @@
 	</screen>
 
 	<!-- Restart Panel FHD -->
-        <screen name="QuitMainloopScreen" position="fill" backgroundColor="black" flags="wfNoBorder">
+        <screen name="QuitMainloopScreen" position="fill" backgroundColor="#00242424" flags="wfNoBorder">
 		<ePixmap position="650,400" size="600,132" pixmap="oDreamy-FHD/restart-gui.png" zPosition="1" alphatest="blend" />
-		<widget name="text" position="525,600" size="1370,100" zPosition="2" font="xRegular;40" halign="left" foregroundColor="green" backgroundColor="#10000000" shadowColor="black" shadowOffset="1,1" transparent="1" />
+		<widget name="text" position="425,600" size="1370,100" zPosition="2" font="xRegular;50" halign="left" foregroundColor="green" backgroundColor="#00242424" shadowColor="#00242424" shadowOffset="1,1" transparent="1" />
 		<!--eLabel name="DEBUG" text="S001" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
         </screen>
 	
