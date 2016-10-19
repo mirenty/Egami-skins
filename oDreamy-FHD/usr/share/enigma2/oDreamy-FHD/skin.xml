@@ -1333,7 +1333,7 @@
 		<eLabel text="Info" position="1370,1000" size="200,43" font="Regular;30" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
 		<eLabel text="Exit" position="1435,975" size="200,95" font="Regular;30" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
 		<ePixmap pixmap="oDreamy-FHD/box/maxbar.png" position="900,180" size="10,720" alphatest="blend" zPosition="2" />
-		<widget name="list" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2" />
+		<widget name="list" position="55,180" size="855,720" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2" />
 		<widget name="number" position="170,1900" size="500,60" font="Regular;34" valign="center" halign="left" foregroundColor="#73c6ff" backgroundColor="transparent" transparent="1" borderColor="black" borderWidth="2" zPosition="2" />
 		<widget name="lab1"   position="70,1950"  size="150,30" font="Regular;24" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2" />
 		<ePixmap position="960,645" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" zPosition="2" />
