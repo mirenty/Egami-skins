@@ -3852,8 +3852,8 @@
 			<convert type="EventName">Name</convert>
 		</widget>
 		<!-- Pig -->
-		<eLabel position="1275,145" size="230,142" backgroundColor="#303030" zPosition="0"/>
-		<widget source="session.VideoPicture" render="Pig" position="1277,147" size="226,138" zPosition="1" backgroundColor="#df0b1300"/>
+		<eLabel position="1275,153" size="230,144" backgroundColor="#303030" zPosition="0"/>
+		<widget source="session.VideoPicture" render="Pig" position="1277,155" size="226,140" zPosition="1" backgroundColor="#df0b1300"/>
 		<!-- Event Name - Time -->
 		<eLabel text="Start Time :"                  position="1540,165" size="200,40" font="Regular;32" halign="left" backgroundColor="header" foregroundColor="yellow" transparent="1" zPosition="1" />
 		<widget source="Event" render="Label" position="1730,165" size="200,40" font="Regular;32" halign="left" backgroundColor="header" transparent="1" zPosition="1" >
