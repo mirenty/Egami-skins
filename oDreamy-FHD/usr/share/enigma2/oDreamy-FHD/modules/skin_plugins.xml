@@ -3744,7 +3744,7 @@
 		</widget>
 	</screen>
 
-	<!-- GraphicEPG FHD -->
+	<!-- GraphicInfobarEPG FHD -->
 	<screen name="GraphicalInfoBarEPG" title="InfoBar EPG" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel name="MultiInfoBar" position="-2,880" size="1920,200" backgroundColor="header" transparent="0" zPosition="-10" />
 		<widget alphatest="blend" position="0,895" render="Picon" size="235,100" source="Service" transparent="1" zPosition="4">
@@ -3815,13 +3815,15 @@
 		</widget>
 	</screen>
 	
-	<!-- GraphicalEPG FHD -->
+         <!-- ********** GraphicalEPGPIG FHD ********** P059 -->
 	<screen name="GraphicalEPGPIG" title="E.P Guide" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="p800_Template"/>
 		<panel name="p800_Ext"/>
 		<panel name="p800_Date"/>
 		<panel name="sRGYB"/>
-		<panel name="MI"/>
+		<panel name="M"/>
+		<eLabel text="Info" position="1370,1000" size="200,43" font="Regular;30" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<eLabel text="Exit" position="1435,975" size="200,95" font="Regular;30" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />			
 		<eLabel position="1260,140" size="610,260" backgroundColor="#10101010" zPosition="0" />
 		<eLabel position="1260,400" size="610,10"  backgroundColor="#FF101010" zPosition="0" />		
 		<ePixmap pixmap="buttons/key_8_epg.png" position="985,50" size="60,35" alphatest="blend" zPosition="2" />
@@ -3852,7 +3854,7 @@
 			<convert type="EventName">Name</convert>
 		</widget>
 		<!-- Pig -->
-		<eLabel position="1275,153" size="230,144" backgroundColor="#303030" zPosition="0"/>
+		<eLabel position="1275,153" size="230,144" backgroundColor="#201b3c85" zPosition="0"/>
 		<widget source="session.VideoPicture" render="Pig" position="1277,155" size="226,140" zPosition="1" backgroundColor="#df0b1300"/>
 		<!-- Event Name - Time -->
 		<eLabel text="Start Time :"                  position="1540,165" size="200,40" font="Regular;32" halign="left" backgroundColor="header" foregroundColor="yellow" transparent="1" zPosition="1" />
@@ -3865,7 +3867,7 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="Event" render="Progress" position="1275,300" pixmap="oDreamy-FHD/skin_default/progress_medium.png" size="580,5" borderWidth="1" borderColor="#202020" zPosition="1" >
+		<widget source="Event" render="Progress" position="1275,310" pixmap="oDreamy-FHD/skin_default/progress_medium.png" size="580,5" borderWidth="1" borderColor="#202020" zPosition="1" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<!-- FullDescription  Interlinea 23 size 450 -->
