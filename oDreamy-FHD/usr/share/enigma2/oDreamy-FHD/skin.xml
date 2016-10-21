@@ -1135,6 +1135,9 @@
 		<widget name="menu" position="70,180" size="725,600" itemHeight="40" font="Regular;40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="2" />
 		<ePixmap position="860,645" size="256,256" pixmap="menu/setup_selection.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/team_logo.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="800,975" size="90,60" pixmap="icons/select.png" alphatest="blend" zPosition="1" />
+		<eLabel text="Menu" position="915,940" size="200,95" font="Regular;34" valign="center" foregroundColor="#b0b0b0" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<eLabel text="exit" position="915,980" size="200,95" font="Regular;34" valign="center" foregroundColor="#b0b0b0" backgroundColor="bluette" transparent="1" zPosition="1" />		
 		<!--eLabel name="DEBUG" text="S111" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
