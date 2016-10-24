@@ -26,6 +26,7 @@
 		<panel name="p800_Ext" />
 		<panel name="p800_Date" />
 		<panel name="nRG"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap pixmap="menu/ico_egami.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
 		<ePixmap position="895,180" size="15,720" pixmap="box/maxbargh.png" alphatest="blend" transparent="1" zPosition="4" />
@@ -65,6 +66,7 @@
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
 		<panel name="nRG"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap pixmap="menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="status" position="70,180" size="820,40" font="Regular;35" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" />      
 		<widget name="menu" position="70,250" size="820,660" font="Regular;30" itemHeight="70" scrollbarMode="showOnDemand" transparent="1"/>
@@ -105,6 +107,7 @@
 		<panel name="p800_Ext" />
 		<panel name="p800_Date" />
 		<panel name="nR" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap pixmap="menu/script.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
 		<widget name="list"        position="70,180" size="840,720" font="Regular;28" itemHeight="50" scrollbarMode="showOnDemand" transparent="1"/>
@@ -118,6 +121,7 @@
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
 		<panel name="nRGYB" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap pixmap="menu/peripheric.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="lab1" position="70,180" size="820,60" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2" />
 		<widget source="list" render="Listbox" position="70,180" size="820,600" scrollbarMode="showOnDemand" zPosition="1" transparent="1" >
@@ -228,6 +232,7 @@
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
 		<panel name="nR"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="status" position="70,180" size="820,40" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />      
 		<eLabel position="70,240" size="820,1" backgroundColor="#10303030" zPosition="2"/>
 		<widget name="remove" position="70,270" size="820,720" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
@@ -241,6 +246,7 @@
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
 		<panel name="nR"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="status" position="70,180" size="820,40" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />      
 		<eLabel position="70,240" size="820,1" backgroundColor="#10303030" zPosition="2"/>
 		<widget name="listaaddonow" position="70,270" size="820,720" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
@@ -253,6 +259,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
 		<widget name="menu" position="70,180" size="840,720" font="Regular;24" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
 		<ePixmap pixmap="menu/logview.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
@@ -265,6 +272,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
 		<widget name="menu" position="70,180" size="840,720" font="Regular;24" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 		<ePixmap pixmap="menu/logview.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
@@ -277,6 +285,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
 		<widget name="menu" position="70,180" size="840,720" font="Regular;24" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
 		<ePixmap pixmap="menu/logview.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
@@ -289,6 +298,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
 		<widget name="menu" position="70,180" size="840,720" font="Regular;24" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
 		<ePixmap pixmap="menu/logview.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
@@ -431,6 +441,7 @@
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
 		<panel name="nRGYB"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
 		<widget source="list" render="Listbox" position="70,180" size="840,720" scrollbarMode="showOnDemand" transparent="1" zPosition="3">
 			  <convert type="TemplatedMultiContent">
@@ -614,6 +625,7 @@
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
 		<panel name="nRGYB"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap pixmap="menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<ePixmap position="70,150" zPosition="3" size="120,157" pixmap="icons/emupic.png" alphatest="blend" transparent="1" />
 		<widget name="choose_cam"  position="180,180" size="710,40" font="Regular;30" halign="center" valign="center" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1"/>
@@ -683,7 +695,8 @@
 		<panel name="p800_Template" /> 
 		<panel name="p800_Logo" /> 
 		<panel name="p800_Date" /> 
-		<panel name="nRG" /> 
+		<panel name="nRG" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="lab1" position="70,180" font="Regular;28" itemHeight="40" size="820,840" scrollbarMode="showOnDemand" zPosition="1" transparent="1" /> 
 		<ePixmap pixmap="menu/deviceusb.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
 		<!-- eLabel name="DEBUG" text="EG43" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
@@ -1039,7 +1052,10 @@
                 <ePixmap position="1220,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />		
 		<widget name="config"      position="70,180" size="1160,720" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="description" position="1260,560" size="610,300" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<widget name="HelpWindow"  position="1260,720" size="1,1" zPosition="1" alphatest="on" transparent="1" />		
+		<widget name="HelpWindow"  position="1260,720" size="1,1" zPosition="1" alphatest="on" transparent="1" />
+		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="1390,970" zPosition="1" size="60,35" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" zPosition="2" />
 
@@ -1170,7 +1186,10 @@
 		<!--panel name="M"/-->
 		<widget name="config"      position="70,180" size="1160,720" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="description" position="1260,560" size="610,300" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<widget name="HelpWindow"  position="1260,720" size="1,1" zPosition="1" alphatest="on" transparent="1" />		
+		<widget name="HelpWindow"  position="1260,720" size="1,1" zPosition="1" alphatest="on" transparent="1" />
+		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="1390,970" zPosition="1" size="60,35" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" zPosition="2" />
 		<!-- eLabel name="DEBUG" text="AT18" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
@@ -1490,14 +1509,52 @@
 	<!-- ####################################### -->
 
 	<screen name="ExtensionsList" position="fill" title="ExtensionsList" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="p800_Template"/>
+		<panel name="p8000_Template"/>
 		<panel name="p800_Logo"/>
-		<panel name="p800_DateMid"/>
-		<widget name="list"       position="70,180" size="820,400" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3" />
-		<eLabel text="Extensions" position="70,600" size="820,240" font="Regular;30" noWrap="0" backgroundColor="header" transparent="1" foregroundColor="white" valign="bottom" zPosition="10" />
-		<ePixmap position="60,970"  size="700,90"  pixmap="icons/ico_team.png"  alphatest="blend" zPosition="2" />
-		<ePixmap position="955,640" size="300,300" pixmap="menu/ico_team.png" alphatest="blend"/>
-		<!-- eLabel name="DEBUG" text="PL01" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<panel name="p800_Date"/>
+		<panel name="p800_Ext"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />	
+		<widget name="list" position="70,180" size="840,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3" />
+		<ePixmap position="1140,390" zPosition="2" size="50,50" pixmap="icons/ram.png" alphatest="blend"/>
+		<widget source="session.Event_Now" render="Progress" position="1200,400" size="450,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="EGLayoutInfo">MemTotal</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1200,410" size="450,26" halign="left" valign="center" font="xRegular; 16" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+			<convert type="EGLayoutInfo">MemTotal</convert>
+		</widget>
+		<ePixmap position="1140,445" zPosition="2" size="50,50" pixmap="icons/cpu.png" alphatest="blend"/>
+		<widget source="session.Event_Now" render="Progress" position="1200,455" size="450,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="EGCpuUsage">$0</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1200,465" size="450,26" halign="left" valign="center" font="xRegular; 16" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+			<convert type="EGCpuUsage">CPU Utilization:$0 (Core #1: $1, Core #2: $2)</convert>
+		</widget>
+		<ePixmap position="1150,503" zPosition="2" size="50,50" pixmap="icons/flash.png" alphatest="blend"/>
+		<widget source="session.Event_Now" render="Progress" position="1200,510" size="450,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="EGLayoutInfo">FleshInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1200,520" size="450,26" halign="left" valign="center" font="xRegular; 16" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+			<convert type="EGLayoutInfo">Flesh</convert>
+		</widget>
+		<ePixmap position="1140,555" zPosition="2" size="50,50" pixmap="icons/hdd_extensions.png" alphatest="blend"/>
+		<widget source="session.Event_Now" render="Progress" position="1200,565" size="450,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="EGLayoutInfo">HddInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1200,575" size="450,26" halign="left" valign="center" font="xRegular; 16" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+			<convert type="EGLayoutInfo">HddInfo</convert>
+		</widget>
+		<ePixmap position="1140,610" zPosition="2" size="50,50" pixmap="icons/usb.png" alphatest="blend"/>
+		<widget source="session.Event_Now" render="Progress" position="1200,620" size="450,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
+			<convert type="EGLayoutInfo">UsbInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1200,630" size="450,26" halign="left" valign="center" font="xRegular; 16" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+		  <convert type="EGLayoutInfo">UsbInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="450,980" size="800,35" halign="left" valign="center" font="xRegular; 32" transparent="1" foregroundColor="ltbluette" backgroundColor="header" zPosition="6">
+			<convert type="EGBoxInfo">Uptime</convert>
+		</widget>
+        <!-- eLabel name="DEBUG" text="PL01" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->		
 	</screen>
 
 	<screen name="PPanel" position="fill" title="PPanel Setting" backgroundColor="#FF000000" flags="wfNoBorder">
