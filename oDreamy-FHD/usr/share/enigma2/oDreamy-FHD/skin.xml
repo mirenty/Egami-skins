@@ -1262,7 +1262,10 @@
 		<widget name="config" position="70,180" size="820,540" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
 		<widget name="description"     position="1270,480" size="580,400" font="Regular;32" halign="center" scrollbarMode="showOnDemand" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<widget name="HelpWindow" position="70,700" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="HelpWindow"      position="1260,720" size="1,1" zPosition="1" alphatest="on" transparent="1" />
+    	        <widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="1390,970" zPosition="1" size="60,35" transparent="1" alphatest="on">
+		     <convert type="ConditionalShowHide" />
+	        </widget>
 		<ePixmap position="70,988"  pixmap="oDreamy-FHD/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
 		<ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="cancel"     position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
