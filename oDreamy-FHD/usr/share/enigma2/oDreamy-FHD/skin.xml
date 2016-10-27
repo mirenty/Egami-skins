@@ -2505,7 +2505,7 @@
 	<screen name="MediaPlayer" position="fill" title="MediaPlayer" flags="wfNoBorder">
 		<ePixmap pixmap="oDreamy-FHD/menu/mediabk.png" position="fill" zPosition="-1" />
 		<ePixmap pixmap="oDreamy-FHD/icons/mp_buttons.png" position="485,592" size="450,60" alphatest="blend" />
-		<eLabel text="Menu - Help " position="230,45" size="250,50" font="Regular;34" foregroundColor="white" backgroundColor="#001842" transparent="1" zPosition="3" />
+		<eLabel text="Menu - Help - Exit " position="230,45" size="350,50" font="Regular;34" foregroundColor="white" backgroundColor="#001842" transparent="1" zPosition="3" />
 		<!-- widget source="Title" render="Label" position="40,30" size="580,40" font="Regular;26" halign="center" foregroundColor="#808080" backgroundColor="#050d21" transparent="1" zPosition="1" /-->
 		<!-- Time 
 		<widget source="global.CurrentTime" render="Label" position="650,45" size="250,60" font="Regular;50" halign="right" foregroundColor="grey" backgroundColor="#001842" transparent="1">
