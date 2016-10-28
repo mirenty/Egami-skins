@@ -26,14 +26,14 @@
 			selectionPixmap="box/slider.png" backgroundPixmap="box/sliderb.png" >
  			<convert type="TemplatedMultiContent">
  				{"template": [ MultiContentEntryText(pos = (100, 10), size = (685, 65), flags = RT_HALIGN_LEFT, text = 0),
- 				MultiContentEntryPixmapAlphaBlend(pos=(20,2),size=(60,60),png=5,)],
+ 				MultiContentEntryPixmapAlphaBlend(pos=(20,2),size=(56,56),png=5,)],
  				"fonts": [gFont("Regular", 35)],
  				"itemHeight": 60
  				}
  			</convert>
  		</widget>
 		<ePixmap position="60,970"  size="700,90"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
-		<ePixmap pixmap="menu/ico_master.png" position="860,645" size="256,256" alphatest="blend" zPosition="5" />
+		<ePixmap pixmap="ico_master.png" position="860,645" size="256,256" alphatest="blend" zPosition="5" />
 	</screen> 
 	
 	<!-- Button Templates Menu Sort -->
