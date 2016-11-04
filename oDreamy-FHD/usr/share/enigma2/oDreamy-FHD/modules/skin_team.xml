@@ -784,6 +784,27 @@
 		<ePixmap pixmap="menu/ico_listch.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 	</screen>
 	
+	<screen name="UserSkin_Menu" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
+  	<panel name="p700_Template" />
+		<panel name="p700_Date" />
+     <ePixmap pixmap="menu/setup_selection.png" position="860,645" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap position="830,160" size="400,700" pixmap="menu/teamlogo.png" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="box/maxbargh.png" position="805,180" size="15,720" alphatest="blend" zPosition="5" />
+		<widget source="list" render="Listbox" position="45,180" size="775,720" scrollbarMode="showOnDemand" transparent="1" zPosition="1" foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43" selectionPixmap="box/slider.png" backgroundPixmap="box/sliderb.png">
+ 			<convert type="TemplatedMultiContent">
+                        {"template": [
+                                MultiContentEntryPixmapAlphaTest(pos = (25, 10), size = (40, 40), png = 0),
+                                MultiContentEntryText(pos = (90, 0), size = (800, 60), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+                                ],
+                                "fonts": [gFont("Regular", 36)],
+                                "itemHeight": 60
+                        }
+      </convert>
+     </widget>
+		<ePixmap position="60,970" size="700,90" pixmap="icons/team_logo.png" alphatest="blend" zPosition="2" />
+		<ePixmap pixmap="ico_master.png" position="860,645" size="256,256" alphatest="blend" zPosition="5" />
+</screen>
+	
 	<!-- ########## END EGAMI TEAM PANELS ########## -->
 
 	<!-- ####################################### -->
