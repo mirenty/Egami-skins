@@ -804,6 +804,14 @@
 		<ePixmap position="60,970" size="700,90" pixmap="icons/team_logo.png" alphatest="blend" zPosition="2" />
 		<ePixmap pixmap="ico_master.png" position="860,645" size="256,256" alphatest="blend" zPosition="5" />
 </screen>
+
+<screen name="oDreamySetup" position="600,245" size="700,640" title="oDreamy_FHD Skin Controler">
+  <eLabel font="Regular; 28" foregroundColor="#00ff4A3C" halign="center" position="20,580" size="180,46" text="Cancel" />
+  <eLabel font="Regular; 28" foregroundColor="#0056C856" halign="center" position="215,580" size="180,46" text="Save" />
+  <eLabel font="Regular; 28" foregroundColor="#00ffff00" halign="left" position="410,580" size="380,46" text="Reboot" />
+  <widget name="config" font="Regular; 28" itemHeight="44" position="10,10" scrollbarMode="showOnDemand" size="680,160" />
+  <widget name="Preview" position="28,195" size="640,360" zPosition="1" />
+</screen>
 	
 	<!-- ########## END EGAMI TEAM PANELS ########## -->
 
