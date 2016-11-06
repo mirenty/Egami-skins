@@ -745,8 +745,8 @@
 	
 	<screen name="InternetRadioFullScreen" position="fill" title="Internet Radio Cover" backgroundColor="transpBlack" flags="wfNoBorder"> 
 		<panel name="p800_Template" /> 
-    <panel name="p800_Ext_BiN" /> 
-    <panel name="p800_Date" /> 
+		<panel name="p800_Ext_BiN" /> 
+		<panel name="p800_Date" /> 
 		<panel name="M" />
     <!-- List Channel --> 
 		<widget name="station" position="1260,570" size="610,120" font="Regular; 30" transparent="1" backgroundColor="header" foregroundColor="green" halign="center" zPosition="1" /> 
@@ -787,7 +787,7 @@
 	<screen name="UserSkin_Menu" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
   	<panel name="p700_Template" />
 		<panel name="p700_Date" />
-     <ePixmap pixmap="menu/setup_selection.png" position="860,645" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="menu/setup_selection.png" position="860,645" size="256,256" zPosition="2" alphatest="blend" />
 		<ePixmap position="830,160" size="400,700" pixmap="menu/teamlogo.png" alphatest="blend" zPosition="1" />
 		<ePixmap pixmap="box/maxbargh.png" position="805,180" size="15,720" alphatest="blend" zPosition="5" />
 		<widget source="list" render="Listbox" position="45,180" size="775,720" scrollbarMode="showOnDemand" transparent="1" zPosition="1" foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43" selectionPixmap="box/slider.png" backgroundPixmap="box/sliderb.png">
@@ -799,19 +799,26 @@
                                 "fonts": [gFont("Regular", 36)],
                                 "itemHeight": 60
                         }
-      </convert>
-     </widget>
+			</convert>
+		</widget>
 		<ePixmap position="60,970" size="700,90" pixmap="icons/team_logo.png" alphatest="blend" zPosition="2" />
 		<ePixmap pixmap="ico_master.png" position="860,645" size="256,256" alphatest="blend" zPosition="5" />
-</screen>
+	</screen>
 
-<screen name="oDreamySetup" position="600,245" size="700,640" title="oDreamy_FHD Skin Controler">
-  <eLabel font="Regular; 28" foregroundColor="#00ff4A3C" halign="center" position="20,580" size="180,46" text="Cancel" />
-  <eLabel font="Regular; 28" foregroundColor="#0056C856" halign="center" position="215,580" size="180,46" text="Save" />
-  <eLabel font="Regular; 28" foregroundColor="#00ffff00" halign="left" position="410,580" size="380,46" text="Reboot" />
-  <widget name="config" font="Regular; 28" itemHeight="44" position="10,10" scrollbarMode="showOnDemand" size="680,160" />
-  <widget name="Preview" position="28,195" size="640,360" zPosition="1" />
-</screen>
+	<screen name="oDreamySetup" position="fill" title="oDreamy_FHD Skin Controler" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" /> 
+		<panel name="p800_Logo" /> 
+		<panel name="p800_DateMid" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" /> 
+		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" /> 
+		<widget name="config" font="Regular; 28" itemHeight="44" position="70,180" scrollbarMode="showOnDemand" size="810,160" /> 
+		<widget name="Preview" position="160,495" size="640,360" zPosition="1" /> 
+		<ePixmap pixmap="menu/setup_selection.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
+		<ePixmap position="320,988" pixmap="buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" /> 
+		<ePixmap position="70,988" pixmap="buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" /> <ePixmap position="565,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" /> <eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="115,985" size="180,46" text="Cancel" /> 
+		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="360,985" size="180,46" text="Save" /> 
+		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="605,985" size="380,46" text="Reboot" /> 
+	</screen>
 	
 	<!-- ########## END EGAMI TEAM PANELS ########## -->
 
